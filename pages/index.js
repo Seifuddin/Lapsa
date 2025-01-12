@@ -1,5 +1,4 @@
 // pages/index.js
-import Hero from '../components/Hero';
 import About from '../components/About';
 import Why from '@/components/Why';
 import Services from '@/components/OurServices';
@@ -9,6 +8,7 @@ import Awards from '@/components/Awards';
 import Know from '@/components/Know';
 import Benefits from '@/components/Benefits';
 import Request from '@/components/Request';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
