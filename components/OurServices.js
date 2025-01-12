@@ -1,4 +1,4 @@
-export default function OurServices() {
+export default function Services() {
 
     return (
         <section className="bg-gray-200 py-16">
