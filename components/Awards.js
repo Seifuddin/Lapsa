@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Awards() {
   return (
     <section className="relative bg-gray-800 text-white pt-10 pb-16 md:pt-16 md:pb-24">
-      <div className="absolute inset-0 bg-cover bg-center bg-opacity-50">
+      <div className="mx-1 inset-0 bg-cover bg-center bg-opacity-50">
         <Image
           src="/images/ai-generated-golden-winner-cup-on-dark-background-photo.jpg"
           alt="Hero Image"
@@ -13,7 +13,7 @@ export default function Awards() {
           className="opacity-50"
         />
       </div>
-      <div className="relative container mx-auto px-4 text-center">
+      <div className="relative px-4 text-center">
         <h1 className="text-3xl font-semibold mb-8">
           Our Customer Service
         </h1>

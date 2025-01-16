@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-const Testimonials = () => {
+const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    '/images/image-removebg-preview (11).png',
-    '/images/image-removebg-preview (11).png',
-    '/images/image-removebg-preview (11).png',
-    '/images/image-removebg-preview (11).png',
+    '/images/2287947-removebg-preview.png',
+    '/images/2287947-removebg-preview.png',
+    '/images/2287947-removebg-preview.png',
+    '/images/2287947-removebg-preview.png',
   ];
 
   // Function to go to the next slide
@@ -68,4 +68,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Carousel;

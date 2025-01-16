@@ -2,7 +2,7 @@ export default function Why() {
 
     return (
         <section className="bg-gray-200 px-3 py-16">
-            <div className="container mx-auto text-center">
+            <div className="mx-1 text-center">
                 <h2 className="text-3xl font-semibold mb-8">Why Choose Us</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
                     <div className="service-card bg-gray-100 p-6 rounded-lg shadow-lg border border-orange-500">

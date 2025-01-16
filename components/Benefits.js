@@ -1,7 +1,7 @@
 export default function Benefits() {
     return (
         <section className="bg-gray-200 py-16">
-            <div className="container mx-auto text-center">
+            <div className="mx-a1 text-center">
                 <h2 className="text-3xl font-semibold mb-4">How we help your Business grow</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">
                 <div className="grid place-items-start p-4 rounded-lg">

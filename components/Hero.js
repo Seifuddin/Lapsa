@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="relative bg-gray-800 text-white pt-20 pb-32 md:pt-32 md:pb-48">
-      <div className="absolute inset-0 bg-cover bg-center bg-opacity-50">
+      <div className="mx-2 inset-0 bg-cover bg-center bg-opacity-50">
         <Image
           src="/images/CDG_blog_post_image_01-850x412.jpg"
           alt="Hero Image"
@@ -13,7 +13,7 @@ export default function Hero() {
           className="opacity-50"
         />
       </div>
-      <div className="relative container mx-auto px-4 text-center">
+      <div className="relative  mx-auto px-2 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
           Stunning Web & Graphic Design Services
         </h1>

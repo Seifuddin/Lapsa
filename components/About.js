@@ -1,7 +1,7 @@
 export default function About() {
     return (
         <section className="bg-white py-16">
-            <div className="container mx-auto text-center">
+            <div className="mx-2 text-center">
                 <h2 className="text-3xl font-semibold mb-10">About Us</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">
                     <div className="service-card">

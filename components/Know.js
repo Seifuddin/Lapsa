@@ -1,14 +1,14 @@
 
 export default function Know() {
   return (
-    <div className="container-know bg-orange-500 py-16">
-            <div className="container mx-auto text-center">
+    <div className="container-know bg-blue-200 py-16">
+            <div className="mx-1 text-center">
                 <h2 className="text-3xl font-semibold mb-4">Did You Know?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div className="service-card m-3">
+                    <div className="service-card m-1">
                         <img src="/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" alt="Project 1" className="w-full h-80 object-cover rounded-xl" />
                 </div>
-                <div className="service-card p-4 rounded-lg">
+                <div className="service-card p-2 rounded-lg">
                 <p className="text-lg text-left text-black mb-2">
 
                 We are a passionate team of web and graphic designers committed to turning your ideas into captivating digital experiences. With years of experience, we specialize in designing intuitive websites and eye-catching graphics that help businesses grow.
