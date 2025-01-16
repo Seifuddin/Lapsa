@@ -1,7 +1,7 @@
 
 export default function Know() {
   return (
-    <div className="container-know bg-blue-200 py-16">
+    <div className="container-know bg-orange-200 py-16">
             <div className="mx-1 text-center">
                 <h2 className="text-3xl font-semibold mb-4">Did You Know?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">

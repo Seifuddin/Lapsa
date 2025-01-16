@@ -1,13 +1,13 @@
 export default function About() {
     return (
         <section className="bg-white py-16">
-            <div className="mx-2 text-center">
+            <div className="text-center">
                 <h2 className="text-3xl font-semibold mb-10">About Us</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">
                     <div className="service-card">
-                        <img src="/images/CDG_blog_post_image_01-850x412.jpg" alt="Project 1" className="w-full h-80 object-cover border-2 border-orange-500" />
+                        <img src="/images/CDG_blog_post_image_01-850x412.jpg" alt="Project 1" className="w-full h-80 object-cover" />
                 </div>
-                <div className="service-card pl-2 rounded-lg">
+                <div className="service-card mx-2 pl-2 rounded-lg">
                 <p className="text-xl text-left text-orange-500 font-extrabold mb-2">Our Motto</p>
                 <p className="text-lg text-left text-gray-700 mb-2">
                 We are commited to excellence in print and branding                </p>
