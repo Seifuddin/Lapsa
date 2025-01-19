@@ -1,7 +1,6 @@
 import About from "@/components/About";
 import Awards from "@/components/Awards";
 import Benefits from "@/components/Benefits";
-import Marquee from "@/components/Clients";
 import Hero from "@/components/Hero";
 import Know from "@/components/Know";
 import Services from "@/components/OurServices";
@@ -17,7 +16,6 @@ export default function MyApp({ Component, pageProps}) {
       <About />
       <Services />
       <Request />
-      <Marquee />
       <Why />
       <Know />
       <Benefits />

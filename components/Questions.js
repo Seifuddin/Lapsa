@@ -16,6 +16,8 @@ const Faq = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h2 className="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
+      <h2 className="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
+      <h2 className="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
       <div className="space-y-6">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-200">

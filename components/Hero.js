@@ -15,11 +15,12 @@ export default function Hero() {
       </div>
       <div className="relative  mx-auto px-2 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-          Stunning Web & Graphic Design Services
+          Your Stunning Solution for Web & Graphic Design
         </h1>
         <p className="text-lg sm:text-xl mb-6">
           Transform your ideas into visually captivating designs. We specialize in both web and graphic design, offering creative solutions to help your business grow.
         </p>
+        
         <a
           href="#portfolio"
           className="inline-block bg-orange-500 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"

@@ -16,7 +16,7 @@ export default function Benefits() {
                 </a>
                 </div>
                 <div className="service-card">
-                        <img src="/images/image-removebg-preview (12).png" alt="Project 1" className="w-full h-80 object-cover" />
+                        <img src="/images/image-removebg-preview (13).png" alt="Project 1" className="w-full h-80 object-cover" />
                     </div>
             </div>
             </div>

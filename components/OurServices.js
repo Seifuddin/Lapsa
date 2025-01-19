@@ -15,6 +15,26 @@ export default function Services() {
                         </div>
                         <div className="p-6">
                             <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Web Design</h3>
+                            <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.</p>
+                            <a
+                                href="#portfolio"
+                                className="inline-block bg-orange-500 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                            >
+                                See More
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="project-card bg-gray-50 rounded-md shadow-lg overflow-hidden border border-orange-500">
+                        <div className="flex justify-center mt-10 mb-1">
+                            <img
+                                src="/images/2287947-removebg-preview.png" // Example icon image
+                                alt="Web Design Icon"
+                                className="w-24 h-24"
+                            />
+                        </div>
+                        <div className="p-6">
+                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Digital Printing</h3>
                             <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence</p>
                             <a
                                 href="#portfolio"
@@ -34,7 +54,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Web Design</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Graphic Design</h3>
                             <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence</p>
                             <a
                                 href="#portfolio"
@@ -54,7 +74,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Web Design</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">SEO Optimimzation</h3>
                             <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence</p>
                             <a
                                 href="#portfolio"
@@ -74,8 +94,8 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Web Design</h3>
-                            <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence</p>
+                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Website Maintenance</h3>
+                            <p className="text-gray-700 text-left">Our comprehensive website maintenance services ensure your site remains up-to-date, secure, and fully functional. Trust us to keep your website running smoothly and efficiently.</p>
                             <a
                                 href="#portfolio"
                                 className="inline-block bg-orange-500 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
@@ -94,27 +114,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Web Design</h3>
-                            <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence</p>
-                            <a
-                                href="#portfolio"
-                                className="inline-block bg-orange-500 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
-                            >
-                                See More
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="project-card bg-gray-50 rounded-md shadow-lg overflow-hidden border border-orange-500">
-                        <div className="flex justify-center mt-10 mb-1">
-                            <img
-                                src="/images/2287947-removebg-preview.png" // Example icon image
-                                alt="Web Design Icon"
-                                className="w-24 h-24"
-                            />
-                        </div>
-                        <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Web Design</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-orange-500 bg-gray-100 rounded-md border border-orange-200">Digital Marketing</h3>
                             <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence</p>
                             <a
                                 href="#portfolio"
