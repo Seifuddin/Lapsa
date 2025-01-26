@@ -41,8 +41,6 @@ export default function Hero() {
         </div>
 
         <div className="service-card relative mx-5 px-14 rounded-md p-5">
-          <img src="/images/Screenshot_20221022-170110-removebg-preview.png" alt="Project 1" className="w-72 h-96 object-cover border-b-4" />
-
           <ul className='list-disc pl-5 ml-5 text-lg font-semibold'>
 
           </ul>
