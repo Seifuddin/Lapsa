@@ -1,9 +1,9 @@
 export default function About() {
     return (
-        <section className="bg-white py-16">
+        <section className="bg-gray-200 py-16">
             <div className="text-center">
                 <h2 className="text-4xl font-semibold mb-10">About Us</h2>
-                <h2 className="text-2xl font-semibold mb-10">We're more than just a printing company. We're your creative partner, dedicated to helping individuals and businesses alike bring their ideas to life with vibrant, high-quality prints.</h2>
+                <h2 className="text-lg text-gray-600 font-semibold mb-10">We're more than just a printing company. We're your creative partner, dedicated to helping individuals and businesses alike bring their ideas to life with vibrant, high-quality prints.</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">
                     <div className="service-card">
                         <img src="/images/CDG_blog_post_image_01-850x412.jpg" alt="Project 1" className="w-full h-80 object-cover" />

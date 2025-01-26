@@ -1,6 +1,8 @@
 import About from "@/components/About";
 import Awards from "@/components/Awards";
 import Benefits from "@/components/Benefits";
+import Discount from "@/components/Discount";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Know from "@/components/Know";
 import Services from "@/components/OurServices";
@@ -14,6 +16,7 @@ export default function MyApp({ Component, pageProps}) {
     <div>
       <Hero />
       <About />
+      <Discount />
       <Services />
       <Request />
       <Why />
@@ -21,6 +24,7 @@ export default function MyApp({ Component, pageProps}) {
       <Benefits />
       <Awards />
       <Quiz />
+      <Footer />
     </div>
   );
 }

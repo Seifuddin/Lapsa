@@ -3,10 +3,10 @@ export default function Know() {
   return (
     <div className="container-know bg-blue-950 py-16">
             <div className="mx-1 text-center">
-                <h2 className="text-3xl font-semibold mb-10 text-orange-500">Did You Know?</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">
+                <h2 className="text-3xl font-semibold mb-10 text-white">Did You Know?</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                     <div className="service-card m-1">
-                        <img src="/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" alt="Project 1" className="w-full h-80 object-cover rounded-xl" />
+                        <img src="/images/download.jpg" alt="Project 1" className="w-full h-full object-cover rounded-xl m-0" />
                 </div>
                 <div className="service-card p-2 rounded-lg">
                 <p className="text-lg text-left text-white mb-2">
@@ -19,7 +19,7 @@ export default function Know() {
                 </p>
                 <a
                     href="#portfolio"
-                        className="inline-block rounded-lg mt-5range-500 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                        className="inline-block rounded-lg bg-orange-500 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                 >
                     Get a Website for your Business
                 </a>
