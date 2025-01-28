@@ -7,8 +7,6 @@ import Hero from "@/components/Hero";
 import Know from "@/components/Know";
 import Services from "@/components/OurServices";
 import Quiz from "@/components/Quiz";
-import Request from "@/components/Request";
-import Why from "@/components/Why";
 
 
 export default function MyApp({ Component, pageProps}) {
@@ -18,8 +16,6 @@ export default function MyApp({ Component, pageProps}) {
       <About />
       <Discount />
       <Services />
-      <Request />
-      <Why />
       <Know />
       <Benefits />
       <Awards />

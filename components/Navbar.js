@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="bg-blue-950 fixed w-full top-0 left-0 z-50 shadow-md border-b-2 border-b-orange-500">
       <div className="max-w-screen-xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-orange-400 font-bold text-xl">Lapsa Web and Graphics</div>
+          <div className="text-orange-400 font-bold text-xl">Lapsa AI</div>
           <div className="lg:hidden">
             <button
               className="text-white"

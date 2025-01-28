@@ -6,7 +6,7 @@ export default function Know() {
                 <h2 className="text-3xl font-semibold mb-10 text-white">Did You Know?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                     <div className="service-card m-1">
-                        <img src="/images/download.jpg" alt="Project 1" className="w-full h-full object-cover rounded-xl m-0" />
+                        <img src="/images/download.jpg" alt="Project 1" className="w-full h-full object-cover rounded-xl m-0 border-2" />
                 </div>
                 <div className="service-card p-2 rounded-lg">
                 <p className="text-lg text-left text-white mb-2">

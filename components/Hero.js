@@ -25,16 +25,16 @@ export default function Hero() {
         <div className='flex gap-10 mt-5'>
         <a
             href="#portfolio"
-            className="inline-block bg-orange-600 text-white py-1 px-6 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
+            className="inline-block bg-orange-600 text-white px-6 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
           >
-            All Services
+            Quotation
           </a>
 
           <a
             href="#portfolio"
-            className="inline-block bg-blue-600 text-white py-1 px-6 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
+            className="inline-block bg-blue-600 text-white px-6 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
           >
-            All Services
+            Services
           </a>
         </div>
 
@@ -52,7 +52,7 @@ export default function Hero() {
         
 
       </div>
-              {/* Row with 3 columns with more visually distinct styling */}
+              {/* Row with 3 columns with more visually distinct styling
                 <div className="flex flex-col md:flex-row mt-12 justify-center gap-8 m-5">
           <div className="w-full md:w-1/3 p-6 bg-white text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
             <div className="flex justify-center mb-4">
@@ -87,7 +87,9 @@ export default function Hero() {
             <h3 className="text-xl font-semibold mb-2 text-orange-500 text-center">Computer Sales</h3>
             <p className=' text-center'>Top-quality computers and accessories to meet your needs, whether for work or personal use.</p>
           </div>
+           
         </div>
+         */}
     </section>
   );
 }
