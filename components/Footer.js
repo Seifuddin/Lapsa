@@ -4,7 +4,7 @@ export default function Footer() {
           <div className='grid'>
               <h2 className="text-2xl font-bold mb-4 text-left text-white">Lapsa Web and Graphics</h2>
                             {/* Row with 3 columns with more visually distinct styling */}
-          <div className="flex flex-col md:flex-row mt-3 justify-center">
+          <div className="flex flex-col md:flex-row mt-3 justify-center gap-8">
           <div className="w-full md:w-1/3">
             <h3 className="text-xl font-semibold text-left text-white">Our Services</h3>
 
