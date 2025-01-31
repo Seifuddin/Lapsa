@@ -1,7 +1,7 @@
 
 export default function Know() {
   return (
-    <div className="container-know bg-blue-950 py-16">
+    <div className="container-know bg-blue-900 py-16">
             <div className="mx-1 text-center">
                 <h2 className="text-3xl font-semibold mb-10 text-white">Did You Know?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
@@ -19,7 +19,7 @@ export default function Know() {
                 </p>
                 <a
                     href="#portfolio"
-                        className="inline-block rounded-lg bg-orange-500 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                        className="inline-block rounded-lg bg-orange-400 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                 >
                     Get a Website for your Business
                 </a>

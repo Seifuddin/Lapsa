@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           
-              <h2 className="text-center text-white mt-7">© 2024. All Rights Reserved. LAPSA. Sitemap | Blog | Privacy Policy | Muriithi Nguru</h2>
+              <h2 className="text-center text-white mt-7">Copyright © 2025 Lapsa Web and Graphics Ltd  -All rights reserved.</h2>
 
           </div>
       </section>

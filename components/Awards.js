@@ -14,7 +14,7 @@ export default function Awards() {
         />
       </div>
       <div className="relative px-4 text-center">
-        <h1 className="text-3xl text-orange-400 font-semibold mb-8">
+        <h1 className="text-3xl text-white font-semibold mb-8">
           Our Customer Care Service
         </h1>
         <p className="text-lg text-white font-bold text-center">
