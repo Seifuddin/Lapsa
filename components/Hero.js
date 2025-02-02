@@ -25,22 +25,22 @@ export default function Hero() {
 
         <a
             href="#portfolio"
-            className="inline-block bg-orange-400 text-white px-10 p-2 mx-2 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
+            className=" bg-orange-400 text-white px-6 p-2 mx-1 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
           >
             Quotation
           </a>
 
           <a
             href="#portfolio"
-            className="inline-block bg-blue-600 text-white px-10 p-2 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
+            className=" bg-blue-600 text-white px-6 p-2 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
           >
             Services
           </a>
 
-        <div className='flex gap-1 mt-5'>
+        <div className='flex mt-5'>
 
                         {/* Row with 3 columns with more visually distinct styling  */}
-                        <div className="flex justify-center gap-1">
+                        <div className="flex relative gap-1 p-3">
           <div className="w-full md:w-1/3 p-6 bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
             <div className="flex justify-center">
             </div>
