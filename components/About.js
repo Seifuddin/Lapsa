@@ -8,13 +8,13 @@ export default function About() {
                         <img src="/images/CDG_blog_post_image_01-850x412.jpg" alt="Project 1" className="w-full h-80 object-cover" />
                 </div>
                 <div className="service-card mx-2 pl-2 rounded-lg">
-                <p className="text-xl text-left text-orange-500 font-extrabold mb-2">Our Motto</p>
+                <p className="text-xl text-left text-gray-700 font-bold mb-2">Our Motto</p>
                 <p className="text-lg text-left text-gray-700 mb-2">
                 We are commited to excellence in print and branding                </p>
-                <p className="text-xl text-left text-orange-500 font-extrabold mb-2">Our Mission</p>
+                <p className="text-xl text-left text-gray-700 font-bold mb-2">Our Mission</p>
                 <p className="text-lg text-left text-gray-700 mb-2">
                 Our mission is to deliver outstanding printing services that exceed customer expectations, using the latest technology and top-quality materials.                </p>
-                <p className="text-lg text-left text-orange-500 font-extrabold mb-2">Our Vission</p>
+                <p className="text-lg text-left text-gray-700 font-bold mb-2">Our Vission</p>
                 <p className="text-lg text-left text-gray-700 mb-2">
                 Our Vision is to offer local and International organizations the finest of products and services in the market through Lapsa.                </p>
                 <a

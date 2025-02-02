@@ -1,7 +1,7 @@
 export default function Services() {
 
     return (
-        <section className="bg-gray-200 py-16">
+        <section className="bg-gray-200 py-16 px-5">
             <div className="mx-1 text-center">
                 <h2 className="text-3xl font-semibold mb-8">Our Services</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-2">
@@ -14,7 +14,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500 ">Web Design</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-700 border-2">Web Design</h3>
                             <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.</p>
                             <a
                                 href="#portfolio"
@@ -34,7 +34,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500">Software Development</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-700">Software Development</h3>
                             <p className="text-gray-700 text-left">Transform your innovative ideas into reality with our bespoke software development services. We design and build custom software solutions to meet your specific business needs and drive growth.</p>
                             <a
                                 href="#portfolio"
@@ -54,7 +54,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500">Graphic Design</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-700">Graphic Design</h3>
                             <p className="text-gray-700 text-left">Bring your ideas to life with our expert graphic design services. From logos, business cards, brochures and posters, we create visually stunning designs that captivate and communicate your message effectively.</p>
                             <a
                                 href="#portfolio"
@@ -74,7 +74,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500">Digital Printing</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-700">Digital Printing</h3>
                             <p className="text-gray-700 text-left">Digital printing is a modern printing method that offers high-quality and cost-effective solutions for both small and large-scale projects. Ideal for vibrant graphics and intricate details.</p>
                             <a
                                 href="#portfolio"
@@ -94,7 +94,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500">Website Maintenance</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-700">Website Maintenance</h3>
                             <p className="text-gray-700 text-left">Our comprehensive website maintenance services ensure your site remains up-to-date, secure, and fully functional. Trust us to keep your website running smoothly and efficiently.</p>
                             <a
                                 href="#portfolio"
@@ -114,7 +114,7 @@ export default function Services() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2 text-orange-500">
+                            <h3 className="text-xl font-semibold mb-2 text-gray-700">
                             Mobile App Development</h3>
                             <p className="text-gray-700 text-left">Engage your audience on-the-go with our cutting-edge mobile app development services. We create user-friendly, feature-rich mobile apps that enhance your brand’s reach and customer interaction.</p>
                             <a

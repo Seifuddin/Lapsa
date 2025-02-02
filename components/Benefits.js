@@ -2,7 +2,7 @@ export default function Benefits() {
     return (
         <section className="bg-gray-200 py-16">
             <div className="mx-a1 text-center">
-                <h2 className="text-3xl font-semibold mb-4">How we help your Business grow</h2>
+                <h2 className="text-3xl font-semibold mb-16">How we help your Business grow</h2>
                 <div className="flex flex-col-reverse md:flex-row ">
                 <div className="left flex-1 grid place-items-start p-4 rounded-lg">
                 <p className="text-xl text-left text-orange-500 font-extrabold mb-2">Connecting your business with customers all around the world.</p>

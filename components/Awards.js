@@ -17,11 +17,11 @@ export default function Awards() {
         <h1 className="text-3xl text-white font-semibold mb-8">
           Our Customer Care Service
         </h1>
-        <p className="text-lg text-white font-bold text-center">
+        <p className="text-lg text-white text-center">
             Customer  service is a priority at Lapsa. Our representatives are ready to assist and advice you throughout the business day. Whether your requirements are for general services or for specific, unique situations, rely on our representatives to help ypu with your purchasing decisions. Best of all, Our prices are unsurpassed. 
         </p>
 
-        <p className="text-lg text-white font-bold text-center">
+        <p className="text-lg text-white text-center">
             Incase you need any help or assistance, kindly WhatsApp or send a text our Customer Care Number below:
         </p>
 

@@ -2,7 +2,7 @@ export default function Discount() {
   return (
     <div className='pt-20 bg-gradient-to-r from-blue-950 to-orange-400'>
       <h2 className="text-3xl font-semibold mb-10 text-center text-white">Get the best for less</h2>
-      <div className="flex flex-col-reverse md:flex-row">
+      <div className="flex flex-col sm:flex-row">
             <div className="left flex-1 service-card p-4">
                     <h2 className="text-xl font-semibold text-white mb-10">Get yourself a Website starting from Kes 13,000 only</h2>
                     <p className="text-lg text-gray-100 text-left">Quality web Design doesnt have to come with a hefty price tag. At Lapsa, we offer affordable, custom web design services tailored to fit your budget. Whether you're aa small business or a growing brand, we're here to help you create a proffessional online presence without breaking the bank. Let's work together to build your dream website at a price that works for you! </p>
