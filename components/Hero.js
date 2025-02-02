@@ -37,33 +37,28 @@ export default function Hero() {
             Services
           </a>
 
-        <div className='flex mt-5'>
 
-                        {/* Row with 3 columns with more visually distinct styling  */}
-                        <div className="flex relative gap-1 p-3">
-          <div className="w-full md:w-1/3 p-6 bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
-            <div className="flex justify-center">
+
+          <div className='flex relative mt-5'>
+        <div className="p-4 justify-center m-2 bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
+        <h3 className="text-xl font-bold mb-2 text-white text-center">100+</h3>
+        <p className=' text-center font-semibold'>Stunning Websites</p>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-white text-center">100+</h3>
-            <p className=' text-center font-semibold'>Stunning Websites</p>
-          </div>
-          <div className="w-full md:w-1/3 p-6 bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
-            <div className="flex justify-center">
-            </div>
+
+            <div className="p-4 justify-center m-2 bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
             <h3 className="text-xl font-bold mb-2 text-white text-center">100+</h3>
             <p className=' text-center font-semibold'>Happy Clients</p>
-          </div>
-          <div className="w-full md:w-1/3 p-6 bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
-            <div className="flex justify-center">
             </div>
+
+            <div className="p-4 justify-center m-2 bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
             <h3 className="text-xl font-bold text-white text-center">100+</h3>
             <p className=' text-center font-semibold'>Software Developed</p>
-          </div>
+            </div>
+
            
         </div>
         
         
-        </div>
 
         </div>
         
