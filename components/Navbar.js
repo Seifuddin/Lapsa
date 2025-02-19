@@ -10,12 +10,16 @@ export default function Navbar() {
     <nav className="bg-blue-950 fixed w-full top-0 left-0 z-50 shadow-md border-b-2 border-b-orange-500">
       <div className="max-w-screen-xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-orange-400 font-bold text-xl">Lapsa AI</div>
+          <div className="flex text-orange-400 font-bold text-xl">
+            <img
+              src="/images/Screenshot_20221022-170110-removebg-preview.png" // Example icon image
+              alt="Web Design Icon"
+              className="w-8 h-8 mr-2"
+            />
+            Lapsa AI
+          </div>
           <div className="lg:hidden">
-            <button
-              className="text-white"
-              onClick={() => setIsOpen(!isOpen)}
-            >
+            <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -42,7 +46,10 @@ export default function Navbar() {
             <a href="#services" className="text-white hover:text-gray-400">
               Services
             </a>
-            <a href="./pages/Contacts" className="text-white hover:text-gray-400">
+            <a
+              href="./pages/Contacts"
+              className="text-white hover:text-gray-400"
+            >
               Contact
             </a>
           </div>

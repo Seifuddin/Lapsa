@@ -1,10 +1,10 @@
 export default function Services() {
 
     return (
-        <section className="bg-gray-200 py-16 px-5">
+        <section className="bg-gray-200 py-16">
             <div className="mx-1 text-center">
                 <h2 className="text-3xl font-semibold mb-8">Our Services</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-1">
                     <div className="project-card bg-gray-200 rounded-md shadow-lg overflow-hidden border border-gray-400">
                         <div className="flex justify-center mt-10 mb-1">
                             <img
