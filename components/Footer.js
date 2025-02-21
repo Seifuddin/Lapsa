@@ -1,8 +1,9 @@
+import Image from "next/image"
+
 export default function Footer() {
     return (
       <section className='relative pt-20 bg-blue-950'>
           <div className='grid'>
-              <h2 className="text-2xl font-bold mb-4 text-center text-white px-5">Lapsa Web and Graphics</h2>
                             {/* Row with 3 columns with more visually distinct styling */}
           <div className="flex flex-col md:flex-row mt-3 justify-center px-5 gap-5">
           <div className="w-full md:w-1/3">
@@ -40,15 +41,75 @@ export default function Footer() {
 
             <div className="footer-list mt-3">
                 <ul>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">Lapsa Web and Graphics </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">0111 608 331 </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">lapsaone@gmail.com </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">Lapsa Web and Graphics </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">Lapsa Web and Graphics </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">Lapsa Web and Graphics </a></li>
+                  <li className="text-white pt-2">
+                    <a href="#" className="flex text-white">
+                      <div className="flex mx-2">
+                        <img
+                          src="/images/phone-512.png" // Example icon image
+                          alt="Brand Identity Icon"
+                          className="w-7 h-7 border rounded-md"
+                        />
+
+                        <img
+                          src="/images/pngtree-whatsapp-icon-png-image_3584845.jpg" // Example icon image
+                          alt="Brand Identity Icon"
+                          className="w-7 h-7 border rounded-md mx-1"
+                        />
+                      </div>
+                      0111 608 331 </a>
+                  </li>
+
+                  <li className="text-white pt-2">
+                    <a href="#" className="flex text-white">
+                      <div className="flex mx-2">
+                        <img
+                          src="/images/gratis-png-direccion-de-correo-electronico-iconos-de-la-computadora-logo-usuario-gmail.png" // Example icon 
+                          alt="Brand Identity Icon"
+                          className="w-7 h-7 border rounded-md"
+                        />
+                      </div>
+                      nguruedwin46@gmail.com </a>
+                  </li>
+
+                  <li className="text-white pt-2">
+                    <a href="#" className="flex text-white">
+                      <div className="flex mx-2">
+                        <img
+                          src="/images/2048px-Facebook_icon_2013.svg.png" // Example icon image
+                          alt="Brand Identity Icon"
+                          className="w-7 h-7 border rounded-md"
+                        />
+                      </div>
+                      Lapsa Web and Graphics </a>
+                  </li>
+
+                  <li className="text-white pt-2">
+                    <a href="#" className="flex text-white">
+                      <div className="flex mx-2">
+                        <img
+                          src="/images/2048px-Instagram_icon.png" // Example icon image
+                          alt="Brand Identity Icon"
+                          className="w-7 h-7 border rounded-md"
+                        />
+                      </div>
+                      Lapsa Web and Graphics </a>
+                  </li>
+
+                  <li className="text-white pt-2">
+                    <a href="#" className="flex text-white">
+                      <div className="flex mx-2">
+                        <img
+                          src="/images/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png" // Example icon image
+                          alt="Brand Identity Icon"
+                          className="w-7 h-7 border rounded-md"
+                        />
+                      </div>
+                      Lapsa Web and Graphics </a>
+                  </li>
+
                 </ul>
               </div>
-          </div>
+            </div>
           
           </div>
 

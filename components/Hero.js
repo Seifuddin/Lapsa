@@ -42,16 +42,19 @@ export default function Hero() {
           <div className='flex relative mt-5 gap-1'>
         <div className="p-4 justify-center bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
         <h3 className="text-xl font-bold mb-2 text-white text-center">100+</h3>
+        <hr />
         <p className=' text-center font-semibold'>Stunning Websites</p>
             </div>
 
             <div className="p-4 justify-center bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
             <h3 className="text-xl font-bold mb-2 text-white text-center">100+</h3>
+            <hr />
             <p className=' text-center font-semibold'>Happy Clients</p>
             </div>
 
             <div className="p-4 justify-center bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
             <h3 className="text-xl font-bold text-white text-center">100+</h3>
+            <hr />
             <p className=' text-center font-semibold'>Software Developed</p>
             </div>
 
