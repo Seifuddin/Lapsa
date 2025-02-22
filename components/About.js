@@ -19,7 +19,7 @@ export default function About() {
                 Our Vision is to offer local and International organizations the finest of products and services in the market through Lapsa.                </p>
                 <a
                     href="#portfolio"
-                        className="inline-block ml-0 rounded-md bg-orange-400 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                        className="inline-block ml-0 rounded-md bg-orange-700 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                 >
                     About Us
                 </a>

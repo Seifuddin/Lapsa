@@ -6,8 +6,10 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Know from "@/components/Know";
 import Services from "@/components/OurServices";
-import Quiz from "@/components/Quiz";
-
+import FAQ from "@/components/Quiz";
+import Request from "@/components/Request";
+import ImageCarousel from "@/components/Testimonials";
+import Why from "@/components/Why";
 
 export default function MyApp({ Component, pageProps}) {
   return (
@@ -16,10 +18,13 @@ export default function MyApp({ Component, pageProps}) {
       <About />
       <Discount />
       <Services />
+      <Request />
       <Know />
+      <Why />
+      <ImageCarousel />
       <Benefits />
       <Awards />
-      <Quiz />
+      <FAQ />
       <Footer />
     </div>
   );

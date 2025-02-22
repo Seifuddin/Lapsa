@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Subhero from './Subhero';
+import Carousel from './Carousel';
 
 // components/Hero.js
 export default function Hero() {
@@ -25,7 +26,7 @@ export default function Hero() {
 
         <a
             href="#portfolio"
-            className=" bg-orange-400 text-white px-6 p-2 mx-1 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
+            className=" bg-orange-600 text-white px-6 p-2 mx-1 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
           >
             Quotation
           </a>
@@ -40,19 +41,19 @@ export default function Hero() {
 
 
           <div className='flex relative mt-5 gap-1'>
-        <div className="p-4 justify-center bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
+        <div className="p-4 justify-center bg-orange-600 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
         <h3 className="text-xl font-bold mb-2 text-white text-center">100+</h3>
         <hr />
         <p className=' text-center font-semibold'>Stunning Websites</p>
             </div>
 
-            <div className="p-4 justify-center bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
+            <div className="p-4 justify-center bg-orange-600 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
             <h3 className="text-xl font-bold mb-2 text-white text-center">100+</h3>
             <hr />
             <p className=' text-center font-semibold'>Happy Clients</p>
             </div>
 
-            <div className="p-4 justify-center bg-orange-400 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
+            <div className="p-4 justify-center bg-orange-600 text-gray-800 rounded-lg shadow-lg transform transition-all hover:scale-105">
             <h3 className="text-xl font-bold text-white text-center">100+</h3>
             <hr />
             <p className=' text-center font-semibold'>Software Developed</p>
@@ -68,7 +69,7 @@ export default function Hero() {
 
         <div className="service-card relative mx-5 px-14 rounded-md p-5">
           <ul className='list-disc pl-5 ml-5 text-lg font-semibold'>
-
+            <Carousel />
           </ul>
         </div>
       </div>

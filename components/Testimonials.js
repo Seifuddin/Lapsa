@@ -1,71 +1,41 @@
-import { useState } from 'react';
+"use client";
+import { motion } from "framer-motion";
 
-const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const images = [
+  "/images/government-of-kenya.jpg",
+  "/images/Screenshot_20221022-170110-removebg-preview.png",
+  "/images/government-of-kenya.jpg",
+  "/images/Screenshot_20221022-170110-removebg-preview.png",
+  "/images/government-of-kenya.jpg",
+  "/images/Screenshot_20221022-170110-removebg-preview.png",
+  "/images/government-of-kenya.jpg",
+  "/images/Screenshot_20221022-170110-removebg-preview.png",
+];
 
-  const images = [
-    '/images/image-removebg-preview (11).png',
-    '/images/image-removebg-preview (11).png',
-    '/images/image-removebg-preview (11).png',
-    '/images/image-removebg-preview (11).png',
-  ];
-
-  // Function to go to the next slide
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  // Function to go to the previous slide
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
-
+export default function ImageCarousel() {
   return (
-    <div className="relative max-w-4xl mx-auto mt-10">
-      {/* Carousel Container */}
-      <div className="relative overflow-hidden rounded-lg shadow-lg">
-        {/* Slides */}
-        <div className="flex transition-all duration-500 ease-in-out transform" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {images.map((image, index) => (
-            <div key={index} className="flex-shrink-0 w-full">
-              <img
-                src={image}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-96 object-cover"
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* Navigation Buttons */}
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full focus:outline-none hover:bg-opacity-75"
-        >
-          &#8592;
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full focus:outline-none hover:bg-opacity-75"
-        >
-          &#8594;
-        </button>
-      </div>
-
-      {/* Dots Navigation */}
-      <div className="flex justify-center mt-4 space-x-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-blue-500' : 'bg-gray-400'}`}
-          />
+    <div className="overflow-hidden relative w-full bg-gray-100 py-6">
+      <motion.div
+        className="flex space-x-6"
+        animate={{
+          x: ["0%", "-100%"],
+        }}
+        transition={{
+          ease: "linear",
+          duration: 20,
+          repeat: Infinity,
+        }}
+      >
+        {[...images, ...images].map((src, index) => (
+          <div key={index} className="min-w-[300px] md:min-w-[400px] lg:min-w-[500px]">
+            <img
+              src={src}
+              alt={`Carousel ${index}`}
+              className="w-full h-60 object-cover rounded-xl shadow-lg"
+            />
+          </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
-};
-
-export default Testimonials;
+}

@@ -18,7 +18,7 @@ export default function Services() {
                             <p className="text-gray-700 text-left">We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.</p>
                             <a
                                 href="#portfolio"
-                                className="inline-block bg-orange-400 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                                className="inline-block bg-orange-700 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                             >
                                 Learn More
                             </a>
@@ -38,7 +38,7 @@ export default function Services() {
                             <p className="text-gray-700 text-left">Transform your innovative ideas into reality with our bespoke software development services. We design and build custom software solutions to meet your specific business needs and drive growth.</p>
                             <a
                                 href="#portfolio"
-                                className="inline-block bg-orange-400 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                                className="inline-block bg-orange-700 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                             >
                                 Learn More
                             </a>
@@ -58,7 +58,7 @@ export default function Services() {
                             <p className="text-gray-700 text-left">Bring your ideas to life with our expert graphic design services. From logos, business cards, brochures and posters, we create visually stunning designs that captivate and communicate your message effectively.</p>
                             <a
                                 href="#portfolio"
-                                className="inline-block bg-orange-400 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                                className="inline-block bg-orange-700 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                             >
                                 Learn More
                             </a>
@@ -78,7 +78,7 @@ export default function Services() {
                             <p className="text-gray-700 text-left">Digital printing is a modern printing method that offers high-quality and cost-effective solutions for both small and large-scale projects. Ideal for vibrant graphics and intricate details.</p>
                             <a
                                 href="#portfolio"
-                                className="inline-block bg-orange-400 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                                className="inline-block bg-orange-700 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                             >
                                 Learn More
                             </a>
@@ -98,7 +98,7 @@ export default function Services() {
                             <p className="text-gray-700 text-left">Our comprehensive website maintenance services ensure your site remains up-to-date, secure, and fully functional. Trust us to keep your website running smoothly and efficiently.</p>
                             <a
                                 href="#portfolio"
-                                className="inline-block bg-orange-400 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                                className="inline-block bg-orange-700 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                             >
                                 Learn More
                             </a>
@@ -119,7 +119,7 @@ export default function Services() {
                             <p className="text-gray-700 text-left">Engage your audience on-the-go with our cutting-edge mobile app development services. We create user-friendly, feature-rich mobile apps that enhance your brand’s reach and customer interaction.</p>
                             <a
                                 href="#portfolio"
-                                className="inline-block bg-orange-400 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                                className="inline-block bg-orange-700 text-white py-2 px-8 mt-4 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                             >
                                 Learn More
                             </a>
