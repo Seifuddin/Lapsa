@@ -1,10 +1,18 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function Services() {
 
     return (
         <section className="bg-gray-200 py-16">
             <div className="mx-1 text-center">
                 <h2 className="text-3xl font-semibold mb-8">Our Services</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-1">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-1">
                     <div className="project-card bg-gray-200 rounded-md shadow-lg overflow-hidden border border-gray-400">
                         <div className="flex justify-center mt-10 mb-1">
                             <img
@@ -127,7 +135,7 @@ export default function Services() {
                     </div>
 
                 {/* Repeat for other projects */}
-                </div>
+                </motion.div>
             </div>
         </section>
     );

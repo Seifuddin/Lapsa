@@ -7,8 +7,7 @@ const Carousel = () => {
   const images = [
     '/images/2287947-removebg-preview.png',
     '/images/4668243-removebg-preview.png',
-    '/images/How_to_Learn_Web_Designing.jpg',
-    '/images/do-graphic-design-and-assignament.jpg',
+    '/images/image-removebg-preview (11).png',
   ];
 
   // Function to go to the next slide
@@ -25,7 +24,7 @@ const Carousel = () => {
 
   return (
     <div className="relative max-w-4xl mx-auto mt-10">
-      <h2 className="text-3xl font-semibold mb-10 text-center">What we do</h2>
+      <h2 className="text-3xl font-semibold mb-10 text-center">Our Portfolio</h2>
       {/* Carousel Container */}
       <div className="relative overflow-hidden rounded-lg shadow-lg">
         {/* Slides */}

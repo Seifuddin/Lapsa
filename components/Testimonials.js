@@ -14,24 +14,24 @@ const images = [
 
 export default function ImageCarousel() {
   return (
-    <div className="overflow-hidden relative w-full bg-gray-100 py-6">
+    <div className="overflow-hidden relative bg-blue-950 py-6">
       <motion.div
-        className="flex space-x-6"
+        className="flex space-x-1"
         animate={{
           x: ["0%", "-100%"],
         }}
         transition={{
           ease: "linear",
-          duration: 20,
+          duration: 5,
           repeat: Infinity,
         }}
       >
         {[...images, ...images].map((src, index) => (
-          <div key={index} className="min-w-[300px] md:min-w-[400px] lg:min-w-[500px]">
+          <div key={index} className="min-w-[100px] md:min-w-[200px] lg:min-w-[300px]">
             <img
               src={src}
               alt={`Carousel ${index}`}
-              className="w-full h-60 object-cover rounded-xl shadow-lg"
+              className="w-28 h-28 object-cover rounded-xl shadow-lg border bg-white"
             />
           </div>
         ))}

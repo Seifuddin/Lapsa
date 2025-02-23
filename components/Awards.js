@@ -1,3 +1,6 @@
+"use client";
+import { motion } from 'framer-motion';
+
 import Image from 'next/image';
 
 // components/Hero.js
@@ -19,8 +22,13 @@ export default function Awards() {
         </h1>
 
         <div className="flex flex-col md:flex-row">
-            <div className="left flex-1 service-card p-4">
-                    <h2 className="text-xl text-left text-gray-100 mb-10 bg-gray-900 p-5 rounded-md"> Customer  service is a priority at Lapsa. Our representatives are ready to assist and advice you throughout the business day. Whether your requirements are for general services or for specific, unique situations, rely on our representatives to help you with your purchasing decisions. Best of all, Our prices are unsurpassed. Incase you need any help or assistance, kindly WhatsApp or send a text our Customer Care Number below: </h2>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="left flex-1 service-card p-4">
+                    <h2 className="text-xl text-left text-gray-100 mb-10 rounded-md"> Customer  service is a priority at Lapsa. Our representatives are ready to assist and advice you throughout the business day. Whether your requirements are for general services or for specific, unique situations, rely on our representatives to help you with your purchasing decisions. Best of all, Our prices are unsurpassed. Incase you need any help or assistance, kindly WhatsApp or send a text our Customer Care Number below: </h2>
                     <h2 className="text-xl text-white mb-10"></h2>
                     
                     <p className="flex w-max text-lg rounded-md text-left mt-5 bg-orange-700 p-2 px-5 text-white font-bold">
@@ -31,11 +39,16 @@ export default function Awards() {
                 className="w-10 h-10 border rounded-md mx-5"
               />
         </p>
-                </div>
-                <div className="right flex-2 service-card rounded-lg p-0">
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  className="right flex-2 service-card rounded-lg p-0">
                 <img src="/images/image-removebg-preview (19).png" alt="Project 1" className="w-full h-full object-cover m-0" />
 
-                </div>
+                </motion.div>
             </div>
         
       </div>

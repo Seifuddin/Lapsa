@@ -5,6 +5,7 @@ import Discount from "@/components/Discount";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Know from "@/components/Know";
+import Ourclients from "@/components/Ourclients";
 import Services from "@/components/OurServices";
 import FAQ from "@/components/Quiz";
 import Request from "@/components/Request";
@@ -21,10 +22,11 @@ export default function MyApp({ Component, pageProps}) {
       <Request />
       <Know />
       <Why />
-      <ImageCarousel />
       <Benefits />
       <Awards />
       <FAQ />
+      <ImageCarousel />
+      <Ourclients />
       <Footer />
     </div>
   );

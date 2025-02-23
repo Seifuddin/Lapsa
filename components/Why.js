@@ -45,7 +45,7 @@ const services = [
 
 export default function Why() {
   return (
-    <section className="bg-gray-200 px-4 py-16">
+    <section className="bg-gray-300 px-4 py-16">
       <div className="mx-auto max-w-5xl text-center">
         <h2 className="text-3xl font-semibold mb-8">Why Choose Us</h2>
         <Swiper
@@ -64,11 +64,11 @@ export default function Why() {
         >
           {services.map((service, index) => (
             <SwiperSlide key={index}>
-              <div className="service-card bg-gray-100 p-6 rounded-lg shadow-lg border border-orange-500">
+              <div className="service-card bg-gray-200 p-6 rounded-lg shadow-lg border border-orange-500">
                 <div className="flex justify-center mb-4">
                   <img src={service.image} alt={service.title} className="w-16 h-16" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-blue-500 bg-gray-200 rounded-md border border-blue-200 p-2">
+                <h3 className="text-xl font-semibold mb-2 text-black">
                   {service.title}
                 </h3>
                 <p>{service.description}</p>

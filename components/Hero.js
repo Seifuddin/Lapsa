@@ -1,5 +1,7 @@
+"use client";
 import Image from 'next/image';
 import Subhero from './Subhero';
+import { motion } from 'framer-motion';
 import Carousel from './Carousel';
 
 // components/Hero.js
@@ -16,13 +18,27 @@ export default function Hero() {
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 p-5">
-      <div className="service-card relative">
+      <div  className="service-card relative">
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
+      >
+        Your Stunning Solution for Web & Graphic Design
+      </motion.h2>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-          Your Stunning Solution for Web & Graphic Design
+          
         </h1>
-        <p className="text-lg sm:text-xl mb-6">
+        <motion.p
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+         className="text-lg sm:text-xl mb-6">
           Transform your ideas into visually captivating designs. We specialize in both web and graphic design, offering creative solutions to help your business grow.
-        </p>
+        </motion.p>
 
         <a
             href="#portfolio"
@@ -67,7 +83,7 @@ export default function Hero() {
         </div>
         
 
-        <div className="service-card relative mx-5 px-14 rounded-md p-5">
+        <div className="service-card relative mx-5 px-14 rounded-md mt-5 border-2 border-orange-500 p-5">
           <ul className='list-disc pl-5 ml-5 text-lg font-semibold'>
             <Carousel />
           </ul>
