@@ -24,7 +24,7 @@ const Carousel = () => {
 
   return (
     <div className="relative max-w-4xl mx-auto mt-10">
-      <h2 className="text-3xl font-semibold mb-10 text-center">Our Portfolio</h2>
+      <h2 className="text-3xl font-semibold mb-10 text-center bg-gray-200 text-orange-500 rounded-md p-2">Our Portfolio</h2>
       {/* Carousel Container */}
       <div className="relative overflow-hidden rounded-lg shadow-lg">
         {/* Slides */}

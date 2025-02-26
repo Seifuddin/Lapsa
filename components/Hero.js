@@ -1,8 +1,7 @@
 "use client";
 import Image from 'next/image';
-import Subhero from './Subhero';
 import { motion } from 'framer-motion';
-import Carousel from './Carousel';
+import Portfolio from './Portfolio';
 
 // components/Hero.js
 export default function Hero() {
@@ -83,10 +82,8 @@ export default function Hero() {
         </div>
         
 
-        <div className="service-card relative mx-5 px-14 rounded-md mt-5 border-2 border-orange-500 p-5">
-          <ul className='list-disc pl-5 ml-5 text-lg font-semibold'>
-            <Carousel />
-          </ul>
+        <div className="service-card relative mx-5 px-14 rounded-md mt-5 p-5">
+            <Portfolio />
         </div>
       </div>
         <div className='flex relative justify-center place-items-center bg-gray-900 border-t'>
