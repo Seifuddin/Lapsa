@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Footer() {
     return (
-      <section className='relative pt-20 bg-blue-950'>
+      <section className='w-full relative pt-20 bg-blue-950'>
           <div className='grid'>
                             {/* Row with 3 columns with more visually distinct styling */}
           <div className="flex flex-col md:flex-row mt-3 justify-center px-5 gap-5">

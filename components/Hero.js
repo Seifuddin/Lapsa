@@ -6,8 +6,8 @@ import Portfolio from './Portfolio';
 // components/Hero.js
 export default function Hero() {
   return (
-    <section className="relative bg-gray-800 text-white pt-24 md:pt-30">
-      <div className="mx-2 inset-0 bg-cover bg-center bg-opacity-50">
+    <section className="mx-auto w-full relative bg-gray-800 text-white pt-24 md:pt-30">
+      <div className=" inset-0 bg-cover bg-center bg-opacity-50">
         <Image
           src="/images/CDG_blog_post_image_01-850x412.jpg"
           alt="Hero Image"

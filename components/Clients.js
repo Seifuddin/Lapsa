@@ -67,9 +67,9 @@ export default function Clients() {
           slidesPerView={1}
           breakpoints={{
             550: { slidesPerView: 2 },
-            768: { slidesPerView: 1 },
-            950: { slidesPerView: 2 },
-            1024: { slidesPerView: 2 },
+            768: { slidesPerView: 2 },
+            950: { slidesPerView: 3 },
+            1024: { slidesPerView: 3 },
           }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           navigation
