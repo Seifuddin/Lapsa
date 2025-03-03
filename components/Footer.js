@@ -26,12 +26,11 @@ export default function Footer() {
 
             <div className="footer-list mt-3">
                 <ul>
-                  <li className="text-white"> <a href="#" className=" text-white border-b">Web Design </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">Graphic Design </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">Digital Printing </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">Digital Marketing </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">SEO </a></li>
-                  <li className="text-white pt-2"> <a href="#" className=" text-white border-b">Web Maintenance </a></li>
+                  <li className="text-white"> <a href="#" className=" text-white">We are located in Nairobi CBD </a></li>
+                  <li className="text-white pt-2"> <a href="#" className=" text-white">Lapsa Avenue </a></li>
+                  <li className="text-white pt-2"> <a href="#" className=" text-white">Lapsa Plaza </a></li>
+                  <li className="text-white pt-2"> <a href="#" className=" text-white">Room no 7 </a></li>
+                  <li className="text-white pt-2"> <a href="#" className=" text-white">First Floor </a></li>
                 </ul>
               </div>
           </div>

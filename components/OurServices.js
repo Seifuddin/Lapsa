@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 export default function Services() {
 
     return (
-        <section className="bg-gray-200 py-16">
-            <div className="mx-1 text-center">
+        <section className="bg-gray-300 py-16">
+            <div className="p-5 text-center">
                 <h2 className="text-3xl font-semibold mb-8">Our Services</h2>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}

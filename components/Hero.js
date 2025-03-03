@@ -13,7 +13,7 @@ export default function Hero() {
           alt="Hero Image"
           layout="fill"
           objectFit="cover"
-          className="opacity-70"
+          className="opacity-30"
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 p-5">
@@ -23,7 +23,7 @@ export default function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
+        className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-orange-500"
       >
         Your Stunning Solution for Web & Graphic Design
       </motion.h2>
@@ -82,7 +82,7 @@ export default function Hero() {
         </div>
         
 
-        <div className="service-card relative mx-5 px-14 rounded-md mt-5 p-5">
+        <div className="service-card relative rounded-md mt-5 p-3">
             <Portfolio />
         </div>
       </div>

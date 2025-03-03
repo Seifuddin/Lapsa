@@ -15,6 +15,9 @@ const images = [
 export default function ImageCarousel() {
   return (
     <div className="overflow-hidden relative bg-blue-950 py-6">
+      <h1 className="text-3xl text-white font-semibold mb-8 text-center">
+          Our Clients
+        </h1>
       <motion.div
         className="flex space-x-1"
         animate={{
@@ -31,7 +34,7 @@ export default function ImageCarousel() {
             <img
               src={src}
               alt={`Carousel ${index}`}
-              className="w-28 h-28 object-cover rounded-xl shadow-lg border bg-white"
+              className="w-28 h-28 object-cover rounded-xl shadow-lg border-2 border-orange-600 bg-white"
             />
           </div>
         ))}
