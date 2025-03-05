@@ -7,7 +7,7 @@ export default function Footer() {
                             {/* Row with 3 columns with more visually distinct styling */}
           <div className="flex flex-col md:flex-row mt-3 justify-center px-5 gap-5">
           <div className="w-full md:w-1/3">
-            <h3 className="text-xl font-semibold text-left text-white pt-5">Our Services</h3>
+            <h3 className="text-xl font-semibold text-left text-white pt-5 underline">Our Services</h3>
 
             <div className="footer-list mt-3">
                 <ul>
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           <div className="w-full md:w-1/3">
-            <h3 className="text-xl font-semibold text-left text-white pt-5">Our Location</h3>
+            <h3 className="text-xl font-semibold text-left text-white pt-5 underline">Our Location</h3>
 
             <div className="footer-list mt-3">
                 <ul>
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
 
           <div className="w-full md:w-1/3">
-            <h3 className="text-xl font-semibold text-left text-white pt-5">Contact Information</h3>
+            <h3 className="text-xl font-semibold text-left text-white pt-5 underline">Contact Information</h3>
 
             <div className="footer-list mt-3">
                 <ul>
@@ -113,7 +113,7 @@ export default function Footer() {
           </div>
 
           
-              <h2 className="text-center text-white mt-7 bg-gray-700 m-0 bottom-0 relative p-3 ">Copyright © 2025 Lapsa Web and Graphics Ltd |Muriithi Nguru |  -All rights reserved.</h2>
+              <h2 className="text-center text-white mt-7 bg-gray-700 m-0 bottom-0 relative p-3 underline">Copyright © 2025 Lapsa Web and Graphics Ltd |Muriithi Nguru |  -All rights reserved.</h2>
 
           </div>
       </section>

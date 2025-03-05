@@ -64,7 +64,7 @@ export default function Why() {
         >
           {services.map((service, index) => (
             <SwiperSlide key={index}>
-              <div className="service-card bg-gray-200 p-6 rounded-lg shadow-lg border border-orange-500">
+              <div className="service-card bg-gray-200 p-6 rounded-lg shadow-lg border border-gray-500">
                 <div className="flex justify-center mb-4">
                   <img src={service.image} alt={service.title} className="w-16 h-16" />
                 </div>

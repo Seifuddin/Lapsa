@@ -31,7 +31,7 @@ export default function Know() {
                 </p>
                 <a
                     href="#portfolio"
-                        className="inline-block rounded-lg bg-orange-700 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+                        className="flex text-center rounded-lg bg-orange-700 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                 >
                     Get a Website for your Business
                 </a>

@@ -55,10 +55,11 @@ export default function Portfolio() {
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
+            200: { slidesPerView: 2 },
             550: { slidesPerView: 2 },
-            768: { slidesPerView: 2 },
-            950: { slidesPerView: 2 },
-            1024: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            950: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
           }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           navigation
@@ -71,7 +72,7 @@ export default function Portfolio() {
                 <div className="flex justify-center mb-4">
                   <img src={service.image} alt={service.title} className="w-24 h-20 border border-orange-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-orange-700">
+                <h3 className="font-semibold mb-2 text-orange-700">
                   {service.title}
                 </h3>
               </div>
@@ -82,7 +83,7 @@ export default function Portfolio() {
       <h2 className="text-lg text-italic text-left text-white rounded-md mt-5 border p-1 bg-blue-800">Would you like to explore more? Click the button below to see more exiting services we do and get our quotation... </h2>
       <a
         href="#portfolio"
-            className="flex w-32 mt-3 rounded-md bg-orange-700 text-white p-2 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
+            className="flex w-fit mt-3 rounded-md bg-orange-700 text-white p-2 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
                 >
                     View More...
         </a>

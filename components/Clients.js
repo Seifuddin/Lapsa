@@ -69,7 +69,7 @@ export default function Clients() {
             550: { slidesPerView: 2 },
             768: { slidesPerView: 2 },
             950: { slidesPerView: 3 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
           }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           navigation
@@ -82,7 +82,7 @@ export default function Clients() {
                 <div className="flex justify-center mb-4">
                   <img src={service.image} alt={service.title} className="w-20 h-20 rounded-full border-2 border-orange-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-orange-700">
+                <h3 className="text-xl font-semibold mb-2 text-orange-700 underline">
                   {service.title}
                 </h3>
                 <p className="text-left">
