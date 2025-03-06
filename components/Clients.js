@@ -16,7 +16,7 @@ const services = [
   {
     title: "Muriithi Nguru",
     description: "Responsive, modern web design tailored to your business needs.",
-    image: "/images/image-removebg-preview (19).png",
+    image: "/images/young-elite-kenya-special-forces-sniper-becomes-world-s-second-deadliest-sniper-after-Symo-Hayha.jpg",
     title1: "CEO, Lapsa",
   },
 
@@ -30,7 +30,7 @@ const services = [
   {
     title: "Muriithi Nguru",
     description: "Responsive, modern web design tailored to your business needs.",
-    image: "/images/image-removebg-preview (19).png",
+    image: "/images/young-elite-kenya-special-forces-sniper-becomes-world-s-second-deadliest-sniper-after-Symo-Hayha.jpg",
     title1: "CEO, Lapsa",
   },
 
@@ -44,7 +44,7 @@ const services = [
   {
     title: "Muriithi Nguru",
     description: "Responsive, modern web design tailored to your business needs.",
-    image: "/images/image-removebg-preview (19).png",
+    image: "/images/young-elite-kenya-special-forces-sniper-becomes-world-s-second-deadliest-sniper-after-Symo-Hayha.jpg",
     title1: "CEO, Lapsa",
   },
 
@@ -82,7 +82,7 @@ export default function Clients() {
                 <div className="flex justify-center mb-4">
                   <img src={service.image} alt={service.title} className="w-20 h-20 rounded-full border-2 border-orange-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-orange-700 underline">
+                <h3 className="text-xl font-semibold mb-2 text-orange-700">
                   {service.title}
                 </h3>
                 <p className="text-left">

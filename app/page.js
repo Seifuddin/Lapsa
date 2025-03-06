@@ -5,7 +5,6 @@ import Discount from "@/components/Discount";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Know from "@/components/Know";
-import LocationMap from "@/components/Map";
 import Ourclients from "@/components/Ourclients";
 import Services from "@/components/OurServices";
 import FAQ from "@/components/Quiz";
@@ -29,7 +28,6 @@ export default function MyApp({ Component, pageProps}) {
       <ImageCarousel />
       <Ourclients />
       <Footer />
-      <LocationMap />
     </div>
   );
 }
