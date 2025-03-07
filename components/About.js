@@ -13,7 +13,7 @@ export default function About() {
                     viewport={{ once: true }}
                     transition={{ duration: 1, ease: "easeOut" }}
                      className="service-card p-3">
-                        <img src="/images/IMG-20230803-WA0032.jpg" alt="Project 1" className="w-full h-80 object-cover rounded-md" />
+                        <img src="/images/IMG-20230803-WA0032.jpg" alt="Project 1" className="w-full h-80 object-cover rounded-md border-2 border-blue-700" />
                 </motion.div>
                 <motion.div
                         initial={{ opacity: 0, x: 50 }}

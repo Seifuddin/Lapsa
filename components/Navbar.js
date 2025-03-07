@@ -1,7 +1,7 @@
-// components/Navbar.js
 "use client"; // Make sure it's a client-side component
 
 import { useState } from "react";
+import Link from "next/link"; // Import Next.js Link
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +12,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex text-orange-400 font-bold text-xl">
             <img
-              src="/images/Screenshot_20221022-170110-removebg-preview.png" // Example icon image
-              alt="Web Design Icon"
+              src="/images/Screenshot_20221022-170110-removebg-preview.png"
+              alt="Lapsa AI Logo"
               className="w-8 h-8 mr-2"
             />
             Lapsa AI
@@ -36,39 +36,44 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
+          {/* Desktop Navigation */}
           <div className="hidden lg:flex space-x-6">
-            <a href="#" className="text-white hover:text-gray-400">
+            <Link href="/" className="text-white hover:text-gray-400">
               Home
-            </a>
-            <a href="#about" className="text-white hover:text-gray-400">
+            </Link>
+            <Link href="/about" className="text-white hover:text-gray-400">
               About
-            </a>
-            <a href="#services" className="text-white hover:text-gray-400">
+            </Link>
+            <Link href="Chat" className="text-white hover:text-gray-400">
+              Chat
+            </Link>
+            <Link href="/services" className="text-white hover:text-gray-400">
               Services
-            </a>
-            <a
-              href="./pages/Contacts"
-              className="text-white hover:text-gray-400"
-            >
+            </Link>
+            <Link href="/contacts" className="text-white hover:text-gray-400">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>
+      {/* Mobile Navigation */}
       {isOpen && (
         <div className="lg:hidden bg-gray-800 text-white space-y-4 px-4 py-4">
-          <a href="#" className="block">
+          <Link href="/" className="block">
             Home
-          </a>
-          <a href="#about" className="block">
+          </Link>
+          <Link href="/about" className="block">
             About
-          </a>
-          <a href="#services" className="block">
+          </Link>
+          <Link href="Chat" className="block">
+            Chat
+          </Link>
+          <Link href="/services" className="block">
             Services
-          </a>
-          <a href="#contact" className="block">
+          </Link>
+          <Link href="/contacts" className="block">
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </nav>

@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Awards from "@/components/Awards";
 import Benefits from "@/components/Benefits";
+import ChatButton from "@/components/ChatButton";
 import Discount from "@/components/Discount";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -14,8 +15,9 @@ import Why from "@/components/Why";
 
 export default function MyApp({ Component, pageProps}) {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
+      <ChatButton />
       <About />
       <Discount />
       <Services />
