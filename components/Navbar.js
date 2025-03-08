@@ -44,7 +44,7 @@ export default function Navbar() {
             <Link href="/about" className="text-white hover:text-gray-400">
               About
             </Link>
-            <Link href="Chat" className="text-white hover:text-gray-400">
+            <Link href="/chat" className="text-white hover:text-gray-400">
               Chat
             </Link>
             <Link href="/services" className="text-white hover:text-gray-400">
@@ -65,7 +65,7 @@ export default function Navbar() {
           <Link href="/about" className="block">
             About
           </Link>
-          <Link href="Chat" className="block">
+          <Link href="/chat" className="block">
             Chat
           </Link>
           <Link href="/services" className="block">

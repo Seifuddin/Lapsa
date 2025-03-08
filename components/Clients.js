@@ -80,17 +80,15 @@ export default function Clients() {
             <SwiperSlide key={index}>
               <div className="service-card bg-gray-100 p-6 rounded-lg shadow-lg border border-orange-400">
                 <div className="flex justify-center mb-4">
-                  <img src={service.image} alt={service.title} className="w-20 h-20 rounded-full border-2 border-orange-500" />
+                  <img src={service.image} alt={service.title} className="w-10 h-10 rounded-full border-2 border-orange-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-orange-700">
+                <h3 className="font-semibold mb-2 text-orange-700">
                   {service.title}
                 </h3>
                 <p className="text-left">
                   {service.description}
                 </p>
-                <h3 className="mt-2 font-semibold mb-2 text-black bg-orange-400 rounded-md">
-                  {service.title1}
-                </h3>
+                
               </div>
             </SwiperSlide>
           ))}
