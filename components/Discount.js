@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export default function Discount() {
   return (
-    <div className='pt-20 bg-gradient-to-r from-blue-950 to-orange-700'>
-      <h2 className="text-3xl font-semibold mb-10 text-center text-white">Get the best for less</h2>
+    <div className='pt-20 bg-gradient-to-r from-blue-500 to-purple-600'>
+      <h2 className="text-3xl font-bold mb-10 text-center text-white">Get the best for less</h2>
       <div className="flex flex-col md:flex-row">
             <div className="left flex-1 service-card p-4">
-                    <h2 className="text-xl font-semibold text-white p-1 border rounded-md mb-10">Get yourself a Website starting from Kes 13,000 only</h2>
+                    <h2 className="text-xl font-semibold text-orange-400 mb-5">Get yourself a Website starting from Kes 13,000 only</h2>
                     <motion.p
                                             initial={{ opacity: 0, x: 50 }}
                                             whileInView={{ opacity: 1, x: 0 }}

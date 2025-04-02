@@ -5,7 +5,7 @@ export default function Know() {
   return (
     <div className="container-know bg-gray-200 py-16">
             <div className="mx-1 text-center">
-                <h2 className="text-3xl font-semibold mb-10 text-whit">Did You Know?</h2>
+                <h2 className="text-3xl font-bold mb-10 text-whit">Did You Know?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                     <motion.div
                     initial={{ opacity: 0, y: 50 }}

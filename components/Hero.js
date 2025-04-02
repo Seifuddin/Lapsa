@@ -35,7 +35,7 @@ export default function Hero() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-         className="text-lg sm:text-xl mb-6">
+         className="font-bold text-lg sm:text-xl mb-6">
           Transform your ideas into visually captivating designs. We specialize in both web and graphic design, offering creative solutions to help your business grow.
         </motion.p>
 

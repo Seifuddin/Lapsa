@@ -17,7 +17,7 @@ export default function Awards() {
         />
       </div>
       <div className="relative px-4 text-center">
-        <h1 className="text-3xl text-white font-semibold mb-8 text-center">
+        <h1 className="text-3xl text-white font-bold mb-8 text-center">
           Our Customer Care Service
         </h1>
             <motion.div

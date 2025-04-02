@@ -5,7 +5,7 @@ export default function About() {
     return (
         <section className="bg-gray-200 py-16">
             <div className="text-center">
-                <h2 className="text-4xl font-semibold mb-10">About Us</h2>
+                <h2 className="text-4xl font-bold mb-10">About Us</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">
                     <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -21,14 +21,14 @@ export default function About() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                  className="service-card mx-2 pl-2 rounded-lg">
-                <p className="text-xl text-left text-blue-700 font-bold mb-1 underline">Our Motto</p>
-                <p className="text-lg text-left text-gray-700 mb-2">
+                <p className="text-xl text-left text-gray-700 font-bold mb-1">Our Motto</p>
+                <p className="text-lg text-left text-gray-600 mb-2">
                 We are commited to excellence in print and branding                </p>
-                <p className="text-xl text-left text-blue-700 font-bold mt-5 mb-1 underline">Our Mission</p>
-                <p className="text-lg text-left text-gray-700 mb-2">
+                <p className="text-xl text-left text-gray-700 font-bold mb-1">Our Mission</p>
+                <p className="text-lg text-left text-gray-600 mb-2">
                 Our mission is to deliver outstanding printing services that exceed customer expectations, using the latest technology and top-quality materials.                </p>
-                <p className="text-xl text-left text-blue-700 font-bold mt-5 mb-1 underline">Our Vission</p>
-                <p className="text-lg text-left text-gray-700 mb-2">
+                <p className="text-xl text-left text-gray-700 font-bold mb-1">Our Vission</p>
+                <p className="text-lg text-left text-gray-600 mb-2">
                 Our Vision is to offer local and International organizations the finest of products and services in the market through Lapsa.                </p>
                 <a
                     href="#portfolio"

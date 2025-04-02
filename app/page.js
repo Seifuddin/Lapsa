@@ -6,6 +6,7 @@ import Discount from "@/components/Discount";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Know from "@/components/Know";
+import Navbar from "@/components/Navbar";
 import Ourclients from "@/components/Ourclients";
 import Services from "@/components/OurServices";
 import FAQ from "@/components/Quiz";
@@ -16,6 +17,7 @@ import Why from "@/components/Why";
 export default function MyApp({ Component, pageProps}) {
   return (
     <div className="overflow-hidden">
+      <Navbar />
       <Hero />
       <ChatButton />
       <About />

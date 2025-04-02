@@ -47,7 +47,7 @@ export default function Why() {
   return (
     <section className="bg-gray-300 px-4 py-16">
       <div className="mx-auto max-w-5xl text-center">
-        <h2 className="text-3xl font-semibold mb-8">Why Choose Us</h2>
+        <h2 className="text-3xl font-bold mb-8">Why Choose Us</h2>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}

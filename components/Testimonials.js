@@ -15,7 +15,7 @@ const images = [
 export default function ImageCarousel() {
   return (
     <div className="overflow-hidden relative bg-blue-950 py-6">
-      <h1 className="text-3xl text-white font-semibold mb-8 text-center">
+      <h1 className="text-3xl text-white font-bold mb-8 text-center">
           Our Clients
         </h1>
       <motion.div
