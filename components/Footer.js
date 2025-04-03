@@ -48,11 +48,17 @@ export default function Footer() {
                           alt="Brand Identity Icon"
                           className="w-7 h-7 border rounded-md"
                         />
+                      </div>
+                      0111 608 331 </a>
+                  </li>
 
+                  <li className="text-white pt-2">
+                    <a href="#" className="flex text-white">
+                      <div className="flex mx-2">
                         <img
-                          src="/images/pngtree-whatsapp-icon-png-image_3584845.jpg" // Example icon image
+                          src="/images/pngtree-whatsapp-icon-png-image_3584845.jpg" // Example icon 
                           alt="Brand Identity Icon"
-                          className="w-7 h-7 border rounded-md mx-1"
+                          className="w-7 h-7 border rounded-md"
                         />
                       </div>
                       0111 608 331 </a>

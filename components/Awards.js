@@ -16,7 +16,7 @@ export default function Awards() {
           className="opacity-50"
         />
       </div>
-      <div className="relative px-4 text-center">
+      <div className="relative text-center">
         <h1 className="text-3xl text-white font-bold mb-8 text-center">
           Our Customer Care Service
         </h1>
@@ -25,7 +25,7 @@ export default function Awards() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="service-card p-4">
+              className="service-card">
                     <h2 className="text-xl text-left text-gray-100 mb-10 rounded-md"> Customer  service is a priority at Lapsa. Our representatives are ready to assist and advice you throughout the business day. Whether your requirements are for general services or for specific, unique situations, rely on our representatives to help you with your purchasing decisions. Best of all, Our prices are unsurpassed. Incase you need any help or assistance, kindly WhatsApp or send a text our Customer Care Number below: </h2>
                     <h2 className="text-xl text-white mb-10"></h2>
                     

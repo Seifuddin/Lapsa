@@ -21,15 +21,12 @@ export default function MyApp({ Component, pageProps}) {
       <Hero />
       <ChatButton />
       <About />
-      <Discount />
       <Services />
-      <Request />
+      <Discount />
       <Know />
-      <Why />
       <Benefits />
-      <Awards />
+      <Why />
       <FAQ />
-      <ImageCarousel />
       <Ourclients />
       <Footer />
     </div>

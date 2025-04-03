@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Know() {
   return (
-    <div className="container-know bg-gray-200 py-16">
+    <div className="container-know bg-gray-300 py-16">
             <div className="mx-1 text-center">
                 <h2 className="text-3xl font-bold mb-10 text-whit">Did You Know?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
@@ -13,7 +13,7 @@ export default function Know() {
                     viewport={{ once: true }}
                     transition={{ duration: 1, ease: "easeOut" }}
                      className="service-card m-1">
-                        <img src="/images/download.jpg" alt="Project 1" className="w-full h-full object-cover rounded-xl m-0 border-2" />
+                        <img src="/images/image-removebg-preview (40).png" alt="Project 1" className="w-full object-cover rounded-xl m-0 border-2" />
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, x: 50 }}
