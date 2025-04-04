@@ -11,8 +11,7 @@ export default function Discount() {
                     <motion.p
                                             initial={{ opacity: 0, x: 50 }}
                                             whileInView={{ opacity: 1, x: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.8 }}
+                                            transition={{ duration: 1 }}
                     className="text-lg text-gray-600 text-left">Quality web Design doesnt have to come with a hefty price tag. At Lapsa, we offer affordable, custom web design services tailored to fit your budget. Whether you're aa small business or a growing brand, we're here to help you create a proffessional online presence without breaking the bank. Let's work together to build your dream website at a price that works for you! 
 
                     </motion.p>

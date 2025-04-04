@@ -10,16 +10,14 @@ export default function About() {
                     <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+                    transition={{ duration: 1 }}
                      className="service-card p-3">
                         <img src="/images/IMG-20230803-WA0032.jpg" alt="Project 1" className="w-full h-80 object-cover rounded-md border border-blue-700" />
                 </motion.div>
                 <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 1 }}
                  className="service-card mx-2 pl-2 rounded-lg">
                 <p className="text-xl text-left text-gray-700 font-bold mb-1">Our Motto</p>
                 <p className="text-lg text-left text-gray-600 mb-2">

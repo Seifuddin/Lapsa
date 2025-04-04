@@ -18,26 +18,23 @@ export default function Hero() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 p-5">
       <div  className="service-card relative">
-      <motion.h2
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-orange-500"
-      >
-        Your Stunning Solution for Web & Graphic Design
-      </motion.h2>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-          
-        </h1>
-        <motion.p
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-         className="font-bold text-lg sm:text-xl mb-6">
-          Transform your ideas into visually captivating designs. We specialize in both web and graphic design, offering creative solutions to help your business grow.
-        </motion.p>
+      <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-orange-500 mb-6"
+          >
+            Elevate Your Brand with Stunning Web & Graphic Design
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="text-lg md:text-xl font-medium text-gray-200 mb-8"
+          >
+            We create captivating digital experiences that convert. Whether you need a website, brand identity, or custom graphics — we bring ideas to life.
+          </motion.p>
 
         <a
             href="#portfolio"

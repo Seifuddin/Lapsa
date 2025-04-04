@@ -10,16 +10,14 @@ export default function Know() {
                     <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+                    transition={{ duration: 1 }}
                      className="service-card m-1">
                         <img src="/images/image-removebg-preview (40).png" alt="Project 1" className="w-full object-cover rounded-xl m-0 border-2" />
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
+                  transition={{ duration: 1 }}
                  className="service-card p-5 rounded-lg">
                 <p className="text-lg text-left text-whit mb-2">
 

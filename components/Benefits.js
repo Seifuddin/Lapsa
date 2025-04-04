@@ -10,8 +10,7 @@ export default function Benefits() {
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 1 }}
                  className="left flex-1 grid place-items-start p-4 rounded-lg">
                 <p className="text-xl text-left text-orange-700 font-extrabold mb-2">Connecting your business with customers all around the world.</p>
                 <p className="text-lg text-left text-gray-700 mb-2">
@@ -26,8 +25,7 @@ export default function Benefits() {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+                    transition={{ duration: 1 }}
                  className="right flex-1 service-card">
                         <img src="/images/image-removebg-preview (13).png" alt="Project 1" className="w-full h-80 object-cover" />
                     </motion.div>
