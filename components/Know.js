@@ -12,7 +12,7 @@ export default function Know() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                      className="service-card m-1">
-                        <img src="/images/image-removebg-preview (40).png" alt="Project 1" className="w-full object-cover rounded-xl m-0 border-2" />
+                        <img src="/images/image-removebg-preview (39).png" alt="Project 1" className="w-full object-cover rounded-xl m-0 border-2" />
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, x: 50 }}

@@ -1,16 +1,17 @@
-"use client"; // Make sure it's a client-side component
+"use client";
 
 import { useState } from "react";
-import Link from "next/link"; // Import Next.js Link
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-950 fixed w-full top-0 left-0 z-50 shadow-md border-b-2 border-b-orange-500">
+    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-blue-950/60 border-b border-orange-500 shadow-md">
       <div className="max-w-screen-xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex text-orange-400 font-bold text-xl">
+          {/* Logo & Brand */}
+          <div className="flex text-orange-400 font-bold text-xl items-center">
             <img
               src="/images/Screenshot_20221022-170110-removebg-preview.png"
               alt="Lapsa AI Logo"
@@ -18,6 +19,8 @@ export default function Navbar() {
             />
             Lapsa AI
           </div>
+
+          {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
               <svg
@@ -36,42 +39,44 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
+
           {/* Desktop Navigation */}
           <div className="hidden lg:flex space-x-6">
-            <Link href="/" className="text-white hover:text-gray-400">
+            <Link href="/" className="text-white hover:text-orange-400 transition">
               Home
             </Link>
-            <Link href="/about" className="text-white hover:text-gray-400">
+            <Link href="/about" className="text-white hover:text-orange-400 transition">
               About
             </Link>
-            <Link href="/chat" className="text-white hover:text-gray-400">
+            <Link href="/chat" className="text-white hover:text-orange-400 transition">
               Chat
             </Link>
-            <Link href="/services" className="text-white hover:text-gray-400">
+            <Link href="/services" className="text-white hover:text-orange-400 transition">
               Services
             </Link>
-            <Link href="/contacts" className="text-white hover:text-gray-400">
+            <Link href="/contacts" className="text-white hover:text-orange-400 transition">
               Contact
             </Link>
           </div>
         </div>
       </div>
+
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden bg-gray-800 text-white space-y-4 px-4 py-4">
-          <Link href="/" className="block">
+        <div className="lg:hidden backdrop-blur-lg bg-blue-950/80 text-white space-y-4 px-4 py-4">
+          <Link href="/" className="block hover:text-orange-400 transition">
             Home
           </Link>
-          <Link href="/about" className="block">
+          <Link href="/about" className="block hover:text-orange-400 transition">
             About
           </Link>
-          <Link href="/chat" className="block">
+          <Link href="/chat" className="block hover:text-orange-400 transition">
             Chat
           </Link>
-          <Link href="/services" className="block">
+          <Link href="/services" className="block hover:text-orange-400 transition">
             Services
           </Link>
-          <Link href="/contacts" className="block">
+          <Link href="/contacts" className="block hover:text-orange-400 transition">
             Contact
           </Link>
         </div>
