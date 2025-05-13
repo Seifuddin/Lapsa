@@ -65,14 +65,14 @@ export default function Services() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.02 }}
-              className=" bg-gradient-to-tr from-orange-200 via-white to-orange-200 rounded-2xl shadow-lg overflow-hidden transition duration-300"
+              className=" rounded-2xl shadow-lg overflow-hidden transition duration-300"
             >
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-44 object-cover"
               />
-              <div className="p-5 text-left">
+              <div className="p-5 text-left bg-gradient-to-tr from-orange-200 via-white to-orange-200">
                 <div className="flex items-center gap-2 mb-2">
                   {service.icon}
                   <h3 className="text-xl font-semibold text-orange-700">{service.title}</h3>
