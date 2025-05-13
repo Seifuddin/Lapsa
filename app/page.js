@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import AnimatedCounters from "@/components/AnimatedCounters";
 import Awards from "@/components/Awards";
 import Benefits from "@/components/Benefits";
 import ChatButton from "@/components/ChatButton";
@@ -21,13 +22,11 @@ export default function MyApp({ Component, pageProps}) {
       <Hero />
       <ChatButton />
       <About />
+      <AnimatedCounters />
       <Services />
-      <Discount />
-      <Know />
       <Benefits />
       <Why />
       <FAQ />
-      <Ourclients />
       <Footer />
     </div>
   );

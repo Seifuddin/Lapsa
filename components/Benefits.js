@@ -2,35 +2,62 @@
 import { motion } from "framer-motion";
 
 export default function Benefits() {
-    return (
-        <section className="bg-gray-200 py-16">
-            <div className="mx-a1 text-center">
-                <h2 className="text-3xl font-bold mb-16">How we help your Business grow</h2>
-                <div className="flex flex-col-reverse md:flex-row ">
-                <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                 className="left flex-1 grid place-items-start p-4 rounded-lg">
-                <p className="text-xl text-left text-orange-700 font-extrabold mb-2">Connecting your business with customers all around the world.</p>
-                <p className="text-lg text-left text-gray-700 mb-2">
-                We Offer Web Design in Kenya, Web Maintenance Website Audit Software & Mobile App Development in Kenya. From cutting-edge web design and robust software development to seamless mobile app creation. Our expert team is dedicated to transforming your vision into digital success. Partner with us to elevate your online presence and achieve your business goals with confidence. </p>
-                <a
-                    href="#portfolio"
-                        className="mt-5 ml-0 bg-orange-700 text-white py-2 px-8 text-sm font-semibold hover:bg-orange-400 transition-all duration-300"
-                >
-                    About Us
-                </a>
-                </motion.div>
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                 className="right flex-1 service-card">
-                        <img src="/images/image-removebg-preview (13).png" alt="Project 1" className="w-full h-80 object-cover" />
-                    </motion.div>
-            </div>
-            </div>
-        </section>
-    );
+  return (
+    <section className="bg-gradient-to-tr from-orange-200 via-white to-orange-200 py-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            Helping Your Business Grow
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            At Lapsa Web & Graphics, we merge innovation with functionality to help you attract, engage, and convert customers through powerful digital solutions.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          {/* Text Section */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="space-y-6"
+          >
+            <h3 className="text-2xl font-semibold text-orange-700">
+              We connect your brand to the world.
+            </h3>
+            <p className="text-gray-700 text-base leading-relaxed">
+              Whether you're a startup or an established brand, we create tailored websites, intuitive mobile apps, and scalable software that align with your goals. Our digital strategy focuses on visibility, performance, and growth—so your business doesn’t just exist online, it thrives.
+            </p>
+            <p className="text-gray-700 text-base leading-relaxed">
+              From stunning web designs and user-focused interfaces to full-stack development and ongoing support, we empower businesses to stand out in the competitive digital world.
+            </p>
+            <a
+              href="#portfolio"
+              className="inline-block bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-300"
+            >
+              Learn More About Us
+            </a>
+          </motion.div>
+
+          {/* Image Section */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <img
+              src="/images/image-removebg-preview (13).png"
+              alt="Digital Services"
+              className="w-full max-h-[400px] object-contain mx-auto"
+            />
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
 }
