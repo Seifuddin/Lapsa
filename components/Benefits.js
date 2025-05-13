@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Benefits() {
   return (
-    <section className="bg-gradient-to-tr from-orange-200 via-white to-orange-200 py-20 px-4">
+    <section className="bg-gray-100 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -25,7 +25,7 @@ export default function Benefits() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="space-y-6"
+            className="space-y-6 bg-gradient-to-tr from-orange-200 via-white to-orange-200"
           >
             <h3 className="text-2xl font-semibold text-orange-700">
               We connect your brand to the world.

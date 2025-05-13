@@ -52,14 +52,14 @@ export default function Services() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="bg-gradient-to-tr from-orange-50 via-white to-orange-100 py-16 px-4">
+    <section className="bg-gradient-to-tr from-blue-200 via-white to-blue-200 py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-10 text-orange-700">Our Services</h2>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 bg-gradient-to-tr from-orange-200 via-white to-orange-200"
         >
           {services.map((service, index) => (
             <motion.div

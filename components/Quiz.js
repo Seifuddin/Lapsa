@@ -48,7 +48,7 @@ export default function FAQ() {
   });
 
   return (
-    <section className="w-full bg-gradient-to-tr from-orange-200 via-white to-orange-200 mx-auto px-10 py-12">
+    <section className="max-w-6xl mx-auto px-4 py-12">
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
 
       {/* Search bar */}
@@ -115,12 +115,12 @@ export default function FAQ() {
       </AnimatePresence>
 
       {/* FAQ list */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid bg-gradient-to-tr from-orange-200 via-white to-orange-200 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredFaqs.length > 0 ? (
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-white rounded-xl shadow hover:shadow-md transition"
+              className=" bg-gradient-to-tr from-orange-200 via-white to-orange-200 rounded-xl shadow hover:shadow-md transition"
             >
               <button
                 className="w-full flex justify-between items-center p-5 text-left font-medium"
