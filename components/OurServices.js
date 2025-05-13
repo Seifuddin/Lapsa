@@ -16,7 +16,7 @@ const services = [
     description:
       "Transform your innovative ideas into reality with our bespoke software development services. We design and build custom software solutions to meet your specific business needs and drive growth.",
     icon: <Code className="w-6 h-6 text-orange-700" />,
-    image: "/images/graphic-designers-vs-logo-designers.webp",
+    image: "/images/developing a website.o.avif",
   },
   {
     title: "Graphic Design",
@@ -59,13 +59,13 @@ export default function Services() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 bg-gradient-to-tr from-orange-200 via-white to-orange-200"
+          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {services.map((service, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.02 }}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300"
+              className=" bg-gradient-to-tr from-orange-200 via-white to-orange-200 rounded-2xl shadow-lg overflow-hidden transition duration-300"
             >
               <img
                 src={service.image}

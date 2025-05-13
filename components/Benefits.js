@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Benefits() {
   return (
-    <section className="bg-gray-100 py-20 px-4">
+    <section className="bg-gray-200 py-20">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -11,10 +11,10 @@ export default function Benefits() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4 px-4">
             Helping Your Business Grow
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto px-4">
             At Lapsa Web & Graphics, we merge innovation with functionality to help you attract, engage, and convert customers through powerful digital solutions.
           </p>
         </motion.div>
@@ -25,7 +25,7 @@ export default function Benefits() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="space-y-6 bg-gradient-to-tr from-orange-200 via-white to-orange-200"
+            className="space-y-6 p-5 bg-gradient-to-tr from-orange-200 via-white to-orange-200"
           >
             <h3 className="text-2xl font-semibold text-orange-700">
               We connect your brand to the world.
@@ -53,7 +53,7 @@ export default function Benefits() {
             <img
               src="/images/image-removebg-preview (13).png"
               alt="Digital Services"
-              className="w-full max-h-[400px] object-contain mx-auto"
+              className="w-full max-h-[400px] object-contain px-4 mx-auto"
             />
           </motion.div>
         </div>

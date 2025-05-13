@@ -115,7 +115,7 @@ export default function FAQ() {
       </AnimatePresence>
 
       {/* FAQ list */}
-      <div className="grid bg-gradient-to-tr from-orange-200 via-white to-orange-200 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid bg-white gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredFaqs.length > 0 ? (
           filteredFaqs.map((faq, index) => (
             <div
