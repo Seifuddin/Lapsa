@@ -48,7 +48,7 @@ export default function FAQ() {
   });
 
   return (
-    <section className="relative z-0 py-12 px-10 mx-auto">
+    <section className="relative z-0 py-12 px-5 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
