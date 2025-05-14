@@ -1,24 +1,37 @@
-'use client';
+"use client";
+
 import { motion } from "framer-motion";
-import { FiBookOpen, FiUser, FiCalendar, FiAward } from "react-icons/fi";
+import { FiCheckCircle, FiSmile, FiClock, FiAward } from "react-icons/fi";
 import CountUp from "react-countup";
 
 const counters = [
-  { label: "Books Published", value: 320 },
-  { label: "Authors Supported", value: 95 },
-  { label: "Years in Publishing", value: 12 },
-  { label: "Awards Received", value: 18 },
+  { label: "Projects Completed", value: 150 },
+  { label: "Happy Clients", value: 120 },
+  { label: "Years of Experience", value: 5 },
+  { label: "Design Awards", value: 10 },
 ];
 
-const icons = [FiBookOpen, FiUser, FiCalendar, FiAward];
+const icons = [FiCheckCircle, FiSmile, FiClock, FiAward];
 
 export default function AnimatedCounters() {
   return (
-    <div className="bg-gradient-to-r from-orange-600 to-blue-600 text-white py-10">
+    <div className="relative z-0 py-10 text-white">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="/images/pexels-pixabay-268533.jpg" // Replace with your actual image
+          alt="Counters Background"
+          className="w-full h-full object-cover bg-black/30"
+        />
+      </div>
+
+      {/* Optional Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-blue-700 opacity-80 -z-10"></div>
+
       <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 text-center gap-8">
         {counters.map((counter, index) => {
           const Icon = icons[index];
-          const percentage = Math.min((counter.value / 400) * 100, 100); // Normalized width
+          const percentage = Math.min((counter.value / 200) * 100, 100);
 
           return (
             <motion.div

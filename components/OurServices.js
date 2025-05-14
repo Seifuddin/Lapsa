@@ -52,9 +52,9 @@ export default function Services() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="bg-gradient-to-tr from-blue-200 via-white to-blue-200 py-16 px-4">
+    <section className="bg-gradient-to-tr from-orange-300 via-white to-blue-200 py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-10 text-orange-700">Our Services</h2>
+        <h2 className="text-4xl font-bold mb-10 text-orange-600">Our Services</h2>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,15 +72,15 @@ export default function Services() {
                 alt={service.title}
                 className="w-full h-44 object-cover"
               />
-              <div className="p-5 text-left bg-gradient-to-tr from-orange-200 via-white to-orange-200">
+              <div className="p-5 text-left bg-white/80">
                 <div className="flex items-center gap-2 mb-2">
                   {service.icon}
-                  <h3 className="text-xl font-semibold text-orange-700">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-orange-600">{service.title}</h3>
                 </div>
                 <p className="text-gray-600 text-sm line-clamp-3">{service.description}</p>
                 <button
                   onClick={() => setActiveService(service)}
-                  className="inline-block bg-orange-700 text-white py-2 px-6 mt-4 text-sm font-semibold rounded hover:bg-blue-600 transition-all duration-300"
+                  className="inline-block bg-orange-600 text-white py-2 px-6 mt-4 text-sm font-semibold rounded hover:bg-blue-600 transition-all duration-300"
                 >
                   Learn More
                 </button>
@@ -107,7 +107,7 @@ export default function Services() {
             />
             <div className="flex items-center gap-2 mb-2">
               {activeService.icon}
-              <h3 className="text-xl font-bold text-orange-700">{activeService.title}</h3>
+              <h3 className="text-xl font-bold text-orange-600">{activeService.title}</h3>
             </div>
             <p className="text-gray-600">{activeService.description}</p>
           </div>

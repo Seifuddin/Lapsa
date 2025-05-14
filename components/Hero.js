@@ -22,18 +22,18 @@ export default function Hero() {
           {/* Text Content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Crafting Stunning <span className="text-cyan-400">Websites</span> &<br />
-              Bold <span className="text-orange-500">Graphic Designs</span>
+              Crafting Stunning <span className="text-blue-600">Websites</span> &<br />
+              Bold <span className="text-orange-600">Graphic Designs</span>
             </h1>
             <p className="text-gray-200 text-lg">
               We blend creativity and technology to deliver modern, high-impact designs that elevate your brand.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <button className="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-full font-semibold shadow-md transition duration-300">
+              <button className="px-6 py-3 bg-blue-600 hover:bg-orange-600 rounded-full font-semibold shadow-md transition duration-300">
                 Our Services
               </button>
-              <button className="px-6 py-3 border-2 border-white hover:bg-cyan-600 rounded-full font-semibold shadow-md transition duration-300">
+              <button className="px-6 py-3 border-2 border-white hover:bg-blue-600 rounded-full font-semibold shadow-md transition duration-300">
                 Contact Us
               </button>
             </div>

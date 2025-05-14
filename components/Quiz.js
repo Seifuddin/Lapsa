@@ -30,7 +30,7 @@ export default function FAQ() {
       setIsMobile(window.innerWidth < 640);
     };
 
-    handleResize(); // Set initially
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -48,8 +48,17 @@ export default function FAQ() {
   });
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+    <section className="relative z-0 py-12 px-10 mx-auto">
+      {/* Background image */}
+      <div className="absolute inset-0 -z-10 opacity-50">
+        <img
+          src="/images/pngwing.com (7).png" // Update this path if needed
+          alt="FAQ background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <h2 className="text-3xl text-orange-600 sm:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
 
       {/* Search bar */}
       <div className="relative max-w-xl mx-auto mb-6">
@@ -59,16 +68,16 @@ export default function FAQ() {
           placeholder="Search FAQs..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full pl-10 pr-4 py-2 border border-blue-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
-      {/* Mobile toggle button for filters */}
+      {/* Mobile filter toggle */}
       {isMobile && (
         <div className="sm:hidden flex justify-center mb-4">
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className="flex items-center gap-2 text-blue-600 border px-4 py-2 rounded-full hover:bg-blue-50 transition"
+            className="flex items-center gap-2 border border-blue-600 text-blue-600 px-4 py-2 rounded-full hover:bg-blue-50 transition"
           >
             <Filter className="w-4 h-4" />
             Filter Categories
@@ -92,7 +101,7 @@ export default function FAQ() {
             <div className="flex flex-wrap justify-center gap-2">
               <button
                 onClick={() => setSelectedCategory("All")}
-                className={`px-4 py-2 rounded-full border ${
+                className={`px-4 py-2 rounded-full border border-blue-600 ${
                   selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-white text-gray-700"
                 } hover:bg-blue-100 transition`}
               >
@@ -102,8 +111,8 @@ export default function FAQ() {
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 rounded-full border ${
-                    selectedCategory === cat ? "bg-blue-600 text-white" : "bg-white text-gray-700"
+                  className={`px-4 py-2 rounded-full border border-blue-600 ${
+                    selectedCategory === cat ? "bg-blue-600 text-white" : "bg-white text-blue-600"
                   } hover:bg-blue-100 transition`}
                 >
                   {cat}
@@ -114,13 +123,13 @@ export default function FAQ() {
         )}
       </AnimatePresence>
 
-      {/* FAQ list */}
+      {/* FAQ items */}
       <div className="grid bg-white gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredFaqs.length > 0 ? (
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className=" bg-gradient-to-tr from-orange-200 via-white to-orange-200 rounded-xl shadow hover:shadow-md transition"
+              className="bg-gradient-to-tr from-blue-300 via-white to-blue-200 rounded-xl shadow hover:shadow-md transition"
             >
               <button
                 className="w-full flex justify-between items-center p-5 text-left font-medium"

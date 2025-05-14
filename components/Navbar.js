@@ -11,13 +11,8 @@ export default function Navbar() {
       <div className="max-w-screen-xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo & Brand */}
-          <div className="flex text-orange-400 font-bold text-xl items-center">
-            <img
-              src="/images/Screenshot_20221022-170110-removebg-preview.png"
-              alt="Lapsa AI Logo"
-              className="w-8 h-8 mr-2"
-            />
-            Lapsa AI
+          <div className="text-orange-600 font-bold text-xl items-center">
+            Lapsa
           </div>
 
           {/* Mobile Menu Button */}
@@ -42,19 +37,19 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex space-x-6">
-            <Link href="/" className="text-white hover:text-orange-400 transition">
+            <Link href="/" className="text-white hover:text-orange-600 transition">
               Home
             </Link>
-            <Link href="/about" className="text-white hover:text-orange-400 transition">
+            <Link href="/about" className="text-white hover:text-orange-600 transition">
               About
             </Link>
-            <Link href="/chat" className="text-white hover:text-orange-400 transition">
+            <Link href="/chat" className="text-white hover:text-orange-600 transition">
               Chat
             </Link>
-            <Link href="/services" className="text-white hover:text-orange-400 transition">
+            <Link href="/services" className="text-white hover:text-orange-600 transition">
               Services
             </Link>
-            <Link href="/contacts" className="text-white hover:text-orange-400 transition">
+            <Link href="/contacts" className="text-white hover:text-orange-600 transition">
               Contact
             </Link>
           </div>
@@ -64,19 +59,19 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="lg:hidden backdrop-blur-lg bg-blue-950/80 text-white space-y-4 px-4 py-4">
-          <Link href="/" className="block hover:text-orange-400 transition">
+          <Link href="/" className="block hover:text-orange-600 transition">
             Home
           </Link>
-          <Link href="/about" className="block hover:text-orange-400 transition">
+          <Link href="/about" className="block hover:text-orange-600 transition">
             About
           </Link>
-          <Link href="/chat" className="block hover:text-orange-400 transition">
+          <Link href="/chat" className="block hover:text-orange-600 transition">
             Chat
           </Link>
-          <Link href="/services" className="block hover:text-orange-400 transition">
+          <Link href="/services" className="block hover:text-orange-600 transition">
             Services
           </Link>
-          <Link href="/contacts" className="block hover:text-orange-400 transition">
+          <Link href="/contacts" className="block hover:text-orange-600 transition">
             Contact
           </Link>
         </div>

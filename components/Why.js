@@ -35,10 +35,10 @@ export default function Why() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-white via-slate-100 to-gray-200 text-gray-800">
+    <section className="py-20 bg-gradient-to-tr from-blue-300 via-white to-blue-200 text-gray-800">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold mb-4">Why Choose Us</h2>
+          <h2 className="text-4xl text-orange-600 font-bold mb-4">Why Choose Us</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Discover what makes us a top choice for authors, creatives, and businesses looking for professional publishing services.
           </p>
@@ -76,8 +76,8 @@ export default function Why() {
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-1">{item.title}</h4>
-                  <p className="text-gray-600">{item.desc}</p>
+                  <h4 className="text-xl font-semibold mb-1 text-blue-600">{item.title}</h4>
+                  <p className="text-gray-700">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
