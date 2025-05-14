@@ -1,49 +1,58 @@
 "use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Layout, Code, PenTool, Printer, Wrench, Smartphone, X } from "lucide-react";
+import {
+  Layout,
+  Code,
+  PenTool,
+  Printer,
+  Wrench,
+  Smartphone,
+  X,
+} from "lucide-react";
 
 const services = [
   {
     title: "Web Design",
     description:
       "We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.",
-    icon: <Layout className="w-6 h-6 text-orange-700" />,
+    icon: <Layout className="w-6 h-6 text-orange-600" />,
     image: "/images/developing a website.o.avif",
   },
   {
     title: "Software Development",
     description:
-      "Transform your innovative ideas into reality with our bespoke software development services. We design and build custom software solutions to meet your specific business needs and drive growth.",
-    icon: <Code className="w-6 h-6 text-orange-700" />,
+      "Transform your innovative ideas into reality with our bespoke software development services. We build custom applications that solve real business problems.",
+    icon: <Code className="w-6 h-6 text-orange-600" />,
     image: "/images/developing a website.o.avif",
   },
   {
     title: "Graphic Design",
     description:
-      "Bring your ideas to life with our expert graphic design services. From logos, business cards, brochures and posters, we create visually stunning designs that captivate and communicate your message effectively.",
-    icon: <PenTool className="w-6 h-6 text-orange-700" />,
+      "From logos and branding to brochures and posters, we deliver eye-catching graphic design that communicates your message and captivates your audience.",
+    icon: <PenTool className="w-6 h-6 text-orange-600" />,
     image: "/images/developing a website.o.avif",
   },
   {
     title: "Digital Printing",
     description:
-      "Digital printing is a modern printing method that offers high-quality and cost-effective solutions for both small and large-scale projects. Ideal for vibrant graphics and intricate details.",
-    icon: <Printer className="w-6 h-6 text-orange-700" />,
+      "Get premium quality digital printing solutions for business cards, flyers, posters, and more — perfect for both personal and corporate branding.",
+    icon: <Printer className="w-6 h-6 text-orange-600" />,
     image: "/images/developing a website.o.avif",
   },
   {
     title: "Website Maintenance",
     description:
-      "Our comprehensive website maintenance services ensure your site remains up-to-date, secure, and fully functional. Trust us to keep your website running smoothly and efficiently.",
-    icon: <Wrench className="w-6 h-6 text-orange-700" />,
+      "Let us handle the updates, security, and performance tuning so your site stays reliable, safe, and optimized — giving you peace of mind.",
+    icon: <Wrench className="w-6 h-6 text-orange-600" />,
     image: "/images/developing a website.o.avif",
   },
   {
     title: "Mobile App Development",
     description:
-      "Engage your audience on-the-go with our cutting-edge mobile app development services. We create user-friendly, feature-rich mobile apps that enhance your brand’s reach and customer interaction.",
-    icon: <Smartphone className="w-6 h-6 text-orange-700" />,
+      "We develop powerful and user-friendly mobile apps that bring your brand to your customer’s fingertips — across Android and iOS platforms.",
+    icon: <Smartphone className="w-6 h-6 text-orange-600" />,
     image: "/images/developing a website.o.avif",
   },
 ];
@@ -52,32 +61,41 @@ export default function Services() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="bg-gradient-to-tr from-orange-300 via-white to-blue-200 py-16 px-4">
+    <section className="bg-gradient-to-tr from-blue-300 via-white to-blue-200 py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-10 text-orange-600">Our Services</h2>
+        <h2 className="text-4xl font-bold text-orange-600 mb-2">Our Services</h2>
+        <p className="text-gray-700 mb-10 text-lg max-w-6xl mx-auto">
+          From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
+        </p>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
           className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {services.map((service, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.02 }}
-              className=" rounded-2xl shadow-lg overflow-hidden transition duration-300"
+              whileHover={{ scale: 1.03 }}
+              className="rounded-2xl shadow-lg overflow-hidden bg-white/80 transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-44 object-cover"
               />
-              <div className="p-5 text-left bg-white/80">
+              <div className="p-5 text-left">
                 <div className="flex items-center gap-2 mb-2">
                   {service.icon}
-                  <h3 className="text-xl font-semibold text-orange-600">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-orange-600">
+                    {service.title}
+                  </h3>
                 </div>
-                <p className="text-gray-600 text-sm line-clamp-3">{service.description}</p>
+                <p className="text-gray-600 text-sm line-clamp-3">
+                  {service.description}
+                </p>
                 <button
                   onClick={() => setActiveService(service)}
                   className="inline-block bg-orange-600 text-white py-2 px-6 mt-4 text-sm font-semibold rounded hover:bg-blue-600 transition-all duration-300"
@@ -92,8 +110,14 @@ export default function Services() {
 
       {/* Modal */}
       {activeService && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center px-4">
-          <div className="bg-white rounded-2xl max-w-lg w-full p-6 relative shadow-lg animate-fade-in-up">
+        <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center px-4">
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white rounded-2xl max-w-lg w-full p-6 relative shadow-xl"
+          >
             <button
               onClick={() => setActiveService(null)}
               className="absolute top-3 right-3 text-gray-500 hover:text-red-500"
@@ -109,8 +133,8 @@ export default function Services() {
               {activeService.icon}
               <h3 className="text-xl font-bold text-orange-600">{activeService.title}</h3>
             </div>
-            <p className="text-gray-600">{activeService.description}</p>
-          </div>
+            <p className="text-gray-700">{activeService.description}</p>
+          </motion.div>
         </div>
       )}
     </section>

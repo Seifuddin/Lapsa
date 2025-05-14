@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.2",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "firebase": "^11.4.0",
     "framer-motion": "^12.4.7",
     "lucide-react": "^0.475.0",

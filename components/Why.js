@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { BookOpen, Users, Award, ShieldCheck } from "lucide-react";
+import { Lightbulb, Users, MonitorSmartphone, ShieldCheck } from "lucide-react";
 import { Dialog } from "@headlessui/react";
 
 export default function Why() {
@@ -9,28 +9,28 @@ export default function Why() {
 
   const features = [
     {
-      icon: <BookOpen className="w-8 h-8 text-orange-600" />,
-      title: "Expertise in Publishing",
-      desc: "With years of experience, we understand the intricacies of publishing from manuscript to market.",
-      modal: "Our publishing experts guide you at every step — from editing to distribution — ensuring your work reaches its audience professionally."
+      icon: <Lightbulb className="w-8 h-8 text-orange-600" />,
+      title: "Creative & Innovative Solutions",
+      desc: "We blend creativity with technology to craft unique digital experiences that set your brand apart.",
+      modal: "From custom websites to impactful graphics, we prioritize originality and innovation in every project, delivering solutions that reflect your brand identity."
     },
     {
       icon: <Users className="w-8 h-8 text-orange-600" />,
-      title: "Client-Centered Approach",
-      desc: "We listen, advise, and collaborate to turn your ideas into published masterpieces.",
-      modal: "We value close collaboration with our clients to tailor publishing solutions that truly reflect their goals and vision."
+      title: "Client-Focused Collaboration",
+      desc: "We listen, understand, and design with your goals at the center of every decision.",
+      modal: "Your vision is our mission. We engage you throughout the process to ensure the final product is not only functional but resonates with your audience."
     },
     {
-      icon: <Award className="w-8 h-8 text-orange-600" />,
-      title: "Quality & Precision",
-      desc: "Our editing and design standards are unmatched, ensuring every detail is perfect.",
-      modal: "Our quality assurance process ensures every book is meticulously edited, professionally designed, and ready for success."
+      icon: <MonitorSmartphone className="w-8 h-8 text-orange-600" />,
+      title: "Responsive & Scalable Design",
+      desc: "Our designs are responsive, mobile-friendly, and built for future growth.",
+      modal: "Whether it’s a landing page, an e-commerce store, or a corporate site, we ensure that every digital product performs flawlessly on all devices and scales with your business."
     },
     {
       icon: <ShieldCheck className="w-8 h-8 text-orange-600" />,
-      title: "Trusted by Authors",
-      desc: "Our reputation is built on transparency, reliability, and exceptional results.",
-      modal: "Authors trust us for our integrity, dedication, and consistent delivery of top-tier publishing services."
+      title: "Reliable Support & Maintenance",
+      desc: "Beyond launch, we provide dependable support to keep your website and visuals running smoothly.",
+      modal: "We offer ongoing maintenance, updates, and security monitoring — so you can focus on growing your business while we take care of your digital infrastructure."
     },
   ];
 
@@ -38,9 +38,9 @@ export default function Why() {
     <section className="py-20 bg-gradient-to-tr from-blue-300 via-white to-blue-200 text-gray-800">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-4xl text-orange-600 font-bold mb-4">Why Choose Us</h2>
+          <h2 className="text-4xl text-orange-600 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover what makes us a top choice for authors, creatives, and businesses looking for professional publishing services.
+            We’re not just another agency — we’re your creative tech partner. See why clients trust us for modern web design and graphics that leave a lasting impression.
           </p>
         </div>
 
