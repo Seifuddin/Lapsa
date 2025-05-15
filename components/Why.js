@@ -35,7 +35,7 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-tr from-orange-300 via-white to-blue-300 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-gradient-to-tr from-orange-300 via-white to-blue-300 z-0 py-12 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <img
