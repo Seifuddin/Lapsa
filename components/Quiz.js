@@ -124,12 +124,12 @@ export default function FAQ() {
       </AnimatePresence>
 
       {/* FAQ items */}
-      <div className="grid bg-white gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredFaqs.length > 0 ? (
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-gradient-to-tr from-blue-300 via-white to-blue-200 rounded-xl shadow hover:shadow-md transition"
+              className="bg-gradient-to-tr from-blue-300 via-white to-blue-200 border border-blue-400 rounded-xl shadow hover:shadow-md transition"
             >
               <button
                 className="w-full flex justify-between items-center p-5 text-left font-medium"

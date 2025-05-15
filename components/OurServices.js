@@ -61,12 +61,21 @@ export default function Services() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="bg-gradient-to-tr from-blue-300 via-white to-blue-200 py-16 px-4">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-orange-600 mb-2">Our Services</h2>
-        <p className="text-gray-700 mb-10 text-lg max-w-6xl mx-auto">
-          From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
-        </p>
+    <section className="relative bg-gradient-to-tr from-orange-300 via-white to-orange-300 z-0 py-12 px-5 mx-auto">
+      {/* Background image */}
+      <div className="absolute inset-0 -z-10 opacity-50">
+        <img
+          src="/images/pngwing.com (13).png" // Update this path if needed
+          alt="FAQ background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+  <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
+  <div className="relative z-10 max-w-7xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-orange-600 mb-2">Our Services</h2>
+    <p className="text-gray-700 mb-10 text-lg max-w-6xl mx-auto">
+      From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
+    </p>
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -98,7 +107,7 @@ export default function Services() {
                 </p>
                 <button
                   onClick={() => setActiveService(service)}
-                  className="inline-block bg-orange-600 text-white py-2 px-6 mt-4 text-sm font-semibold rounded hover:bg-blue-600 transition-all duration-300"
+                  className="inline-block bg-blue-600 text-white py-2 px-6 mt-4 text-sm font-semibold rounded hover:bg-blue-600 transition-all duration-300"
                 >
                   Learn More
                 </button>

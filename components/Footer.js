@@ -21,7 +21,7 @@ export default function Footer() {
         >
           <h2 className="text-2xl font-bold text-white mb-2">Lapsa Web and Graphics</h2>
           <p className="text-sm text-gray-400">
-            Crafting Stunning Websites & Bold Graphic Designs.
+            Crafting Stunning Websites & Bold Graphic Designs. From small businesses to growing startups, we transform ideas into impactful digital experiences that drive real growth.
           </p>
         </motion.div>
 

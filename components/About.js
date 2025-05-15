@@ -18,7 +18,7 @@ export default function AboutUs() {
         <div className="text-center py-10 px-4 max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-6 leading-tight text-orange-600">About Us</h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            We are a passionate digital agency focused on building powerful websites and creative designs that elevate brands. From small businesses to growing startups, we transform ideas into impactful digital experiences that drive real growth.
+            We are a passionate digital agency focused on building powerful websites and creative designs that elevate brands.
           </p>
         </div>
 
