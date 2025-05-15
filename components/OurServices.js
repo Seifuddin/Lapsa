@@ -18,42 +18,42 @@ const services = [
     description:
       "We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.",
     icon: <Layout className="w-6 h-6 text-orange-600" />,
-    image: "/images/developing a website.o.avif",
+    image: "/images/xCSAEp8DjjrT2UQB87AoFN.jpg",
   },
   {
     title: "Software Development",
     description:
       "Transform your innovative ideas into reality with our bespoke software development services. We build custom applications that solve real business problems.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/developing a website.o.avif",
+    image: "/images/what-is-software-development.jpg",
   },
   {
     title: "Graphic Design",
     description:
       "From logos and branding to brochures and posters, we deliver eye-catching graphic design that communicates your message and captivates your audience.",
     icon: <PenTool className="w-6 h-6 text-orange-600" />,
-    image: "/images/developing a website.o.avif",
+    image: "/images/art_design_740x317.jpg",
   },
   {
     title: "Digital Printing",
     description:
       "Get premium quality digital printing solutions for business cards, flyers, posters, and more — perfect for both personal and corporate branding.",
     icon: <Printer className="w-6 h-6 text-orange-600" />,
-    image: "/images/developing a website.o.avif",
+    image: "/images/images (4).jpg",
   },
   {
     title: "Website Maintenance",
     description:
       "Let us handle the updates, security, and performance tuning so your site stays reliable, safe, and optimized — giving you peace of mind.",
     icon: <Wrench className="w-6 h-6 text-orange-600" />,
-    image: "/images/developing a website.o.avif",
+    image: "/images/download (1).jpg",
   },
   {
     title: "Mobile App Development",
     description:
       "We develop powerful and user-friendly mobile apps that bring your brand to your customer’s fingertips — across Android and iOS platforms.",
     icon: <Smartphone className="w-6 h-6 text-orange-600" />,
-    image: "/images/developing a website.o.avif",
+    image: "/images/download (2).jpg",
   },
 ];
 
