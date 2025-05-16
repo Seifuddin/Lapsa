@@ -7,11 +7,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-blue-950/60 border-b border-orange-500 shadow-md">
+    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-slate-900 border-b border-orange-500 shadow-md">
       <div className="max-w-screen-xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo & Brand */}
-          <div className="text-orange-600 font-bold text-xl items-center">
+          <div className="text-white font-bold text-xl items-center">
             Lapsa
           </div>
 

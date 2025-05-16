@@ -1,8 +1,10 @@
+import ServicesHero from "@/components/HeroService";
+
 export default function Contacts() {
     
     return (
-            <div className="container mx-auto px-6 text-center">
-                <h2 className="text-3xl font-semibold mb-8">Contact Us</h2>
+            <div className=" text-center bg-gray-100">
+                <ServicesHero />
                 <form className="max-w-lg mx-auto">
                 <input type="text" placeholder="Your Name" className="w-full p-4 mb-4 border border-gray-300 rounded-lg" />
                 <input type="email" placeholder="Your Email" className="w-full p-4 mb-4 border border-gray-300 rounded-lg" />

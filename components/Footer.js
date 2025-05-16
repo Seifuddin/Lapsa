@@ -1,9 +1,32 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!email.trim()) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    alert(`Thanks for subscribing, ${email}!`);
+    setEmail("");
+  };
+
   return (
     <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-gray-300 pt-16 pb-10 px-6 overflow-x-hidden" role="contentinfo">
       <motion.div
@@ -34,7 +57,7 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-4">Our Services</h4>
           <ul className="space-y-2 text-sm">
             <li><a href="/services" className="hover:text-white transition">Web Development</a></li>
-            <li><a href="/services" className="hover:text-white transition">Website management</a></li>
+            <li><a href="/services" className="hover:text-white transition">Website Management</a></li>
             <li><a href="/services" className="hover:text-white transition">S.E.O</a></li>
             <li><a href="/services" className="hover:text-white transition">Graphic Design</a></li>
             <li><a href="/services" className="hover:text-white transition">Digital Printing</a></li>
@@ -59,7 +82,7 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-2">
               <Mail className="w-4 h-4 mt-1 text-indigo-400" />
-              <span>muriithinguru46@gmail.com</span>
+              <span>lapsatechnologies@gmail.com</span>
             </li>
           </ul>
         </motion.div>
@@ -119,16 +142,17 @@ export default function Footer() {
         >
           <h4 className="text-white font-semibold mb-4">Subscribe</h4>
           <p className="text-sm text-gray-400 mb-4">
-            Get Web design tips, success stories, and exclusive offers straight to your inbox.
+            Get web design tips, success stories, and exclusive offers straight to your inbox.
           </p>
-          <form className="flex flex-col sm:flex-row gap-2">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
             <label htmlFor="email" className="sr-only">Your email address</label>
             <input
               type="email"
               id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email"
               className="w-full px-3 py-2 rounded-md text-sm bg-slate-800 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              aria-describedby="emailHelp"
             />
             <button
               type="submit"

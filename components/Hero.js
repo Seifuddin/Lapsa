@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -16,17 +17,18 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 p-8 md:p-12 w-full max-w-6xl min-h-screen flex items-center justify-center backdrop-blur-sm"
+        className="relative z-10 p-10 md:p-12 w-full max-w-6xl min-h-screen flex items-center justify-center backdrop-blur-sm"
       >
         <div className="grid md:grid-cols-2 gap-10 items-center w-full">
           {/* Text Content */}
-          <div className="space-y-6">
+          <div className="space-y-5 pt-5">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Crafting Stunning <span className="text-blue-600">Websites</span> &<br />
-              Bold <span className="text-orange-600">Graphic Designs</span>
+              Elevate Your Brand with 
+              <span className="text-blue-500"> Custom Websites</span> & 
+              <span className="text-orange-600"> Creative Graphic Design</span>
             </h1>
             <p className="text-gray-200 text-lg">
-              We blend creativity and technology to deliver modern, high-impact designs that elevate your brand.
+              At Lapsa Web and Graphics, we turn ideas into digital experiences. Whether you're launching a startup or rebranding an established business, our expert team delivers high-performance websites and compelling visuals that captivate, convert, and grow your audience.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -43,7 +45,7 @@ export default function Hero() {
           <div className="hidden md:flex justify-center">
             <div className="w-full">
               <Image
-                src="/images/image-removebg-preview (39).png"
+                src="/images/image-removebg-preview (44).png"
                 alt="Web and Graphic Design"
                 width={500}
                 height={500}

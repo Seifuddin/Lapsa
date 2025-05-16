@@ -57,7 +57,7 @@ const services = [
   },
 ];
 
-export default function Services() {
+export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
