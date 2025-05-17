@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Benefits() {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat py-20"
+      className="relative bg-cover bg-gray-100 bg-center bg-no-repeat py-20"
       style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
@@ -13,7 +13,7 @@ export default function Benefits() {
       <div className="absolute inset-0 bg-gradient-to-tr from-white/60 via-white/50 to-white/60 z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4">
+      <div className="relative z-10 max-w-6xl mx-auto px-2">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}

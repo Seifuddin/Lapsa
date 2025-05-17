@@ -17,18 +17,18 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 p-10 md:p-12 w-full max-w-6xl min-h-screen flex items-center justify-center backdrop-blur-sm"
+        className="relative z-10 p-6 md:p-8 w-full max-w-6xl min-h-screen flex items-center justify-center backdrop-blur-sm"
       >
-        <div className="grid md:grid-cols-2 gap-10 items-center w-full">
+        <div className="grid md:grid-cols-2 gap-10 items-center w-full pt-5">
           {/* Text Content */}
-          <div className="space-y-5 pt-5">
+          <div className="space-y-5">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Elevate Your Brand with 
-              <span className="text-blue-500"> Custom Websites</span> & 
-              <span className="text-orange-600"> Creative Graphic Design</span>
+              Crafting Stunning 
+              <span className="text-blue-500"> Websites</span> & Bold
+              <span className="text-orange-600"> Graphic Designs</span>
             </h1>
             <p className="text-gray-200 text-lg">
-              At Lapsa Web and Graphics, we turn ideas into digital experiences. Whether you're launching a startup or rebranding an established business, our expert team delivers high-performance websites and compelling visuals that captivate, convert, and grow your audience.
+              At Lapsa Web and Graphics, we create beautiful websites and eye-catching designs that make an impact.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">

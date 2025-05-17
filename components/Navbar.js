@@ -59,19 +59,19 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="lg:hidden backdrop-blur-lg bg-blue-950/80 text-white space-y-4 px-4 py-4">
-          <Link href="/" className="block hover:text-orange-600 transition">
+          <Link href="/" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             Home
           </Link>
-          <Link href="/about" className="block hover:text-orange-600 transition">
+          <Link href="/about" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             About
           </Link>
-          <Link href="/chat" className="block hover:text-orange-600 transition">
+          <Link href="/chat" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             Chat
           </Link>
-          <Link href="/services" className="block hover:text-orange-600 transition">
+          <Link href="/services" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             Services
           </Link>
-          <Link href="/contacts" className="block hover:text-orange-600 transition">
+          <Link href="/contacts" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             Contact
           </Link>
         </div>

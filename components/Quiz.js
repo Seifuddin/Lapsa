@@ -48,7 +48,7 @@ export default function FAQ() {
   });
 
   return (
-    <section className="relative z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-gray-100 z-0 py-12 px-5 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
@@ -62,13 +62,13 @@ export default function FAQ() {
 
       {/* Search bar */}
       <div className="relative max-w-xl mx-auto mb-6">
-        <Search className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+        <Search className="absolute left-3 top-3.5 w-5 h-5 text-gray-600" />
         <input
           type="text"
           placeholder="Search FAQs..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 pr-4 py-2 border border-blue-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full pl-10 text-gray-600 pr-4 py-2 border border-blue-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -102,8 +102,8 @@ export default function FAQ() {
               <button
                 onClick={() => setSelectedCategory("All")}
                 className={`px-4 py-2 rounded-full border border-blue-600 ${
-                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-white text-gray-700"
-                } hover:bg-blue-100 transition`}
+                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-white text-gray-600"
+                } hover:bg-blue-100 transition text-gray-600`}
               >
                 All
               </button>
@@ -129,7 +129,7 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-gradient-to-tr from-blue-300 via-white to-blue-200 border border-blue-400 rounded-xl shadow hover:shadow-md transition"
+              className="bg-gradient-to-tr from-orange-400 via-white to-orange-400 border text-blue-600 border-blue-400 rounded-xl shadow hover:shadow-md transition"
             >
               <button
                 className="w-full flex justify-between items-center p-5 text-left font-medium"
@@ -138,7 +138,7 @@ export default function FAQ() {
                 <span>{faq.question}</span>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-180 text-blue-600" : "text-gray-500"
+                    openIndex === index ? "rotate-180 text-blue-600" : "text-gray-600"
                   }`}
                 />
               </button>

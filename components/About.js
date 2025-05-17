@@ -4,7 +4,7 @@ import CorePrinciples from "./CorePrinciples"; // Adjust path if needed
 export default function AboutUs() {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat py-10 text-gray-800"
+      className="relative bg-cover bg-center bg-orange-200 bg-no-repeat py-10 text-gray-800"
       style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
