@@ -43,14 +43,11 @@ export default function Navbar() {
             <Link href="/about" className="text-white hover:text-orange-600 transition">
               About
             </Link>
-            <Link href="/chat" className="text-white hover:text-orange-600 transition">
-              Chat
-            </Link>
             <Link href="/services" className="text-white hover:text-orange-600 transition">
               Services
             </Link>
             <Link href="/contacts" className="text-white hover:text-orange-600 transition">
-              Contact
+              Contact Us
             </Link>
           </div>
         </div>
@@ -65,14 +62,11 @@ export default function Navbar() {
           <Link href="/about" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             About
           </Link>
-          <Link href="/chat" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
-            Chat
-          </Link>
           <Link href="/services" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             Services
           </Link>
           <Link href="/contacts" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
-            Contact
+            Contact Us
           </Link>
         </div>
       )}
