@@ -13,6 +13,7 @@ export default function MyApp({ Component, pageProps}) {
       <Hero />
       <ChatButton />
       <About />
+      <AnimatedCounters />
       <OurServices />
       <Benefits />
       <Why />
