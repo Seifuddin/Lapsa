@@ -38,6 +38,11 @@ export const metadata = {
     title: "Lapsa Web and Graphics",
     description: "Crafting websites and designs that elevate your brand.",
     images: ["/og-image.jpg"]
+  },
+
+  // ✅ Google Search Console Verification
+  other: {
+    "google-site-verification": "googlea194578d408084fe.html" // 🔁 Replace with your actual verification code
   }
 };
 
