@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lapsa.vercel.app
+
+# Sitemaps
+Sitemap: https://lapsa.vercel.app/sitemap.xml

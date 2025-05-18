@@ -7,7 +7,43 @@ import OurServices from "@/components/OurServices";
 import FAQ from "@/components/Quiz";
 import Why from "@/components/Why";
 
-export default function MyApp({ Component, pageProps}) {
+// ✅ Page-specific SEO metadata
+export const metadata = {
+  title: "Professional Web Design and Graphics in Kenya | Lapsa",
+  description: "Lapsa offers top-tier web development and creative graphic design services in Kenya. Elevate your brand with our professional solutions.",
+  keywords: [
+    "web design Kenya",
+    "graphic design Kenya",
+    "web development Nairobi",
+    "branding services Kenya",
+    "Lapsa Web and Graphics"
+  ],
+  alternates: {
+    canonical: "https://lapsa.vercel.app"
+  },
+  openGraph: {
+    title: "Lapsa | Web Design and Graphics in Kenya",
+    description: "Boost your online presence with professional web development and graphics by Lapsa.",
+    url: "https://lapsa.vercel.app",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Lapsa Web and Graphics"
+      }
+    ],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lapsa Web and Graphics",
+    description: "Get high-quality web and graphic design solutions with Lapsa.",
+    images: ["/og-image.jpg"]
+  }
+};
+
+export default function MyApp({ Component, pageProps }) {
   return (
     <div className="overflow-hidden">
       <Hero />
