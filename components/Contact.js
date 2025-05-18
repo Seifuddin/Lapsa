@@ -19,7 +19,7 @@ export default function Contact() {
       }}
     >
       <div className="rounded-xl p-6 md:p-12 max-w-6xl mx-auto">
-        {/* Header */}
+        {/* Header 
         <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function Contact() {
             Have a project in mind? We'd love to hear from you.
           </p>
         </motion.div>
-
+        */}
         {/* Grid */}
         <div className="grid md:grid-cols-2 gap-10">
           {/* Contact Info */}

@@ -9,25 +9,25 @@ export default function Why() {
 
   const features = [
     {
-      icon: <Lightbulb className="w-8 h-8 text-orange-600" />,
+      icon: <Lightbulb className="w-8 h-8 text-white" />,
       title: "Creative & Innovative Solutions",
       desc: "We blend creativity with technology to craft unique digital experiences that set your brand apart.",
       modal: "From custom websites to impactful graphics, we prioritize originality and innovation in every project, delivering solutions that reflect your brand identity."
     },
     {
-      icon: <Users className="w-8 h-8 text-orange-600" />,
+      icon: <Users className="w-8 h-8 text-white" />,
       title: "Client-Focused Collaboration",
       desc: "We listen, understand, and design with your goals at the center of every decision.",
       modal: "Your vision is our mission. We engage you throughout the process to ensure the final product is not only functional but resonates with your audience."
     },
     {
-      icon: <MonitorSmartphone className="w-8 h-8 text-orange-600" />,
+      icon: <MonitorSmartphone className="w-8 h-8 text-white" />,
       title: "Responsive & Scalable Design",
       desc: "Our designs are responsive, mobile-friendly, and built for future growth.",
       modal: "Whether it’s a landing page, an e-commerce store, or a corporate site, we ensure that every digital product performs flawlessly on all devices and scales with your business."
     },
     {
-      icon: <ShieldCheck className="w-8 h-8 text-orange-600" />,
+      icon: <ShieldCheck className="w-8 h-8 text-white" />,
       title: "Reliable Support & Maintenance",
       desc: "Beyond launch, we provide dependable support to keep your website and visuals running smoothly.",
       modal: "We offer ongoing maintenance, updates, and security monitoring — so you can focus on growing your business while we take care of your digital infrastructure."
@@ -35,19 +35,19 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-tr from-orange-300 via-white to-blue-300 z-0 py-12 mx-auto">
+    <section className="relative bg-blue-900 via-white to-blue-300 z-0 py-12 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <img
-          src="/images/pngwing.com (10).png" // Update this path if needed
+          src="/images/pngwing.com (16).png" // Update this path if needed
           alt="FAQ background"
           className="w-full h-full object-cover"
         />
       </div>
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-4xl text-orange-600 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
-          <p className="text-gray-800 max-w-2xl mx-auto">
+          <h2 className="text-4xl text-orange-500 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
+          <p className="text-gray-200 max-w-2xl mx-auto">
             We’re not just another agency — we’re your creative tech partner. See why clients trust us for modern web design and graphics that leave a lasting impression.
           </p>
         </div>
@@ -60,9 +60,9 @@ export default function Why() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/developing a website.o.avif"
+              src="/images/lovepik-business-people-awarding-awards-png-image_401594823_wh1200.png"
               alt="Why Choose Us"
-              className="rounded-2xl w-full shadow-lg"
+              className="rounded-2xl w-full shadow-xl hidden md:flex justify-center"
             />
           </motion.div>
 
@@ -77,10 +77,10 @@ export default function Why() {
               <motion.div
                 key={idx}
                 whileHover={{ scale: 1.03 }}
-                className="flex w-full border border-blue-400 bg-gradient-to-tr from-orange-200 via-white to-orange-200 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-sm transition-transform duration-300"
+                className="flex w-full border bg-gradient-to-tr from-orange-200 via-white to-orange-200 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-xl transition-transform duration-300"
                 onClick={() => setSelectedFeature(item)}
               >
-                <div className="bg-orange-100 p-3 rounded-full">
+                <div className="bg-blue-600 p-3 rounded-full border-2">
                   {item.icon}
                 </div>
                 <div>

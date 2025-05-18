@@ -48,7 +48,7 @@ export default function FAQ() {
   });
 
   return (
-    <section className="relative bg-gray-100 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-white z-0 py-12 px-5 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
@@ -113,7 +113,7 @@ export default function FAQ() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-full border border-blue-600 ${
                     selectedCategory === cat ? "bg-blue-600 text-white" : "bg-white text-blue-600"
-                  } hover:bg-blue-100 transition`}
+                  } hover:bg-blue-100 transition text-blue-600`}
                 >
                   {cat}
                 </button>
@@ -129,7 +129,7 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-gradient-to-tr from-orange-400 via-white to-orange-400 border text-blue-600 border-blue-400 rounded-xl shadow hover:shadow-md transition"
+              className="bg-blue-300 border text-blue-600 rounded-xl shadow hover:shadow-xl transition"
             >
               <button
                 className="w-full flex justify-between items-center p-5 text-left font-medium"
