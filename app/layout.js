@@ -40,10 +40,6 @@ export const metadata = {
     images: ["/og-image.jpg"]
   },
 
-  // ✅ Google Search Console Verification
-  other: {
-    "google-site-verification": "googlea194578d408084fe.html" // 🔁 Replace with your actual verification code
-  }
 };
 
 export default function RootLayout({ children }) {
