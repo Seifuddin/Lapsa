@@ -35,11 +35,11 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-gray-200 z-0 py-12 mx-auto">
+    <section className="relative bg-gray-50 z-0 py-12 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <img
-          src="/images/pngwing.com (13).png" // Update this path if needed
+          src="/images/pngwing.com (7).png" // Update this path if needed
           alt="FAQ background"
           className="w-full h-full object-cover"
         />

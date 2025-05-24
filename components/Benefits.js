@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Benefits() {
   return (
     <section
-      className="relative bg-cover bg-gray-100 bg-center bg-no-repeat py-20"
+      className="relative bg-cover bg-gray-300 bg-center bg-no-repeat py-20"
       style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
