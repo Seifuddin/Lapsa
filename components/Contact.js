@@ -15,7 +15,7 @@ export default function Contact() {
     <div
       className="relative bg-cover bg-center bg-gray-100 bg-no-repeat py-10 text-gray-800"
       style={{
-        backgroundImage: `url('/images/pngwing.com (14).png')`,
+        backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
     >
       <div className="rounded-xl p-6 md:p-12 max-w-6xl mx-auto">

@@ -17,7 +17,11 @@ export default function AboutUs() {
         {/* Intro */}
         <div className="text-center py-10 px-4 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-950">
-                    This Site is <span className="text-orange-500">still under development</span>
+                    This Website is <span className="text-orange-500">still under development</span>
+                  </h1>
+
+                  <h1 className="text-4xl md:text-5xl font-extrabold text-blue-950">
+                    About <span className="text-orange-500">Us</span>
                   </h1>
                   <p className="mt-4 text-lg text-gray-600">
                     Elevating brands through innovative <strong>web development</strong> and <strong>graphic design</strong> solutions.
