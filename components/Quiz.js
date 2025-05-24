@@ -129,7 +129,7 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-blue-300 border text-blue-600 rounded-xl shadow hover:shadow-xl transition"
+              className="bg-blue-950 border text-white rounded-xl shadow hover:shadow-xl transition"
             >
               <button
                 className="w-full flex justify-between items-center p-5 text-left font-medium"
@@ -138,7 +138,7 @@ export default function FAQ() {
                 <span>{faq.question}</span>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-180 text-blue-600" : "text-gray-600"
+                    openIndex === index ? "rotate-180 text-gray-100" : "text-gray-100"
                   }`}
                 />
               </button>
@@ -150,7 +150,7 @@ export default function FAQ() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="overflow-hidden px-5 pb-5 text-gray-600"
+                    className="overflow-hidden px-5 pb-5 text-gray-100"
                   >
                     <div className="mt-2">{faq.answer}</div>
                   </motion.div>

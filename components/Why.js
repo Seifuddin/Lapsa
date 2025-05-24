@@ -35,19 +35,20 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-blue-900 via-white to-blue-300 z-0 py-12 mx-auto">
+    <section className="relative bg-gray-300 z-0 py-12 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <img
-          src="/images/pngwing.com (16).png" // Update this path if needed
+          src="/images/pngwing.com (13).png" // Update this path if needed
           alt="FAQ background"
           className="w-full h-full object-cover"
         />
       </div>
+      
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <h2 className="text-4xl text-orange-500 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             We’re not just another agency — we’re your creative tech partner. See why clients trust us for modern web design and graphics that leave a lasting impression.
           </p>
         </div>
@@ -60,9 +61,9 @@ export default function Why() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/lovepik-business-people-awarding-awards-png-image_401594823_wh1200.png"
+              src="/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp"
               alt="Why Choose Us"
-              className="rounded-2xl w-full shadow-xl hidden md:flex justify-center"
+              className="rounded-2xl w-full shadow-xl justify-center"
             />
           </motion.div>
 
@@ -77,7 +78,7 @@ export default function Why() {
               <motion.div
                 key={idx}
                 whileHover={{ scale: 1.03 }}
-                className="flex w-full border bg-gradient-to-tr from-orange-200 via-white to-orange-200 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-xl transition-transform duration-300"
+                className="flex w-full border bg-gradient-to-tr from-orange-300 via-white to-orange-300 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-xl transition-transform duration-300"
                 onClick={() => setSelectedFeature(item)}
               >
                 <div className="bg-blue-600 p-3 rounded-full border-2">

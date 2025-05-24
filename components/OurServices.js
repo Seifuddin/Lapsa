@@ -61,7 +61,7 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-gradient-to-tr from-orange-300 via-white to-orange-300 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-gray-200 z-0 py-12 px-5 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
@@ -70,6 +70,7 @@ export default function OurServices() {
           className="w-full h-full object-cover"
         />
       </div>
+      
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     <h2 className="text-4xl font-bold text-orange-600 mb-2">Our Services</h2>
@@ -88,7 +89,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="rounded-2xl shadow-lg overflow-hidden bg-white/80 transition duration-300 hover:shadow-2xl"
+              className="rounded-2xl shadow-lg overflow-hidden bg-gradient-to-tr from-orange-300 via-white to-orange-300 transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}
