@@ -78,7 +78,7 @@ export default function Why() {
               <motion.div
                 key={idx}
                 whileHover={{ scale: 1.03 }}
-                className="flex w-full border bg-gradient-to-tr from-orange-300 via-white to-orange-300 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-xl transition-transform duration-300"
+                className="flex w-full border bg-gradient-to-tr from-blue-300 via-white to-blue-300 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-xl transition-transform duration-300"
                 onClick={() => setSelectedFeature(item)}
               >
                 <div className="bg-blue-600 p-3 rounded-full border-2">

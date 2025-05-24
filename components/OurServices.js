@@ -61,11 +61,11 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-orange-500 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-blue-950 z-0 py-12 px-5 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
-          src="/images/pngwing.com (15).png" // Update this path if needed
+          src="/images/pngwing.com (13).png" // Update this path if needed
           alt="FAQ background"
           className="w-full h-full object-cover"
         />
@@ -74,7 +74,7 @@ export default function OurServices() {
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     <h2 className="text-4xl font-bold text-white mb-2">Our Services</h2>
-    <p className="text-black mb-10 text-lg max-w-6xl mx-auto">
+    <p className="text-gray-100 mb-10 text-lg max-w-6xl mx-auto">
       From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
     </p>
 
@@ -89,7 +89,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="rounded-2xl border-2 shadow-lg overflow-hidden bg-gradient-to-tr from-orange-300 via-white to-orange-300 transition duration-300 hover:shadow-2xl"
+              className="rounded-2xl border-2 shadow-lg overflow-hidden bg-gradient-to-tr from-blue-300 via-white to-blue-300 transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}

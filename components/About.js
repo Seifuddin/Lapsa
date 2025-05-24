@@ -26,7 +26,7 @@ export default function AboutUs() {
         {/* Image + Who We Are */}
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 pt-3 pb-16 items-center">
           <img
-            src="/images/IMG-20230803-WA0032.jpg"
+            src="/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp"
             alt="Team Collaboration"
             className="w-full rounded-md shadow-lg object-cover"
           />
