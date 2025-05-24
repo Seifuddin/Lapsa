@@ -1,5 +1,6 @@
 import AboutUs from "@/components/About";
 import Aboutus from "@/components/AboutUs";
+import AnimatedCounters from "@/components/AnimatedCounters";
 import ServicesHero from "@/components/HeroService";
 
 // ✅ SEO metadata for this page
@@ -45,6 +46,7 @@ export default function About() {
       {/* Page Sections */}
       <ServicesHero />
       <AboutUs />
+      <AnimatedCounters />
       <Aboutus />
     </div>
   );

@@ -35,11 +35,11 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-gray-200 z-0 py-12 mx-auto">
+    <section className="relative bg-blue-950 z-0 py-12 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <img
-          src="/images/pngwing.com (7).png" // Update this path if needed
+          src="/images/pngwing.com (13).png" // Update this path if needed
           alt="FAQ background"
           className="w-full h-full object-cover"
         />
@@ -47,8 +47,8 @@ export default function Why() {
       
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-4xl text-orange-500 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
-          <p className="text-gray-900 max-w-2xl mx-auto">
+          <h2 className="text-4xl text-white font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
+          <p className="text-gray-200 max-w-2xl mx-auto">
             We’re not just another agency — we’re your creative tech partner. See why clients trust us for modern web design and graphics that leave a lasting impression.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function Why() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp"
+              src="/images/why-choose-us-is-written-document-office-desk-with-office-accessories_192941-1120.avif"
               alt="Why Choose Us"
               className="rounded-2xl w-full shadow-xl justify-center"
             />

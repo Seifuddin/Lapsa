@@ -108,7 +108,7 @@ export default function Aboutus() {
           <h2 className="text-3xl font-bold">Ready to bring your ideas to life?</h2>
           <p className="mt-4 text-lg">Let's build something great together.</p>
           <a
-            href="/contact"
+            href="contacts"
             className="mt-6 inline-block bg-white text-orange-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
           >
             Contact Us
