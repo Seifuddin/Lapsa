@@ -1,5 +1,8 @@
+import AllServices from "@/components/AllServices";
+import GraphicDesign from "@/components/Graphics";
 import ServicesHero from "@/components/HeroService";
 import OurServices from "@/components/OurServices";
+import WebServices from "@/components/WebServices";
 
 // ✅ SEO metadata for this page
 export const metadata = {
@@ -49,7 +52,9 @@ export default function Services() {
         }}
       />
       <ServicesHero />
-      <OurServices />
+      <WebServices />
+      <AllServices />
+      <GraphicDesign />
     </div>
   );
 }
