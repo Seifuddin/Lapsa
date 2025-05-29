@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Lightbulb, Code, PenTool, Users, Rocket } from "lucide-react";
+import AnimatedCounters from "./AnimatedCounters";
 
 export default function Aboutus() {
   return (
@@ -29,6 +30,51 @@ export default function Aboutus() {
           ))}
         </motion.div>
 
+        <AnimatedCounters/>
+
+
+        {/* Timeline 
+      <div className="py-16 px-4 max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h3 className="text-2xl font-bold text-center mb-10 text-orange-600">Our Journey</h3>
+        </motion.div>
+        <div className="relative border-l-4 border-orange-600 pl-6 space-y-10">
+          {[
+            {
+              year: "2011 - Company Founded",
+              desc: "Established with the mission to support emerging authors and diverse narratives.",
+            },
+            {
+              year: "2014 - First Bestseller",
+              desc: "Achieved national recognition with our first best-selling novel.",
+            },
+            {
+              year: "2017 - Global Distribution",
+              desc: "Expanded to international markets, enabling worldwide access to our titles.",
+            },
+            {
+              year: "2023 - Digital Publishing Launch",
+              desc: "Introduced eBook and audiobook formats to reach more readers globally.",
+            },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: index * 0.2 }}
+            >
+              <h4 className="text-lg font-semibold text-blue-600">{item.year}</h4>
+              <p className="text-gray-800">{item.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+      */}
+
         {/* What We Do */}
         <div className="space-y-6 text-center">
           <h2 className="text-3xl font-bold text-blue-950">What We Do</h2>
@@ -51,7 +97,7 @@ export default function Aboutus() {
           </div>
         </div>
 
-        {/* Our Process */}
+        {/* Our Process 
         <div className="text-center">
           <h2 className="text-3xl font-bold text-blue-950 mb-8">Our Process</h2>
           <div className="grid md:grid-cols-4 gap-6">
@@ -71,8 +117,8 @@ export default function Aboutus() {
             ))}
           </div>
         </div>
-
-        {/* Stats / Counters */}
+        */}
+        {/* Stats / Counters 
         <div className="bg-blue-950 text-white py-16 rounded-xl text-center">
           <h2 className="text-3xl font-bold mb-10">Our Impact</h2>
           <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -89,15 +135,16 @@ export default function Aboutus() {
             ))}
           </div>
         </div>
+        */}
 
-        {/* Core Values */}
+        {/* Core Values 
         <div className="text-center space-y-6">
           <h2 className="text-3xl font-bold text-blue-950">Our Values</h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             We believe in excellence, creativity, integrity, and continuous growth. These principles guide everything we do — from strategy to execution.
           </p>
         </div>
-
+        */}
         {/* Call to Action */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}

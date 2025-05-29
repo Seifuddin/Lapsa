@@ -28,7 +28,7 @@ export default function Hero() {
               <span className="text-orange-600"> Graphic Designs</span>
             </h1>
             <p className="text-gray-200 text-lg">
-              At Lapsa Web and Graphics, we create beautiful websites and eye-catching designs that make an impact.
+              We are Lapsa, We Design Your Digital Future by Elevating Your Brand Online, We create beautiful websites and eye-catching designs that make an impact.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">

@@ -44,9 +44,7 @@ export default function About() {
       />
 
       {/* Page Sections */}
-      <ServicesHero />
       <AboutUs />
-      <AnimatedCounters />
       <Aboutus />
     </div>
   );
