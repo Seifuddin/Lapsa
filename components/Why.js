@@ -9,25 +9,25 @@ export default function Why() {
 
   const features = [
     {
-      icon: <Lightbulb className="w-8 h-8 text-white" />,
+      icon: <Lightbulb className="w-8 h-8 text-orange-500" />,
       title: "Creative & Innovative Solutions",
       desc: "We blend creativity with technology to craft unique digital experiences that set your brand apart.",
       modal: "From custom websites to impactful graphics, we prioritize originality and innovation in every project, delivering solutions that reflect your brand identity."
     },
     {
-      icon: <Users className="w-8 h-8 text-white" />,
+      icon: <Users className="w-8 h-8 text-orange-500" />,
       title: "Client-Focused Collaboration",
       desc: "We listen, understand, and design with your goals at the center of every decision.",
       modal: "Your vision is our mission. We engage you throughout the process to ensure the final product is not only functional but resonates with your audience."
     },
     {
-      icon: <MonitorSmartphone className="w-8 h-8 text-white" />,
+      icon: <MonitorSmartphone className="w-8 h-8 text-orange-500" />,
       title: "Responsive & Scalable Design",
       desc: "Our designs are responsive, mobile-friendly, and built for future growth.",
       modal: "Whether it’s a landing page, an e-commerce store, or a corporate site, we ensure that every digital product performs flawlessly on all devices and scales with your business."
     },
     {
-      icon: <ShieldCheck className="w-8 h-8 text-white" />,
+      icon: <ShieldCheck className="w-8 h-8 text-orange-500" />,
       title: "Reliable Support & Maintenance",
       desc: "Beyond launch, we provide dependable support to keep your website and visuals running smoothly.",
       modal: "We offer ongoing maintenance, updates, and security monitoring — so you can focus on growing your business while we take care of your digital infrastructure."
@@ -35,7 +35,7 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-blue-950 z-0 py-12 mx-auto">
+    <section className="relative bg-gray-200 z-0 py-12 mx-auto">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <img
@@ -47,8 +47,8 @@ export default function Why() {
       
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-4xl text-white font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <h2 className="text-4xl text-orange-600 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
+          <p className="text-gray-700 max-w-2xl mx-auto">
             We’re not just another agency — we’re your creative tech partner. See why clients trust us for modern web design and graphics that leave a lasting impression.
           </p>
         </div>
@@ -78,14 +78,14 @@ export default function Why() {
               <motion.div
                 key={idx}
                 whileHover={{ scale: 1.03 }}
-                className="flex w-full border bg-gradient-to-tr from-blue-300 via-white to-blue-300 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-xl transition-transform duration-300"
+                className="flex w-full border bg-gradient-to-tr from-gray-300 via-white to-gray-300 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-xl transition-transform duration-300"
                 onClick={() => setSelectedFeature(item)}
               >
-                <div className="bg-blue-600 p-3 rounded-full border-2">
+                <div className="bg-gradient-to-tr from-blue-500 via-white to-blue-500 p-3 rounded-full border-2">
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-1 text-blue-600">{item.title}</h4>
+                  <h4 className="text-xl font-semibold mb-1 text-gray-700">{item.title}</h4>
                   <p className="text-gray-700">{item.desc}</p>
                 </div>
               </motion.div>

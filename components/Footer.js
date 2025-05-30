@@ -42,7 +42,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 1, ease: "easeInOut" }}
         >
-          <h2 className="text-2xl font-bold text-white mb-2">Lapsa Web and Graphics</h2>
+          <h2 className="text-xl font-bold text-white mb-2">Lapsa Web and Graphics</h2>
           <p className="text-sm text-gray-400">
             Elevate Your Brand Online 
           </p>

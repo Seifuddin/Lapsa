@@ -52,7 +52,7 @@ export default function Benefits() {
             transition={{ duration: 1 }}
             className="order-2 md:order-1 space-y-6 text-center md:text-left p-5"
           >
-            <h3 className="text-2xl text-left font-semibold text-blue-600">
+            <h3 className="text-2xl text-left font-semibold text-gray-700">
               We connect your brand to the world.
             </h3>
             <p className="text-gray-700 text-left text-base leading-relaxed">
