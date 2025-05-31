@@ -129,7 +129,7 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-gradient-to-tr from-gray-300 via-white to-gray-300 border border-blue-200 text-black rounded-xl shadow hover:shadow-xl transition"
+              className="bg-gradient-to-tr from-orange-200 via-gray-200 to-blue-200 border border-blue-200 text-black rounded-xl shadow hover:shadow-xl transition"
             >
               <button
                 className="w-full flex justify-between items-center p-5 text-left font-medium"

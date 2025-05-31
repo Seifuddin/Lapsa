@@ -99,7 +99,7 @@ export default function Hero() {
           </div>
 
           {/* Hero Image (hidden on small screens) */}
-          <div className="flex justify-center">
+          <div className="hidden md:flex justify-center">
             <div className="w-full flex rounded-xl items-center justify-center">
               <Image
                 src="/images/image-removebg-preview (44).png"
