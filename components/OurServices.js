@@ -61,8 +61,8 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-gradient-to-tr from-orange-200 via-gray-200 to-blue-200 z-0 py-12 px-5 mx-auto">
-      {/* Background image 
+    <section className="relative bg-gradient-to-tr from-orange-100 via-gray-200 to-blue-200 z-0 py-12 px-5 mx-auto">
+      {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
           src="/images/pngwing.com (13).png" // Update this path if needed
@@ -70,7 +70,7 @@ export default function OurServices() {
           className="w-full h-full object-cover"
         />
       </div>
-      */}
+      
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     <h2 className="text-4xl font-bold text-orange-600 mb-2">Our Services</h2>
@@ -89,7 +89,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="rounded-2xl border-2 shadow-lg overflow-hidden bg-gradient-to-tr from-blue-300 via-white to-orange-300 transition duration-300 hover:shadow-2xl"
+              className="rounded-2xl border border-gray-400 shadow-lg overflow-hidden bg-gradient-to-tr from-blue-300 via-white to-orange-300 transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}
