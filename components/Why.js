@@ -47,8 +47,8 @@ export default function Why() {
       
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-4xl text-orange-600 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
-          <p className="text-blue-900 text-2xl max-w-5xl mx-auto">
+          <h2 className="text-3xl text-orange-600 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
+          <p className="text-blue-900 font-semibold text-xl max-w-5xl mx-auto">
             We’re not just another agency — we’re your creative tech partner. See why clients trust us for modern web design and graphics that leave a lasting impression.
           </p>
         </div>

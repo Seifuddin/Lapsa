@@ -73,8 +73,8 @@ export default function OurServices() {
       */}
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
-    <h2 className="text-4xl font-bold text-orange-600 mb-2">Our Services</h2>
-    <p className="text-blue-900 text-2xl mb-10 max-w-6xl mx-auto">
+    <h2 className="text-3xl font-bold text-orange-600 mb-2">Our Services</h2>
+    <p className="text-blue-900 font-semibold text-xl mb-10 max-w-6xl mx-auto">
       From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
     </p>
 

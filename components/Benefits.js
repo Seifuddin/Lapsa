@@ -21,10 +21,10 @@ export default function Benefits() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-orange-600 mb-4">
+          <h2 className="text-3xl font-bold text-orange-600 mb-4">
             Helping Your Business Grow
           </h2>
-          <p className="text-blue-900 text-2xl max-w-4xl mx-auto">
+          <p className="text-blue-900 font-semibold text-xl max-w-4xl mx-auto">
             At Lapsa Web & Graphics, we merge innovation with functionality to help you attract, engage, and convert customers through powerful digital solutions.
           </p>
         </motion.div>
@@ -52,7 +52,7 @@ export default function Benefits() {
             transition={{ duration: 1 }}
             className="order-2 md:order-1 space-y-6 text-center md:text-left p-5"
           >
-            <h3 className="text-2xl text-left font-semibold text-blue-900">
+            <h3 className="text-xl text-left font-semibold text-blue-900">
               We connect your brand to the world.
             </h3>
             <p className="text-gray-700 text-left text-base leading-relaxed">
