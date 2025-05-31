@@ -36,7 +36,7 @@ export default function Why() {
 
   return (
     <section className="relative bg-gradient-to-tr from-blue-200 via-gray-200 to-blue-200 z-0 py-12 mx-auto">
-      {/* Background image */}
+      {/* Background image 
       <div className="absolute inset-0 -z-10">
         <img
           src="/images/pngwing.com (13).png" // Update this path if needed
@@ -44,12 +44,12 @@ export default function Why() {
           className="w-full h-full object-cover opacity-20"
         />
       </div>
-      
+      */}
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl text-orange-600 font-bold mb-4">Why Choose Lapsa Web & Graphics</h2>
-          <p className="text-blue-900 font-semibold text-xl max-w-5xl mx-auto">
-            We’re not just another agency — we’re your creative tech partner. See why clients trust us for modern web design and graphics that leave a lasting impression.
+          <h2 className="text-3xl text-orange-600 font-bold mb-4">Why Choose Us</h2>
+          <p className="text-blue-900 font-semibold text-lg max-w-5xl mx-auto">
+            The Lapsa Advantage: Why Clients Trust Us.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function Why() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/IMG-20230803-WA0032.jpg"
+              src="/images/whyUs.webp"
               alt="Why Choose Us"
               className="rounded-2xl w-full shadow-xl justify-center"
             />
@@ -85,7 +85,7 @@ export default function Why() {
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-1 text-blue-900">{item.title}</h4>
+                  <h4 className="text-lg font-semibold mb-1 text-blue-900">{item.title}</h4>
                   <p className="text-gray-700">{item.desc}</p>
                 </div>
               </motion.div>

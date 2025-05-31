@@ -18,7 +18,7 @@ const services = [
     description:
       "We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.",
     icon: <Layout className="w-6 h-6 text-orange-600" />,
-    image: "/images/xCSAEp8DjjrT2UQB87AoFN.jpg",
+    image: "/images/creative-web-design-studio-with-flying-web-page-layout-elements-concept_1029473-56271.avif",
   },
   {
     title: "Software Development",
@@ -39,14 +39,14 @@ const services = [
     description:
       "Get premium quality digital printing solutions for business cards, flyers, posters, and more — perfect for both personal and corporate branding.",
     icon: <Printer className="w-6 h-6 text-orange-600" />,
-    image: "/images/images (4).jpg",
+    image: "/images/digitalprinting.jpg",
   },
   {
     title: "Website Maintenance",
     description:
       "Let us handle the updates, security, and performance tuning so your site stays reliable, safe, and optimized — giving you peace of mind.",
     icon: <Wrench className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (1).jpg",
+    image: "/images/Website-Maintenance-is-No-Longer.webp",
   },
   {
     title: "Mobile App Development",
@@ -74,8 +74,8 @@ export default function OurServices() {
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     <h2 className="text-3xl font-bold text-orange-600 mb-2">Our Services</h2>
-    <p className="text-blue-900 font-semibold text-xl mb-10 max-w-6xl mx-auto">
-      From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
+    <p className="text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
+      Everything You Need to Succeed Online.
     </p>
 
         <motion.div

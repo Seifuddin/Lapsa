@@ -19,7 +19,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-70"
+        className="absolute inset-0 bg-cover bg-center opacity-60"
         style={{ backgroundImage: "url('/images/pexels-pixabay-268533.jpg')" }}
       />
 
@@ -35,10 +35,10 @@ export default function Hero() {
           <div className="space-y-5">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
               Crafting Stunning 
-              <span className="text-blue-500"> Websites</span> & Bold
+              <span className="text-blue-400"> Websites</span> & Bold
               <span className="text-orange-600"> Graphic Designs</span>
             </h1>
-            <p className="text-gray-200 text-lg">
+            <p className="text-gray-200 text-xl font-semibold">
               We are Lapsa, We Design Your Digital Future by Elevating Your Brand Online, We create beautiful websites and eye-catching designs that make an impact.
             </p>
 
