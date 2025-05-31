@@ -10,7 +10,7 @@ export default function AboutUs() {
       }}
     >
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-white/60 via-white/60 to-white/60 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-white/60 via-white/60 to-white/60 z-0 opacity-4"></div>
 
       {/* Content */}
       <div className="relative z-10">
@@ -21,10 +21,10 @@ export default function AboutUs() {
                   </h1>
 
                   <h1 className="text-4xl font-bold text-blue-950">
-                    About <span className="text-orange-500">Us</span>
+                     <span className="text-orange-500">About Us</span>
                   </h1>
-                  <p className="mt-4 text-lg text-gray-600">
-                    Elevating brands through innovative <strong>web development</strong> and <strong>graphic design</strong> solutions.
+                  <p className="mt-4 text-2xl font-semibold text-blue-900">
+                    We Empower Businesses through innovative and Creative Digital solutions.<strong></strong>  <strong></strong>
                   </p>
         </div>
         {/* Image + Who We Are */}
@@ -35,7 +35,7 @@ export default function AboutUs() {
             className="w-full rounded-md shadow-lg object-cover"
           />
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-gray-700">Who We Are</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-blue-900">Who We Are</h3>
             <p className="text-gray-700 text-base leading-relaxed mb-4">
               At Lapsa, we believe that great design and thoughtful development go hand-in-hand. Our team of developers, designers, and digital experts works collaboratively to deliver visually compelling, fast, and functional solutions that help businesses make a lasting impression online.
             </p>

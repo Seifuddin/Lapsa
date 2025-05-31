@@ -50,11 +50,11 @@ export default function FAQ() {
   return (
     <section className="relative bg-gray-50 z-0 py-12 px-5 mx-auto">
       {/* Background image */}
-      <div className="absolute inset-0 -z-10 opacity-50">
+      <div className="absolute inset-0 -z-10">
         <img
           src="/images/pngwing.com (7).png" // Update this path if needed
           alt="FAQ background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-40"
         />
       </div>
 
@@ -129,7 +129,7 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-gradient-to-tr from-orange-200 via-gray-200 to-blue-200 border border-blue-200 text-black rounded-xl shadow hover:shadow-xl transition"
+              className="bg-gradient-to-tr from-orange-200 via-gray-200 to-blue-200 border border-blue-200 text-blue-900 rounded-xl shadow hover:shadow-xl transition"
             >
               <button
                 className="w-full flex justify-between items-center p-5 text-left font-medium"

@@ -74,7 +74,7 @@ export default function OurServices() {
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     <h2 className="text-4xl font-bold text-orange-600 mb-2">Our Services</h2>
-    <p className="text-gray-700 mb-10 text-lg max-w-6xl mx-auto">
+    <p className="text-blue-900 text-2xl mb-10 max-w-6xl mx-auto">
       From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
     </p>
 
@@ -99,7 +99,7 @@ export default function OurServices() {
               <div className="p-5 text-left">
                 <div className="flex items-center gap-2 mb-2">
                   {service.icon}
-                  <h3 className="text-xl font-semibold text-gray-700">
+                  <h3 className="text-xl font-semibold text-blue-900">
                     {service.title}
                   </h3>
                 </div>
