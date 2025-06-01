@@ -58,8 +58,8 @@ export default function FAQ() {
         />
       </div>
 
-      <h2 className="text-3xl text-orange-600 sm:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-        <p className="text-blue-900 font-semibold text-lg max-w-5xl mx-auto text-center">
+      <h2 className="text-3xl text-orange-600 sm:text-4xl font-bold text-center mb-3">Frequently Asked Questions</h2>
+        <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto text-center mb-8">
           Everything You Need to Know About Working With Us.
         </p>
       {/* Search bar */}

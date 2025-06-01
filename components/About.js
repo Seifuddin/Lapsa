@@ -19,7 +19,7 @@ export default function AboutUs() {
                   <h1 className="text-3xl font-bold text-blue-950">
                      <span className="text-orange-500">About Us</span>
                   </h1>
-                  <p className="mt-4 text-lg font-semibold text-blue-900">
+                  <p className="italic mt-4 text-lg font-semibold text-blue-900">
                     We Empower Businesses through innovative and Creative Digital solutions.
                   </p>
         </div>

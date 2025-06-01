@@ -24,7 +24,7 @@ export default function Benefits() {
           <h2 className="text-3xl font-bold text-orange-600 mb-4">
             Helping Your Business Grow
           </h2>
-          <p className="text-blue-900 font-semibold text-lg max-w-4xl mx-auto">
+          <p className="italic text-blue-900 font-semibold text-lg max-w-4xl mx-auto">
            What We Do to Help Your Business Stand Out.
           </p>
         </motion.div>

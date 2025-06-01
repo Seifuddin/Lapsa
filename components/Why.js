@@ -35,7 +35,7 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-tr from-blue-200 via-gray-200 to-blue-200 z-0 py-12 mx-auto">
+    <section className="relative bg-gradient-to-tr from-orange-200 via-gray-200 to-blue-200 z-0 py-12 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10">
         <img
@@ -48,7 +48,7 @@ export default function Why() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl text-orange-600 font-bold mb-4">Why Choose Us</h2>
-          <p className="text-blue-900 font-semibold text-lg max-w-5xl mx-auto">
+          <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto">
             The Lapsa Advantage: Why Clients Trust Us.
           </p>
         </div>
