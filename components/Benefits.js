@@ -21,7 +21,7 @@ export default function Benefits() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-orange-600 mb-4">
+          <h2 className="text-3xl font-bold text-orange-700 mb-4">
             Helping Your Business Grow
           </h2>
           <p className="italic text-blue-900 font-semibold text-lg max-w-4xl mx-auto">

@@ -73,7 +73,7 @@ export default function OurServices() {
       */}
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
-    <h2 className="text-3xl font-bold text-orange-600 mb-2">Our Services</h2>
+    <h2 className="text-3xl font-bold text-orange-700 mb-2">Our Services</h2>
     <p className="italic text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
       Everything You Need to Succeed Online.
     </p>
@@ -99,7 +99,7 @@ export default function OurServices() {
               <div className="p-5 text-left">
                 <div className="flex items-center gap-2 mb-2">
                   {service.icon}
-                  <h3 className="text-xl font-semibold text-blue-900">
+                  <h3 className="text-lg font-semibold text-blue-900">
                     {service.title}
                   </h3>
                 </div>

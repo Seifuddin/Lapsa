@@ -38,11 +38,11 @@ export default function Hero() {
               <span className="text-blue-400"> Websites</span> & Bold
               <span className="text-orange-600"> Graphic Designs</span>
             </h1>
-            <p className="text-gray-200 text-xl font-semibold">
+            <p className="italic text-gray-200 text-lg font-semibold">
               We are Lapsa, We Design Your Digital Future by Elevating Your Brand Online, We create beautiful websites and eye-catching designs that make an impact.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <div className="flex gap-4 pt-2">
               <button className="px-6 py-3 bg-blue-600 hover:bg-orange-600 rounded-full font-semibold shadow-md transition duration-300">
                 Our Services
               </button>

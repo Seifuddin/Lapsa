@@ -4,7 +4,7 @@ import CorePrinciples from "./CorePrinciples"; // Adjust path if needed
 export default function AboutUs() {
   return (
     <section
-      className="relative bg-cover bg-center bg-gray-50 bg-no-repeat py-10 text-gray-800"
+      className="relative bg-cover bg-center bg-gray-50 bg-no-repeat py-6 text-gray-800"
       style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
@@ -15,9 +15,9 @@ export default function AboutUs() {
       {/* Content */}
       <div className="relative z-10">
         {/* Intro */}
-        <div className="text-center py-10 px-4 max-w-6xl mx-auto">
+        <div className="text-center py-6 px-4 max-w-6xl mx-auto">
                   <h1 className="text-3xl font-bold text-blue-950">
-                     <span className="text-orange-500">About Us</span>
+                     <span className="text-orange-700">About Us</span>
                   </h1>
                   <p className="italic mt-4 text-lg font-semibold text-blue-900">
                     We Empower Businesses through innovative and Creative Digital solutions.
