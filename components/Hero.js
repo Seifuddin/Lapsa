@@ -28,7 +28,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative mt-8 z-10 p-6 md:p-8 w-full max-w-6xl min-h-screen flex items-center justify-center backdrop-blur-smm"
+        className="relative z-10 p-6 md:p-8 w-full max-w-6xl min-h-screen flex items-center justify-center backdrop-blur-smm"
       >
         <div className="grid md:grid-cols-2 gap-10 items-center w-full pt-5">
           {/* Text Content */}
