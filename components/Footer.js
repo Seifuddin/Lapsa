@@ -96,7 +96,7 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-4">Follow Us</h4>
           <div className="flex gap-4">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=61570201295782"
               aria-label="Follow us on Facebook"
               className="hover:text-white transition"
               target="_blank"
@@ -105,8 +105,8 @@ export default function Footer() {
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="https://www.twitter.com"
-              aria-label="Follow us on Twitter"
+              href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09"
+              aria-label="Follow us on X"
               className="hover:text-white transition"
               target="_blank"
               rel="noopener noreferrer"
@@ -114,7 +114,7 @@ export default function Footer() {
               <Twitter className="w-5 h-5" />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48"
               aria-label="Follow us on Instagram"
               className="hover:text-white transition"
               target="_blank"
@@ -123,7 +123,7 @@ export default function Footer() {
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               aria-label="Follow us on LinkedIn"
               className="hover:text-white transition"
               target="_blank"

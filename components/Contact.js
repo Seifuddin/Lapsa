@@ -79,19 +79,19 @@ export default function Contact() {
             {/* Social Media Icons */}
             <h4 className="font-bold text-white text-lg">Follow Us</h4>
             <div className="flex space-x-4 pt-4">
-              <a href="#" aria-label="Facebook" className="text-blue-700 hover:text-orange-500 bg-gray-200 p-1 rounded-full">
+              <a href="https://www.facebook.com/profile.php?id=61570201295782" aria-label="Facebook" className="text-blue-700 hover:text-orange-500 bg-gray-200 p-1 rounded-full">
                 <FaFacebookF size={20} />
               </a>
-              <a href="#" aria-label="Instagram" className="text-pink-600 hover:text-orange-500 bg-gray-200 p-1 rounded-full">
+              <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48" aria-label="Instagram" className="text-pink-600 hover:text-orange-500 bg-gray-200 p-1 rounded-full">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" aria-label="Twitter" className="text-blue-400 hover:text-orange-500 bg-gray-200 p-1 rounded-full">
+              <a href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09" aria-label="Twitter" className="text-blue-400 hover:text-orange-500 bg-gray-200 p-1 rounded-full">
                 <FaTwitter size={20} />
               </a>
-              <a href="#" aria-label="TikTok" className="text-black hover:text-orange-500 bg-gray-200 p-1 rounded-full">
+              <a href="https://www.tiktok.com/@muriithi_nguru?_t=ZM-8wuMwLm6AoH&_r=1" aria-label="TikTok" className="text-black hover:text-orange-500 bg-gray-200 p-1 rounded-full">
                 <FaTiktok size={20} />
               </a>
-              <a href="#" aria-label="LinkedIn" className="text-blue-600 hover:text-orange-500 bg-gray-200 p-1 rounded-full">
+              <a href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" className="text-blue-600 hover:text-orange-500 bg-gray-200 p-1 rounded-full">
                 <FaLinkedinIn size={20} />
               </a>
             </div>
