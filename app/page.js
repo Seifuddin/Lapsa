@@ -9,21 +9,22 @@ import Why from "@/components/Why";
 
 // ✅ Page-specific SEO metadata
 export const metadata = {
-  title: "Professional Web Design and Graphics in Kenya | Lapsa",
+  title: "Professional Web Design and Graphics in Kenya | Lapsa Web and Graphics",
   description: "Lapsa offers top-tier web development and creative graphic design services in Kenya. Elevate your brand with our professional solutions.",
   keywords: [
     "web design Kenya",
     "graphic design Kenya",
     "web development Nairobi",
     "branding services Kenya",
-    "Lapsa Web and Graphics"
+    "Lapsa Web and Graphics",
+    "Lapsa"
   ],
   alternates: {
     canonical: "https://lapsa.vercel.app"
   },
   openGraph: {
     title: "Lapsa | Web Design and Graphics in Kenya",
-    description: "Boost your online presence with professional web development and graphics by Lapsa.",
+    description: "Elevate your brand online with professional web development and graphics by Lapsa.",
     url: "https://lapsa.vercel.app",
     images: [
       {

@@ -16,10 +16,10 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-black/100 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-60"
+        className="absolute inset-0 bg-cover bg-center opacity-40"
         style={{ backgroundImage: "url('/images/pexels-pixabay-268533.jpg')" }}
       />
 
@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="space-y-5">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
               Crafting Stunning 
-              <span className="text-blue-400"> Websites</span> & Bold
+              <span className="text-blue-500"> Websites</span> & Bold
               <span className="text-orange-600"> Graphic Designs</span>
             </h1>
             <p className="italic text-gray-200 text-lg font-semibold">

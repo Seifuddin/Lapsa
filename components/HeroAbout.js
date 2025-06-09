@@ -4,10 +4,10 @@ import { useTypingText } from "@/hooks/useTypingText"; // Import the custom hook
 import { BookOpen, Pencil, Paperclip } from "lucide-react";
 import Image from "next/image";
 
-export default function ServicesHero() {
+export default function AboutHero() {
   const words = [
-    "Our Services.",
-    "What We Do",
+    "About Us.",
+    "Learn more about Lapsa, a creative web design and graphic design company in Kenya.",
   ];
 
   const { displayText, cursor } = useTypingText(words);
@@ -54,9 +54,9 @@ export default function ServicesHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-lg italic md:text-xl text-gray-100 max-w-2xl font-semibold"
+          className="text-lg md:text-xl text-gray-100 italic max-w-2xl font-semibold"
         >
-          From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
+          We are Lapsa, We Design Your Digital Future by Elevating Your Brand Online, We create beautiful websites and eye-catching designs that make an impact.
         </motion.p>
       </div>
 

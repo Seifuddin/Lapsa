@@ -1,5 +1,5 @@
 import Contact from "@/components/Contact";
-import ServicesHero from "@/components/HeroService";
+import ContactsHero from "@/components/HeroContacts";
 
 // ✅ SEO metadata
 export const metadata = {
@@ -54,7 +54,7 @@ export default function Contacts() {
       />
 
       {/* Page sections */}
-      <ServicesHero />
+      <ContactsHero />
       <Contact />
     </div>
   );

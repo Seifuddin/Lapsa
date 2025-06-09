@@ -61,8 +61,8 @@ export default function AllServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-blue-500 z-0 py-12 px-5 mx-auto">
-      {/* Background image */}
+    <section className="relative bg-gradient-to-tr from-blue-300 via-gray-200 to-blue-300 z-0 py-12 px-5 mx-auto">
+      {/* Background image 
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
           src="/images/pngwing.com (13).png" // Update this path if needed
@@ -70,10 +70,10 @@ export default function AllServices() {
           className="w-full h-full object-cover"
         />
       </div>
-      
+      */}
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
-    <h2 className="text-4xl font-bold text-white mb-10">Other Services</h2>
+    <h2 className="text-4xl font-bold text-orange-700 mb-10">Other Services</h2>
     {/*
     <p className="text-gray-100 mb-10 text-lg max-w-6xl mx-auto">
       From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.

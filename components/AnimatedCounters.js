@@ -5,10 +5,10 @@ import { FiCheckCircle, FiSmile, FiClock, FiAward } from "react-icons/fi";
 import CountUp from "react-countup";
 
 const counters = [
-  { label: "Projects Completed", value: 150 },
-  { label: "Happy Clients", value: 120 },
-  { label: "Years of Experience", value: 5 },
-  { label: "Design Awards", value: 10 },
+  { label: "Projects Completed", value: 10 },
+  { label: "Happy Clients", value: 10 },
+  { label: "Years of Experience", value: 2 },
+  { label: "Design Awards", value: 1 },
 ];
 
 const icons = [FiCheckCircle, FiSmile, FiClock, FiAward];
@@ -28,7 +28,7 @@ export default function AnimatedCounters() {
 
       {/* Optional Overlay */}
       <div className="absolute inset-0 -z-10"></div>
-          <h2 className="text-3xl text-center text-orange-500 font-bold mb-10">Our Impact</h2>
+          <h2 className="text-3xl text-center text-white font-bold mb-10">Our Impact</h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 text-center gap-8">
         {counters.map((counter, index) => {

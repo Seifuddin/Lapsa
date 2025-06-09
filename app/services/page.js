@@ -1,12 +1,12 @@
 import AllServices from "@/components/AllServices";
 import GraphicDesign from "@/components/Graphics";
 import ServicesHero from "@/components/HeroService";
-import OurServices from "@/components/OurServices";
+import OtherServices from "@/components/Other";
 import WebServices from "@/components/WebServices";
 
 // ✅ SEO metadata for this page
 export const metadata = {
-  title: "Our Services | Web Development & Graphic Design | Lapsa",
+  title: "Our Services | Lapsa Web and Graphics",
   description:
     "Explore our range of services including web design, branding, UI/UX design, and graphic design tailored to elevate your business in Kenya.",
   alternates: {
@@ -53,7 +53,7 @@ export default function Services() {
       />
       <ServicesHero />
       <WebServices />
-      <AllServices />
+      <OtherServices />
       <GraphicDesign />
     </div>
   );

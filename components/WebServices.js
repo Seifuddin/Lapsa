@@ -94,6 +94,31 @@ const PricingModal = ({ service, isOpen, onClose }) => (
   </Dialog>
 );
 
+// Service Modal Component
+const ServiceModal = ({ service, isOpen, onClose }) => (
+  <Dialog open={isOpen} onClose={onClose} className="relative z-50">
+    <div className="fixed inset-0 bg-black/30" />
+    <div className="fixed inset-0 flex items-center justify-center p-4">
+      <Dialog.Panel className="bg-white p-6 rounded-xl max-w-md w-full">
+        <Dialog.Title className="text-xl font-bold text-blue-600">
+          <img
+            src={service?.image}
+            className="w-full h-44 object-cover rounded-md"
+          />
+          {service?.title}
+        </Dialog.Title>
+        <p className="text-gray-700 mt-4">{service?.description}</p>
+        <button
+          className="mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-orange-700"
+          onClick={onClose}
+        >
+          Close
+        </button>
+      </Dialog.Panel>
+    </div>
+  </Dialog>
+);
+
 // Request Modal Component
 const RequestModal = ({ service, isOpen, onClose }) => (
   <Dialog open={isOpen} onClose={onClose} className="relative z-50">
@@ -145,11 +170,17 @@ const RequestModal = ({ service, isOpen, onClose }) => (
 export default function WebServices() {
   const [selectedService, setSelectedService] = useState(null);
   const [isPricingOpen, setPricingOpen] = useState(false);
+  const [isServiceOpen, setServiceOpen] = useState(false);
   const [isRequestOpen, setRequestOpen] = useState(false);
 
   const openPricingModal = (service) => {
     setSelectedService(service);
     setPricingOpen(true);
+  };
+
+  const openServiceModal = (service) => {
+    setSelectedService(service);
+    setServiceOpen(true);
   };
 
   const openRequestModal = (service) => {
@@ -168,18 +199,20 @@ export default function WebServices() {
       </Head>
 
       <section
-      className="relative bg-cover bg-center bg-gray-200 bg-no-repeat py-10 text-gray-800 p-5"
-      style={{
+      className="relative bg-cover bg-center bg-gradient-to-tr from-orange-200 via-gray-200 to-orange-200 bg-no-repeat py-10 text-gray-800 p-5">
+      
+      {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
-    >
+      */}
+    
         <div className="max-w-7xl mx-auto text-center">
-            <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-950 mb-5">
+            <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
                     Web Design & <span className="text-orange-500">Development Services</span>
                   </h1>
 
-                  <p className="max-w-4xl mx-auto text-gray-600 mb-10 text-lg">
-      We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.
+                  <p className="max-w-4xl mx-auto italic  text-blue-900 font-semibold mb-10 text-lg">
+      We create visually stunning and highly functional websites tailored to your brand’s unique needs.
     </p>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -192,7 +225,7 @@ export default function WebServices() {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.02 }}
-                className="bg-gray-50 border-2 border-gray-300 rounded-2xl shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
+                className="bg-gradient-to-tr from-blue-300 via-white to-blue-300 border-2 border-gray-200 rounded-2xl shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
               >
                 <div className="relative w-full h-44">
                   <Image
@@ -207,7 +240,7 @@ export default function WebServices() {
                 <div className="p-5 text-left">
                   <div className="flex items-center gap-2 mb-2">
                     {service.icon}
-                    <h3 className="text-xl font-semibold text-blue-600">
+                    <h3 className="text-lg font-semibold text-blue-900">
                       {service.title}
                     </h3>
                   </div>
@@ -217,16 +250,22 @@ export default function WebServices() {
                   <div className="flex space-x-2">
                     <button
                       onClick={() => openPricingModal(service)}
-                      className="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm hover:bg-blue-800"
+                      className="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm hover:bg-orange-700"
                     >
                       See Pricing
                     </button>
                     <button
                       onClick={() => openRequestModal(service)}
-                      className="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm hover:bg-blue-800"
+                      className="bg-blue-800 text-white px-3 py-2 rounded-lg text-sm hover:bg-orange-700"
                     >
                       Request This Service
                     </button>
+                    <button
+                  onClick={() => openServiceModal(service)}
+                  className="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm hover:bg-orange-700"
+                >
+                  Learn More
+                </button>
                   </div>
                 </div>
               </motion.div>
@@ -238,6 +277,12 @@ export default function WebServices() {
           service={selectedService}
           isOpen={isPricingOpen}
           onClose={() => setPricingOpen(false)}
+        />
+
+        <ServiceModal
+          service={selectedService}
+          isOpen={isServiceOpen}
+          onClose={() => setServiceOpen(false)}
         />
 
         <RequestModal

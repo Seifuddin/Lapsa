@@ -17,48 +17,54 @@ import {
 // Service data
 const services = [
   {
-      title: "Logo & Branding Design",
-      description:
-        "We create unique, memorable logos and cohesive brand identity systems that give your business a professional edge and lasting first impression.",
-      icon: <Code className="w-6 h-6 text-orange-600" />,
-      image: "/images/download (2).jpg",
-    },
-    {
-      title: "Marketing & Advertising Design",
-      description:
-        "Get eye-catching designs that promote your business across print and digital platforms. Whether it's flyers, posters, or online ads, we ensure your message stands out with clarity and creativity.",
-      icon: <Code className="w-6 h-6 text-orange-600" />,
-      image: "/images/download (2).jpg",
-    },
-    {
-      title: "Publication & Editorial Design",
-      description:
-        "We design Professionally structured magazines, books, reports, and manuals that are easy to read and visually appealing-ideal for both digital and print distribution.",
-      icon: <Code className="w-6 h-6 text-orange-600" />,
-      image: "/images/download (2).jpg",
-    },
-  {
-    title: "Business Printing",
+    title: "Digital Marketing",
     description:
-      "Give your business a polished look with professionally printed materials like business cards, letterheads, invoices, and branded company profiles. Perfect for meetings, presentations, and daily operations.",
+      "Creating visually appealing, user-friendly layouts that reflect your brand and engage visitors. This Includes: UI/UX Design, Responsive Layouts (Mobile and Desktop), Landing Page Design, and Website Redesign",
     icon: <Code className="w-6 h-6 text-orange-600" />,
     image: "/images/download (2).jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
   {
-    title: "Large Format Printing",
+    title: "Photo Mounting",
     description:
-      "Make your brand unmissable with bold, large-scale prints. Ideal for events, promotions, and outdoor advertising, we print everything from roll-up banners to vehicle wraps with precision and durability.",
+      "Building interactive, fast-loading websites using modern frameworks and technologies. This includes: HTML, CSS and Javascript, React.js and Next.js, Tailwind Css and Bootstrap, and Responsive & Cross-Border Compatibility.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
     image: "/images/download (2).jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
   {
-    title: "Custom Product Printing",
+    title: "Photography",
     description:
-      "Stand out with personalized merchandise like T-Shirts, mugs, caps, and bags. Great for branding, gifting, or reselling- our prints are durable, vibrant, and professionally done.",
+      "Developing the core logic, database interactions, and server-side operations of your web application. This includes: API Integration and Development, Database Setup( MySQL, MongoDB), Authentication Systems, and Frameworks(Flask, Django, Node.js)",
+    icon: <Code className="w-6 h-6 text-orange-600" />,
+    image: "/images/download (2).jpg",
+    pricing:
+      "Please contact us for details on pricing as pricing varies depending on several factors.",
+  },
+  {
+    title: "Video Editing",
+    description:
+      "Optimizing websites to rank higher on search engines and attract organic traffic. This Includes: On-Page SEO (Meta Tags, Speed, Mobile), Sitemap.xml & Robots.txt, Google Analytics & Search Console Setup, and SEO-Friendly URL Structures.",
+    icon: <Code className="w-6 h-6 text-orange-600" />,
+    image: "/images/download (2).jpg",
+    pricing:
+      "Please contact us for details on pricing as pricing varies depending on several factors.",
+  },
+  {
+    title: "Art and Design",
+    description:
+      "Ongoing support to keep your website secure, updated and performing well. This Includes: Security Monitoring, Plugin/Theme Updates, Regular Backups, and Bug Fixes.",
+    icon: <Code className="w-6 h-6 text-orange-600" />,
+    image: "/images/download (2).jpg",
+    pricing:
+      "Please contact us for details on pricing as pricing varies depending on several factors.",
+  },
+  {
+    title: "All cyber services",
+    description:
+      "Helping you get your site live with reliable, fast, and secure hosting options. This includes: Domain Registration Assistance, Hosting Setup, SSL Certificate Setup, and Email Setup(Optional)",
     icon: <Code className="w-6 h-6 text-orange-600" />,
     image: "/images/download (2).jpg",
     pricing:
@@ -136,7 +142,7 @@ const RequestModal = ({ service, isOpen, onClose }) => (
   </Dialog>
 );
 
-export default function GraphicDesign() {
+export default function OtherServices() {
   const [selectedService, setSelectedService] = useState(null);
   const [isPricingOpen, setPricingOpen] = useState(false);
   const [isRequestOpen, setRequestOpen] = useState(false);
@@ -154,7 +160,7 @@ export default function GraphicDesign() {
   return (
     <>
       <Head>
-        <title>Graphic Design | Lapsa Web and Graphics</title>
+        <title>Web Services | Lapsa Web and Graphics</title>
         <meta
           name="description"
           content="Explore professional web services including Web Design, SEO Optimization, Website Maintenence, and more by Lapsa Web and Graphics."
@@ -162,18 +168,20 @@ export default function GraphicDesign() {
       </Head>
 
       <section
-      className="relative bg-gradient-to-tr from-orange-200 via-gray-100 to-orange-200 bg-cover bg-center bg-gray-200 bg-no-repeat py-10 text-gray-800 p-5">
-        {/* style={{
+      className="relative bg-cover bg-center bg-gradient-to-tr from-blue-200 via-gray-200 to-blue-200 bg-no-repeat py-10 text-gray-800 p-5">
+      
+      {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
       */}
+    
         <div className="max-w-7xl mx-auto text-center">
             <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
-                    Graphic Design & <span className="text-orange-500">Digital Printing Services</span>
+                    Other <span className="text-orange-500">Services</span>
                   </h1>
 
-                  <p className="font-semibold italic text-blue-900 max-w-4xl mx-auto mb-10 text-lg">
-      From logos and branding to brochures and posters, we deliver eye-catching graphic design that communicates your message and captivates your audience.
+                  <p className="max-w-4xl mx-auto italic  text-blue-900 font-semibold mb-10 text-lg">
+      We create visually stunning and highly functional websites tailored to your brand’s unique needs.
     </p>
           <motion.div
             initial={{ opacity: 0, y: 50 }}

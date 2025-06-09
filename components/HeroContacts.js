@@ -4,10 +4,10 @@ import { useTypingText } from "@/hooks/useTypingText"; // Import the custom hook
 import { BookOpen, Pencil, Paperclip } from "lucide-react";
 import Image from "next/image";
 
-export default function ServicesHero() {
+export default function ContactsHero() {
   const words = [
-    "Our Services.",
-    "What We Do",
+    "Contact us.",
+    "Have a project in mind? We'd love to hear from you.",
   ];
 
   const { displayText, cursor } = useTypingText(words);
@@ -56,7 +56,7 @@ export default function ServicesHero() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg italic md:text-xl text-gray-100 max-w-2xl font-semibold"
         >
-          From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
+          Get in touch with Lapsa Web and Graphics for professional web design and graphic design services in Kenya. We're here to help your brand grow.
         </motion.p>
       </div>
 

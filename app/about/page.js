@@ -1,7 +1,11 @@
 import AboutUs from "@/components/About";
 import Aboutus from "@/components/AboutUs";
 import AnimatedCounters from "@/components/AnimatedCounters";
+import CorePrinciples from "@/components/CorePrinciples";
+import AboutHero from "@/components/HeroAbout";
+import ContactsHero from "@/components/HeroContacts";
 import ServicesHero from "@/components/HeroService";
+import Timeline from "@/components/Timeline";
 
 // ✅ SEO metadata for this page
 export const metadata = {
@@ -36,15 +40,18 @@ export default function About() {
             description:
               "Lapsa is a Kenyan company offering professional web design and graphic design services.",
             sameAs: [
-              "https://facebook.com", // ✅ Replace or remove
-              "https://instagram.com",
+              "https://www.facebook.com/profile.php?id=61570201295782", // ✅ Replace or remove
+              "https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48",
             ],
           }),
         }}
       />
 
       {/* Page Sections */}
+      <AboutHero />
       <AboutUs />
+      <CorePrinciples />
+      <Timeline />
       <Aboutus />
     </div>
   );
