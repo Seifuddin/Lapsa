@@ -47,7 +47,9 @@ export default function Why() {
       */}
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl text-orange-700 font-bold mb-4">Why Choose Us</h2>
+          <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
+                    Why <span className="text-orange-500">Us</span>
+                  </h1>
           <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto">
             The Lapsa Advantage: Why Clients Trust Us.
           </p>
@@ -85,8 +87,8 @@ export default function Why() {
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-1 text-blue-900">{item.title}</h4>
-                  <p className="text-gray-700">{item.desc}</p>
+                  <h4 className="text-lg font-semibold mb-1 text-orange-700">{item.title}</h4>
+                  <p className="text-blue-950">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -102,7 +104,7 @@ export default function Why() {
             <Dialog.Title className="text-2xl font-bold mb-2 text-orange-700">
               {selectedFeature?.title}
             </Dialog.Title>
-            <Dialog.Description className="text-gray-700">
+            <Dialog.Description className="text-blue-950">
               {selectedFeature?.modal}
             </Dialog.Description>
             <div className="mt-6 text-right">

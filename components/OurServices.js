@@ -73,7 +73,9 @@ export default function OurServices() {
       */}
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
-    <h2 className="text-3xl font-bold text-orange-700 mb-2">Our Services</h2>
+    <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
+                    Our <span className="text-orange-500">Services</span>
+                  </h1>
     <p className="italic text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
       Everything You Need to Succeed Online.
     </p>
@@ -103,7 +105,7 @@ export default function OurServices() {
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-gray-600 text-sm line-clamp-3">
+                <p className="text-blue-950 text-sm line-clamp-3">
                   {service.description}
                 </p>
                 <button
@@ -130,7 +132,7 @@ export default function OurServices() {
           >
             <button
               onClick={() => setActiveService(null)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-red-500"
+              className="absolute top-3 right-3 text-blue-950 hover:text-red-500"
             >
               <X className="w-6 h-6" />
             </button>
@@ -141,9 +143,9 @@ export default function OurServices() {
             />
             <div className="flex items-center gap-2 mb-2">
               {activeService.icon}
-              <h3 className="text-xl font-bold text-orange-600">{activeService.title}</h3>
+              <h3 className="text-xl font-bold text-orange-700">{activeService.title}</h3>
             </div>
-            <p className="text-gray-700">{activeService.description}</p>
+            <p className="text-blue-950">{activeService.description}</p>
           </motion.div>
         </div>
       )}

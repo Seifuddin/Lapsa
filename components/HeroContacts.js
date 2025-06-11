@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function ContactsHero() {
   const words = [
     "Contact us.",
-    "Have a project in mind? We'd love to hear from you.",
+    "Get in touch with Lapsa...",
   ];
 
   const { displayText, cursor } = useTypingText(words);
@@ -44,7 +44,7 @@ export default function ContactsHero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl font-bold text-orange-500 mb-4"
+          className="text-3xl md:text-5xl font-bold text-orange-600 mb-4"
         >
           {displayText}
           <span className="blinking-cursor">{cursor}</span>
@@ -56,7 +56,7 @@ export default function ContactsHero() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg italic md:text-xl text-gray-100 max-w-2xl font-semibold"
         >
-          Get in touch with Lapsa Web and Graphics for professional web design and graphic design services in Kenya. We're here to help your brand grow.
+        Have a project in mind? We'd love to hear from you, Contact Us today... We're here to help your brand grow.
         </motion.p>
       </div>
 

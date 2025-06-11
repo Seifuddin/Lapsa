@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function ServicesHero() {
   const words = [
     "Our Services.",
-    "What We Do",
+    "What We Do..",
   ];
 
   const { displayText, cursor } = useTypingText(words);
@@ -44,7 +44,7 @@ export default function ServicesHero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl font-bold text-orange-500 mb-4"
+          className="text-3xl md:text-5xl font-bold text-orange-600 mb-4"
         >
           {displayText}
           <span className="blinking-cursor">{cursor}</span>

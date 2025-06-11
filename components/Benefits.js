@@ -21,9 +21,9 @@ export default function Benefits() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-orange-700 mb-4">
-            Helping Your Business Grow
-          </h2>
+        <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
+                    Helping Your <span className="text-orange-500">Business Grow</span>
+                  </h1>
           <p className="italic text-blue-900 font-semibold text-lg max-w-4xl mx-auto">
            What We Do to Help Your Business Stand Out.
           </p>
@@ -52,13 +52,13 @@ export default function Benefits() {
             transition={{ duration: 1 }}
             className="order-2 md:order-1 space-y-6 text-center md:text-left p-5"
           >
-            <h3 className="text-lg text-left font-semibold text-blue-900">
+            <h3 className="text-lg text-left font-semibold text-orange-700">
               We connect your brand to the world.
             </h3>
-            <p className="text-gray-700 text-left text-base leading-relaxed">
+            <p className="text-blue-950 text-left text-base leading-relaxed">
               Whether you're a startup or an established brand, we create tailored websites, intuitive mobile apps, and scalable software that align with your goals. Our digital strategy focuses on visibility, performance, and growth—so your business doesn’t just exist online, it thrives.
             </p>
-            <p className="text-gray-700 text-left text-base leading-relaxed">
+            <p className="text-blue-950 text-left text-base leading-relaxed">
               From stunning web designs and user-focused interfaces to full-stack development and ongoing support, we empower businesses to stand out in the competitive digital world.
             </p>
           </motion.div>

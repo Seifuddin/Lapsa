@@ -11,7 +11,9 @@ export default function Timeline() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h3 className="text-2xl font-bold text-center mb-5 text-orange-600">Our Journey</h3>
+          <h1 className="text-center max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
+                    Our <span className="text-orange-500">Journey</span>
+                  </h1>
           <p className="italic text-center text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
             A brief History about Lapsa Web and Graphics.
           </p>
@@ -41,8 +43,8 @@ export default function Timeline() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <h4 className="text-lg font-semibold text-blue-900">{item.year}</h4>
-              <p className="text-gray-800">{item.desc}</p>
+              <h4 className="text-lg font-semibold text-orange-700">{item.year}</h4>
+              <p className="text-blue-950">{item.desc}</p>
             </motion.div>
           ))}
         </div>

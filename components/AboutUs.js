@@ -11,7 +11,7 @@ export default function Aboutus() {
 
         
 
-        {/* Our Mission, Vision, Motto 
+        {/* Our Mission, Vision, Motto  
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -79,8 +79,11 @@ export default function Aboutus() {
 
         {/* What We Do */}
         <div className="space-y-6 text-center">
-          <h2 className="text-3xl font-bold text-blue-950">What We Do</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
+                    What <span className="text-orange-500">We Do</span>
+                  </h1>
+      
+          <p className="italic mt-4 text-lg font-semibold text-blue-900 max-w-4xl mx-auto mb-10">
             We blend creativity and technology to deliver exceptional web experiences and stunning visual identities. Whether you're a startup or a growing brand, we tailor our services to your unique needs.
           </p>
 
@@ -92,8 +95,8 @@ export default function Aboutus() {
             ].map((service, i) => (
               <div key={i} className="p-6 bg-white rounded-xl shadow hover:shadow-lg flex flex-col items-center text-center">
                 <service.icon className="w-10 h-10 text-orange-500 mb-4" />
-                <h4 className="text-lg font-semibold text-blue-950">{service.title}</h4>
-                <p className="text-gray-600 mt-2">{service.desc}</p>
+                <h4 className="text-lg font-semibold text-blue-900">{service.title}</h4>
+                <p className="text-blue-950 mt-2">{service.desc}</p>
               </div>
             ))}
           </div>

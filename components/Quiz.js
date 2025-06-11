@@ -58,19 +58,21 @@ export default function FAQ() {
         />
       </div>
 
-      <h2 className="text-3xl text-orange-700 font-bold text-center mb-3">Frequently Asked Questions</h2>
+      <h1 className="max-w-7xl text-center text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
+                    Frequently <span className="text-orange-500">Asked Questions</span>
+                  </h1>
         <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto text-center mb-8">
           Everything You Need to Know About Working With Us.
         </p>
       {/* Search bar */}
       <div className="relative max-w-xl mx-auto mb-6">
-        <Search className="absolute left-3 top-3.5 w-5 h-5 text-gray-600" />
+        <Search className="absolute left-3 top-3.5 w-5 h-5 text-blue-950" />
         <input
           type="text"
           placeholder="Search FAQs..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 text-gray-600 pr-4 py-2 border border-blue-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full pl-10 text-blue-950 pr-4 py-2 border border-blue-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -104,8 +106,8 @@ export default function FAQ() {
               <button
                 onClick={() => setSelectedCategory("All")}
                 className={`px-4 py-2 rounded-full border border-blue-600 ${
-                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-white text-gray-600"
-                } hover:bg-blue-100 transition text-gray-600`}
+                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-white text-blue-950"
+                } hover:bg-blue-100 transition text-blue-950`}
               >
                 All
               </button>
@@ -140,7 +142,7 @@ export default function FAQ() {
                 <span>{faq.question}</span>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-180 text-gray-700" : "text-gray-700"
+                    openIndex === index ? "rotate-180 text-blue-950" : "text-blue-950"
                   }`}
                 />
               </button>
@@ -152,7 +154,7 @@ export default function FAQ() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="overflow-hidden px-5 pb-5 text-gray-700"
+                    className="overflow-hidden px-5 pb-5 text-blue-950"
                   >
                     <div className="mt-2">{faq.answer}</div>
                   </motion.div>
@@ -161,7 +163,7 @@ export default function FAQ() {
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-600 col-span-full">No FAQs match your search.</p>
+          <p className="text-center text-blue-950 col-span-full">No FAQs match your search.</p>
         )}
       </div>
     </section>

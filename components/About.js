@@ -16,8 +16,8 @@ export default function AboutUs() {
       <div className="relative z-10">
         {/* Intro */}
         <div className="text-center py-6 px-4 max-w-6xl mx-auto">
-                  <h1 className="text-3xl font-bold text-blue-950">
-                     <span className="text-orange-700">About Us</span>
+                  <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
+                    About <span className="text-orange-500">Us</span>
                   </h1>
                   <p className="italic mt-4 text-lg font-semibold text-blue-900">
                     We Empower Businesses through innovative and Creative Digital solutions.
@@ -31,8 +31,8 @@ export default function AboutUs() {
             className="w-full rounded-md shadow-lg object-cover"
           />
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-blue-900">Who We Are</h3>
-            <p className="text-gray-700 text-base leading-relaxed mb-4">
+            <h3 className="text-lg font-semibold mb-4 text-orange-700">Who We Are</h3>
+            <p className="text-blue-950 text-base leading-relaxed mb-4">
               At Lapsa, we believe that great design and thoughtful development go hand-in-hand. Our team of developers, designers, and digital experts works collaboratively to deliver visually compelling, fast, and functional solutions that help businesses make a lasting impression online.
             </p>
             <p className="text-gray-700 text-base leading-relaxed">
