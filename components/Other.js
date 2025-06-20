@@ -21,7 +21,7 @@ const services = [
     description:
       "Creating visually appealing, user-friendly layouts that reflect your brand and engage visitors. This Includes: UI/UX Design, Responsive Layouts (Mobile and Desktop), Landing Page Design, and Website Redesign",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/digital-marketing-header.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -30,7 +30,7 @@ const services = [
     description:
       "Building interactive, fast-loading websites using modern frameworks and technologies. This includes: HTML, CSS and Javascript, React.js and Next.js, Tailwind Css and Bootstrap, and Responsive & Cross-Border Compatibility.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/mounting.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -39,7 +39,7 @@ const services = [
     description:
       "Developing the core logic, database interactions, and server-side operations of your web application. This includes: API Integration and Development, Database Setup( MySQL, MongoDB), Authentication Systems, and Frameworks(Flask, Django, Node.js)",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/photography.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -48,7 +48,7 @@ const services = [
     description:
       "Optimizing websites to rank higher on search engines and attract organic traffic. This Includes: On-Page SEO (Meta Tags, Speed, Mobile), Sitemap.xml & Robots.txt, Google Analytics & Search Console Setup, and SEO-Friendly URL Structures.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/videoediting.webp",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -57,7 +57,7 @@ const services = [
     description:
       "Ongoing support to keep your website secure, updated and performing well. This Includes: Security Monitoring, Plugin/Theme Updates, Regular Backups, and Bug Fixes.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/artdesign.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -66,7 +66,7 @@ const services = [
     description:
       "Helping you get your site live with reliable, fast, and secure hosting options. This includes: Domain Registration Assistance, Hosting Setup, SSL Certificate Setup, and Email Setup(Optional)",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/cybercafee.webp",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },

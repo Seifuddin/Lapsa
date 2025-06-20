@@ -39,7 +39,7 @@ const services = [
     description:
       "Developing the core logic, database interactions, and server-side operations of your web application. This includes: API Integration and Development, Database Setup( MySQL, MongoDB), Authentication Systems, and Frameworks(Flask, Django, Node.js)",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/Best-Programming-Languages-to-Start-Learning-Today.jpg",
+    image: "/images/backend-banner.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -48,7 +48,7 @@ const services = [
     description:
       "Optimizing websites to rank higher on search engines and attract organic traffic. This Includes: On-Page SEO (Meta Tags, Speed, Mobile), Sitemap.xml & Robots.txt, Google Analytics & Search Console Setup, and SEO-Friendly URL Structures.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/Search-Engine-Optimization (1).jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -66,7 +66,7 @@ const services = [
     description:
       "Helping you get your site live with reliable, fast, and secure hosting options. This includes: Domain Registration Assistance, Hosting Setup, SSL Certificate Setup, and Email Setup(Optional)",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg",
+    image: "/images/webhosting.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },

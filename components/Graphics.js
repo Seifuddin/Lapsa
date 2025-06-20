@@ -21,7 +21,7 @@ const services = [
       description:
         "We create unique, memorable logos and cohesive brand identity systems that give your business a professional edge and lasting first impression.",
       icon: <Code className="w-6 h-6 text-orange-600" />,
-      image: "/images/images (3).jpg",
+      image: "/images/logodesign.jpg",
     },
     {
       title: "Business Cards & Fliers",
@@ -42,7 +42,7 @@ const services = [
     description:
       "Give your business a polished look with professionally printed materials like business cards, letterheads, invoices, and branded company profiles. Perfect for meetings, presentations, and daily operations.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/e92886_a011b374f3994c87bc715aaf3737a15f~mv2.jpg",
+    image: "/images/cool-cash-app-card-designs-1-1.webp",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -51,7 +51,7 @@ const services = [
     description:
       "Make your brand unmissable with bold, large-scale prints. Ideal for events, promotions, and outdoor advertising, we print everything from roll-up banners to vehicle wraps with precision and durability.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/DSC00337ThinkDigital_566x566.jpg",
+    image: "/images/Large-Format-Printing_367726020_XL.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
