@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function ServicesHero() {
   const words = [
     "Our Services.",
-    "What We Do..",
+    "What we do...",
   ];
 
   const { displayText, cursor } = useTypingText(words);
@@ -44,7 +44,7 @@ export default function ServicesHero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl md:text-5xl font-bold text-orange-600 mb-4"
+          className="text-2xl md:text-3xl font-bold text-white mb-4"
         >
           {displayText}
           <span className="blinking-cursor">{cursor}</span>
@@ -54,7 +54,7 @@ export default function ServicesHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-lg italic md:text-xl text-gray-100 max-w-2xl font-semibold"
+          className="md:text-lg text-gray-200 italic max-w-2xl font-semibold"
         >
           From custom websites and mobile apps to captivating graphics and reliable print solutions — we offer everything your business needs to thrive online and offline.
         </motion.p>

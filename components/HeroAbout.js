@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function AboutHero() {
   const words = [
     "About Us.",
-    "Learn more about Lapsa...",
+    "Who we are...",
   ];
 
   const { displayText, cursor } = useTypingText(words);
@@ -44,7 +44,7 @@ export default function AboutHero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl md:text-5xl font-bold text-orange-600 mb-4"
+          className="text-2xl md:text-3xl font-bold text-white mb-4"
         >
           {displayText}
           <span className="blinking-cursor">{cursor}</span>
@@ -54,7 +54,7 @@ export default function AboutHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-lg md:text-xl text-gray-100 italic max-w-2xl font-semibold"
+          className="md:text-lg text-gray-200 italic max-w-2xl font-semibold"
         >
           We are Lapsa, We Design Your Digital Future by Elevating Your Brand Online, We create beautiful websites and eye-catching designs that make an impact.
         </motion.p>

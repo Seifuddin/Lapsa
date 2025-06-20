@@ -48,31 +48,30 @@ export default function FAQ() {
   });
 
   return (
-    <section className="relative bg-gray-50 z-0 py-12 px-5 mx-auto">
-      {/* Background image */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="/images/pngwing.com (7).png" // Update this path if needed
-          alt="FAQ background"
-          className="w-full h-full object-cover opacity-40"
-        />
-      </div>
+    <section
+      className="relative p-5 bg-cover bg-center bg-blue-50 bg-no-repeat py-16 text-gray-800">
+     {/* style={{
+        backgroundImage: `url('/images/pngwing.com (7).png')`,
+      }}
+        */}
+    
+      {/* Gradient overlay */}
 
-      <h1 className="max-w-7xl text-center text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
-                    Frequently <span className="text-orange-500">Asked Questions</span>
+      <h1 className="max-w-7xl text-center text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
+                    Frequently <span className="text-orange-600">Asked Questions</span>
                   </h1>
         <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto text-center mb-8">
           Everything You Need to Know About Working With Us.
-        </p>
+        </p>  
       {/* Search bar */}
       <div className="relative max-w-xl mx-auto mb-6">
-        <Search className="absolute left-3 top-3.5 w-5 h-5 text-blue-950" />
+        <Search className="absolute left-3 top-3.5 w-5 h-5 text-blue-900" />
         <input
           type="text"
           placeholder="Search FAQs..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 text-blue-950 pr-4 py-2 border border-blue-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full bg-blue-50 pl-10 text-blue-900 pr-4 py-2 border border-blue-600 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -106,8 +105,8 @@ export default function FAQ() {
               <button
                 onClick={() => setSelectedCategory("All")}
                 className={`px-4 py-2 rounded-full border border-blue-600 ${
-                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-white text-blue-950"
-                } hover:bg-blue-100 transition text-blue-950`}
+                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-white text-blue-900"
+                } hover:bg-blue-400 transition text-blue-900 hover:text-white`}
               >
                 All
               </button>
@@ -116,8 +115,8 @@ export default function FAQ() {
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-full border border-blue-600 ${
-                    selectedCategory === cat ? "bg-blue-600 text-white" : "bg-white text-blue-600"
-                  } hover:bg-blue-100 transition text-blue-600`}
+                    selectedCategory === cat ? "bg-blue-600 text-white" : "bg-blue-50 text-blue-600"
+                  } hover:bg-blue-400 transition text-blue-600 hover:text-white`}
                 >
                   {cat}
                 </button>
@@ -133,16 +132,16 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-gradient-to-tr from-orange-200 via-gray-200 to-blue-200 border border-blue-200 text-blue-900 rounded-xl shadow hover:shadow-xl transition"
+              className="bg-blue-50 p-2 border border-gray-300 text-blue-700 rounded-md shadow-md hover:shadow-xl transition"
             >
               <button
-                className="w-full flex justify-between items-center p-5 text-left font-medium"
+                className="w-full flex justify-between font-semibold items-center p-3 text-left"
                 onClick={() => toggleFAQ(index)}
               >
                 <span>{faq.question}</span>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-180 text-blue-950" : "text-blue-950"
+                    openIndex === index ? "rotate-180 text-blue-900" : "text-blue-600"
                   }`}
                 />
               </button>
@@ -154,16 +153,16 @@ export default function FAQ() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="overflow-hidden px-5 pb-5 text-blue-950"
+                    className="overflow-hidden px-3 pb-3 text-blue-900"
                   >
-                    <div className="mt-2">{faq.answer}</div>
+                    <div className="mt-1">{faq.answer}</div>
                   </motion.div>
                 )}
               </AnimatePresence>
             </div>
           ))
         ) : (
-          <p className="text-center text-blue-950 col-span-full">No FAQs match your search.</p>
+          <p className="text-center text-blue-900 col-span-full">No FAQs match your search.</p>
         )}
       </div>
     </section>

@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 
 export default function Timeline() {
   return (
-    <div className='relative, bg-gray-100'>
-        <div className="py-16 px-4 max-w-4xl mx-auto">
+    <div className='overflow-x-hidden bg-blue-50'>
+        <div className="py-16 px-5 max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-center max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
-                    Our <span className="text-orange-500">Journey</span>
+          <h1 className="text-center max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
+                    Our <span className="text-orange-600">Journey</span>
                   </h1>
           <p className="italic text-center text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
             A brief History about Lapsa Web and Graphics.
@@ -22,15 +22,15 @@ export default function Timeline() {
           {[
             {
               year: "September 9 2024 - Company Founded",
-              desc: "On September 9 2024, Lapsa Web and Graphics was Founded by Muriithi Nguru as the Founder and CEO of Lapsa, It was his 24th birthday. It was started as a freelancing company in his tiny living room in Kahawa Wendani along Thika Super Highway in Nairobi. It was established with the mission to digitalize every sector in kenya by the year 2030 and to .",
+              desc: "On September 9 2024, Lapsa Web and Graphics was Founded by Muriithi Nguru as the Founder and CEO of Lapsa, It was his 24th birthday. It was started as a freelancing company in his tiny living room in Kahawa Wendani along Thika Super Highway in Nairobi. It was established with the mission to digitalize every sector in kenya by the year 2030 and to transform Africa in terms of Technology and Economy.",
             },
             {
               year: "November 1 2024 - First Client",
-              desc: "On this day, Lapsa Web and Graphics got its first clients for Graphic Design & Digital Printing and the client really loved the work",
+              desc: "On this day, Lapsa Web and Graphics got its first clients for Graphic Design & Digital Printing and the client really loved the work.",
             },
             {
               year: "January 7 2025 - First Website",
-              desc: "On this day, Lapsa got an assignment to create a website for Capvim International Publishers LTD. When Muriithi Nguru delivered the website, Dr. Clifford Matara, The CEO of Capvim really appreciated the work of Lapsa and He has been supporting Lapsa whenever Lapsa needed his Help",
+              desc: "On this day, Lapsa got an assignment to create a website for Capvim International Publishers LTD. When Muriithi Nguru delivered the website, Dr. Clifford Matara, The CEO of Capvim really appreciated the work of Lapsa and He has been supporting Lapsa whenever Lapsa needed his Help.",
             },
             {
               year: "September 9 2025 - Lapsa Website Launch",
@@ -43,8 +43,10 @@ export default function Timeline() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <h4 className="text-lg font-semibold text-orange-700">{item.year}</h4>
-              <p className="text-blue-950">{item.desc}</p>
+              <div className='bg-gray-50 p-5 rounded-md shadow-xl'>
+              <h4 className="font-bold text-orange-600 mb-2">{item.year}</h4>
+              <p className="text-blue-900">{item.desc}</p>
+              </div>
             </motion.div>
           ))}
         </div>

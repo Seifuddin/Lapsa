@@ -21,16 +21,16 @@ const services = [
     description:
       "Creating visually appealing, user-friendly layouts that reflect your brand and engage visitors. This Includes: UI/UX Design, Responsive Layouts (Mobile and Desktop), Landing Page Design, and Website Redesign",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/xCSAEp8DjjrT2UQB87AoFN.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
   {
-    title: "Front-End Development",
+    title: "Mobile App Development",
     description:
-      "Building interactive, fast-loading websites using modern frameworks and technologies. This includes: HTML, CSS and Javascript, React.js and Next.js, Tailwind Css and Bootstrap, and Responsive & Cross-Border Compatibility.",
+      "We develop powerful and user-friendly mobile apps that bring your brand to your customer’s fingertips — across Android and iOS platforms.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/iphone_apps.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -39,7 +39,7 @@ const services = [
     description:
       "Developing the core logic, database interactions, and server-side operations of your web application. This includes: API Integration and Development, Database Setup( MySQL, MongoDB), Authentication Systems, and Frameworks(Flask, Django, Node.js)",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/Best-Programming-Languages-to-Start-Learning-Today.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -57,7 +57,7 @@ const services = [
     description:
       "Ongoing support to keep your website secure, updated and performing well. This Includes: Security Monitoring, Plugin/Theme Updates, Regular Backups, and Bug Fixes.",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/Website-Maintenance-is-No-Longer.webp",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -66,7 +66,7 @@ const services = [
     description:
       "Helping you get your site live with reliable, fast, and secure hosting options. This includes: Domain Registration Assistance, Hosting Setup, SSL Certificate Setup, and Email Setup(Optional)",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/download (2).jpg",
+    image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -199,7 +199,7 @@ export default function WebServices() {
       </Head>
 
       <section
-      className="relative bg-cover bg-center bg-gradient-to-tr from-orange-200 via-gray-200 to-orange-200 bg-no-repeat py-10 text-gray-800 p-5">
+      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800 p-5">
       
       {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
@@ -207,11 +207,11 @@ export default function WebServices() {
       */}
     
         <div className="max-w-7xl mx-auto text-center">
-            <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
-                    Web Design & <span className="text-orange-500">Development Services</span>
+            <h1 className="max-w-7xl text-xl md:text-2xl font-extrabold text-orange-500 mb-5">
+                    Web & Software Development Services<span className="text-orange-500"></span>
                   </h1>
 
-                  <p className="max-w-4xl mx-auto italic  text-blue-900 font-semibold mb-10 text-lg">
+                  <p className="max-w-4xl mx-auto italic text-blue-900 font-semibold mb-10">
       We create visually stunning and highly functional websites tailored to your brand’s unique needs.
     </p>
           <motion.div
@@ -225,7 +225,7 @@ export default function WebServices() {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.02 }}
-                className="bg-gradient-to-tr from-blue-300 via-white to-blue-300 border-2 border-gray-200 rounded-2xl shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
+                className="bg-gray-50 border-gray-200 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
               >
                 <div className="relative w-full h-44">
                   <Image
@@ -240,29 +240,30 @@ export default function WebServices() {
                 <div className="p-5 text-left">
                   <div className="flex items-center gap-2 mb-2">
                     {service.icon}
-                    <h3 className="text-lg font-semibold text-blue-900">
+                    <h3 className="font-bold text-blue-600">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-sm line-clamp-3 mb-4">
+                  <p className="text-blue-900 text-sm line-clamp-3 mb-4">
                     {service.description}
                   </p>
-                  <div className="flex space-x-2">
+                  <div className="relative flex items-center w-full justify-center space-x-1">
                     <button
                       onClick={() => openPricingModal(service)}
-                      className="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm hover:bg-orange-700"
+                      className="bg-blue-800 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
                     >
                       See Pricing
                     </button>
-                    <button
+                    {/* <button
                       onClick={() => openRequestModal(service)}
-                      className="bg-blue-800 text-white px-3 py-2 rounded-lg text-sm hover:bg-orange-700"
+                      className="bg-blue-800 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
                     >
-                      Request This Service
+                      Request Service
                     </button>
+                    */}
                     <button
                   onClick={() => openServiceModal(service)}
-                  className="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm hover:bg-orange-700"
+                  className="bg-blue-600 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
                 >
                   Learn More
                 </button>

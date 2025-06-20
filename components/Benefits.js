@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 export default function Benefits() {
   return (
     <section
-      className="relative bg-cover bg-gray-50 bg-center bg-no-repeat py-20"
-      style={{
+      className="relative bg-cover bg-gray-50 bg-center bg-no-repeat py-20">
+      {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
-    >
+    */}
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-white/60 via-white/50 to-white/60 z-0"></div>
+      <div className="absolute inset-0 bg-blue-50 z-0 opacity-01"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-2">
@@ -21,8 +21,8 @@ export default function Benefits() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-        <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
-                    Helping Your <span className="text-orange-500">Business Grow</span>
+        <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
+                    Helping Your <span className="text-orange-600">Business Grow</span>
                   </h1>
           <p className="italic text-blue-900 font-semibold text-lg max-w-4xl mx-auto">
            What We Do to Help Your Business Stand Out.

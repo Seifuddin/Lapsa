@@ -53,8 +53,8 @@ export default function Services() {
       />
       <ServicesHero />
       <WebServices />
-      <OtherServices />
       <GraphicDesign />
+      <OtherServices />
     </div>
   );
 }

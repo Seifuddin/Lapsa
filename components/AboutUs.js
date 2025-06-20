@@ -6,7 +6,7 @@ import AnimatedCounters from "./AnimatedCounters";
 
 export default function Aboutus() {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 px-4 py-16">
+    <div className="bg-gray-200 text-gray-900 px-4 py-16">
       <div className="max-w-7xl mx-auto space-y-20">
 
         
@@ -79,8 +79,8 @@ export default function Aboutus() {
 
         {/* What We Do */}
         <div className="space-y-6 text-center">
-          <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
-                    What <span className="text-orange-500">We Do</span>
+          <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
+                    What <span className="text-orange-600">We Do</span>
                   </h1>
       
           <p className="italic mt-4 text-lg font-semibold text-blue-900 max-w-4xl mx-auto mb-10">
@@ -94,35 +94,16 @@ export default function Aboutus() {
               { title: "Branding & Strategy", icon: Lightbulb, desc: "Helping you build a brand identity that stands out." },
             ].map((service, i) => (
               <div key={i} className="p-6 bg-white rounded-xl shadow hover:shadow-lg flex flex-col items-center text-center">
-                <service.icon className="w-10 h-10 text-orange-500 mb-4" />
-                <h4 className="text-lg font-semibold text-blue-900">{service.title}</h4>
-                <p className="text-blue-950 mt-2">{service.desc}</p>
+                <service.icon className="w-8 h-8 text-orange-600 mb-4" />
+                <h4 className="font-bold text-blue-600">{service.title}</h4>
+                <p className="text-blue-900 mt-2">{service.desc}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Our Process 
-        <div className="text-center">
-          <h2 className="text-3xl font-bold text-blue-950 mb-8">Our Process</h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            {["Consult", "Design", "Develop", "Deliver"].map((step, index) => (
-              <motion.div
-                key={step}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 * index }}
-                className="p-6 bg-white rounded-xl shadow text-blue-950 font-semibold"
-              >
-                <span className="text-5xl font-extrabold text-orange-500 block mb-3">
-                  {index + 1}
-                </span>
-                {step}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-        */}
+        
+        
         {/* Stats / Counters 
         <div className="bg-blue-950 text-white py-16 rounded-xl text-center">
           <h2 className="text-3xl font-bold mb-10">Our Impact</h2>
@@ -155,10 +136,10 @@ export default function Aboutus() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="bg-orange-500 text-white py-12 px-6 rounded-2xl text-center"
+          className="bg-orange-600 text-white py-12 px-6 rounded-2xl text-center"
         >
-          <h2 className="text-3xl font-bold">Ready to bring your ideas to life?</h2>
-          <p className="mt-4 text-lg">Let's build something great together.</p>
+          <h2 className="text-3xl font-bold">Ready to bring your ideas to life and elevate your brand?</h2>
+          <p className="mt-4 text-lg italic">Let's build something great together. Contact us for a free consultation today!!!</p>
           <a
             href="contacts"
             className="mt-6 inline-block bg-white text-orange-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
@@ -166,6 +147,27 @@ export default function Aboutus() {
             Contact Us
           </a>
         </motion.div>
+
+        {/* Our Process */}
+        <div className="text-center">
+          <h2 className="text-3xl font-extrabold text-orange-600 mb-8">Our Process</h2>
+          <div className="grid md:grid-cols-4 gap-6">
+            {["Consult", "Design", "Develop", "Deliver"].map((step, index) => (
+              <motion.div
+                key={step}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 * index }}
+                className="p-6 bg-white border-2 rounded-xl shadow-xl text-blue-600 font-bold"
+              >
+                <span className="text-3xl font-extrabold text-orange-600 block mb-3">
+                  {index + 1}
+                </span>
+                {step}
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
       </div>
     </div>

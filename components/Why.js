@@ -35,7 +35,7 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-tr from-orange-200 via-gray-200 to-blue-200 z-0 py-12 mx-auto">
+    <section className="relative bg-gray-200 z-0 py-10 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10">
         <img
@@ -45,17 +45,17 @@ export default function Why() {
         />
       </div>
       */}
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
-                    Why <span className="text-orange-500">Us</span>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-5">
+          <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
+                    Why <span className="text-orange-600">Us</span>
                   </h1>
           <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto">
             The Lapsa Advantage: Why Clients Trust Us.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-6 items-center">
           {/* Left Side (Image) */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -63,9 +63,9 @@ export default function Why() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/images/whyUs.webp"
+              src="/images/image-removebg-preview (44).png"
               alt="Why Choose Us"
-              className="rounded-2xl w-full shadow-xl justify-center"
+              className="rounded-2xl w-full justify-center p-24 md:p-0 lg:p-20"
             />
           </motion.div>
 
@@ -74,21 +74,21 @@ export default function Why() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="space-y-8"
+            className="space-y-3"
           >
             {features.map((item, idx) => (
               <motion.div
                 key={idx}
                 whileHover={{ scale: 1.03 }}
-                className="flex w-full border bg-gradient-to-tr from-blue-200 via-white to-orange-200 items-start gap-4 cursor-pointer hover:bg-orange-50 p-2 rounded-lg shadow-xl transition-transform duration-300"
+                className="flex w-full border bg-gray-50 items-start gap-4 cursor-pointer hover:bg-gray-100 p-2 rounded-lg shadow-xl transition-transform duration-300"
                 onClick={() => setSelectedFeature(item)}
               >
-                <div className="bg-gradient-to-tr from-blue-500 via-white to-blue-500 p-3 rounded-full border-2">
+                <div className="bg-white p-3 rounded-full border-2">
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-1 text-orange-700">{item.title}</h4>
-                  <p className="text-blue-950">{item.desc}</p>
+                  <h4 className="text-lg font-bold mb-1 text-blue-600">{item.title}</h4>
+                  <p className="text-blue-900">{item.desc}</p>
                 </div>
               </motion.div>
             ))}

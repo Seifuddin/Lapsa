@@ -61,7 +61,7 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-gradient-to-tr from-orange-100 via-gray-200 to-blue-200 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-gray-200 z-0 py-12 px-5 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
@@ -73,8 +73,8 @@ export default function OurServices() {
       */}
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
-    <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-blue-900 mb-5">
-                    Our <span className="text-orange-500">Services</span>
+    <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
+                    Our <span className="text-orange-600">Services</span>
                   </h1>
     <p className="italic text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
       Everything You Need to Succeed Online.
@@ -91,17 +91,17 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="rounded-2xl border border-gray-300 shadow-lg overflow-hidden bg-gradient-to-tr from-blue-300 via-white to-orange-300 transition duration-300 hover:shadow-2xl"
+              className="rounded-2xl border border-gray-300 shadow-lg overflow-hidden bg-gray-100 transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-44 object-cover border-b border-gray-300"
+                className="w-full h-40 object-cover border-b border-gray-300"
               />
               <div className="p-5 text-left">
                 <div className="flex items-center gap-2 mb-2">
                   {service.icon}
-                  <h3 className="text-lg font-semibold text-blue-900">
+                  <h3 className="text-lg font-bold text-blue-600">
                     {service.title}
                   </h3>
                 </div>

@@ -7,12 +7,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-blue-950 shadow-md">
-      <div className="max-w-screen-xl mx-auto px-4 py-4">
+    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-blue-900 shadow-md">
+      <div className="max-w-screen-xl mx-auto px-10 py-4">
         <div className="flex justify-between items-center">
           {/* Logo & Brand */}
-          <div className="text-white font-bold text-xl items-center">
-            Lapsa
+          <div className="text-white font-bold text-2xl items-center italic">
+            Lap<span className="text-orange-500">sa</span>
           </div>
 
           {/* Mobile Menu Button */}
@@ -36,7 +36,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex space-x-6">
+          <div className="hidden lg:flex space-x-6 font-semibold px-10">
             <Link href="/" className="text-white hover:text-orange-600 transition">
               Home
             </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden backdrop-blur-lg bg-blue-950/80 text-white space-y-4 px-4 py-4">
+        <div className="lg:hidden backdrop-blur-lg bg-blue-950/80 text-white space-y-4 px-4 py-4 font-semibold">
           <Link href="/" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             Home
           </Link>
