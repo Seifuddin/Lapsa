@@ -13,7 +13,7 @@ import {
 export default function Contact() {
   return (
     <div
-      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800">
+      className="relative bg-cover bg-center bg-white bg-no-repeat py-10 text-gray-800">
       {/* style={{
         backgroundImage: `url('/images/pngwng.com (7).png')`,
       }}
@@ -41,9 +41,9 @@ export default function Contact() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 bg-gray-200 border border-gray-400 p-5 py-10 rounded-lg"
+            className="space-y-6 bg-gray-50 shadow-xl border border-gray-400 p-5 py-10 rounded-lg"
           >
-            <h4 className="font-bold text-blue-800 text-lg">Contact Information</h4>
+            <h4 className="text-xl font-bold text-blue-900 mb-6">Contact Information</h4>
             <div className="flex items-start space-x-4">
               <Mail className="text-orange-500 mt-1" />
               <div>
@@ -108,7 +108,7 @@ export default function Contact() {
               // Handle submission
             }}
           >
-          <h2 className="text-xl font-semibold text-blue-900 mb-6">Send Us a Message</h2>
+          <h2 className="text-xl font-bold text-blue-900 mb-6">Send Us a Message</h2>
 
             <div>
               <label className="block font-semibold text-blue-600">Full Name</label>

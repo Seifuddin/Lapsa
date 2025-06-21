@@ -199,7 +199,7 @@ export default function OtherServices() {
       </Head>
 
       <section
-      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800 p-5">
+      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800 p-6">
       
       {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
@@ -207,7 +207,7 @@ export default function OtherServices() {
       */}
     
         <div className="max-w-7xl mx-auto text-center">
-            <h1 className="max-w-7xl text-xl md:text-2xl font-extrabold text-orange-500 mb-5">
+            <h1 className="max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
                     Other Services<span className="text-orange-500"></span>
                   </h1>
 
@@ -240,7 +240,7 @@ export default function OtherServices() {
                 <div className="p-5 text-left">
                   <div className="flex items-center gap-2 mb-2">
                     {service.icon}
-                    <h3 className="font-bold text-blue-600">
+                    <h3 className="font-bold text-orange-600">
                       {service.title}
                     </h3>
                   </div>
@@ -250,7 +250,7 @@ export default function OtherServices() {
                   <div className="relative flex items-center w-full justify-center space-x-1">
                     <button
                       onClick={() => openPricingModal(service)}
-                      className="bg-blue-800 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
+                      className="bg-orange-600 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-blue-700"
                     >
                       See Pricing
                     </button>
@@ -263,7 +263,7 @@ export default function OtherServices() {
                     */}
                     <button
                   onClick={() => openServiceModal(service)}
-                  className="bg-blue-600 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
+                  className="bg-orange-500 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-blue-700"
                 >
                   Learn More
                 </button>

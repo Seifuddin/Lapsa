@@ -11,8 +11,8 @@ export default function Timeline() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-center max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
-                    Our <span className="text-orange-600">Journey</span>
+          <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                    Our Journey<span className="text-orange-600"></span>
                   </h1>
           <p className="italic text-center text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
             A brief History about Lapsa Web and Graphics.

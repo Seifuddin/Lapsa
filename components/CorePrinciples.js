@@ -4,8 +4,8 @@ import { Target, Eye, Quote } from "lucide-react";
 export default function CorePrinciples() {
   return (
     <div className="bg-gray-200 py-20 px-6">
-      <h1 className="text-center mb-6 max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600">
-                    Our Mission, <span className="text-orange-600">Vision & Motto</span>
+      <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                    Our Mission, Vision & Motto<span className="text-orange-600"></span>
                   </h1>
                   <p className="italic text-center text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
             The Purpose & Goals of establishing Lapsa Web & Graphics.

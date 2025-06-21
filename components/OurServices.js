@@ -73,8 +73,8 @@ export default function OurServices() {
       */}
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
-    <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
-                    Our <span className="text-orange-600">Services</span>
+    <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                    Our Services<span className="text-orange-600"></span>
                   </h1>
     <p className="italic text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
       Everything You Need to Succeed Online.
@@ -91,7 +91,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="rounded-2xl border border-gray-300 shadow-lg overflow-hidden bg-gray-100 transition duration-300 hover:shadow-2xl"
+              className="rounded-md border border-gray-300 shadow-lg overflow-hidden bg-gray-100 transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}

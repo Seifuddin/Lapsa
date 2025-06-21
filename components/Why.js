@@ -47,8 +47,8 @@ export default function Why() {
       */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-5">
-          <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
-                    Why <span className="text-orange-600">Us</span>
+          <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                    Why Us<span className="text-orange-600"></span>
                   </h1>
           <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto">
             The Lapsa Advantage: Why Clients Trust Us.

@@ -21,8 +21,8 @@ export default function Benefits() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-        <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
-                    Helping Your <span className="text-orange-600">Business Grow</span>
+        <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                    Helping Your Business Grow<span className="text-orange-600"></span>
                   </h1>
           <p className="italic text-blue-900 font-semibold text-lg max-w-4xl mx-auto">
            What We Do to Help Your Business Stand Out.

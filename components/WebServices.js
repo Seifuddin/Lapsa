@@ -21,7 +21,7 @@ const services = [
     description:
       "Creating visually appealing, user-friendly layouts that reflect your brand and engage visitors. This Includes: UI/UX Design, Responsive Layouts (Mobile and Desktop), Landing Page Design, and Website Redesign",
     icon: <Code className="w-6 h-6 text-orange-600" />,
-    image: "/images/xCSAEp8DjjrT2UQB87AoFN.jpg",
+    image: "/images/creative-web-design-studio-with-flying-web-page-layout-elements-concept_1029473-56271.avif",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
@@ -79,7 +79,7 @@ const PricingModal = ({ service, isOpen, onClose }) => (
     <div className="fixed inset-0 bg-black/30" />
     <div className="fixed inset-0 flex items-center justify-center p-4">
       <Dialog.Panel className="bg-white p-6 rounded-xl max-w-md w-full">
-        <Dialog.Title className="text-xl font-bold text-blue-600">
+        <Dialog.Title className="text-xl font-bold text-blue-800">
           {service?.title} - Pricing
         </Dialog.Title>
         <p className="text-gray-700 mt-4">{service?.pricing}</p>
@@ -100,7 +100,7 @@ const ServiceModal = ({ service, isOpen, onClose }) => (
     <div className="fixed inset-0 bg-black/30" />
     <div className="fixed inset-0 flex items-center justify-center p-4">
       <Dialog.Panel className="bg-white p-6 rounded-xl max-w-md w-full">
-        <Dialog.Title className="text-xl font-bold text-blue-600">
+        <Dialog.Title className="text-xl font-bold text-blue-800">
           <img
             src={service?.image}
             className="w-full h-44 object-cover rounded-md"
@@ -125,7 +125,7 @@ const RequestModal = ({ service, isOpen, onClose }) => (
     <div className="fixed inset-0 bg-black/30" />
     <div className="fixed inset-0 flex items-center justify-center p-4">
       <Dialog.Panel className="bg-white p-6 rounded-xl max-w-md w-full">
-        <Dialog.Title className="text-xl font-bold text-blue-600">
+        <Dialog.Title className="text-xl font-bold text-blue-800">
           Request: {service?.title}
         </Dialog.Title>
         <form className="mt-4 space-y-4">
@@ -199,7 +199,7 @@ export default function WebServices() {
       </Head>
 
       <section
-      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800 p-5">
+      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800 p-6">
       
       {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
@@ -207,8 +207,8 @@ export default function WebServices() {
       */}
     
         <div className="max-w-7xl mx-auto text-center">
-            <h1 className="max-w-7xl text-xl md:text-2xl font-extrabold text-orange-500 mb-5">
-                    Web & Software Development Services<span className="text-orange-500"></span>
+            <h1 className="max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                    Web Design & Software Development<span className="text-orange-500"></span>
                   </h1>
 
                   <p className="max-w-4xl mx-auto italic text-blue-900 font-semibold mb-10">
@@ -240,7 +240,7 @@ export default function WebServices() {
                 <div className="p-5 text-left">
                   <div className="flex items-center gap-2 mb-2">
                     {service.icon}
-                    <h3 className="font-bold text-blue-600">
+                    <h3 className="font-bold text-orange-600">
                       {service.title}
                     </h3>
                   </div>
@@ -250,7 +250,7 @@ export default function WebServices() {
                   <div className="relative flex items-center w-full justify-center space-x-1">
                     <button
                       onClick={() => openPricingModal(service)}
-                      className="bg-blue-800 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
+                      className="bg-orange-600 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-blue-700"
                     >
                       See Pricing
                     </button>
@@ -263,7 +263,7 @@ export default function WebServices() {
                     */}
                     <button
                   onClick={() => openServiceModal(service)}
-                  className="bg-blue-600 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
+                  className="bg-orange-500 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-blue-700"
                 >
                   Learn More
                 </button>

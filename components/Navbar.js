@@ -7,11 +7,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-blue-900 shadow-md">
-      <div className="max-w-screen-xl mx-auto px-10 py-4">
+    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-blue-950/80 shadow-md">
+      <div className="max-w-screen-xl mx-auto px-10 py-5">
         <div className="flex justify-between items-center">
           {/* Logo & Brand */}
-          <div className="text-white font-bold text-2xl items-center italic">
+          <div className="text-white font-mono text-3xl items-center">
             Lap<span className="text-orange-500">sa</span>
           </div>
 
@@ -20,7 +20,7 @@ export default function Navbar() {
             <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-8 w-8"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -36,7 +36,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex space-x-6 font-semibold px-10">
+          <div className="hidden lg:flex space-x-6 font-mono px-10 text-2xl">
             <Link href="/" className="text-white hover:text-orange-600 transition">
               Home
             </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden backdrop-blur-lg bg-blue-950/80 text-white space-y-4 px-4 py-4 font-semibold">
+        <div className="lg:hidden backdrop-blur-lg bg-blue-950/40 text-white space-y-4 px-4 py-4 font-mono text-2xl">
           <Link href="/" className="block hover:text-orange-600 transition" onClick={() => setIsOpen(false)}>
             Home
           </Link>

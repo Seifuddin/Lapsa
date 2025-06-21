@@ -193,7 +193,7 @@ const services = [
         </Head>
   
         <section
-        className="relative bg-cover bg-center bg-gray-200 bg-no-repeat py-10 text-gray-800 p-5">
+        className="relative bg-cover bg-center bg-gray-200 bg-no-repeat py-10 text-gray-800 p-6">
         
         {/* style={{
           backgroundImage: `url('/images/pngwing.com (7).png')`,
@@ -201,8 +201,8 @@ const services = [
         */}
              
           <div className="max-w-7xl mx-auto text-center">
-              <h1 className="max-w-7xl text-xl md:text-2xl font-extrabold text-orange-500 mb-5">
-                      Graphic Design & Digital Printing Services<span className="text-orange-500"></span>
+              <h1 className="max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                      Graphic Design & Digital Printing<span className="text-orange-500"></span>
                     </h1>
   
                     <p className="max-w-4xl mx-auto italic text-blue-900 font-semibold mb-10">
@@ -244,7 +244,7 @@ const services = [
                     <div className="relative flex items-center w-full justify-center space-x-1">
                       <button
                         onClick={() => openPricingModal(service)}
-                        className="bg-blue-800 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
+                        className="bg-blue-600 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
                       >
                         See Pricing
                       </button>
@@ -258,7 +258,7 @@ const services = [
 
                       <button
                     onClick={() => openServiceModal(service)}
-                    className="bg-blue-600 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
+                    className="bg-blue-500 w-full text-white px-3 py-2 rounded-sm text-sm hover:bg-orange-700"
                   >
                     Learn More
                   </button>

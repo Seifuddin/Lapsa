@@ -79,12 +79,12 @@ export default function Aboutus() {
 
         {/* What We Do */}
         <div className="space-y-6 text-center">
-          <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
-                    What <span className="text-orange-600">We Do</span>
+          <h1 className="max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                    What We Do <span className="text-orange-600"></span>
                   </h1>
       
           <p className="italic mt-4 text-lg font-semibold text-blue-900 max-w-4xl mx-auto mb-10">
-            We blend creativity and technology to deliver exceptional web experiences and stunning visual identities. Whether you're a startup or a growing brand, we tailor our services to your unique needs.
+            Whether you're a startup or a growing brand, we tailor our services to your unique needs.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mt-10">
@@ -150,7 +150,7 @@ export default function Aboutus() {
 
         {/* Our Process */}
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-orange-600 mb-8">Our Process</h2>
+          <h2 className="max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">Our Process</h2>
           <div className="grid md:grid-cols-4 gap-6">
             {["Consult", "Design", "Develop", "Deliver"].map((step, index) => (
               <motion.div

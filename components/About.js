@@ -16,7 +16,7 @@ export default function AboutUs() {
       <div className="relative z-10">
         {/* Intro */}
         <div className="text-center py-6 px-4 max-w-6xl mx-auto">
-                  <h1 className="max-w-7xl text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
+                  <h1 className="max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
                     About <span className="text-orange-600">Us</span>
                   </h1>
                   <p className="italic mt-4 text-lg font-semibold text-blue-900">

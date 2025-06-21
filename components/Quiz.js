@@ -6,12 +6,12 @@ import { ChevronDown, Search, Filter } from "lucide-react";
 
 const faqs = [
   { category: "General", question: "What services do you offer?", answer: "We provide web development and graphic design services tailored to your needs." },
-  { category: "Support", question: "How can I contact support?", answer: "You can reach us via email or our contact form on the website." },
+  { category: "Support", question: "How can I contact support?", answer: "You can reach us via email lapsatechnologies@gmail.com or our contact form on the website." },
   { category: "Services", question: "Do you offer custom website designs?", answer: "Yes, we create custom designs based on your brand identity and business needs." },
   { category: "Timeline", question: "What is your turnaround time?", answer: "Project timelines depend on complexity, but we always strive to deliver on time." },
   { category: "Services", question: "Do you offer website maintenance?", answer: "Yes, we offer ongoing support and maintenance services for all our clients." },
   { category: "Services", question: "Can I request a redesign of an existing website?", answer: "Yes, we specialize in website redesigns to enhance performance and aesthetics." },
-  { category: "Payments", question: "What payment methods do you accept?", answer: "We accept major credit cards, PayPal, and bank transfers." },
+  { category: "Payments", question: "What payment methods do you accept?", answer: "We accept Lipa na M-Pesa services through our Till Number provided on the Website which is or send money to 0111 608 331 (name: edwin)." },
   { category: "SEO", question: "Do you provide SEO optimization?", answer: "Yes, we include basic SEO optimizations and offer advanced SEO as an add-on service." },
   { category: "Branding", question: "Do you offer branding services?", answer: "Yes, we help businesses build strong brand identities through design and strategy." },
 ];
@@ -57,8 +57,8 @@ export default function FAQ() {
     
       {/* Gradient overlay */}
 
-      <h1 className="max-w-7xl text-center text-3xl md:text-3xl font-extrabold text-orange-600 mb-5">
-                    Frequently <span className="text-orange-600">Asked Questions</span>
+      <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+                    Frequently Asked Questions<span className="text-orange-600"></span>
                   </h1>
         <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto text-center mb-8">
           Everything You Need to Know About Working With Us.
@@ -132,7 +132,7 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-blue-50 p-2 border border-gray-300 text-blue-700 rounded-md shadow-md hover:shadow-xl transition"
+              className="bg-blue-50 p-1 border border-gray-300 text-blue-700 rounded-md shadow-md hover:shadow-xl transition"
             >
               <button
                 className="w-full flex justify-between font-semibold items-center p-3 text-left"
