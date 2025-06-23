@@ -52,6 +52,7 @@ export default function About() {
       <AboutUs />
       <CorePrinciples />
       <Timeline />
+      <AnimatedCounters />
       <Aboutus />
     </div>
   );

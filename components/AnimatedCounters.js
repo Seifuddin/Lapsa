@@ -15,7 +15,8 @@ const icons = [FiCheckCircle, FiSmile, FiClock, FiAward];
 
 export default function AnimatedCounters() {
   return (
-    <div className="relative z-0 p-5 rounded-lg shadow-lg py-10 bg-blue-950 text-white">
+    <div className="relative z-0 py-10 p-5 items-center justify-center bg-blue-100">
+    <div className="p-5 rounded-lg max-w-7xl mx-auto shadow-lg py-10 bg-blue-950 text-white">
       {/* Background Image 
       <div className="absolute inset-0 -z-10">
         <img
@@ -38,7 +39,7 @@ export default function AnimatedCounters() {
           return (
             <motion.div
               key={index}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center border border-gray-700 shadow-md rounded p-3 backdrop-blur-g bg-blue-950/20"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -61,6 +62,7 @@ export default function AnimatedCounters() {
           );
         })}
       </div>
+    </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import AnimatedCounters from "./AnimatedCounters";
 
 export default function Aboutus() {
   return (
-    <div className="bg-gray-200 text-gray-900 px-4 py-16">
+    <div className="bg-gray-50 text-gray-900 py-16 px-5">
       <div className="max-w-7xl mx-auto space-y-20">
 
         
@@ -75,8 +75,6 @@ export default function Aboutus() {
         </div>
       </div>
       */}
-      <AnimatedCounters/>
-
         {/* What We Do */}
         <div className="space-y-6 text-center">
           <h1 className="max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
@@ -93,7 +91,7 @@ export default function Aboutus() {
               { title: "Graphic Design", icon: PenTool, desc: "Logos, business cards, flyers, social media kits & more." },
               { title: "Branding & Strategy", icon: Lightbulb, desc: "Helping you build a brand identity that stands out." },
             ].map((service, i) => (
-              <div key={i} className="p-6 bg-white rounded-xl shadow hover:shadow-lg flex flex-col items-center text-center">
+              <div key={i} className="p-6 bg-blue-50 border border-blue-300 rounded-md shadow hover:shadow-lg flex flex-col items-center text-center">
                 <service.icon className="w-8 h-8 text-orange-600 mb-4" />
                 <h4 className="font-bold text-blue-600">{service.title}</h4>
                 <p className="text-blue-900 mt-2">{service.desc}</p>
@@ -148,7 +146,7 @@ export default function Aboutus() {
           </a>
         </motion.div>
 
-        {/* Our Process */}
+        {/* Our Process 
         <div className="text-center">
           <h2 className="max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">Our Process</h2>
           <div className="grid md:grid-cols-4 gap-6">
@@ -168,7 +166,7 @@ export default function Aboutus() {
             ))}
           </div>
         </div>
-
+        */}
       </div>
     </div>
   );

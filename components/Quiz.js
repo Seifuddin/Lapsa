@@ -49,7 +49,7 @@ export default function FAQ() {
 
   return (
     <section
-      className="relative p-5 bg-cover bg-center bg-blue-50 bg-no-repeat py-16 text-gray-800">
+      className="relative p-5 bg-cover bg-center bg-gray-50 bg-no-repeat py-16 text-blue-900">
      {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
@@ -71,7 +71,7 @@ export default function FAQ() {
           placeholder="Search FAQs..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-blue-50 pl-10 text-blue-900 pr-4 py-2 border border-blue-600 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full bg-blue-0 pl-10 text-blue-900 pr-4 py-2 border border-blue-600 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -85,7 +85,7 @@ export default function FAQ() {
             <Filter className="w-4 h-4" />
             Filter Categories
             <ChevronDown
-              className={`w-4 h-4 transform transition-transform ${showFilters ? "rotate-180" : ""}`}
+              className={`w-4 h-4 transform text-blue-900 transition-transform ${showFilters ? "rotate-180" : ""}`}
             />
           </button>
         </div>
@@ -105,8 +105,8 @@ export default function FAQ() {
               <button
                 onClick={() => setSelectedCategory("All")}
                 className={`px-4 py-2 rounded-full border border-blue-600 ${
-                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-white text-blue-900"
-                } hover:bg-blue-400 transition text-blue-900 hover:text-white`}
+                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-blue-50 text-blue-900"
+                } hover:bg-blue-600 transition text-blue-900 hover:text-white`}
               >
                 All
               </button>
@@ -116,7 +116,7 @@ export default function FAQ() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-full border border-blue-600 ${
                     selectedCategory === cat ? "bg-blue-600 text-white" : "bg-blue-50 text-blue-600"
-                  } hover:bg-blue-400 transition text-blue-600 hover:text-white`}
+                  } hover:bg-blue-600 transition text-blue-600 hover:text-white`}
                 >
                   {cat}
                 </button>
@@ -127,12 +127,12 @@ export default function FAQ() {
       </AnimatePresence>
 
       {/* FAQ items */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {filteredFaqs.length > 0 ? (
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-blue-50 p-1 border border-gray-300 text-blue-700 rounded-md shadow-md hover:shadow-xl transition"
+              className="bg-blue-50 p-1 border border-blue-200 text-blue-700 rounded-md shadow-md hover:shadow-xl transition"
             >
               <button
                 className="w-full flex justify-between font-semibold items-center p-3 text-left"
@@ -153,7 +153,7 @@ export default function FAQ() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="overflow-hidden px-3 pb-3 text-blue-900"
+                    className="overflow-hidden px-3 pb-3 text-blue-800"
                   >
                     <div className="mt-1">{faq.answer}</div>
                   </motion.div>

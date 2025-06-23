@@ -3,14 +3,14 @@
 export default function AboutUs() {
   return (
     <section
-      className="relative bg-cover bg-center bg-gray-100 bg-no-repeat py-6 text-gray-800">
+      className="relative bg-cover bg-center bg-no-repeat py-6 text-gray-800">
      {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}
         */}
     
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-blue-50 z-0 opacity-01"></div>
+      <div className="absolute inset-0 bg-gray-50 z-0 opacity-01"></div>
 
       {/* Content */}
       <div className="relative z-10">
@@ -24,7 +24,7 @@ export default function AboutUs() {
                   </p>
         </div>
         {/* Image + Who We Are */}
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 pt-3 pb-16 items-center">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-4 pt-3 pb-16 items-center">
           <img
             src="/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp"
             alt="Team Collaboration"

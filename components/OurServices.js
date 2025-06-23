@@ -61,7 +61,7 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-gray-200 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-blue-100 z-0 py-12 px-5 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
@@ -101,7 +101,7 @@ export default function OurServices() {
               <div className="p-5 text-left">
                 <div className="flex items-center gap-2 mb-2">
                   {service.icon}
-                  <h3 className="text-lg font-bold text-blue-600">
+                  <h3 className="text-lg font-semibold text-blue-600">
                     {service.title}
                   </h3>
                 </div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Timeline() {
   return (
-    <div className='overflow-x-hidden bg-blue-50'>
+    <div className='overflow-x-hidden bg-gray-50'>
         <div className="py-16 px-5 max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -18,7 +18,7 @@ export default function Timeline() {
             A brief History about Lapsa Web and Graphics.
           </p>
         </motion.div>
-        <div className="relative border-l-4 border-orange-600 pl-6 space-y-10">
+        <div className="relative border-l-4 border-orange-600 pl-6 space-y-6">
           {[
             {
               year: "September 9 2024 - Company Founded",
@@ -43,7 +43,7 @@ export default function Timeline() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <div className='bg-gray-50 p-5 rounded-md shadow-xl'>
+              <div className='bg-blue-50 p-5 rounded-md shadow-md border border-blue-200'>
               <h4 className="font-bold text-orange-600 mb-2">{item.year}</h4>
               <p className="text-blue-900">{item.desc}</p>
               </div>
