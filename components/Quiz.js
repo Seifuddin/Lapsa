@@ -49,7 +49,7 @@ export default function FAQ() {
 
   return (
     <section
-      className="relative p-5 bg-cover bg-center bg-gray-50 bg-no-repeat py-16 text-blue-900">
+      className="relative p-5 bg-cover bg-center bg-white bg-no-repeat py-16 text-blue-900">
      {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
       }}

@@ -61,7 +61,7 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-blue-100 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-gray-100 z-0 py-12 px-5 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
@@ -91,7 +91,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="rounded-md border border-gray-300 shadow-lg overflow-hidden bg-gray-100 transition duration-300 hover:shadow-2xl"
+              className="bg-gray-50 border border-blue-300 rounded-md shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}

@@ -10,7 +10,7 @@ export default function AboutUs() {
         */}
     
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gray-50 z-0 opacity-01"></div>
+      <div className="absolute inset-0 bg-white z-0 opacity-01"></div>
 
       {/* Content */}
       <div className="relative z-10">

@@ -6,21 +6,20 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import {
-  BookOpen,
-  Code,
-  ImagePlus,
-  FileText,
-  Printer,
-  HelpCircle,
+  Layout,
+  Smartphone,
+  Database,
+  Search,
+  RefreshCcw,
+  UploadCloud,
 } from "lucide-react";
 
-// Service data
 const services = [
   {
     title: "Website Design",
     description:
-      "Creating visually appealing, user-friendly layouts that reflect your brand and engage visitors. This Includes: UI/UX Design, Responsive Layouts (Mobile and Desktop), Landing Page Design, and Website Redesign",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "We design clean, modern, and responsive websites that deliver exceptional user experiences. Services include UI/UX design, mobile optimization, landing pages, and website redesigns tailored to your brand.",
+    icon: <Layout className="w-6 h-6 text-orange-600" />,
     image: "/images/creative-web-design-studio-with-flying-web-page-layout-elements-concept_1029473-56271.avif",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -28,8 +27,8 @@ const services = [
   {
     title: "Mobile App Development",
     description:
-      "We develop powerful and user-friendly mobile apps that bring your brand to your customer’s fingertips — across Android and iOS platforms.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "Bring your idea to life with powerful Android and iOS mobile apps that are fast, secure, and user-friendly. From concept to deployment, we build apps that keep users engaged.",
+    icon: <Smartphone className="w-6 h-6 text-orange-600" />,
     image: "/images/iphone_apps.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -37,8 +36,8 @@ const services = [
   {
     title: "Back-End Development",
     description:
-      "Developing the core logic, database interactions, and server-side operations of your web application. This includes: API Integration and Development, Database Setup( MySQL, MongoDB), Authentication Systems, and Frameworks(Flask, Django, Node.js)",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "We build secure, scalable backends to power your apps. Services include API development, database design, authentication systems, and integration with tools like Flask, Django, and Node.js.",
+    icon: <Database className="w-6 h-6 text-orange-600" />,
     image: "/images/backend-banner.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -46,17 +45,17 @@ const services = [
   {
     title: "SEO Optimization",
     description:
-      "Optimizing websites to rank higher on search engines and attract organic traffic. This Includes: On-Page SEO (Meta Tags, Speed, Mobile), Sitemap.xml & Robots.txt, Google Analytics & Search Console Setup, and SEO-Friendly URL Structures.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "Improve your online visibility and rank higher on Google. Our SEO services include on-page SEO, technical fixes, site speed, Google tools setup, and strategic keyword optimization.",
+    icon: <Search className="w-6 h-6 text-orange-600" />,
     image: "/images/Search-Engine-Optimization (1).jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
   {
-    title: "Website Maintenace and Support",
+    title: "Website Maintenance and Support",
     description:
-      "Ongoing support to keep your website secure, updated and performing well. This Includes: Security Monitoring, Plugin/Theme Updates, Regular Backups, and Bug Fixes.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "We offer continuous monitoring and updates to keep your website secure, bug-free, and up-to-date. Includes plugin updates, backups, uptime checks, and performance enhancements.",
+    icon: <RefreshCcw className="w-6 h-6 text-orange-600" />,
     image: "/images/Website-Maintenance-is-No-Longer.webp",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -64,14 +63,14 @@ const services = [
   {
     title: "Web Hosting and Deployment",
     description:
-      "Helping you get your site live with reliable, fast, and secure hosting options. This includes: Domain Registration Assistance, Hosting Setup, SSL Certificate Setup, and Email Setup(Optional)",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "We help you go live smoothly with fast, reliable hosting. Services include domain registration, SSL setup, custom email setup, and launching your site to the public.",
+    icon: <UploadCloud className="w-6 h-6 text-orange-600" />,
     image: "/images/webhosting.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
-
 ];
+
 
 // Pricing Modal Component
 const PricingModal = ({ service, isOpen, onClose }) => (
@@ -199,7 +198,7 @@ export default function WebServices() {
       </Head>
 
       <section
-      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800 p-6">
+      className="relative bg-cover bg-center bg-gray-50 bg-no-repeat py-10 p-6">
       
       {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
@@ -225,7 +224,7 @@ export default function WebServices() {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.02 }}
-                className="bg-gray-50 border-gray-200 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
+                className="bg-blue-50 border border-orange-300 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
               >
                 <div className="relative w-full h-44">
                   <Image

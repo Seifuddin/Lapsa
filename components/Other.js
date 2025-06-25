@@ -6,21 +6,20 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
 import {
-  BookOpen,
-  Code,
-  ImagePlus,
-  FileText,
-  Printer,
-  HelpCircle,
+  Megaphone,
+  Image as ImageIcon,
+  Camera,
+  ScissorsSquare,
+  Paintbrush2,
+  Globe,
 } from "lucide-react";
 
-// Service data
 const services = [
   {
     title: "Digital Marketing",
     description:
-      "Creating visually appealing, user-friendly layouts that reflect your brand and engage visitors. This Includes: UI/UX Design, Responsive Layouts (Mobile and Desktop), Landing Page Design, and Website Redesign",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "Grow your business online with our digital marketing solutions including social media campaigns, online ads, email marketing, and brand visibility strategies.",
+    icon: <Megaphone className="w-6 h-6 text-orange-600" />,
     image: "/images/digital-marketing-header.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -28,8 +27,8 @@ const services = [
   {
     title: "Photo Mounting",
     description:
-      "Building interactive, fast-loading websites using modern frameworks and technologies. This includes: HTML, CSS and Javascript, React.js and Next.js, Tailwind Css and Bootstrap, and Responsive & Cross-Border Compatibility.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "We offer high-quality photo mounting services using durable materials and clean finishes — perfect for events, galleries, homes, and office displays.",
+    icon: <ImageIcon className="w-6 h-6 text-orange-600" />,
     image: "/images/mounting.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -37,8 +36,8 @@ const services = [
   {
     title: "Photography",
     description:
-      "Developing the core logic, database interactions, and server-side operations of your web application. This includes: API Integration and Development, Database Setup( MySQL, MongoDB), Authentication Systems, and Frameworks(Flask, Django, Node.js)",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "Capture unforgettable moments with professional photography for events, portraits, products, and more. We offer high-resolution photos and editing.",
+    icon: <Camera className="w-6 h-6 text-orange-600" />,
     image: "/images/photography.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -46,8 +45,8 @@ const services = [
   {
     title: "Video Editing",
     description:
-      "Optimizing websites to rank higher on search engines and attract organic traffic. This Includes: On-Page SEO (Meta Tags, Speed, Mobile), Sitemap.xml & Robots.txt, Google Analytics & Search Console Setup, and SEO-Friendly URL Structures.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "Transform raw footage into stunning videos. We handle cutting, transitions, effects, sound design, subtitles, and export for social media or commercial use.",
+    icon: <ScissorsSquare className="w-6 h-6 text-orange-600" />,
     image: "/images/videoediting.webp",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -55,23 +54,23 @@ const services = [
   {
     title: "Art and Design",
     description:
-      "Ongoing support to keep your website secure, updated and performing well. This Includes: Security Monitoring, Plugin/Theme Updates, Regular Backups, and Bug Fixes.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "Express your creativity with our custom art and design services. From illustrations to mixed media, we craft unique visuals that tell your story beautifully.",
+    icon: <Paintbrush2 className="w-6 h-6 text-orange-600" />,
     image: "/images/artdesign.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
   {
-    title: "All cyber services",
+    title: "All Cyber Services",
     description:
-      "Helping you get your site live with reliable, fast, and secure hosting options. This includes: Domain Registration Assistance, Hosting Setup, SSL Certificate Setup, and Email Setup(Optional)",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "We provide essential cyber services like printing, document scanning, online form assistance, KRA services, NHIF/NSSF support, and more at our cyber café.",
+    icon: <Globe className="w-6 h-6 text-orange-600" />,
     image: "/images/cybercafee.webp",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
-
 ];
+
 
 // Pricing Modal Component
 const PricingModal = ({ service, isOpen, onClose }) => (
@@ -199,7 +198,7 @@ export default function OtherServices() {
       </Head>
 
       <section
-      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800 p-6">
+      className="relative bg-cover bg-center bg-gray-50 bg-no-repeat py-10 p-6">
       
       {/* style={{
         backgroundImage: `url('/images/pngwing.com (7).png')`,
@@ -225,7 +224,7 @@ export default function OtherServices() {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.02 }}
-                className="bg-gray-50 border-gray-200 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
+                className="bg-blue-50 border border-orange-300 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
               >
                 <div className="relative w-full h-44">
                   <Image

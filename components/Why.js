@@ -35,7 +35,7 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-blue-100 z-0 py-10 mx-auto">
+    <section className="relative bg-blue-50 z-0 py-10 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10">
         <img
@@ -80,7 +80,7 @@ export default function Why() {
               <motion.div
                 key={idx}
                 whileHover={{ scale: 1.03 }}
-                className="flex w-full border-2 bg-gray-50 shadow-md items-start gap-4 cursor-pointer hover:bg-gray-100 p-2 rounded-lg transition-transform duration-300"
+                className="flex w-full border-2 bg-white shadow-md items-start gap-4 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-transform duration-300"
                 onClick={() => setSelectedFeature(item)}
               >
                 <div className="bg-white p-3 rounded-full border-2">

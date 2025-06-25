@@ -5,43 +5,43 @@
   import { motion } from "framer-motion";
   import Image from "next/image";
   import Head from "next/head";
-  import {
-    BookOpen,
-    Code,
-    ImagePlus,
-    FileText,
-    Printer,
-    HelpCircle,
-  } from "lucide-react";
-  
-// Service data
+
+import {
+  BookOpen,
+  Code,
+  ImagePlus,
+  FileText,
+  Printer,
+  Shirt,
+} from "lucide-react";
+
 const services = [
   {
-      title: "Logo & Branding Design",
-      description:
-        "We create unique, memorable logos and cohesive brand identity systems that give your business a professional edge and lasting first impression.",
-      icon: <Code className="w-6 h-6 text-orange-600" />,
-      image: "/images/logodesign.jpg",
-    },
-    {
-      title: "Business Cards & Fliers",
-      description:
-        "Get eye-catching designs that promote your business across print and digital platforms. Whether it's flyers, posters, or online ads, we ensure your message stands out with clarity and creativity.",
-      icon: <Code className="w-6 h-6 text-orange-600" />,
-      image: "/images/blog-logo-3.jpg",
-    },
-    {
-      title: "Margazines, Books & Diaries",
-      description:
-        "We design Professionally structured magazines, books, reports, and manuals that are easy to read and visually appealing-ideal for both digital and print distribution.",
-      icon: <Code className="w-6 h-6 text-orange-600" />,
-      image: "/images/The-Most-Beautiful-Brand-Books-and-Brand-Guidelines-Examples-6-Brand-Book-Templates-1.webp",
-    },
+    title: "Logo & Branding Design",
+    description:
+      "We craft visually striking logos and cohesive brand identities that reflect your business's personality, values, and mission—ensuring you leave a lasting impression.",
+    icon: <ImagePlus className="w-6 h-6 text-orange-600" />,
+    image: "/images/logodesign.jpg",
+  },
+  {
+    title: "Business Cards & Fliers",
+    description:
+      "Get professionally designed business cards, fliers, posters, and promotional materials that grab attention and communicate your message clearly across both print and digital platforms.",
+    icon: <FileText className="w-6 h-6 text-orange-600" />,
+    image: "/images/blog-logo-3.jpg",
+  },
+  {
+    title: "Magazines, Books & Diaries",
+    description:
+      "We design well-structured magazines, books, reports, and diaries that are easy to read and visually polished—perfect for professional, educational, or promotional use.",
+    icon: <BookOpen className="w-6 h-6 text-orange-600" />,
+    image: "/images/The-Most-Beautiful-Brand-Books-and-Brand-Guidelines-Examples-6-Brand-Book-Templates-1.webp",
+  },
   {
     title: "Stickers & Banners",
     description:
-      "Give your business a polished look with professionally printed materials like business cards, letterheads, invoices, and branded company profiles. Perfect for meetings, presentations, and daily operations.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "Enhance your brand visibility with vibrant sticker and banner designs ideal for marketing, events, product packaging, or promotions—available in all shapes and sizes.",
+    icon: <Printer className="w-6 h-6 text-orange-600" />,
     image: "/images/cool-cash-app-card-designs-1-1.webp",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -49,8 +49,8 @@ const services = [
   {
     title: "Large Format Printing",
     description:
-      "Make your brand unmissable with bold, large-scale prints. Ideal for events, promotions, and outdoor advertising, we print everything from roll-up banners to vehicle wraps with precision and durability.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "We offer high-quality large-format printing solutions for roll-up banners, billboards, vehicle wraps, and more—ensuring bold visibility and long-lasting results.",
+    icon: <Printer className="w-6 h-6 text-orange-600" />,
     image: "/images/Large-Format-Printing_367726020_XL.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
@@ -58,14 +58,14 @@ const services = [
   {
     title: "Cloth Branding",
     description:
-      "Turn ordinary apparel into powerful marketing tools with our professional cloth branding services. Whether you need branded t-shirts, caps, uniforms, or other garments, we use high-quality techniques to create durable and visually stunning designs.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+      "Turn apparel into a marketing tool with custom-branded t-shirts, hoodies, caps, and uniforms using durable, high-quality print and embroidery techniques.",
+    icon: <Shirt className="w-6 h-6 text-orange-600" />,
     image: "/images/61d1aff14bf9944a66bdd2fb81cf637c729d70c9.jpg",
     pricing:
       "Please contact us for details on pricing as pricing varies depending on several factors.",
   },
-
 ];
+
   
   // Pricing Modal Component
   const PricingModal = ({ service, isOpen, onClose }) => (
@@ -219,7 +219,7 @@ const services = [
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.02 }}
-                  className="bg-gray-50 border-gray-200 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
+                  className="bg-blue-50 border border-blue-300 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
                 >
                   <div className="relative w-full h-44">
                     <Image
