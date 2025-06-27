@@ -141,7 +141,7 @@ export default function FAQ() {
                 <span>{faq.question}</span>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-180 text-blue-900" : "text-blue-600"
+                    openIndex === index ? "rotate-180 text-blue-900" : "text-blue-900"
                   }`}
                 />
               </button>
@@ -153,7 +153,7 @@ export default function FAQ() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="overflow-hidden px-3 pb-3 text-blue-800"
+                    className="overflow-hidden px-3 pb-3 text-blue-900"
                   >
                     <div className="mt-1">{faq.answer}</div>
                   </motion.div>

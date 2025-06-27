@@ -75,7 +75,7 @@ export default function Leadership() {
             <h4 className="font-semibold text-blue-800 text-md italic">
               Follow, Like & Subscribe Muriithi Nguru at social media
             </h4>
-            <div className="flex justify-start space-x-4 pt-2 flex-wrap">
+            <div className="flex justify-start space-x-4 pt-2 flex-wrap p-3">
               <a href="https://www.facebook.com/profile.php?id=61570201295782" aria-label="Facebook" className="text-blue-700 hover:text-orange-500 shadow-md p-1">
                 <FaFacebookF size={20} />
               </a>
