@@ -61,7 +61,7 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-gray-100 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-blue-100 z-0 py-12 px-5 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10 opacity-50">
         <img

@@ -44,7 +44,7 @@ export default function Contact() {
             className="space-y-6 bg-gray-50 shadow-xl border border-gray-400 p-5 py-10 rounded-lg"
           >
             <h4 className="text-xl font-bold text-blue-900 mb-6">Contact Information</h4>
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 shadow-md p-1">
               <Mail className="text-orange-500 mt-1" />
               <div>
                 <h4 className="font-bold text-blue-600">Email</h4>
@@ -52,7 +52,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 shadow-md p-1">
               <Phone className="text-orange-500 mt-1" />
               <div>
                 <h4 className="font-bold text-blue-600">Phone</h4>
@@ -60,7 +60,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 shadow-md p-1">
               <MapPin className="text-orange-500 mt-1" />
               <div>
                 <h4 className="font-bold text-blue-600">Location</h4>
@@ -68,7 +68,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 shadow-md p-1">
               <Building2 className="text-orange-500 mt-1" />
               <div>
                 <h4 className="font-bold text-blue-600">Building & Room</h4>
@@ -79,19 +79,19 @@ export default function Contact() {
             {/* Social Media Icons */}
             <h4 className="font-bold text-blue-800 text-lg">Follow Us</h4>
             <div className="flex space-x-4 pt-4">
-              <a href="https://www.facebook.com/profile.php?id=61570201295782" aria-label="Facebook" className="text-blue-700 hover:text-orange-500">
+              <a href="https://www.facebook.com/profile.php?id=61570201295782" aria-label="Facebook" className="text-blue-700 hover:text-orange-500 shadow-md p-1">
                 <FaFacebookF size={20} />
               </a>
-              <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48" aria-label="Instagram" className="text-pink-600 hover:text-orange-500">
+              <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48" aria-label="Instagram" className="text-pink-600 hover:text-orange-500 shadow-md p-1">
                 <FaInstagram size={20} />
               </a>
-              <a href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09" aria-label="Twitter" className="text-blue-400 hover:text-orange-500">
+              <a href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09" aria-label="Twitter" className="text-blue-400 hover:text-orange-500 shadow-md p-1">
                 <FaTwitter size={20} />
               </a>
-              <a href="https://www.tiktok.com/@muriithi_nguru?_t=ZM-8wuMwLm6AoH&_r=1" aria-label="TikTok" className="text-black hover:text-orange-500">
+              <a href="https://www.tiktok.com/@muriithi_nguru?_t=ZM-8wuMwLm6AoH&_r=1" aria-label="TikTok" className="text-black hover:text-orange-500 shadow-md p-1">
                 <FaTiktok size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" className="text-blue-600 hover:text-orange-500">
+              <a href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" className="text-blue-600 hover:text-orange-500 shadow-md p-1">
                 <FaLinkedinIn size={20} />
               </a>
             </div>
@@ -115,7 +115,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="name"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Name"
                 required
               />
@@ -126,7 +126,7 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Email"
                 required
               />
@@ -137,7 +137,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Phone Number"
               />
             </div>
@@ -147,7 +147,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="subject"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Subject of Your Message"
               />
             </div>
@@ -157,7 +157,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 rows="4"
-                className="w-full text-blue-900 mt-1 p-2 rounded-lg border border-gray-400 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 rounded-lg border border-gray-400 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Message"
                 required
               ></textarea>

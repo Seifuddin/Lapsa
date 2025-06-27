@@ -91,7 +91,7 @@ export default function Aboutus() {
               { title: "Graphic Design", icon: PenTool, desc: "Logos, business cards, flyers, social media kits & more." },
               { title: "Branding & Strategy", icon: Lightbulb, desc: "Helping you build a brand identity that stands out." },
             ].map((service, i) => (
-              <div key={i} className="p-6 bg-blue-50 border border-blue-300 rounded-md shadow hover:shadow-lg flex flex-col items-center text-center">
+              <div key={i} className="p-6 bg-blue-50 border border-blue-300 rounded-md shadow-md hover:shadow-lg flex flex-col items-center text-center">
                 <service.icon className="w-8 h-8 text-orange-600 mb-4" />
                 <h4 className="font-bold text-blue-600">{service.title}</h4>
                 <p className="text-blue-900 mt-2">{service.desc}</p>

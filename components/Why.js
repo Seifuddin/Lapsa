@@ -35,7 +35,7 @@ export default function Why() {
   ];
 
   return (
-    <section className="relative bg-blue-50 z-0 py-10 mx-auto">
+    <section className="relative bg-blue-100 z-0 py-10 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10">
         <img

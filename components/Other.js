@@ -224,7 +224,7 @@ export default function OtherServices() {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.02 }}
-                className="bg-blue-50 border border-orange-300 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
+                className="bg-white border border-orange-300 rounded-md shadow-lg overflow-hidden cursor-pointer transition duration-300 flex flex-col justify-between"
               >
                 <div className="relative w-full h-44">
                   <Image

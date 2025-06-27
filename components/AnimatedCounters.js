@@ -15,7 +15,7 @@ const icons = [FiCheckCircle, FiSmile, FiClock, FiAward];
 
 export default function AnimatedCounters() {
   return (
-    <div className="relative z-0 py-10 p-5 items-center justify-center bg-blue-100">
+    <div className="relative z-0 py-10 p-5 items-center justify-center bg-gray-50">
     <div className="p-5 rounded-lg max-w-7xl mx-auto shadow-lg py-10 bg-blue-950 text-white">
       {/* Background Image 
       <div className="absolute inset-0 -z-10">

@@ -3,8 +3,7 @@ import Aboutus from "@/components/AboutUs";
 import AnimatedCounters from "@/components/AnimatedCounters";
 import CorePrinciples from "@/components/CorePrinciples";
 import AboutHero from "@/components/HeroAbout";
-import ContactsHero from "@/components/HeroContacts";
-import ServicesHero from "@/components/HeroService";
+import Leadership from "@/components/Leadership";
 import Timeline from "@/components/Timeline";
 
 // ✅ SEO metadata for this page
@@ -54,6 +53,7 @@ export default function About() {
       <Timeline />
       <AnimatedCounters />
       <Aboutus />
+      <Leadership />
     </div>
   );
 }
