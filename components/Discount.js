@@ -3,35 +3,60 @@ import { motion } from "framer-motion";
 
 export default function Discount() {
   return (
-    <div className='pt-20 bg-gray-200'>
-      <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">Get the best for less</h2>
-      <div className="flex flex-col md:flex-row">
-            <div className="left flex-1 service-card p-4">
-                    <h2 className="text-xl font-bold text-orange-700 mb-5">Get yourself a Website starting from Kes 13,000 only</h2>
-                    <motion.p
-                                            initial={{ opacity: 0, x: 50 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            transition={{ duration: 1 }}
-                    className="text-lg text-gray-600 text-left">Quality web Design doesnt have to come with a hefty price tag. At Lapsa, we offer affordable, custom web design services tailored to fit your budget. Whether you're aa small business or a growing brand, we're here to help you create a proffessional online presence without breaking the bank. Let's work together to build your dream website at a price that works for you! 
+    <section className="bg-blue-100 pt-20 px-5 md:px-10">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        {/* Left: Text Content */}
+        <div className="space-y-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600 leading-tight">
+            Get a{" "}
+            <span className="text-black-600">world-class</span> website for only{" "}
+            <span className=" text-orange-600 text-6xl md:text-7xl mt-2">
+              KES 13,000
+            </span>
+          </h1>
 
-                    </motion.p>
-                    <a
-                    href="#portfolio"
-                        className="inline-block ml-0 rounded-md bg-orange-700 text-white my-5 py-2 px-10 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
-                >
-                    Request Quotation
-                </a>
-                </div>
-                <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                 className="right flex-2 service-card rounded-lg p-0">
-                <img src="/images/image-removebg-preview (14).png" alt="Project 1" className="w-full h-full object-cover m-0" />
+          <motion.p
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-lg text-gray-700"
+          >
+            Quality web design doesn’t have to come with a hefty price tag.
+            At <span className="font-bold text-blue-900">Lapsa</span>, we offer affordable,
+            custom-built websites tailored to fit your budget.
+            Whether you’re a small business or an emerging brand,
+            we’ll help you create a professional online presence
+            without breaking the bank.
+          </motion.p>
 
-                </motion.div>
-            </div>
-    </div>
-  )
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <a
+              href="/contacts"
+              className="inline-block bg-orange-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-md transition duration-300"
+            >
+              Contact Us
+            </a>
+          </motion.div>
+        </div>
+
+        {/* Right: Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="w-full p-0"
+        >
+          <img
+            src="/images/image-removebg-preview (14).png"
+            alt="Website Design Offer Illustration"
+            className="w-full h-auto object-contain m-0 p-0"
+          />
+        </motion.div>
+      </div>
+    </section>
+  );
 }

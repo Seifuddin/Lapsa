@@ -15,8 +15,8 @@ const icons = [FiCheckCircle, FiSmile, FiClock, FiAward];
 
 export default function AnimatedCounters() {
   return (
-    <div className="relative z-0 py-10 p-5 items-center justify-center bg-gray-50">
-    <div className="p-5 rounded-lg max-w-7xl mx-auto shadow-lg py-10 bg-blue-950 text-white">
+    <div className="relative z-0 py-10 items-center justify-center bg-blue-950">
+    <div className="rounded-lg mx-auto shadow-lg bg-blue-950 text-white">
       {/* Background Image 
       <div className="absolute inset-0 -z-10">
         <img
@@ -29,9 +29,9 @@ export default function AnimatedCounters() {
 
       {/* Optional Overlay */}
       <div className="absolute inset-0 -z-10"></div>
-          <h2 className="text-3xl text-center text-white font-bold mb-10">Our Impact</h2>
+       <h2 className="text-3xl text-center text-white font-bold mb-10">Our Impact</h2> 
 
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 text-center gap-8">
+      <div className="max- mx-auto grid grid-cols-2 sm:grid-cols-4 text-center gap-8">
         {counters.map((counter, index) => {
           const Icon = icons[index];
           const percentage = Math.min((counter.value / 200) * 100, 100);
