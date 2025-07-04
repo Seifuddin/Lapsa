@@ -4,10 +4,12 @@ import Benefits from "@/components/Benefits";
 import ChatButton from "@/components/ChatButton";
 import Discount from "@/components/Discount";
 import Hero from "@/components/Hero";
+import Know from "@/components/Know";
 import ServiceMarquee from "@/components/Marquee";
 import OurServices from "@/components/OurServices";
 import Portfolio from "@/components/Portfolio";
 import FAQ from "@/components/Quiz";
+import TopServices from "@/components/topservice";
 import Why from "@/components/Why";
 
 // ✅ Page-specific SEO metadata
@@ -54,10 +56,12 @@ export default function MyApp({ Component, pageProps }) {
       <ChatButton />
       <About />
       <ServiceMarquee />
+      <TopServices />
       <OurServices />
-      <Discount />
+      <AnimatedCounters />
+      <Know />
       <Benefits />
-      <Why />
+      <Discount />
       <FAQ />
     </div>
   );

@@ -65,7 +65,7 @@ export default function Why() {
             <img
               src="/images/image-removebg-preview (44).png"
               alt="Why Choose Us"
-              className="rounded-2xl w-full justify-center p-24 md:p-0 lg:p-20"
+              className="rounded-2xl w-full justify-center p-12 md:p-0 lg:p-20"
             />
           </motion.div>
 

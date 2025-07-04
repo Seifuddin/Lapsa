@@ -10,7 +10,7 @@ const faqs = [
   { category: "Services", question: "Do you offer custom website designs?", answer: "Yes, we create custom designs based on your brand identity and business needs." },
   { category: "Timeline", question: "What is your turnaround time?", answer: "Project timelines depend on complexity, but we always strive to deliver on time." },
   { category: "Services", question: "Do you offer website maintenance?", answer: "Yes, we offer ongoing support and maintenance services for all our clients." },
-  { category: "Services", question: "Can I request a redesign of an existing website?", answer: "Yes, we specialize in website redesigns to enhance performance and aesthetics." },
+  { category: "Services", question: "Can I request a redesign of a website?", answer: "Yes, we specialize in website redesigns to enhance performance and aesthetics." },
   { category: "Payments", question: "What payment methods do you accept?", answer: "We accept Lipa na M-Pesa services through our Till Number provided on the Website which is or send money to 0111 608 331 (name: edwin)." },
   { category: "SEO", question: "Do you provide SEO optimization?", answer: "Yes, we include basic SEO optimizations and offer advanced SEO as an add-on service." },
   { category: "Branding", question: "Do you offer branding services?", answer: "Yes, we help businesses build strong brand identities through design and strategy." },
@@ -132,7 +132,7 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bg-blue-50 p-1 border border-blue-200 text-blue-700 rounded-md shadow-md hover:shadow-xl transition"
+              className="bgblue-50 p- border border-blu-200 text-blue-900 rounded-sm shadow-md hover:shadow-xl transition"
             >
               <button
                 className="w-full flex justify-between font-semibold items-center p-3 text-left"

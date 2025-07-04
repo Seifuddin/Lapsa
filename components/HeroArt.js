@@ -4,7 +4,7 @@ import { useTypingText } from "@/hooks/useTypingText"; // Import the custom hook
 import { BookOpen, Pencil, Paperclip } from "lucide-react";
 import Image from "next/image";
 
-export default function WebHero() {
+export default function ArtHero() {
   const words = [
     "Our Services",
   ];

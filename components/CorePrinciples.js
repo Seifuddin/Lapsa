@@ -3,8 +3,8 @@ import { Target, Eye, Quote } from "lucide-react";
 
 export default function CorePrinciples() {
   return (
-    <div className="bg-gray-50 py-20 px-6">
-      <h1 className="text-center ax-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
+    <div className="bg-blue-100 py-20 px-6">
+      <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
                     Our Mission, Vision & Motto<span className="text-orange-600"></span>
                   </h1>
                   <p className="italic text-center text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">

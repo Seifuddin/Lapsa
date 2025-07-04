@@ -4,7 +4,9 @@ import AnimatedCounters from "@/components/AnimatedCounters";
 import CorePrinciples from "@/components/CorePrinciples";
 import AboutHero from "@/components/HeroAbout";
 import Leadership from "@/components/Leadership";
+import Ready from "@/components/Ready";
 import Timeline from "@/components/Timeline";
+import Location from "../../components/Location";
 
 // ✅ SEO metadata for this page
 export const metadata = {
@@ -54,6 +56,8 @@ export default function About() {
       <AnimatedCounters />
       <Aboutus />
       <Leadership />
+      <Ready />
+      <Location />
     </div>
   );
 }

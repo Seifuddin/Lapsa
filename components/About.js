@@ -20,7 +20,7 @@ export default function AboutUs() {
                     About <span className="text-orange-600">Us</span>
                   </h1>
                   <p className="italic mt-4 text-lg font-semibold text-blue-900">
-                    We Empower Businesses through innovative and Creative Digital solutions.
+                    Know more about Us.
                   </p>
         </div>
         {/* Image + Who We Are */}
@@ -33,11 +33,9 @@ export default function AboutUs() {
           <div>
             <h3 className="italic font-bold mb-2 text-orange-600">Who We Are</h3>
             <p className="text-blue-900 text-base leading-relaxed mb-4">
-              At Lapsa, we believe that great design and thoughtful development go hand-in-hand. Our team of developers, designers, and digital experts works collaboratively to deliver visually compelling, fast, and functional solutions that help businesses make a lasting impression online.
+              Lapsa Web and Graphics is a passionate creative agency dedicated to helping brands stand out through impactful design and innovative web solutions. We specialize in crafting beautiful, functional websites and eye-catching graphics that bring your vision to life. With a blend of creativity, strategy, and technology, we empower businesses to grow and make a lasting impression.
             </p>
-            <p className="text-blue-900 text-base leading-relaxed">
-              We don’t just build websites — we create experiences that reflect your brand’s personality and communicate your value clearly. Whether you're looking to launch, scale, or refresh your digital presence, Lapsa is your creative partner.
-            </p>
+            
           </div>
         </div>
 

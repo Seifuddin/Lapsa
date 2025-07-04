@@ -16,11 +16,11 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-black/100 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center b-black100 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: "url('/images/pexels-pixabay-268533.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center opacity-"
+        style={{ backgroundImage: "url('/images/herobackground1.jpg')" }}
       />
 
       {/* Glass Card */}
@@ -33,12 +33,12 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-10 items-center w-full pt-5">
           {/* Text Content */}
           <div className="space-y-5">
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+            <h1 className="md:text-black text-4xl md:text-5xl font-extrabold leading-tight">
               Crafting Stunning 
               <span className="text-blue-500"> Websites</span> & Bold
-              <span className="text-orange-600"> Graphic Designs</span>
+              <span className="text-white"> Graphic Designs</span>
             </h1>
-            <p className="italic text-gray-200 text-lg font-semibold">
+            <p className="italic  text-black md:text-gray-50 text-lg font-semibold">
               We are Lapsa, We Design Your Digital Future by Elevating Your Brand Online, We create beautiful websites and eye-catching designs that make an impact.
             </p>
 
@@ -52,7 +52,7 @@ export default function Hero() {
 
               <a
             href="contacts"
-            className="text-center mt-6 inline-block bg-black/50 border-2 border-white text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
+            className="text-center mt-6 inline-block border-2 border-white text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
           >
             Contact Us
           </a>
@@ -109,7 +109,7 @@ export default function Hero() {
           {/* Hero Image (hidden on small screens) */}
           <div className="hidden md:flex justify-center">
             <div className="w-full flex rounded-xl items-center justify-center">
-              <Image
+               {/* <Image
                 src="/images/image-removebg-preview (44).png"
                 alt="Web and Graphic Design"
                 width={500}
@@ -117,6 +117,7 @@ export default function Hero() {
                 className="flex rounded-xl items-center justify-center  w-60 md:w-full h-auto object-contain"
                 priority
               />
+              */}
             </div>
           </div>
           

@@ -1,41 +1,72 @@
 "use client";
 import { motion } from "framer-motion";
+import { Lightbulb } from "lucide-react";
+import Link from "next/link";
 
 export default function Know() {
   return (
-    <div className="container-know bg-gray-300 py-16">
-            <div className="mx-1 text-center">
-                <h2 className="text-3xl font-bold mb-10 text-whit">Did You Know?</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                    <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                     className="service-card m-1">
-                        <img src="/images/image-removebg-preview (39).png" alt="Project 1" className="w-full object-cover rounded-xl m-0 border-2" />
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1 }}
-                 className="service-card p-5 rounded-lg">
-                <p className="text-lg text-left text-whit mb-2">
+    <section className="bg-gradient-to-br from-orange-100 via-white to-blue-100 py-16 px-4">
+      <div className="max-w-5xl mx-auto text-center space-y-10">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col items-center gap-2"
+        >
+          <Lightbulb className="w-10 h-10 text-yellow-500 animate-pulse" />
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-600">
+            Did You Know?
+          </h2>
+        </motion.div>
 
-                We are a passionate team of web and graphic designers committed to turning your ideas into captivating digital experiences. With years of experience, we specialize in designing intuitive websites and eye-catching graphics that help businesses grow.
-                </p>
+        {/* What is a website */}
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="bg-white p-6 rounded-2xl shadow-md"
+        >
+          <h3 className="text-xl font-semibold text-blue-800 mb-2">
+            What is a Website
+          </h3>
+          <p className="text-blue-900 text-base md:text-lg leading-relaxed">
+            A website is like your digital office or shop on the internet. Just as people visit a
+            physical shop to learn about or buy your products or services, they visit your website
+            for the same reasons—but from anywhere, anytime.
+          </p>
+        </motion.div>
 
-                <p className="text-lg text-left tet-white mb-2">
-                With years of experience, we specialize in designing intuitive websites and eye-catching graphics that help businesses grow. With years of experience, we specialize in designing intuitive websites and eye-catching graphics that help businesses grow.
-                </p>
-                <a
-                    href="#portfolio"
-                        className="flex text-center rounded-lg bg-orange-700 text-white py-2 px-8 text-sm font-semibold hover:bg-blue-600 transition-all duration-300"
-                >
-                    Get a Website for your Business
-                </a>
-                </motion.div>
-            </div>
-            </div>
-    </div>
-  )
+        {/* Why it matters */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="bg-white p-6 rounded-2xl shadow-md"
+        >
+          <h3 className="text-xl font-semibold text-blue-800 mb-2">
+            Why It Matters
+          </h3>
+          <p className="text-blue-900 text-base md:text-lg leading-relaxed">
+            A website gives you a global voice, improves credibility, and allows others to find,
+            contact, or buy from you easily.
+          </p>
+        </motion.div>
+
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="pt-6"
+        >
+          <Link href="/contacts">
+            <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all duration-300">
+              Let’s Build Your Website
+            </button>
+          </Link>
+        </motion.div>
+      </div>
+    </section>
+  );
 }

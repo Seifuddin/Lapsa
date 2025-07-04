@@ -22,7 +22,7 @@ export default function Leadership() {
 
   return (
     <section className="relative bg-cover overflow-x-hidden bg-center bg-no-repeat py-16 sm:py-12 px-4 sm:px-3">
-      <div className="absolute inset-0 bg-gray-50 z-0 opacity-01"></div>
+      <div className="absolute inset-0 bg-blue-50 z-0 opacity-01"></div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <motion.div
@@ -44,12 +44,12 @@ export default function Leadership() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="order-1 md:order-2 flex justify-center"
+            className="order-1 md:order-2 flex justify-center p-10"
           >
             <img
               src="/images/WhatsApp Image 2025-04-27 at 04.32.48 (1).jpeg"
               alt="Muriithi Nguru"
-              className="w-72 h-72 sm:w-56 sm:h-56 object-contain rounded-full border-4 border-blue-600 bg-gray-500"
+              className="w-72 h-72 sm:w-40 sm:h-40 object-contain rounded-full border-4 border-blue-600 bg-gray-500"
             />
           </motion.div>
 
