@@ -58,7 +58,7 @@ export default function MyApp({ Component, pageProps }) {
       <TopServices />
       <ServiceMarquee />
       <OurServices />
-      <AnimatedCounters />
+      <Why />
       <Benefits />
       <Discount />
       <FAQ />
