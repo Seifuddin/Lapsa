@@ -8,7 +8,7 @@ import Know from "./Know";
 
 export default function Benefits() {
   return (
-    <section className="relative bg-gray-50 bg-cover bg-center bg-no-repeat p-5 py-20">
+    <section className="relative bg-white bg-cover bg-center bg-no-repeat p-5 py-20">
       {/* Optional background image */}
       {/* style={{ backgroundImage: `url('/images/pngwing.com (7).png')` }} */}
 

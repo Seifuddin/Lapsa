@@ -17,42 +17,42 @@ const services = [
     title: "Web Design",
     description:
       "We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.",
-    icon: <Layout className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
+    icon: <Layout className="w-9 h-9 border text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/creative-web-design-studio-with-flying-web-page-layout-elements-concept_1029473-56271.avif",
   },
   {
     title: "Software Development",
     description:
       "Transform your innovative ideas into reality with our bespoke software development services. We build custom applications that solve real business problems.",
-    icon: <Code className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
+    icon: <Code className="w-9 h-9 border text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/what-is-software-development.jpg",
   },
   {
     title: "Graphic Design",
     description:
       "From logos and branding to brochures and posters, we deliver eye-catching graphic design that communicates your message and captivates your audience.",
-    icon: <PenTool className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
+    icon: <PenTool className="w-9 h-9 border text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/art_design_740x317.jpg",
   },
   {
     title: "Digital Printing",
     description:
       "Get premium quality digital printing solutions for business cards, flyers, posters, and more — perfect for both personal and corporate branding.",
-    icon: <Printer className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
+    icon: <Printer className="w-9 h-9 border text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/digitalprinting.jpg",
   },
   {
     title: "Website Maintenance",
     description:
       "Let us handle the updates, security, and performance tuning so your site stays reliable, safe, and optimized — giving you peace of mind.",
-    icon: <Wrench className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
+    icon: <Wrench className="w-9 h-9 border text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/Website-Maintenance-is-No-Longer.webp",
   },
   {
     title: "Mobile App Development",
     description:
       "We develop powerful and user-friendly mobile apps that bring your brand to your customer’s fingertips — across Android and iOS platforms.",
-    icon: <Smartphone className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
+    icon: <Smartphone className="w-9 h-9 border text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/download (2).jpg",
   },
 ];
@@ -91,7 +91,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="bg-blue-50 border border-orange-200 rounded-md shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl"
+              className="bg-white border border-orange-200 rounded-md shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}
