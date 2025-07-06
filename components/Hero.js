@@ -16,11 +16,10 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center b-black100 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white overflow-hidden">
-      {/* Background Image */}
+    <section className="relative h-sceen bg-black py-16 px-5 md:px-10">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-"
-        style={{ backgroundImage: "url('/images/herobackground1.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center opacity-75"
+        style={{ backgroundImage: "url('/images/herobackground4.avif')" }}
       />
 
       {/* Glass Card */}
@@ -33,12 +32,12 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-10 items-center w-full pt-5">
           {/* Text Content */}
           <div className="space-y-5">
-            <h1 className="md:text-black text-4xl md:text-5xl font-extrabold leading-tight">
+            <h1 className="font-black text-white text-4xl md:text-5xl leading-tight">
               Crafting Stunning 
               <span className="text-blue-500"> Websites</span> & Bold
-              <span className="text-white"> Graphic Designs</span>
+              <span className="text-orange-400"> Graphic Designs</span>
             </h1>
-            <p className="italic  text-black md:text-gray-50 text-lg font-semibold">
+            <p className="italic font-serif text-white md:text-gray-50 text-md font-semibold">
               We are Lapsa, We Design Your Digital Future by Elevating Your Brand Online, We create beautiful websites and eye-catching designs that make an impact.
             </p>
 

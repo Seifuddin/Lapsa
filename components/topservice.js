@@ -66,8 +66,8 @@ function ServiceCard({ title, description, image }) {
         className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
       />
       <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center px-4 text-white">
-        <h3 className="text-xl sm:text-2xl font-semibold mb-1">{title}</h3>
-        <p className="text-xs sm:text-sm max-w-xs leading-snug">{description}</p>
+        <h3 className="text-xl sm:text-2xl font-semibold mb-1 font-mono">{title}</h3>
+        <p className="text-xs sm:text-sm max-w-xs leading-snug font-mono">{description}</p>
       </div>
     </motion.div>
   );

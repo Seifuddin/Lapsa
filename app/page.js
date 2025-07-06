@@ -55,11 +55,10 @@ export default function MyApp({ Component, pageProps }) {
       <Hero />
       <ChatButton />
       <About />
-      <ServiceMarquee />
       <TopServices />
+      <ServiceMarquee />
       <OurServices />
       <AnimatedCounters />
-      <Know />
       <Benefits />
       <Discount />
       <FAQ />

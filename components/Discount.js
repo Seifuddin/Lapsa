@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 
 export default function Discount() {
   return (
-    <section className="relative bg-gray0 pt-20 px-5 md:px-10">
+    <section className="relative bg-black py-16 px-5 md:px-10">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-"
-        style={{ backgroundImage: "url('/images/1f509a19270c2a770c29744f88e1975d.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center opacity-80"
+        style={{ backgroundImage: "url('/images/herobackground5.jpg')" }}
       />
       <div className="relative z-10 p-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left: Text Content */}
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-orange-600 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-black text-white leading-tight">
             Get a{" "}
             <span className="">world-class</span> website for only{" "}
-            <span className=" text-6xl md:text-7xl mt-2">
+            <span className="mt-2">
               KES 13,000
             </span>
           </h1>
@@ -23,7 +23,7 @@ export default function Discount() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-lg text-gray-50"
+            className="relative font-mono text-md text-white"
           >
             Quality web design doesn’t have to come with a hefty price tag.
             At <span className="font-bold">Lapsa</span>, we offer affordable,
@@ -40,7 +40,7 @@ export default function Discount() {
           >
             <a
               href="/contacts"
-              className="inline-block bg-orange-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition duration-300"
+              className="inline-block border-2 border-white hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition duration-300"
             >
               Contact Us
             </a>
