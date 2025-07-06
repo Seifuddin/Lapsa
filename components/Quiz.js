@@ -57,9 +57,9 @@ export default function FAQ() {
     
       {/* Gradient overlay */}
 
-      <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
-                    Frequently Asked Questions<span className="text-orange-600"></span>
-                  </h1>
+      <h2 className="text-center text-orange-600 text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Frequently Asked Questions
+          </h2>
         <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto text-center mb-8">
           Everything You Need to Know About Working With Us.
         </p>  
@@ -132,7 +132,7 @@ export default function FAQ() {
           filteredFaqs.map((faq, index) => (
             <div
               key={`${faq.question}-${index}`}
-              className="bgblue-50 p- border border-blu-200 text-blue-900 rounded-sm shadow-md hover:shadow-xl transition"
+              className="bgblue-50 p- bordr border-blu-200 text-blue-900 rounded-sm shadow-md hover:shadow-xl transition"
             >
               <button
                 className="w-full flex justify-between font-semibold items-center p-3 text-left"

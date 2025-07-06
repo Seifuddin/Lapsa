@@ -2,12 +2,14 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaTiktok,
-  FaLinkedinIn,
-} from "react-icons/fa";
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export default function Leadership() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -49,7 +51,7 @@ export default function Leadership() {
             <img
               src="/images/WhatsApp Image 2025-04-27 at 04.32.48 (1).jpeg"
               alt="Muriithi Nguru"
-              className="w-72 h-72 sm:w-40 sm:h-40 object-contain rounded-full border-4 border-blue-600 bg-gray-500"
+              className="w-48 h-48 md:w-72 md:h-72 object-contain rounded-full border-4 border-blue-600 bg-gray-500"
             />
           </motion.div>
 
@@ -72,26 +74,52 @@ export default function Leadership() {
               Read Full Story
             </button>
 
-            <h4 className="font-semibold text-blue-800 text-md italic">
-              Follow, Like & Subscribe Muriithi Nguru at social media
-            </h4>
-            <div className="flex justify-start space-x-4 pt-2 flex-wrap p-3">
-              <a href="https://www.facebook.com/profile.php?id=61570201295782" aria-label="Facebook" className="text-blue-700 hover:text-orange-500 shadow-md p-1">
-                <FaFacebookF size={20} />
-              </a>
-              <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48" aria-label="Instagram" className="text-pink-600 hover:text-orange-500 shadow-md p-1">
-                <FaInstagram size={20} />
-              </a>
-              <a href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09" aria-label="Twitter" className="text-blue-400 hover:text-orange-500 shadow-md p-1">
-                <FaTwitter size={20} />
-              </a>
-              <a href="https://www.tiktok.com/@muriithi_nguru?_t=ZM-8wuMwLm6AoH&_r=1" aria-label="TikTok" className="text-black hover:text-orange-500 shadow-md p-1">
-                <FaTiktok size={20} />
-              </a>
-              <a href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" className="text-blue-600 hover:text-orange-500 shadow-md p-1">
-                <FaLinkedinIn size={20} />
-              </a>
-            </div>
+           {/* Social Media */}
+                           <motion.div
+                             initial={{ opacity: 0, y: 20 }}
+                             whileInView={{ opacity: 1, y: 0 }}
+                             transition={{ delay: 0.5, duration: 1, ease: "easeInOut" }}
+                           >
+                             <h4 className="text-xl font-ono italic text-orange-600 font-semibold mb-4 underline">Follow, Like & Subscribe Muriithi Nguru at social media</h4>
+                             <div className="relative flex gap-4 text-white">
+                               <a
+                                 href="https://www.facebook.com/profile.php?id=61570201295782"
+                                 aria-label="Follow us on Facebook"
+                                 className="hover:text-white transition"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                               >
+                                 <Facebook className="w-9 h-9 rounded-md font-semibold bg-blue-500 border shadow-md p-1" />
+                               </a>
+                               <a
+                                 href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09"
+                                 aria-label="Follow us on Twitter"
+                                 className="hover:text-white transition"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                               >
+                                 <Twitter className="w-9 h-9 rounded-md font-semibold bg-orange-500 border shadow-md p-1" />
+                               </a>
+                               <a
+                                 href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48"
+                                 aria-label="Follow us on Instagram"
+                                 className="hover:text-white transition"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                               >
+                                 <Instagram className="w-9 h-9 rounded-md font-semibold bg-blue-500 border shadow-md p-1" />
+                               </a>
+                               <a
+                                 href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                 aria-label="Follow us on LinkedIn"
+                                 className="hover:text-white transition"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                               >
+                                 <Linkedin className="w-9 h-9 rounded-md font-semibold bg-orange-500 border shadow-md p-1" />
+                               </a>
+                             </div>
+                           </motion.div>
           </motion.div>
         </div>
       </div>

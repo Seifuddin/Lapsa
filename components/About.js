@@ -2,6 +2,15 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export default function AboutUs() {
   return (
@@ -15,31 +24,65 @@ export default function AboutUs() {
           viewport={{ once: true }}
           className="md:w-1/2"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-            About <span className="text-indigo-500">Lapsa</span> Web & Graphics
+          <h2 className="text-orange-600 text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            About Us
           </h2>
           <p className="text-blue-950 text-lg mb-6">
             We are a passionate team of digital creatives helping brands build unforgettable identities online and offline. At Lapsa, design meets purpose, code meets clarity, and your business meets success.
           </p>
-          <div className="flex flex-wrap gap-6 mb-8">
-            <div>
-              <p className="text-3xl font-bold text-indigo-500">50+</p>
-              <p className="text-sm text-gray-700">Projects Completed</p>
-            </div>
-            <div>
-              <p className="text-3xl font-bold text-indigo-500">30+</p>
-              <p className="text-sm text-gray-700">Happy Clients</p>
-            </div>
-            <div>
-              <p className="text-3xl font-bold text-indigo-500">5+</p>
-              <p className="text-sm text-gray-700">Years Experience</p>
-            </div>
-          </div>
+             {/* Social Media */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 1, ease: "easeInOut" }}
+                >
+                  <h4 className="text-2xl font-ono italic text-orange-600 font-semibold mb-4 underline">Follow us on social media</h4>
+                  <div className="relative flex gap-4 text-white">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61570201295782"
+                      aria-label="Follow us on Facebook"
+                      className="hover:text-white transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Facebook className="w-9 h-9 rounded-md font-semibold bg-blue-500 border shadow-md p-1" />
+                    </a>
+                    <a
+                      href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09"
+                      aria-label="Follow us on Twitter"
+                      className="hover:text-white transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Twitter className="w-9 h-9 rounded-md font-semibold bg-orange-500 border shadow-md p-1" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48"
+                      aria-label="Follow us on Instagram"
+                      className="hover:text-white transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Instagram className="w-9 h-9 rounded-md font-semibold bg-blue-500 border shadow-md p-1" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      aria-label="Follow us on LinkedIn"
+                      className="hover:text-white transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Linkedin className="w-9 h-9 rounded-md font-semibold bg-orange-500 border shadow-md p-1" />
+                    </a>
+                  </div>
+                </motion.div>
+                   
+          
           <Link
-            href="/contact"
-            className="inline-block px-8 py-3 text-white rounded-full bg-indigo-600 hover:bg-indigo-700 transition font-medium"
+            href="/about"
+            className="inline-block mt-10 px-8 py-3 text-white rounded-full bg-indigo-600 hover:bg-indigo-700 transition font-medium"
           >
-            Let’s Work Together
+            Learn more about Lapsa
           </Link>
         </motion.div>
 

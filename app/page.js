@@ -5,6 +5,7 @@ import ChatButton from "@/components/ChatButton";
 import Discount from "@/components/Discount";
 import Hero from "@/components/Hero";
 import Know from "@/components/Know";
+import Ready from "@/components/Ready";
 import ServiceMarquee from "@/components/Marquee";
 import OurServices from "@/components/OurServices";
 import Portfolio from "@/components/Portfolio";
@@ -62,6 +63,7 @@ export default function MyApp({ Component, pageProps }) {
       <Benefits />
       <Discount />
       <FAQ />
+      <Ready />
     </div>
   );
 }

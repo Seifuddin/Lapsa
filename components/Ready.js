@@ -15,7 +15,9 @@ export default function Ready() {
                       transition={{ duration: 0.5 }}
                       className="bg-orange-600 text-white py-12 px-6 rounded-2xl text-center"
                     >
-                      <h2 className="text-3xl font-bold">Ready to bring your ideas to life and elevate your brand?</h2>
+                      <h2 className="text-center text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Ready to elevate your brand online?
+          </h2>
                       <p className="mt-4 text-lg italic">Let's build something great together. Contact us for a free consultation today!!!</p>
                       <a
                         href="contacts"

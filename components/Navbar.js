@@ -27,7 +27,7 @@ export default function Navbar() {
   const isActive = (href) => pathname === href;
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-blue-950/60 shadow-md">
+    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-blue-950 shadow-md">
       <div className="max-w-screen-xl mx-auto px-6 py-5">
         <div className="flex justify-between items-center">
           {/* Logo */}

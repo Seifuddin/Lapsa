@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Know() {
   return (
-    <section className=" gradient-to-br from-orange-100 via-white to-blue-100 py-16 px-4">
+    <section className=" gradient-to-br from-orange-100 via-white to-blue-100">
       <div className="max-w-5xl mx-auto text-center space-y-10">
         {/* Header 
         <motion.div
@@ -25,9 +25,9 @@ export default function Know() {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="p-5 rounded-sm shadow-md bg-blue-50 border"
+          className="p-5 rounded-sm shadow-md bg-white border border-orange-200"
         >
-          <h3 className="text-xl font-semibold text-blue-600 mb-2">
+          <h3 className="text-xl font-semibold text-orange-600 mb-2">
             What is a Website
           </h3>
           <p className="text-blue-950 text-base md:text-lg leading-relaxed">
@@ -42,9 +42,9 @@ export default function Know() {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="bg-blue-50 p-5 rounded-sm shadow-md border"
+          className="bg-white p-5 rounded-sm shadow-md border border-orange-200"
         >
-          <h3 className="text-xl font-semibold text-blue-600 mb-2">
+          <h3 className="text-xl font-semibold text-orange-600 mb-2">
             Why It Matters
           </h3>
           <p className="text-blue-950 text-base md:text-lg leading-relaxed">
@@ -58,7 +58,7 @@ export default function Know() {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative"
+          className="relative "
         >
         </motion.div>
       </div>

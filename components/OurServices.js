@@ -17,42 +17,42 @@ const services = [
     title: "Web Design",
     description:
       "We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.",
-    icon: <Layout className="w-6 h-6 text-orange-600" />,
+    icon: <Layout className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/creative-web-design-studio-with-flying-web-page-layout-elements-concept_1029473-56271.avif",
   },
   {
     title: "Software Development",
     description:
       "Transform your innovative ideas into reality with our bespoke software development services. We build custom applications that solve real business problems.",
-    icon: <Code className="w-6 h-6 text-orange-600" />,
+    icon: <Code className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/what-is-software-development.jpg",
   },
   {
     title: "Graphic Design",
     description:
       "From logos and branding to brochures and posters, we deliver eye-catching graphic design that communicates your message and captivates your audience.",
-    icon: <PenTool className="w-6 h-6 text-orange-600" />,
+    icon: <PenTool className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/art_design_740x317.jpg",
   },
   {
     title: "Digital Printing",
     description:
       "Get premium quality digital printing solutions for business cards, flyers, posters, and more — perfect for both personal and corporate branding.",
-    icon: <Printer className="w-6 h-6 text-orange-600" />,
+    icon: <Printer className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/digitalprinting.jpg",
   },
   {
     title: "Website Maintenance",
     description:
       "Let us handle the updates, security, and performance tuning so your site stays reliable, safe, and optimized — giving you peace of mind.",
-    icon: <Wrench className="w-6 h-6 text-orange-600" />,
+    icon: <Wrench className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/Website-Maintenance-is-No-Longer.webp",
   },
   {
     title: "Mobile App Development",
     description:
       "We develop powerful and user-friendly mobile apps that bring your brand to your customer’s fingertips — across Android and iOS platforms.",
-    icon: <Smartphone className="w-6 h-6 text-orange-600" />,
+    icon: <Smartphone className="w-9 h-9 border bg-gray-50 text-orange-600 shadow-md p-1 rounded-full font-black" />,
     image: "/images/download (2).jpg",
   },
 ];
@@ -61,7 +61,7 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative bg-gray-50 z-0 py-12 px-5 mx-auto">
+    <section className="relative bg-white z-0 py-12 px-5 mx-auto">
       {/* Background image 
       <div className="absolute inset-0 -z-10 opacity-50">
         <img
@@ -73,9 +73,9 @@ export default function OurServices() {
       */}
   <div className="absolute inset-0 z-0"></div> {/* Optional overlay */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
-    <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
-                    Our Services<span className="text-orange-600"></span>
-                  </h1>
+    <h2 className="text-orange-600 text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+      Our Services
+    </h2>
     <p className="italic text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
       Everything You Need to Succeed Online.
     </p>
@@ -91,7 +91,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="bg-white border border-blue-200 rounded-md shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl"
+              className="bg-blue-50 border border-orange-200 rounded-md shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl"
             >
               <img
                 src={service.image}
@@ -101,7 +101,7 @@ export default function OurServices() {
               <div className="p-5 text-left">
                 <div className="flex items-center gap-2 mb-2">
                   {service.icon}
-                  <h3 className="text-lg font-semibold text-blue-600">
+                  <h3 className="text-lg font-bold text-orange-600">
                     {service.title}
                   </h3>
                 </div>
@@ -110,7 +110,7 @@ export default function OurServices() {
                 </p>
                 <button
                   onClick={() => setActiveService(service)}
-                  className="inline-block bg-blue-600 text-white py-2 px-6 mt-4 text-sm font-semibold rounded hover:bg-blue-600 transition-all duration-300"
+                  className="inline-block bg-orange-600 text-white py-2 px-6 mt-4 text-sm font-semibold rounded hover:bg-blue-600 transition-all duration-300"
                 >
                   Learn More
                 </button>

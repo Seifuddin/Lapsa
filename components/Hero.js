@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section className="relative h-sceen bg-black py-16 px-5 md:px-10">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-75"
+        className="absolute inset-0 bg-cover bg-center opacity-75 md:opacity-100"
         style={{ backgroundImage: "url('/images/herobackground4.avif')" }}
       />
 
@@ -44,7 +44,7 @@ export default function Hero() {
             <div className="flex gap-4 pt-2">
               <a
             href="services"
-            className="mt-6 text-center inline-block bg-blue-600 border-2 border-white text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
+            className="mt-6 text-center inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
           >
             Our Services
           </a>
