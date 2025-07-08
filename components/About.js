@@ -36,7 +36,7 @@ export default function AboutUs() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 1, ease: "easeInOut" }}
                 >
-                  <h4 className="text-2xl font-ono italic text-orange-600 font-semibold mb-4 underline">Follow us on social media</h4>
+                  <h4 className="text-2xl font-ono italic text-blue-600 font-semibold mb-4 underline">Follow us on social media</h4>
                   <div className="relative flex gap-4 text-white">
                     <a
                       href="https://www.facebook.com/profile.php?id=61570201295782"

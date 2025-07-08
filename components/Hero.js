@@ -16,7 +16,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative h-sceen bg-black py-16 px-5 md:px-10">
+    <section className="relative bg-black py-16 lg:py-20 px-5 md:px-10">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-75 md:opacity-100"
         style={{ backgroundImage: "url('/images/herobackground4.avif')" }}
@@ -27,12 +27,12 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 p-6 md:p-8 w-full max-w-6xl min-h-screen flex items-center justify-center backdrop-blur-smm"
+        className="relative z-10 w-full min-h-screen flex items-center justify-center backdrop-blur-smm"
       >
-        <div className="grid md:grid-cols-2 gap-10 items-center w-full pt-5">
+        <div className="grid md:grid-cols-2 gap-10 items-center w-full">
           {/* Text Content */}
           <div className="space-y-5">
-            <h1 className="font-black text-white text-4xl md:text-5xl leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
               Crafting Stunning 
               <span className="text-blue-500"> Websites</span> & Bold
               <span className="text-orange-400"> Graphic Designs</span>

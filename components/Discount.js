@@ -8,7 +8,7 @@ export default function Discount() {
         className="absolute inset-0 bg-cover bg-center opacity-70 md:opacity-100"
         style={{ backgroundImage: "url('/images/herobackground5.jpg')" }}
       />
-      <div className="relative z-10 p-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left: Text Content */}
         <div className="space-y-6">
           <h2 className="text-white text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
