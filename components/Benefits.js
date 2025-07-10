@@ -8,7 +8,7 @@ import Know from "./Know";
 
 export default function Benefits() {
   return (
-    <section className="relative bg-white bg-cover bg-center bg-no-repeat p-5 py-20">
+    <section className="relative bg-gradient-to-r from-orange-100 via-white to-blue-100 bg-cover bg-center bg-no-repeat p-5 py-20">
       {/* Optional background image */}
       {/* style={{ backgroundImage: `url('/images/pngwing.com (7).png')` }} */}
 
@@ -70,7 +70,7 @@ export default function Benefits() {
                 "🔍 Be Found on Google – SEO brings free organic traffic.",
                 "💼 Sell Products & Services – Turn your site into a money-maker.",
               ].map((benefit, index) => (
-                <li key={index} className="flex items-start shadow-md bg-white gap-3 p-2 border border-orange-200">
+                <li key={index} className="flex items-start shadow-md bg-white rounded-md gap-3 p-3 border border-orange-200">
                   <CheckCircle className="text-orange-600 w-5 h-5 mt-1" />
                   <span className="leading-relaxed">{benefit}</span>
                 </li>

@@ -25,7 +25,7 @@ const services = [
 
 export default function TopServices() {
   return (
-    <section className="mx-auto px-5 py-10 bg-gray-200">
+    <section className="mx-auto px-5 py-10 bg-gray-100">
       {/* Desktop Layout */}
       <div className="hidden md:grid grid-cols-2 gap-6">
         {/* Left Column */}

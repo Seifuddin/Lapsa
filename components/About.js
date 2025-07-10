@@ -14,7 +14,7 @@ import {
 
 export default function AboutUs() {
   return (
-    <section className="bg-gray-50 text-orange-600 py-20" id="about">
+    <section className="bg-gradient-to-r from-orange-100 via-white to-blue-100 text-orange-600 py-20" id="about">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
         {/* Text Side */}
         <motion.div

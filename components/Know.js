@@ -25,7 +25,7 @@ export default function Know() {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="p-5 rounded-sm shadow-md bg-white border border-orange-200"
+          className="p-5 rounded-md shadow-md bg-white border border-orange-200"
         >
           <h3 className="text-xl font-semibold text-orange-600 mb-2">
             What is a Website
@@ -42,7 +42,7 @@ export default function Know() {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="bg-white p-5 rounded-sm shadow-md border border-orange-200"
+          className="bg-white p-5 rounded-md shadow-md border border-orange-200"
         >
           <h3 className="text-xl font-semibold text-orange-600 mb-2">
             Why It Matters
