@@ -12,6 +12,7 @@ import Portfolio from "@/components/Portfolio";
 import FAQ from "@/components/Quiz";
 import TopServices from "@/components/topservice";
 import Why from "@/components/Why";
+import Testimonial from "@/components/Testimonial";
 
 // ✅ Page-specific SEO metadata
 export const metadata = {
@@ -64,6 +65,7 @@ export default function MyApp({ Component, pageProps }) {
       <Discount />
       <FAQ />
       <Ready />
+      <Testimonial />
     </div>
   );
 }

@@ -11,8 +11,8 @@ const faqs = [
   { category: "Timeline", question: "What is your turnaround time?", answer: "Project timelines depend on complexity, but we always strive to deliver on time." },
   { category: "Services", question: "Do you offer website maintenance?", answer: "Yes, we offer ongoing support and maintenance services for all our clients." },
   { category: "Services", question: "Can I request a redesign of a website?", answer: "Yes, we specialize in website redesigns to enhance performance and aesthetics." },
-  { category: "Payments", question: "What payment methods do you accept?", answer: "We accept Lipa na M-Pesa services through our Till Number provided on the Website which is or send money to 0111 608 331 (name: edwin)." },
-  { category: "SEO", question: "Do you provide SEO optimization?", answer: "Yes, we include basic SEO optimizations and offer advanced SEO as an add-on service." },
+  { category: "Payments", question: "What payment methods do you accept?", answer: "We accept Lipa na M-Pesa through our Till Number or direct payment to 0111 608 331 (name: Edwin)." },
+  { category: "SEO", question: "Do you provide SEO optimization?", answer: "Yes, we include basic SEO and offer advanced SEO as an add-on service." },
   { category: "Branding", question: "Do you offer branding services?", answer: "Yes, we help businesses build strong brand identities through design and strategy." },
 ];
 
@@ -29,7 +29,6 @@ export default function FAQ() {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 640);
     };
-
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -48,123 +47,152 @@ export default function FAQ() {
   });
 
   return (
-    <section
-      className="relative p-5 bg-cover bg-center bg-white bg-no-repeat py-16 text-blue-900">
-     {/* style={{
-        backgroundImage: `url('/images/pngwing.com (7).png')`,
-      }}
-        */}
-    
-      {/* Gradient overlay */}
+    <section className="relative px-6 py-16 bg-gradient-to-br from-orange-50 via-white to-blue-50 text-blue-900">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-700 mb-4">
+          Frequently Asked Questions
+        </h2>
+        <p className="italic font-medium text-lg mb-10 max-w-2xl mx-auto">
+          Everything you need to know about working with Lapsa.
+        </p>
 
-      <h2 className="text-center text-orange-600 text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
-            Frequently Asked Questions
-          </h2>
-        <p className="italic text-blue-900 font-semibold text-lg max-w-5xl mx-auto text-center mb-8">
-          Everything You Need to Know About Working With Us.
-        </p>  
-      {/* Search bar */}
-      <div className="relative max-w-xl mx-auto mb-6">
-        <Search className="absolute left-3 top-3.5 w-5 h-5 text-blue-900" />
-        <input
-          type="text"
-          placeholder="Search FAQs..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-blue-0 pl-10 text-blue-900 pr-4 py-2 border border-blue-600 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-
-      {/* Mobile filter toggle */}
-      {isMobile && (
-        <div className="sm:hidden flex justify-center mb-4">
-          <button
-            onClick={() => setShowFilters(!showFilters)}
-            className="flex items-center gap-2 border border-blue-600 text-blue-600 px-4 py-2 rounded-full hover:bg-blue-50 transition"
-          >
-            <Filter className="w-4 h-4" />
-            Filter Categories
-            <ChevronDown
-              className={`w-4 h-4 transform text-blue-900 transition-transform ${showFilters ? "rotate-180" : ""}`}
-            />
-          </button>
+        {/* Search bar */}
+        <div className="relative max-w-xl mx-auto mb-6">
+          <Search className="absolute left-3 top-3.5 w-5 h-5 text-blue-800" />
+          <input
+            type="text"
+            placeholder="Search FAQs..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full pl-10 pr-4 py-2 border border-blue-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
+          />
         </div>
-      )}
 
-      {/* Category filters */}
-      <AnimatePresence initial={false}>
-        {(!isMobile || showFilters) && (
-          <motion.div
-            key="filters"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden mb-8"
-          >
-            <div className="flex flex-wrap justify-center gap-2">
-              <button
-                onClick={() => setSelectedCategory("All")}
-                className={`px-4 py-2 rounded-full border border-blue-600 ${
-                  selectedCategory === "All" ? "bg-blue-600 text-white" : "bg-blue-50 text-blue-900"
-                } hover:bg-blue-600 transition text-blue-900 hover:text-white`}
-              >
-                All
-              </button>
-              {uniqueCategories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 rounded-full border border-blue-600 ${
-                    selectedCategory === cat ? "bg-blue-600 text-white" : "bg-blue-50 text-blue-600"
-                  } hover:bg-blue-600 transition text-blue-600 hover:text-white`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* FAQ items */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-        {filteredFaqs.length > 0 ? (
-          filteredFaqs.map((faq, index) => (
-            <div
-              key={`${faq.question}-${index}`}
-              className="bgblue-50 p- bordr border-blu-200 text-blue-900 rounded-sm shadow-md hover:shadow-xl transition"
+        {/* Mobile filter toggle */}
+        {isMobile && (
+          <div className="sm:hidden flex justify-center mb-4">
+            <button
+              onClick={() => setShowFilters(!showFilters)}
+              className="flex items-center gap-2 border border-blue-600 text-blue-600 px-4 py-2 rounded-full hover:bg-blue-50 transition"
             >
-              <button
-                className="w-full flex justify-between font-semibold items-center p-3 text-left"
-                onClick={() => toggleFAQ(index)}
-              >
-                <span>{faq.question}</span>
-                <ChevronDown
-                  className={`w-5 h-5 transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-180 text-blue-900" : "text-blue-900"
-                  }`}
-                />
-              </button>
-
-              <AnimatePresence initial={false}>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="overflow-hidden px-3 pb-3 text-blue-900"
-                  >
-                    <div className="mt-1">{faq.answer}</div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          ))
-        ) : (
-          <p className="text-center text-blue-900 col-span-full">No FAQs match your search.</p>
+              <Filter className="w-4 h-4" />
+              Filter Categories
+              <ChevronDown
+                className={`w-4 h-4 transform transition-transform ${showFilters ? "rotate-180" : ""}`}
+              />
+            </button>
+          </div>
         )}
+
+        {/* Category filters */}
+        <AnimatePresence initial={false}>
+          {(!isMobile || showFilters) && (
+            <motion.div
+              key="filters"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="overflow-hidden mb-10"
+            >
+              <div className="flex flex-wrap justify-center gap-2">
+                <button
+                  onClick={() => setSelectedCategory("All")}
+                  className={`px-4 py-2 rounded-full border text-sm ${
+                    selectedCategory === "All"
+                      ? "bg-blue-600 text-white border-blue-600"
+                      : "bg-blue-100 text-blue-700 border-blue-200"
+                  } hover:bg-blue-600 hover:text-white transition`}
+                >
+                  All
+                </button>
+                {uniqueCategories.map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    className={`px-4 py-2 rounded-full border text-sm ${
+                      selectedCategory === cat
+                        ? "bg-blue-600 text-white border-blue-600"
+                        : "bg-blue-100 text-blue-700 border-blue-200"
+                    } hover:bg-blue-600 hover:text-white transition`}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* FAQ items */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {filteredFaqs.length > 0 ? (
+            filteredFaqs.map((faq, index) => (
+              <motion.div
+                key={`${faq.question}-${index}`}
+                className="bg-white rounded-xl shadow-md border border-blue-100 transition hover:shadow-lg"
+                whileHover={{ scale: 1.01 }}
+              >
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full flex justify-between items-center text-left p-4 font-semibold text-blue-800"
+                >
+                  <span>{faq.question}</span>
+                  <ChevronDown
+                    className={`w-5 h-5 transform transition-transform duration-300 ${
+                      openIndex === index ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {openIndex === index && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden px-4 pb-4 text-sm text-blue-700"
+                    >
+                      {faq.answer}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))
+          ) : (
+            <p className="text-center text-blue-700 col-span-full">No FAQs match your search.</p>
+          )}
+        </div>
       </div>
+      {/* CTA Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="mt-16 bg-gradient-to-r from-orange-100 via-white to-blue-100 rounded-xl shadow-md p-8 max-w-4xl mx-auto text-center"
+      >
+        <h3 className="text-2xl font-bold text-blue-900 mb-2">
+          Didn't find what you're looking for?
+        </h3>
+        <p className="text-blue-800 mb-6">
+          Reach out to us directly. We're here to help you with custom solutions for your web and design needs.
+        </p>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a
+            href="/contacts"
+            className="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-all"
+          >
+            Contact Us
+          </a>
+          <a
+            href="/quote"
+            className="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-600 transition-all"
+          >
+            Request a Custom Quote
+          </a>
+        </div>
+      </motion.div>
     </section>
   );
 }
