@@ -32,32 +32,32 @@ const Testimonial = () => {
     {
       quote:
         "Lapsa transformed our brand image with a stunning website and sleek visual identity. Absolutely phenomenal!",
-      author: "Linda Achieng, CEO - SmartTech Africa",
-      image: "/images/Screenshot_20231128-143947_Photos.jpg",
+      author: "Mark Kinyua",
+      image: "/images/images (1).jpg",
     },
     {
       quote:
         "Their attention to detail and creative direction elevated our product launch beyond expectations.",
-      author: "Kevin Mwangi, Marketing Lead - NeonWave",
-      image: "/images/Screenshot_20231128-143947_Photos.jpg",
+      author: "Clifford Matara",
+      image: "/images/ai-generated-businessman-using-tablet-with-social-media-icons-over-night-cityscape-background-a-businessman-on-a-blurred-background-using-a-3d-rendering-mobile-phone-with-social-m.jpg",
     },
     {
       quote:
         "From UI/UX to branding kits, Lapsa’s team delivers with passion, creativity, and professionalism.",
-      author: "Faith Kamau, Founder - Vibe Creatives",
-      image: "/images/Screenshot_20231128-143947_Photos.jpg",
+      author: "Brian Odhiambo",
+      image: "/images/pexels-pixabay-268533.jpg",
     },
     {
       quote:
         "We received a fast, responsive site that boosted our engagement and sales within weeks. Highly recommended!",
-      author: "Brian Odhiambo, E-Commerce Manager - Kito Trends",
+      author: "Muriithi Nguru",
       image: "/images/Screenshot_20231128-143947_Photos.jpg",
     },
     {
       quote:
         "Their branding strategy and design expertise gave our company the professional look we needed.",
-      author: "Alex Mutua, Operations Head - ZipServe Solutions",
-      image: "/images/Screenshot_20231128-143947_Photos.jpg",
+      author: "DJ Youngjey254",
+      image: "/images/YOUNG DREAMERS💫 20231113_164706.jpg",
     },
   ];
 
@@ -79,7 +79,7 @@ const Testimonial = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-700"
+              className="text-4xl md:text-5xl font-extrabold text-orange-600"
             >
               What Our Clients Say
             </motion.h2>

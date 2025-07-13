@@ -47,9 +47,9 @@ export default function FAQ() {
   });
 
   return (
-    <section className="relative px-6 py-16 bg-gradient-to-br from-orange-50 via-white to-blue-50 text-blue-900">
+    <section className="text-orange-600 relative px-6 py-16 bg-gradient-to-br from-orange-50 via-white to-blue-50">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-700 mb-4">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
           Frequently Asked Questions
         </h2>
         <p className="italic font-medium text-lg mb-10 max-w-2xl mx-auto">
@@ -124,7 +124,7 @@ export default function FAQ() {
         </AnimatePresence>
 
         {/* FAQ items */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 text-left">
           {filteredFaqs.length > 0 ? (
             filteredFaqs.map((faq, index) => (
               <motion.div

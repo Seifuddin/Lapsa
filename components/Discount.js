@@ -18,7 +18,7 @@ export default function Discount() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative text-lg border-t-4 font-mono font-semibold text-white"
+            className="relative text-lg font-mono font-semibold text-white"
           >
             Quality web design doesn’t have to come with a hefty price tag.
             At <span className="font-bold">Lapsa</span>, we offer affordable,
@@ -35,7 +35,7 @@ export default function Discount() {
           >
             <a
               href="/contacts"
-              className="inline-block border bg-blue-600 text-white font-semibold px-8 py-3 rounded-full transition duration-300"
+              className="inline-block border-2 text-white font-semibold px-8 py-3 rounded-full transition duration-300"
             >
               Contact Us Today
             </a>

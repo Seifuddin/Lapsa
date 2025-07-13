@@ -64,7 +64,7 @@ export default function OurServices() {
   return (
     <section className="relative z-0 py-16 bg-gradient-to-b from-blue-50 via-white to-orange-50 px-5">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-700 mb-4">
+        <h2 className="text-orange-600 text-4xl md:text-5xl font-extrabold mb-4">
           Our Services
         </h2>
         <p className="italic text-blue-900 font-medium text-lg mb-12 max-w-2xl mx-auto">
