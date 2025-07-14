@@ -29,13 +29,13 @@ export default function Navbar() {
 
   return (
     <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-blue-950 shadow-md">
-      <div className="max-w-screen-xl mx-auto px-6 py-0">
+      <div className="max-w-screen-xl mx-auto px-6 py-2">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="block">
               <Image
-                src="/images/lapsalogo-removebg-preview.png"
+                src="/images/Logo Lapsa Final.png"
                 alt="Lapsa Logo"
                 width={80}
                 height={10}

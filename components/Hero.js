@@ -19,7 +19,7 @@ export default function Hero() {
     <section className="relative bg-black py-16 lg:py-20 px-5 md:px-10">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-75 md:opacity-100"
-        style={{ backgroundImage: "url('/images/herobackground4.avif')" }}
+        style={{ backgroundImage: "url('/images/lapsabackground.jpg')" }}
       />
 
       {/* Glass Card */}
@@ -27,7 +27,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 w-full min-h-screen flex items-center justify-center backdrop-blur-smm"
+        className="relative z-10 w-full h-screen flex items-center justify-center backdrop-blur-smm"
       >
         <div className="grid md:grid-cols-2 gap-10 items-center w-full">
           {/* Text Content */}
