@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-blue-950 shadow-md">
-      <div className="max-w-screen-xl mx-auto px-6 py-2">
+      <div className="max-w-screen-xl mx-auto px-6 py-1">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
@@ -40,7 +40,7 @@ export default function Navbar() {
                 width={80}
                 height={10}
                 priority
-                className="h-auto w-auto"
+                className="w-20 md:w-24"
               />
             </Link>
           </div>
@@ -50,7 +50,7 @@ export default function Navbar() {
             <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -66,7 +66,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex space-x-6 font-mono text-lg items-center">
+          <div className="hidden lg:flex space-x-6 font-mono text-2xl items-center">
             <NavLink href="/" active={isActive("/")}>Home</NavLink>
             <NavLink href="/about" active={isActive("/about")}>About</NavLink>
 
@@ -76,9 +76,8 @@ export default function Navbar() {
                 Services
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white text-gray-800 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                <div className="p-4 space-y-2">
+                <div className="p-4 space-y-2 text-lg font-semibold text-blue-700">
                   <DropdownGroup
-                    title="Our Services"
                     color="text-blue-700"
                     links={[
                       { href: "/web", label: "Web Development" },
@@ -102,7 +101,7 @@ export default function Navbar() {
             initial={{ height: 0 }}
             animate={{ height: "auto" }}
             exit={{ height: 0 }}
-            className="lg:hidden bg-blue-950/90 text-white px-6 py-4 font-mono text-lg space-y-4 overflow-hidden"
+            className="lg:hidden bg-blue-950/90 text-white px-6 py-4 font-mono text-2xl space-y-4 overflow-hidden"
           >
             <MobileLink href="/" isActive={isActive("/")} onClick={() => setIsOpen(false)}>
               Home
@@ -127,10 +126,9 @@ export default function Navbar() {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="mt-2 ml-3 space-y-3 text-sm overflow-hidden"
+                    className="mt-2 ml-1 space-y-3 text-lg overflow-hidden"
                   >
                     <DropdownGroupMobile
-                      title="Our Services"
                       color="text-blue-300"
                       links={[
                         { href: "/web", label: "Web Development" },

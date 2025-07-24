@@ -57,9 +57,9 @@ export default function Benefits() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="order-2 md:order-2 space-y-2 text-left"
+            className="order-2 md:order-2 space-y-2 text-left shadow-md bg-white rounded-md gap-3 p-2 border border-orange-200"
           >
-            <h3 className="text-xl font-semibold text-orange-600 mb-10">
+            <h3 className="text-xl font-semibold text-orange-600 mb-10 mt-5 text-center">
               Why Every Brand Needs a Website:
             </h3>
             <ul className="space-y-4 text-blue-950">
@@ -70,7 +70,7 @@ export default function Benefits() {
                 "🔍 Be Found on Google – SEO brings free organic traffic.",
                 "💼 Sell Products & Services – Turn your site into a money-maker.",
               ].map((benefit, index) => (
-                <li key={index} className="flex items-start shadow-md bg-white rounded-md gap-3 p-3 border border-orange-200">
+                <li key={index} className="flex items-start shadow-md p-2">
                   <CheckCircle className="text-orange-600 w-5 h-5 mt-1" />
                   <span className="leading-relaxed">{benefit}</span>
                 </li>

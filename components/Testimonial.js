@@ -89,16 +89,16 @@ const Testimonial = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-end gap-4 mb-6">
+          <div className="flex justify-between mb-6">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
-              className="p-2 rounded-full bg-white hover:bg-orange-500 text-blue-700 hover:text-white shadow-lg transition"
+              className="p-2 rounded-full bg-orange-600 hover:bg-blue-600 text-white hover:text-white shadow-lg transition"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={() => swiperRef.current?.slideNext()}
-              className="p-2 rounded-full bg-white hover:bg-orange-500 text-blue-700 hover:text-white shadow-lg transition"
+              className="p-2 rounded-full bg-orange-600 hover:bg-blue-600 text-white hover:text-white shadow-lg transition"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -123,7 +123,7 @@ const Testimonial = () => {
                 <motion.div
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.4 }}
-                  className="bg-white/60 backdrop-blur-md border border-blue-100 shadow-2xl rounded-3xl p-8 text-center h-full flex flex-col items-center justify-between"
+                  className="bg-white/60 backdrop-blur-md border border-orange-100 shadow-2xl rounded-3xl p-8 text-center h-full flex flex-col items-center justify-between"
                 >
                   <img
                     src={testimonial.image}

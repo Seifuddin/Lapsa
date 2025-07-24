@@ -5,13 +5,13 @@ export default function Discount() {
   return (
     <section className="relative bg-black py-20 px-5 md:px-10">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-70 md:opacity-100"
-        style={{ backgroundImage: "url('/images/herobackground5.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center opacity-90 md:opacity-100"
+        style={{ backgroundImage: "url('/images/herobackground1.jpg')" }}
       />
       <div className="relative z-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left: Text Content */}
         <div className="space-y-6">
-          <h2 className="text-white text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+          <h2 className="text-orange-500 text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
             Get stunning websites from as low as KES 150, 000
           </h2>
           <motion.p
@@ -35,7 +35,7 @@ export default function Discount() {
           >
             <a
               href="/contacts"
-              className="inline-block border-2 text-white font-semibold px-8 py-3 rounded-full transition duration-300"
+              className="inline-block bg-white border-2 text-black font-semibold px-8 py-3 rounded-full transition duration-300"
             >
               Contact Us Today
             </a>

@@ -56,7 +56,6 @@ export default function MyApp({ Component, pageProps }) {
     <div className="overflow-hidden">
       <Hero />
       <ChatButton />
-      <About />
       <TopServices />
       <ServiceMarquee />
       <OurServices />
