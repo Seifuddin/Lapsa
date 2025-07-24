@@ -13,7 +13,7 @@ import {
 export default function Contact() {
   return (
     <div
-      className="relative bg-cover bg-center bg-white bg-no-repeat py-10 text-gray-800">
+      className="relative bg-cover bg-center bg-gray-100 bg-no-repeat py-10 text-gray-800">
       {/* style={{
         backgroundImage: `url('/images/pngwng.com (7).png')`,
       }}
@@ -41,7 +41,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 bg-gray-50 shadow-xl border border-gray-400 p-5 py-10 rounded-lg"
+            className="space-y-6 bg-gray-50 shadow-xl border border-blue-500 p-5 py-10 rounded-lg"
           >
             <h4 className="text-xl font-bold text-blue-900 mb-6">Contact Information</h4>
             <div className="flex items-start space-x-4 shadow-md p-1">
@@ -102,7 +102,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-50 border border-gray-400 p-6 rounded-lg shadow-xl space-y-4"
+            className="bg-gray-50 border border-blue-500 p-6 rounded-lg shadow-xl space-y-4"
             onSubmit={(e) => {
               e.preventDefault();
               // Handle submission
@@ -115,7 +115,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="name"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-blue-500 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Name"
                 required
               />
@@ -126,7 +126,7 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-blue-500 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Email"
                 required
               />
@@ -137,7 +137,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-blue-500 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Phone Number"
               />
             </div>
@@ -147,7 +147,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="subject"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-400 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-blue-500 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Subject of Your Message"
               />
             </div>
@@ -157,7 +157,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 rows="4"
-                className="w-full text-blue-900 mt-1 p-2 rounded-lg border border-gray-400 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 rounded-lg border border-blue-500 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Message"
                 required
               ></textarea>

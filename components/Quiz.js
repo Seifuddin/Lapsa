@@ -47,7 +47,7 @@ export default function FAQ() {
   });
 
   return (
-    <section className="text-orange-600 relative px-6 py-16 bg-gradient-to-br from-orange-50 via-white to-blue-50">
+    <section className="text-orange-600 relative px-6 py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
           Frequently Asked Questions
@@ -129,7 +129,7 @@ export default function FAQ() {
             filteredFaqs.map((faq, index) => (
               <motion.div
                 key={`${faq.question}-${index}`}
-                className="bg-white rounded-xl shadow-md border border-blue-100 transition hover:shadow-lg"
+                className="bg-white rounded-xl shadow-md border border-blue-300 transition hover:shadow-lg"
                 whileHover={{ scale: 1.01 }}
               >
                 <button

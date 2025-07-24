@@ -83,7 +83,7 @@ const Testimonial = () => {
             >
               What Our Clients Say
             </motion.h2>
-            <p className="text-lg text-blue-800 mt-4 max-w-2xl mx-auto">
+            <p className="text-lg italic font-semibold text-blue-800 mt-4 max-w-2xl mx-auto">
               Hear how Lapsa Web and Graphics has transformed businesses through powerful design and modern web solutions.
             </p>
           </div>
@@ -152,7 +152,7 @@ const Testimonial = () => {
 
       {/* Optional Modal Feature Section (if enabled later) */}
       <Dialog open={!!selectedFeature} onClose={handleModalClose} className="relative z-50">
-        <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
+        <div className="fixed inset-0 bg-black/30 rounded-lg" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center p-4">
           <Dialog.Panel className="w-full max-w-md rounded-xl bg-white p-6 shadow-2xl">
             <Dialog.Title className="flex items-center gap-3 text-lg font-bold text-orange-600 mb-3">

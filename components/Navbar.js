@@ -40,7 +40,7 @@ export default function Navbar() {
                 width={80}
                 height={10}
                 priority
-                className="w-20 md:w-24"
+                className="w-24"
               />
             </Link>
           </div>

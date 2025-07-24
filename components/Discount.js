@@ -11,14 +11,14 @@ export default function Discount() {
       <div className="relative z-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left: Text Content */}
         <div className="space-y-6">
-          <h2 className="text-orange-500 text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+          <h2 className="text-white text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
             Get stunning websites from as low as KES 150, 000
           </h2>
           <motion.p
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative text-lg font-mono font-semibold text-white"
+            className="relative text-lg text-white"
           >
             Quality web design doesn’t have to come with a hefty price tag.
             At <span className="font-bold">Lapsa</span>, we offer affordable,

@@ -82,7 +82,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="relative rounded-2xl overflow-hidden shadow-xl border border-orange-200 bg-white/60 backdrop-blur-md transition-all duration-300 hover:shadow-2xl group"
+              className="relative rounded-md overflow-hidden shadow-xl border border-orange-200 bg-white/60 backdrop-blur-md transition-all duration-300 hover:shadow-2xl group"
             >
               <img
                 src={service.image}

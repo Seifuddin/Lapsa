@@ -16,7 +16,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen lg:h-auto bg-black py-16 lg:py-20 px-5 md:px-10">
+    <section className="relative h-screen lg:h-auto bg-black lg:py-20 px-5 md:px-10">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-75 md:opacity-100"
         style={{ backgroundImage: "url('/images/lapsabackground.jpg')" }}
@@ -44,14 +44,14 @@ export default function Hero() {
             <div className="flex gap-4 pt-2">
               <a
             href="services"
-            className="mt-6 text-center inline-block bg-white text-blue-600 font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
+            className="mt-6 text-center inline-block bg-blue-600 text-blue-600 font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
           >
             Our Services
           </a>
 
               <a
             href="contacts"
-            className="bg-blue-600 text-center mt-6 inline-block border- border-white text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
+            className="bg-white text-center mt-6 inline-block border- border-white text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
           >
             Contact Us
           </a>

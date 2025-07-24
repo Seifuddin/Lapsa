@@ -19,11 +19,9 @@ export default function Location() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Text Section */}
         <motion.div {...animationConfig}>
-          <h1 className="text-3xl md:text-4xl font-extrabold text-black leading-tight">
-            Visit{" "}
-            <span className="text-blue-600 text-5xl md:text-6xl">Lapsa Web</span> and {" "}
+          <h1 className="text-3xl md:text-4xl font-extrabold text-orange-600 mb-5 leading-tight">
+            Visit Lapsa Web & Graphics{" "}
             <span className=" text-orange-600 text-5xl md:text-6xl mt-2">
-              Graphics
             </span>
           </h1>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">
@@ -49,7 +47,7 @@ export default function Location() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, backgroundColor: "#047857" }}
               whileTap={{ scale: 0.95 }}
-              className="relative z-10 flex items-center gap-2 bg-[#0a1d37] text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
+              className="relative z-10 flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
             >
               <MapPin size={20} className="text-white" />
               Get Directions
