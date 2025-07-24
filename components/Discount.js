@@ -11,8 +11,8 @@ export default function Discount() {
       <div className="relative z-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left: Text Content */}
         <div className="space-y-6">
-          <h2 className="text-white text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
-            Get stunning websites from as low as KES 150, 000
+          <h2 className="text-blue-700 text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Get stunning websites from as low as KES 13, 000
           </h2>
           <motion.p
             initial={{ opacity: 0, x: 50 }}
@@ -35,7 +35,7 @@ export default function Discount() {
           >
             <a
               href="/contacts"
-              className="inline-block bg-white border-2 text-black font-semibold px-8 py-3 rounded-full transition duration-300"
+              className="inline-block bg-blue-700 border-2 text-white font-semibold px-8 py-3 rounded-full transition duration-300"
             >
               Contact Us Today
             </a>

@@ -44,14 +44,14 @@ export default function Hero() {
             <div className="flex gap-4 pt-2">
               <a
             href="services"
-            className="mt-6 text-center inline-block bg-blue-600 text-blue-600 font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
+            className="mt-6 text-center inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
           >
             Our Services
           </a>
 
               <a
             href="contacts"
-            className="bg-white text-center mt-6 inline-block border- border-white text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
+            className="bg-white text-center mt-6 inline-block border- border-white text-blue-600 font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
           >
             Contact Us
           </a>
