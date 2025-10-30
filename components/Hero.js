@@ -67,7 +67,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
+    <section className="relative w-full h-[70vh] md:h-[70vh] overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={slides[current].id}

@@ -64,10 +64,10 @@ export default function OurServices() {
   return (
     <section className="relative z-0 py-16 bg-gray-50 dient-to-b from-blue-50 via-white to-orange-50 px-5">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-blue-800 text-2xl md:text-4xl font-bold font-serif tracking-tight mb-4">
+        <h2 className="text-blue-800 text-3xl md:text-4xl font-bold font-serif tracking-tight mb-4">
           Our Services
         </h2>
-        <p className="italic text-blue-800 font-medium text-lg mb-12 max-w-2xl mx-auto">
+        <p className="itext-lg itali fontsemibold text-gray-600 mt-4 max-w-2xl mx-auto mb-8">
           Everything you need to succeed online — from design to deployment.
         </p>
 

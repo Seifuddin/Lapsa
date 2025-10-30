@@ -57,7 +57,7 @@ const Testimonial = () => {
       quote:
         "Their branding strategy and design expertise gave our company the professional look we needed.",
       author: "DJ Youngjey254",
-      image: "/images/YOUNG DREAMERS💫 20231113_164706.jpg",
+      image: "/images/teamup.jpg",
     },
   ];
 
@@ -79,11 +79,11 @@ const Testimonial = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="text-blue-800 text-2xl md:text-4xl font-bold font-serif tracking-tight mb-4"
+              className="text-blue-800 text-3xl md:text-4xl font-bold font-serif tracking-tight mb-4"
             >
               What Our Clients Say
             </motion.h2>
-            <p className="text-lg italic font-semibold text-blue-800 mt-4 max-w-2xl mx-auto">
+            <p className="text-lg itali fontsemibold text-gray-600 mt-4 max-w-2xl mx-auto">
               Hear how Lapsa Web and Graphics has transformed businesses through powerful design and modern web solutions.
             </p>
           </div>

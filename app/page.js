@@ -58,7 +58,6 @@ export default function MyApp({ Component, pageProps }) {
       <Hero />
       <ChatButton />
       <Discount />
-      <Ready />
       <OurServices />
       <Why />
       <FAQ />
