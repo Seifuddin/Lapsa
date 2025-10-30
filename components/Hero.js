@@ -1,128 +1,152 @@
 "use client";
 
-import { useState } from "react";
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-  Mail,
-  Phone,
-  MapPin,
-} from "lucide-react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+const slides = [
+  {
+    id: 1,
+    image: "/images/CDG_blog_post_image_01-850x412.jpg",
+    title: "Modern Web Design",
+    subtitle:
+      "We create stunning, responsive websites that turn visitors into loyal clients — designed to represent your brand perfectly.",
+    button: "Start Your Website",
+  },
+  {
+    id: 2,
+    image: "/images/iphone_apps.jpg",
+    title: "Custom Mobile Apps",
+    subtitle:
+      "We build intuitive mobile applications for Android and iOS, tailored to help your business grow and connect better.",
+    button: "Build an App",
+  },
+  {
+    id: 3,
+    image: "/images/images (3).jpg",
+    title: "Creative Graphic Design",
+    subtitle:
+      "From logos and posters to full branding packages — our creative touch makes your business stand out everywhere.",
+    button: "Explore Our Designs",
+  },
+  {
+    id: 4,
+    image: "/images/digitalprinting.jpg",
+    title: "High-Quality Digital Printing",
+    subtitle:
+      "We offer top-notch digital printing services with vibrant colors, premium materials, and fast delivery times.",
+    button: "Get a Quote",
+  },
+  {
+    id: 5,
+    image: "/images/teamup.jpg",
+    title: "Your Creative Partner",
+    subtitle:
+      "At Lapsa Web and Graphics, innovation meets design excellence. Let’s bring your vision to life together.",
+    button: "Work With Us",
+  },
+];
 
 export default function Hero() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
   return (
-    <section className="relative h-screen lg:h-auto bg-black lg:py-20 px-5 md:px-10">
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-75 md:opacity-100"
-        style={{ backgroundImage: "url('/images/lapsabackground.jpg')" }}
-      />
+    <section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={slides[current].id}
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          transition={{ duration: 1 }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={slides[current].image}
+            alt={slides[current].title}
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+        </motion.div>
+      </AnimatePresence>
 
-      {/* Glass Card */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative z-10 w-full h-screen flex items-center justify-center backdrop-blur-smm"
+      {/* Content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
+        <motion.h1
+          key={slides[current].title}
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl font-extrabold tracking-tight"
+        >
+          {slides[current].title}
+        </motion.h1>
+        <motion.p
+          key={slides[current].subtitle}
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="mt-4 text-lg md:text-2xl text-gray-200 max-w-3xl leading-relaxed"
+        >
+          {slides[current].subtitle}
+        </motion.p>
+        <motion.button
+          key={slides[current].button}
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="mt-8 px-10 py-3 text-lg font-semibold rounded-full bg-gradient-to-r from-indigo-600 to-pink-600 hover:from-pink-700 hover:to-indigo-700 transition shadow-lg"
+        >
+          {slides[current].button}
+        </motion.button>
+      </div>
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full shadow-lg transition"
       >
-        <div className="grid md:grid-cols-2 gap-10 items-center w-full">
-          {/* Text Content */}
-          <div className="space-y-5">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-              Crafting Stunning 
-              <span className="text-blue-500"> Websites</span> & Bold
-              <span className="text-orange-400"> Graphic Designs</span>
-            </h1>
-            <p className="italic font-serif text-white md:text-gray-50 text-md font-semibold">
-              We are Lapsa, We Design Your Digital Future by Elevating Your Brand Online, We create beautiful websites and eye-catching designs that make an impact.
-            </p>
+        <ChevronLeft size={28} />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full shadow-lg transition"
+      >
+        <ChevronRight size={28} />
+      </button>
 
-            <div className="flex gap-4 pt-2">
-              <a
-            href="services"
-            className="mt-6 text-center inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
-          >
-            Our Services
-          </a>
-
-              <a
-            href="contacts"
-            className="bg-white text-center mt-6 inline-block border- border-white text-blue-600 font-bold px-6 py-3 rounded-full hover:bg-blue-900 transition"
-          >
-            Contact Us
-          </a>
-            </div>
-            {/* Social Media 
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 1, ease: "easeInOut" }}
-                >
-                  <h4 className="text-white font-semibold mb-4">Follow Us</h4>
-                  <div className="absolute flex gap-4">
-                    <a
-                      href="https://www.facebook.com/profile.php?id=61570201295782"
-                      aria-label="Follow us on Facebook"
-                      className="hover:text-white transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Facebook className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09"
-                      aria-label="Follow us on Twitter"
-                      className="hover:text-white transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Twitter className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48"
-                      aria-label="Follow us on Instagram"
-                      className="hover:text-white transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Instagram className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                      aria-label="Follow us on LinkedIn"
-                      className="hover:text-white transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                  </div>
-                </motion.div>
-          */}
-
-          </div>
-          {/* Hero Image (hidden on small screens) */}
-          <div className="hidden md:flex justify-center">
-            <div className="w-full flex rounded-xl items-center justify-center">
-               {/* <Image
-                src="/images/image-removebg-preview (44).png"
-                alt="Web and Graphic Design"
-                width={500}
-                height={500}
-                className="flex rounded-xl items-center justify-center  w-60 md:w-full h-auto object-contain"
-                priority
-              />
-              */}
-            </div>
-          </div>
-          
-        </div>
-      </motion.div>
-      
+      {/* Indicators */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`w-3 h-3 rounded-full transition-all ${
+              current === index
+                ? "bg-pink-600 scale-125 shadow-md"
+                : "bg-gray-400 hover:bg-pink-400"
+            }`}
+          />
+        ))}
+      </div>
     </section>
   );
 }

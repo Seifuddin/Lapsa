@@ -13,6 +13,7 @@ import FAQ from "@/components/Quiz";
 import TopServices from "@/components/topservice";
 import Why from "@/components/Why";
 import Testimonial from "@/components/Testimonial";
+import WhyWebsite from "../components/Website";
 
 // ✅ Page-specific SEO metadata
 export const metadata = {
@@ -56,14 +57,11 @@ export default function MyApp({ Component, pageProps }) {
     <div className="overflow-hidden">
       <Hero />
       <ChatButton />
-      <TopServices />
-      <ServiceMarquee />
+      <Discount />
+      <Ready />
       <OurServices />
       <Why />
-      <Benefits />
-      <Discount />
       <FAQ />
-      <Ready />
       <Testimonial />
     </div>
   );
