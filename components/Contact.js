@@ -41,35 +41,35 @@ export default function Contact() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 bg-gray-50 shadow-xl border border-blue-500 p-5 py-10 rounded-lg"
+            className="space-y-6 bg-gray-50 shadow-xl border border-gray-200 p-5 py-10 rounded-lg"
           >
-            <h4 className="text-xl font-bold text-blue-900 mb-6">Contact Information</h4>
-            <div className="flex items-start space-x-4 shadow-md p-1">
-              <Mail className="text-orange-500 mt-1" />
+            <h4 className="text-xl font-bold text-blue-900 mb-6 font-serif">Contact Information</h4>
+            <div className="flex items-start space-x-4 shadowmd p1">
+              <Mail className="text-red-600 mt-1" />
               <div>
                 <h4 className="font-bold text-blue-600">Email</h4>
                 <p className="text-blue-900">lapsatechnologies@gmail.com</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 shadow-md p-1">
-              <Phone className="text-orange-500 mt-1" />
+            <div className="flex items-start space-x-4 shadowmd p1">
+              <Phone className="text-red-600 mt-1" />
               <div>
                 <h4 className="font-bold text-blue-600">Phone</h4>
                 <p className="text-blue-900">+254 111 608 331</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 shadow-md p-1">
-              <MapPin className="text-orange-500 mt-1" />
+            <div className="flex items-start space-x-4 shadowmd p1">
+              <MapPin className="text-red-600 mt-1" />
               <div>
                 <h4 className="font-bold text-blue-600">Location</h4>
                 <p className="text-blue-900">Nairobi, Kenya</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 shadow-md p-1">
-              <Building2 className="text-orange-500 mt-1" />
+            <div className="flex items-start space-x-4 shadowmd p1">
+              <Building2 className="text-red-600 mt-1" />
               <div>
                 <h4 className="font-bold text-blue-600">Building & Room</h4>
                 <p className="text-blue-900">Kahawa Wendani, Magu House, First Floor, Room No. 27</p>
@@ -77,7 +77,7 @@ export default function Contact() {
             </div>
 
             {/* Social Media Icons */}
-            <h4 className="font-bold text-blue-800 text-lg">Follow Us</h4>
+            <h4 className="font-bold text-blue-800 text-lg font-serif">Follow Us</h4>
             <div className="flex space-x-4 pt-4">
               <a href="https://www.facebook.com/profile.php?id=61570201295782" aria-label="Facebook" className="text-blue-700 hover:text-orange-500 shadow-md p-1">
                 <FaFacebookF size={20} />
@@ -102,20 +102,20 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-50 border border-blue-500 p-6 rounded-lg shadow-xl space-y-4"
+            className="bg-gray-50 border border-gray-200 p-6 rounded-lg shadow-xl space-y-4"
             onSubmit={(e) => {
               e.preventDefault();
               // Handle submission
             }}
           >
-          <h2 className="text-xl font-bold text-blue-900 mb-6">Send Us a Message</h2>
+          <h2 className="text-xl font-bold text-blue-900 mb-6 font-serif">Send Us a Message</h2>
 
             <div>
               <label className="block font-semibold text-blue-600">Full Name</label>
               <input
                 type="text"
                 name="name"
-                className="w-full text-blue-900 mt-1 p-2 border border-blue-500 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Name"
                 required
               />
@@ -126,7 +126,7 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
-                className="w-full text-blue-900 mt-1 p-2 border border-blue-500 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Email"
                 required
               />
@@ -137,7 +137,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone"
-                className="w-full text-blue-900 mt-1 p-2 border border-blue-500 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Phone Number"
               />
             </div>
@@ -147,7 +147,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="subject"
-                className="w-full text-blue-900 mt-1 p-2 border border-blue-500 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Subject of Your Message"
               />
             </div>
@@ -157,7 +157,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 rows="4"
-                className="w-full text-blue-900 mt-1 p-2 rounded-lg border border-blue-500 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
                 placeholder="Your Message"
                 required
               ></textarea>
