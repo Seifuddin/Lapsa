@@ -39,7 +39,7 @@ export default function Discount() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap gap-4 mt-6"
+            className="flex flex-wrap gap-2 mt-6"
           >
             <a
               href="/contacts"
@@ -52,7 +52,7 @@ export default function Discount() {
               href="/pricing"
               className="inline-block border-2 border-blue-700 text-blue-700 font-semibold px-8 py-3 rounded-full hover:bg-blue-700 hover:text-white transition duration-300"
             >
-              View Pricing
+              Pricing
             </a>
           </motion.div>
         </motion.div>

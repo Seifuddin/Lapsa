@@ -50,14 +50,8 @@ export default function About() {
 
       {/* Page Sections */}
       <AboutHero />
-      <AboutUs />
-      <CorePrinciples />
       <Timeline />
-      <AnimatedCounters />
-      <Aboutus />
-      <Leadership />
       <Ready />
-      <Location />
     </div>
   );
 }

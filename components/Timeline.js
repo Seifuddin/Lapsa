@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 
 export default function Timeline() {
   return (
-    <div className='overflow-x-hidden bg-gray-50'>
+    <div className='overflow-x-hidden bg-amber-50'>
         <div className="py-16 px-5 max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-center max-w-7xl text-xl md:text-2xl font-bold text-orange-600 mb-5">
-                    Our Journey<span className="text-orange-600"></span>
+          <h1 className="text-center max-w-7xl text-2xl md:text-4xl font-bold text-red-700 mb-5 font-serif">
+                    Our Journey<span className="text-red-800"></span>
                   </h1>
-          <p className="italic text-center text-blue-900 font-semibold text-lg mb-10 max-w-6xl mx-auto">
+          <p className="itaic text-center text-gray-700 font-bold mb-10 max-w-6xl mx-auto">
             A brief History about Lapsa Web and Graphics.
           </p>
         </motion.div>
-        <div className="relative border-l-4 border-orange-600 pl-6 space-y-6">
+        <div className="relative border-l-4 border-red-700 pl-6 space-y-6">
           {[
             {
               year: "September 9 2024 - Company Founded",
@@ -43,9 +43,9 @@ export default function Timeline() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <div className='bg-blue-50 p-5 rounded-md shadow-md border border-blue-200'>
-              <h4 className="font-bold text-orange-600 mb-2">{item.year}</h4>
-              <p className="text-blue-900">{item.desc}</p>
+              <div className='bg-white p-5 rounded-md shadow-md border border-gray-300'>
+              <h4 className="font-bold text-blue-900 mb-2 font-serif">{item.year}</h4>
+              <p className="text-gray-700">{item.desc}</p>
               </div>
             </motion.div>
           ))}

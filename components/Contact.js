@@ -47,7 +47,7 @@ export default function Contact() {
             <div className="flex items-start space-x-4 shadowmd p1">
               <Mail className="text-red-600 mt-1" />
               <div>
-                <h4 className="font-bold text-blue-600">Email</h4>
+                <h4 className="font-bold text-gray-800">Email</h4>
                 <p className="text-blue-900">lapsatechnologies@gmail.com</p>
               </div>
             </div>
@@ -55,7 +55,7 @@ export default function Contact() {
             <div className="flex items-start space-x-4 shadowmd p1">
               <Phone className="text-red-600 mt-1" />
               <div>
-                <h4 className="font-bold text-blue-600">Phone</h4>
+                <h4 className="font-bold text-gray-800">Phone</h4>
                 <p className="text-blue-900">+254 111 608 331</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Contact() {
             <div className="flex items-start space-x-4 shadowmd p1">
               <MapPin className="text-red-600 mt-1" />
               <div>
-                <h4 className="font-bold text-blue-600">Location</h4>
+                <h4 className="font-bold text-gray-800">Location</h4>
                 <p className="text-blue-900">Nairobi, Kenya</p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Contact() {
             <div className="flex items-start space-x-4 shadowmd p1">
               <Building2 className="text-red-600 mt-1" />
               <div>
-                <h4 className="font-bold text-blue-600">Building & Room</h4>
+                <h4 className="font-bold text-gray-800">Building</h4>
                 <p className="text-blue-900">Kahawa Wendani, Magu House, First Floor, Room No. 27</p>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Contact() {
           <h2 className="text-xl font-bold text-blue-900 mb-6 font-serif">Send Us a Message</h2>
 
             <div>
-              <label className="block font-semibold text-blue-600">Full Name</label>
+              <label className="block font-semibold text-gray-800">Full Name</label>
               <input
                 type="text"
                 name="name"
@@ -122,7 +122,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label className="block font-semibold  text-blue-600">Email Address</label>
+              <label className="block font-semibold  text-gray-800">Email Address</label>
               <input
                 type="email"
                 name="email"
@@ -133,7 +133,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label className="block font-semibold text-blue-600">Phone Number</label>
+              <label className="block font-semibold text-gray-800">Phone Number</label>
               <input
                 type="tel"
                 name="phone"
@@ -143,7 +143,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label className="block font-semibold text-blue-600">Subject</label>
+              <label className="block font-semibold text-gray-800">Subject</label>
               <input
                 type="text"
                 name="subject"
@@ -153,7 +153,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label className="block font-semibold text-blue-600">Message</label>
+              <label className="block font-semibold text-gray-800">Message</label>
               <textarea
                 name="message"
                 rows="4"

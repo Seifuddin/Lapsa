@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Ready() {
   return (
-    <div className='relative p-5 bg-gray-50'>
+    <div className='relative p-5 bg-amber-50'>
         <div className='relative'>
             {/* Call to Action */}
                     <motion.div
