@@ -1,5 +1,3 @@
-import AboutUs from "@/components/About";
-import Aboutus from "@/components/AboutUs";
 import AnimatedCounters from "@/components/AnimatedCounters";
 import CorePrinciples from "@/components/CorePrinciples";
 import AboutHero from "@/components/HeroAbout";
@@ -7,6 +5,7 @@ import Leadership from "@/components/Leadership";
 import Ready from "@/components/Ready";
 import Timeline from "@/components/Timeline";
 import Location from "../../components/Location";
+import HeroSection from "@/components/Banner";
 
 // ✅ SEO metadata for this page
 export const metadata = {
@@ -49,7 +48,7 @@ export default function About() {
       />
 
       {/* Page Sections */}
-      <AboutHero />
+      <HeroSection/>
       <Timeline />
       <Ready />
     </div>

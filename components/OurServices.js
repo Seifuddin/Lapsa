@@ -17,7 +17,7 @@ const services = [
     title: "Web Design",
     description:
       "We create visually stunning and highly functional websites tailored to your brand’s unique needs. Our custom web design solutions ensure a seamless user experience and a strong online presence.",
-    icon: <Layout className="w-8 h-8 text-red-600" />,
+    icon: <Layout className="w-10 h-10 text-white p-2 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full" />,
     image:
       "/images/creative-web-design-studio-with-flying-web-page-layout-elements-concept_1029473-56271.avif",
   },
@@ -25,35 +25,35 @@ const services = [
     title: "Software Development",
     description:
       "Transform your innovative ideas into reality with our bespoke software development services. We build custom applications that solve real business problems.",
-    icon: <Code className="w-8 h-8 text-red-600" />,
+    icon: <Code className="w-10 h-10 text-white p-2 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full" />,
     image: "/images/what-is-software-development.jpg",
   },
   {
     title: "Graphic Design",
     description:
       "From logos and branding to brochures and posters, we deliver eye-catching graphic design that communicates your message and captivates your audience.",
-    icon: <PenTool className="w-8 h-8 text-red-600" />,
+    icon: <PenTool className="w-10 h-10 text-white p-2 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full" />,
     image: "/images/art_design_740x317.jpg",
   },
   {
     title: "Digital Printing",
     description:
       "Get premium quality digital printing solutions for business cards, flyers, posters, and more — perfect for both personal and corporate branding.",
-    icon: <Printer className="w-8 h-8 text-red-600" />,
+    icon: <Printer className="w-10 h-10 text-white p-2 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full" />,
     image: "/images/digitalprinting.jpg",
   },
   {
     title: "Website Maintenance",
     description:
       "Let us handle the updates, security, and performance tuning so your site stays reliable, safe, and optimized — giving you peace of mind.",
-    icon: <Wrench className="w-8 h-8 text-red-600" />,
+    icon: <Wrench className="w-10 h-10 text-white p-2 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full" />,
     image: "/images/Website-Maintenance-is-No-Longer.webp",
   },
   {
     title: "Mobile App Development",
     description:
       "We develop powerful and user-friendly mobile apps that bring your brand to your customer’s fingertips — across Android and iOS platforms.",
-    icon: <Smartphone className="w-8 h-8 text-red-600" />,
+    icon: <Smartphone className="w-10 h-10 text-white p-2 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full" />,
     image: "/images/download (2).jpg",
   },
 ];
@@ -92,7 +92,7 @@ export default function OurServices() {
               <div className="p-6 text-left space-y-3">
                 <div className="flex items-center gap-2">
                   {service.icon}
-                  <h3 className="md:text-lg font-serif font-bold text-blue-800">
+                  <h3 className="text-xl font-serif font-bold text-blue-800">
                     {service.title}
                   </h3>
                 </div>

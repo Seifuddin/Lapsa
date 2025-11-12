@@ -83,7 +83,7 @@ const Testimonial = () => {
             >
               What Our Clients Say
             </motion.h2>
-            <p className="text-lg itali fontsemibold text-gray-600 mt-4 max-w-2xl mx-auto">
+            <p className="itext-lg itali fontsemibold text-gray-600 mt-4 max-w-2xl mx-auto mb-8">
               Hear how Lapsa Web and Graphics has transformed businesses through powerful design and modern web solutions.
             </p>
           </div>

@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import AnimatedCounters from "@/components/AnimatedCounters";
 import Benefits from "@/components/Benefits";
 import ChatButton from "@/components/ChatButton";
 import Discount from "@/components/Discount";
@@ -10,10 +9,11 @@ import ServiceMarquee from "@/components/Marquee";
 import OurServices from "@/components/OurServices";
 import Portfolio from "@/components/Portfolio";
 import FAQ from "@/components/Quiz";
-import TopServices from "@/components/topservice";
 import Why from "@/components/Why";
 import Testimonial from "@/components/Testimonial";
-import WhyWebsite from "../components/Website";
+import WhyWebsite from "@/components/WhyWebsite";
+import HeroSection from "@/components/Banner";
+import Whatis from "@/components/What";
 
 // ✅ Page-specific SEO metadata
 export const metadata = {
@@ -58,6 +58,9 @@ export default function MyApp({ Component, pageProps }) {
       <Hero />
       <ChatButton />
       <Discount />
+      <Whatis />
+      <WhyWebsite />
+      <HeroSection />
       <OurServices />
       <Why />
       <FAQ />

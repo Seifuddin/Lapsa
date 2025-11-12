@@ -7,7 +7,7 @@ export default function Know() {
   return (
     <section className=" gradient-to-br from-orange-100 via-white to-blue-100">
       <div className="max-w-5xl mx-auto text-center space-y-10">
-        {/* Header 
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ export default function Know() {
             Did You Know?
           </h2>
         </motion.div>
-          */}
+          
         {/* What is a website */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}

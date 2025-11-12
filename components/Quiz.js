@@ -157,7 +157,7 @@ export default function FAQ() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mt-20 bg-gradient-to-r from-blue-950 to-blue-900 text-white rounded-2xl shadow-lg p-10 max-w3xl mx-auto text-center"
+          className="mt-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-2xl shadow-lg p-10 max-w3xl mx-auto text-center"
         >
           <h3 className="text-3xl font-bold mb-3 font-serif">
             Still have questions?
@@ -167,16 +167,16 @@ export default function FAQ() {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
-              href="/contacts"
-              className="bg-white text-blue-800 px-6 py-2 rounded-full font-semibold hover:bg-blue-100 transition-all"
+              href="/contact"
+              className="bg-white text-blue-700 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
             >
               Contact Us
             </a>
             <a
-              href="/quote"
-              className="border border-white text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-blue-800 transition-all"
+              href="#portfolio"
+              className="border border-white/70 text-white font-semibold py-3 px-8 rounded-lg hover:bg-white/10 transition"
             >
-              Request a Quote
+              View Our Work
             </a>
           </div>
         </motion.div>
