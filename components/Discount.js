@@ -41,16 +41,16 @@ export default function Discount() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-wrap gap-2 mt-6"
           >
-            <div className="flex flexcol sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="flex flex-col w-full sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#contact"
-              className="bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
+              className="bg-blue-700 text-center md:px-8 md:py-4 text-white font-semibold py-2 px-3 rounded-lg shadow-md hover:bg-gray-100 transition"
             >
               Get a Free Quote
             </a>
             <a
               href="#portfolio"
-              className="border border-blue-700 text-blue-700 font-semibold py-3 px-8 rounded-lg hover:bg-white/10 transition"
+              className="border text-center md:px-8 md:py-4 border-blue-700 text-blue-700 font-semibold py-2 px-3 rounded-lg hover:bg-white/10 transition"
             >
               View Our Work
             </a>

@@ -10,7 +10,7 @@ export default function HeroSection() {
 
       <div className="relative rounded-xl bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24 px-6 md:px-16 z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Content */}
-        <div className="text-center md:text-left flex-1">
+        <div className="text-left flex-1">
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight font-serif">
             We Design <br />
             <span className="text-yellow-300">Websites That Work</span>
@@ -22,13 +22,13 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#contact"
-              className="bg-white text-blue-700 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
+              className="bg-white text-center text-blue-700 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
             >
               Get a Free Quote
             </a>
             <a
               href="#portfolio"
-              className="border border-white/70 text-white font-semibold py-3 px-8 rounded-lg hover:bg-white/10 transition"
+              className="border text-center border-white/70 text-white font-semibold py-3 px-8 rounded-lg hover:bg-white/10 transition"
             >
               View Our Work
             </a>
@@ -37,7 +37,7 @@ export default function HeroSection() {
 
         {/* Hero Image (optional) */}
         <div className="flex-1 flex justify-center">
-          <div className="relative w-80 h-80 md:w-[400px] md:h-[400px] rounded-full overflow-hidden shadow-xl bg-gray-300 border-4 border-blue-500">
+          <div className="relative w-64 h-64 md:w-[400px] md:h-[400px] rounded-full overflow-hidden shadow-xl bg-gray-300 border-4 border-blue-500">
             <Image
               src="/images/image-removebg-preview (44).png" // <- replace with your image (e.g. a mockup)
               alt="Web design illustration"

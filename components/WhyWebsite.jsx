@@ -25,7 +25,7 @@ export default function WhyWebsite() {
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-full p-4 rounded-full mb-4">
             <GlobeAltIcon className="h-10 w-10 text-bwhite" />
           </div>
-          <h3 className="text-xl font-semibold text-blue-800 mb-2 font-serif">
+          <h3 className="md:text-xl font-semibold text-blue-800 mb-2 font-serif">
             Establish Your Online Presence
           </h3>
           <p className="text-gray-600">
@@ -38,7 +38,7 @@ export default function WhyWebsite() {
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-full p-4 rounded-full mb-4">
             <SparklesIcon className="h-10 w-10 text-white" />
           </div>
-          <h3 className="text-xl font-semibold text-blue-800 mb-2 font-serif">
+          <h3 className="md:text-xl font-semibold text-blue-800 mb-2 font-serif">
             Build Trust & Credibility
           </h3>
           <p className="text-gray-600">
@@ -51,7 +51,7 @@ export default function WhyWebsite() {
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-full p-4 rounded-full mb-4">
             <ChartBarIcon className="h-10 w-10 text-white" />
           </div>
-          <h3 className="text-xl font-semibold text-blue-800 mb-2 font-serif">
+          <h3 className="md:text-xl font-semibold text-blue-800 mb-2 font-serif">
             Expand Your Reach
           </h3>
           <p className="text-gray-600">
@@ -64,7 +64,7 @@ export default function WhyWebsite() {
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-full p-4 rounded-full mb-4">
             <CursorArrowRaysIcon className="h-10 w-10 text-white" />
           </div>
-          <h3 className="text-xl font-semibold text-blue-800 mb-2 font-serif">
+          <h3 className="md:text-xl font-semibold text-blue-800 mb-2 font-serif">
             Convert Visitors into Clients
           </h3>
           <p className="text-gray-600">

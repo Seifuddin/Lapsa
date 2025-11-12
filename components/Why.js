@@ -64,7 +64,7 @@ export default function Why() {
                 <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-4 rounded-full transition-all">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-semibold font-serif">
+                <h3 className="md:text-xl font-semibold font-serif">
                   {item.title}
                 </h3>
               </div>
