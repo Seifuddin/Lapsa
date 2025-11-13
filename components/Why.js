@@ -41,7 +41,7 @@ export default function Why() {
           viewport={{ once: true }}
           className="mb-8 text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-2 font-serif">
+          <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-2 font-serif">
             Why Choose <span className="text-yellow-300">Lapsa</span>?
           </h2>
           <p className="text-base text-gray-300 max-w-2xl mx-auto">
@@ -64,7 +64,7 @@ export default function Why() {
                 <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-4 rounded-full transition-all">
                   {item.icon}
                 </div>
-                <h3 className="text-lg md:text-xl font-semibold font-serif">
+                <h3 className="textlg md:text-xl font-semibold font-serif">
                   {item.title}
                 </h3>
               </div>

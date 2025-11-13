@@ -121,7 +121,7 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="text-lg md:text-xl font-serif w-full flex justify-between items-center text-left p-5 font-semibold text-gray-700"
+                  className="textlg md:text-xl font-serif w-full flex justify-between items-center text-left p-5 font-semibold text-gray-700"
                 >
                   <span>{faq.question}</span>
                   <ChevronDown
@@ -159,10 +159,10 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           className="mt-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-2xl shadow-lg p-10 max-w3xl mx-auto text-center"
         >
-          <h3 className="text-2xl md:text-3xl font-bold mb-3 font-serif">
+          <h3 className="text-2xl text-left md:text-center md:text-3xl font-bold mb-3 font-serif">
             Still have questions?
           </h3>
-          <p className="text-gray-200 mb-6">
+          <p className="text-gray-200 mb-6 text-left md:text-center">
             Reach out to our team — we’d love to help bring your ideas to life.
           </p>
           <div className="relative mt-6 flex flex-col sm:flex-row justify-center gap-4">

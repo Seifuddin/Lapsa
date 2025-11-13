@@ -79,7 +79,7 @@ const Testimonial = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="text-blue-800 text-3xl md:text-4xl font-bold font-serif tracking-tight mb-4"
+              className="text-blue-800 text-2xl md:text-4xl font-bold font-serif tracking-tight mb-4"
             >
               What Our Clients Say
             </motion.h2>

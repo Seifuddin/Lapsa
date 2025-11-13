@@ -7,7 +7,7 @@ export default function Whatis() {
       {/* Background Overlay with Patterns */}
       <div className="relative inset-0 bg-gradient-to-br from-blue-900/60 via-[#0a2540]/90 to-blue-800/70 z-0"></div>
       <div className="relative inset-0 bg-[url('/images/patterns.png')] opacity-10 bg-cover bg-center z-0"></div>
-        <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="max-w-6xl mx-auto px-3 text-center">
           <h3 className="relative text-left md:text-center  text-2xl md:text-4xl fontmedium font-serif font-bold text-white mb-4">Did You  Know?</h3>
           <p className="relative mt-2 text-left md:text-center text-white max-w-4xl mx-auto">A website is your digital storefront — a space on the internet where people can learn about your business, products, and services at any time, from anywhere. It’s often the first impression customers get of your brand.</p>
 

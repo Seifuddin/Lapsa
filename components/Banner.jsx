@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-green-50 py-20 px-6 md:px-12">
+    <section className="relative overflow-hidden bg-green-50 py-16 px-6 md:px-12">
       {/* Decorative background shapes */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 bg-center"></div>
       <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
@@ -15,7 +15,7 @@ export default function HeroSection() {
             We Design <br />
             <span className="text-yellow-300">Websites That Work</span>
           </h1>
-          <p className="text-lg text-gray-100 mb-8 max-w-md mx-auto md:mx-0">
+          <p className="relative mt-2 text-left md:text-center text-white max-w-4xl mx-auto">
             Lapsa Web & Graphics helps businesses stand out online with
             beautiful, high-performing websites and creative visual design.
           </p>
