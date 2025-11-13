@@ -7,9 +7,9 @@ import {
 
 export default function WhyWebsite() {
   return (
-    <section className="bg-gradient-to-b from-white via-gray-50 to-gray-100 py-20 px-6 md:px-16">
+    <section className="bg-green-50 gradient-to-b from-white via-gray-50 to-gray-100 py-20 px-6 md:px-16">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-blue-800 text-3xl md:text-4xl font-bold font-serif tracking-tight mb-6">
+        <h2 className="text-blue-800 text-2xl md:text-4xl font-bold font-serif tracking-tight mb-6">
           Why Every Business Needs a Website
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -21,11 +21,11 @@ export default function WhyWebsite() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16 max-w-7xl mx-auto">
         {/* Card 1 */}
-        <div className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition-all border-t-4 border-blue-600">
+        <div className="flex flex-col items-center text-center bg-white p-4 rounded-2xl shadow-sm hover:shadow-2xl transition-all border-t-4 borderblue-600 border border-blue-100">
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-full p-4 rounded-full mb-4">
-            <GlobeAltIcon className="h-10 w-10 text-bwhite" />
+            <GlobeAltIcon className="h-7 w-7 text-bwhite" />
           </div>
-          <h3 className="md:text-xl font-semibold text-blue-800 mb-2 font-serif">
+          <h3 className="text-lg md:text-xl font-semibold text-blue-800 mb-2 font-serif">
             Establish Your Online Presence
           </h3>
           <p className="text-gray-600">
@@ -34,11 +34,11 @@ export default function WhyWebsite() {
         </div>
 
         {/* Card 2 */}
-        <div className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition-all border-t-4 border-red-600">
+        <div className="flex flex-col items-center text-center bg-white p-4 rounded-2xl shadow-sm hover:shadow-2xl transition-all border-t-4 borde-red-600 border border-blue-100">
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-full p-4 rounded-full mb-4">
-            <SparklesIcon className="h-10 w-10 text-white" />
+            <SparklesIcon className="h-7 w-7 text-white" />
           </div>
-          <h3 className="md:text-xl font-semibold text-blue-800 mb-2 font-serif">
+          <h3 className="text-lg md:text-xl font-semibold text-blue-800 mb-2 font-serif">
             Build Trust & Credibility
           </h3>
           <p className="text-gray-600">
@@ -47,11 +47,11 @@ export default function WhyWebsite() {
         </div>
 
         {/* Card 3 */}
-        <div className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition-all border-t-4 border-blue-600">
+        <div className="flex flex-col items-center text-center bg-white p-4 rounded-2xl shadow-sm hover:shadow-2xl transition-all border-t-4 borderblue-600 border border-blue-100">
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-full p-4 rounded-full mb-4">
-            <ChartBarIcon className="h-10 w-10 text-white" />
+            <ChartBarIcon className="h-7 w-7 text-white" />
           </div>
-          <h3 className="md:text-xl font-semibold text-blue-800 mb-2 font-serif">
+          <h3 className="text-lg md:text-xl font-semibold text-blue-800 mb-2 font-serif">
             Expand Your Reach
           </h3>
           <p className="text-gray-600">
@@ -60,11 +60,11 @@ export default function WhyWebsite() {
         </div>
 
         {/* Card 4 */}
-        <div className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition-all border-t-4 border-red-600">
+        <div className="flex flex-col items-center text-center bg-white p-4 rounded-2xl shadow-sm hover:shadow-2xl transition-all border-t-4 borde-red-600 border border-blue-100">
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-full p-4 rounded-full mb-4">
-            <CursorArrowRaysIcon className="h-10 w-10 text-white" />
+            <CursorArrowRaysIcon className="h-7 w-7 text-white" />
           </div>
-          <h3 className="md:text-xl font-semibold text-blue-800 mb-2 font-serif">
+          <h3 className="text-lg md:text-xl font-semibold text-blue-800 mb-2 font-serif">
             Convert Visitors into Clients
           </h3>
           <p className="text-gray-600">

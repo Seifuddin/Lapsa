@@ -4,7 +4,6 @@ import { CheckCircle } from "lucide-react";
 import { Lightbulb } from "lucide-react";
 import Link from "next/link";
 
-import Know from "./Know";
 
 export default function Benefits() {
   return (

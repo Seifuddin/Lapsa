@@ -42,10 +42,10 @@ export default function FAQ() {
   });
 
   return (
-    <section className="px-6 py-20 bg-gradient-to-b from-gray-50 via-white to-blue-50">
+    <section className="px-6 py-20 bg-green-50 adient-to-b from-gray-50 via-white to-blue-50">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-red-600 text-sm font-bold uppercase tracking-wider">FAQ</h2>
-        <h2 className="text-blue-900 text-3xl md:text-5xl font-extrabold font-serif mb-3">
+        <h2 className="text-red-600 text-sm font-bold uppercase tracking-wider mb-3">FAQ</h2>
+        <h2 className="text-blue-900 text-2xl md:text-5xl font-extrabold font-serif mb-3">
           Frequently Asked Questions
         </h2>
         <p className="text-gray-600 italc font-medium mb-10 max-w-2xl mx-auto">
@@ -116,16 +116,16 @@ export default function FAQ() {
             filteredFaqs.map((faq, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-xl border border-blue-100 shadow-sm hover:shadow-lg transition duration-300"
+                className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300"
                 whileHover={{ scale: 1.01 }}
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between items-center text-left p-5 font-semibold text-blue-900"
+                  className="text-lg md:text-xl font-serif w-full flex justify-between items-center text-left p-5 font-semibold text-gray-700"
                 >
                   <span>{faq.question}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-red-600 transform transition-transform duration-300 ${
+                    className={`w-5 h-5 text-blue-900 transform transition-transform duration-300 ${
                       openIndex === index ? "rotate-180" : ""
                     }`}
                   />
@@ -137,7 +137,7 @@ export default function FAQ() {
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="overflow-hidden px-5 pb-5 text-blue-800 text-sm leading-relaxed"
+                      className="overflow-hidden px-5 pb-5 font-base text-gray-600 text-sm leading-relaxed"
                     >
                       {faq.answer}
                     </motion.div>
@@ -159,13 +159,13 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           className="mt-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-2xl shadow-lg p-10 max-w3xl mx-auto text-center"
         >
-          <h3 className="text-3xl font-bold mb-3 font-serif">
+          <h3 className="text-2xl md:text-3xl font-bold mb-3 font-serif">
             Still have questions?
           </h3>
           <p className="text-gray-200 mb-6">
             Reach out to our team — we’d love to help bring your ideas to life.
           </p>
-          <div className="flex justify-center gap-4 flex-wrap">
+          <div className="relative mt-6 flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="/contact"
               className="bg-white text-blue-700 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"

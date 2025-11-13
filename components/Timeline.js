@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Timeline() {
   return (
-    <div className='overflow-x-hidden bg-amber-50'>
+    <div className='overflow-x-hidden bg-blue-50'>
         <div className="py-16 px-5 max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: 50 }}

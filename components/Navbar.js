@@ -1,223 +1,176 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Link from "next/link";
+'use client';
+import { useState } from 'react';
+import Link from 'next/link';
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from 'next/navigation';
+import { Menu, X, ChevronDown } from 'lucide-react';
+
+const services = [
+  { label: 'Web Design', href: '/web' },
+  { label: 'Graphic Design', href: '/graphics' },
+  { label: 'Others', href: '/art' },
+];
+
+const resources = [
+  { label: 'Bible Study', href: '/resources/bible-study' },
+  { label: 'Devotionals', href: '/resources/devotionals' },
+  { label: 'Podcasts', href: '/resources/podcasts' },
+];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
   const pathname = usePathname();
-  const router = useRouter();
 
-  // Auto-close on route change
-  useEffect(() => {
-    const handleRouteChange = () => {
-      setIsOpen(false);
-      setMobileDropdownOpen(false);
-    };
+  const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About' },
+    { label: 'Services', dropdown: services },
+    { href: '/portfolio', label: 'Portfolio' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/contacts', label: 'Contacts' },
+  ];
 
-    router.events?.on?.("routeChangeStart", handleRouteChange);
-    return () => {
-      router.events?.off?.("routeChangeStart", handleRouteChange);
-    };
-  }, [router]);
-
-  const isActive = (href) => pathname === href;
+  const linkClasses = (href) =>
+    `block font-medium transition-colors ${
+      pathname === href
+        ? 'text-blue-700 underline underline-offset-4'
+        : 'text-gray-700 hover:text-blue-700'
+    }`;
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-blue-950 shadow-md">
-      <div className="max-w-screen-xl mx-auto px-6 py-1">
-        <div className="flex justify-between items-center">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" className="block">
-              <Image
-                src="/images/Logo Lapsa Final.png"
-                alt="Lapsa Logo"
-                width={80}
-                height={10}
-                priority
-                className="w-24"
-              />
-            </Link>
+    <nav className="bg-white py-1 px-6 shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl px-6 mx-auto flex justify-between items-center py-3">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative w-10 h-10">
+            <Image
+              src="/images/Lapsa Logo Final.png"
+              alt="Lapsa Logo"
+              fill
+              className="rounded-md object-contain"
+            />
           </div>
-
-          {/* Mobile Toggle */}
-          <div className="lg:hidden">
-            <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+          <span className="hidden mdflex text-lg md:text-xl font-bold tracking-wide text-blue-900 font-serif group-hover:text-pink-800 transition">
+            Utamaduni
+          </span>
+        </Link>
+        {/* Desktop menu */}
+        <ul className="hidden md:flex space-x-6 items-center">
+          {navLinks.map((item, i) =>
+            item.dropdown ? (
+              <li
+                key={i}
+                className="relative group"
+                onMouseEnter={() => setOpenDropdown(item.label)}
+                onMouseLeave={() => setOpenDropdown(null)}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
+                <button className="flex items-center gap-1 text-gray-700 hover:text-blue-700 font-medium">
+                  {item.label} <ChevronDown size={16} />
+                </button>
+                {openDropdown === item.label && (
+                  <ul className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-48 py-2 z-50">
+                    {item.dropdown.map((subItem) => (
+                      <li key={subItem.href}>
+                        <Link
+                          href={subItem.href}
+                          className={linkClasses(subItem.href) + ' px-4 py-2 text-sm hover:bg-blue-50'}
+                        >
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ) : (
+              <li key={i}>
+                <Link href={item.href} className={linkClasses(item.href)}>
+                  {item.label}
+                </Link>
+              </li>
+            )
+          )}
+        </ul>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex space-x-6 font-mono text-2xl items-center">
-            <NavLink href="/" active={isActive("/")}>Home</NavLink>
-            <NavLink href="/about" active={isActive("/about")}>About</NavLink>
-
-            {/* Services Dropdown */}
-            <div className="relative group">
-              <button className="text-white hover:text-orange-500 transition">
-                Services
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white text-gray-800 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                <div className="p-4 space-y-2 text-lg font-semibold text-blue-700">
-                  <DropdownGroup
-                    color="text-blue-700"
-                    links={[
-                      { href: "/web", label: "Web Development" },
-                      { href: "/graphics", label: "Graphic Design" },
-                      { href: "/art", label: "Art & Other Services" },
-                    ]}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <NavLink href="/contacts" active={isActive("/contacts")}>Contact</NavLink>
-          </div>
-        </div>
+        {/* Mobile menu button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-blue-700"
+          aria-label="Toggle Menu"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
 
-      {/* Mobile Navigation with Animation */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0 }}
-            animate={{ height: "auto" }}
-            exit={{ height: 0 }}
-            className="lg:hidden bg-blue-950/90 text-white px-6 py-4 font-mono text-2xl space-y-4 overflow-hidden"
-          >
-            <MobileLink href="/" isActive={isActive("/")} onClick={() => setIsOpen(false)}>
-              Home
-            </MobileLink>
-            <MobileLink href="/about" isActive={isActive("/about")} onClick={() => setIsOpen(false)}>
-              About
-            </MobileLink>
+      {/* Mobile menu overlay */}
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-40 transition-opacity duration-300 ${
+          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+        onClick={() => setIsOpen(false)}
+      />
 
-            {/* Mobile Dropdown Toggle */}
-            <div>
-              <button
-                onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                className="w-full text-left hover:text-orange-500"
-              >
-                Services
-                <span className="float-right">{mobileDropdownOpen ? "−" : "+"}</span>
-              </button>
+      {/* Mobile slide-in panel */}
+      <div
+        className={`fixed top-0 right-0 h-full w-72 bg-white shadow-lg transform transition-transform duration-300 ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex justify-between items-center px-6 py-4 border-b">
+          <h2 className="text-lg font-bold text-blue-700">Menu</h2>
+          <button onClick={() => setIsOpen(false)} aria-label="Close Menu">
+            <X size={24} className="text-gray-700" />
+          </button>
+        </div>
 
-              <AnimatePresence>
-                {mobileDropdownOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="mt-2 ml-1 space-y-3 text-lg overflow-hidden"
-                  >
-                    <DropdownGroupMobile
-                      color="text-blue-300"
-                      links={[
-                        { href: "/web", label: "Web Development" },
-                        { href: "/graphics", label: "Graphic Design" },
-                        { href: "/art", label: "Art & Other Services" },
-                      ]}
-                      onLinkClick={() => {
-                        setIsOpen(false);
-                        setMobileDropdownOpen(false);
-                      }}
-                    />
-                  </motion.div>
+        <div className="px-6 py-6 space-y-4">
+          {navLinks.map((item, i) =>
+            item.dropdown ? (
+              <div key={i} className="border-b pb-2">
+                <button
+                  className="flex justify-between items-center w-full text-left text-gray-700 font-medium"
+                  onClick={() =>
+                    setOpenDropdown(openDropdown === item.label ? null : item.label)
+                  }
+                >
+                  {item.label}
+                  <ChevronDown
+                    size={18}
+                    className={`transform transition-transform ${
+                      openDropdown === item.label ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                {openDropdown === item.label && (
+                  <ul className="mt-2 pl-3 space-y-2">
+                    {item.dropdown.map((subItem) => (
+                      <li key={subItem.href}>
+                        <Link
+                          href={subItem.href}
+                          className="block text-gray-600 hover:text-blue-700"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 )}
-              </AnimatePresence>
-            </div>
-
-            <MobileLink href="/contacts" isActive={isActive("/contacts")} onClick={() => setIsOpen(false)}>
-              Contact
-            </MobileLink>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              </div>
+            ) : (
+              <Link
+                key={i}
+                href={item.href}
+                className="block text-gray-700 font-medium hover:text-blue-700"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
+        </div>
+      </div>
     </nav>
-  );
-}
-
-// Desktop NavLink
-function NavLink({ href, children, active }) {
-  return (
-    <Link
-      href={href}
-      className={`hover:text-orange-500 transition ${
-        active ? "text-orange-500" : "text-white"
-      }`}
-    >
-      {children}
-    </Link>
-  );
-}
-
-// Mobile NavLink
-function MobileLink({ href, children, isActive, onClick }) {
-  return (
-    <Link
-      href={href}
-      onClick={onClick}
-      className={`block hover:text-orange-500 ${isActive ? "text-orange-500" : ""}`}
-    >
-      {children}
-    </Link>
-  );
-}
-
-// Desktop Dropdown Group
-function DropdownGroup({ title, color, links }) {
-  return (
-    <div>
-      <p className={`font-semibold ${color} mb-1`}>{title}</p>
-      <ul className="space-y-1 text-sm">
-        {links.map((link) => (
-          <li key={link.href}>
-            <Link href={link.href} className="hover:text-blue-500">
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-// Mobile Dropdown Group
-function DropdownGroupMobile({ title, color, links, onLinkClick }) {
-  return (
-    <div>
-      <p className={`font-semibold ${color}`}>{title}</p>
-      <ul className="ml-3 space-y-1">
-        {links.map((link) => (
-          <li key={link.href}>
-            <Link
-              href={link.href}
-              className="block hover:underline"
-              onClick={onLinkClick}
-            >
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }

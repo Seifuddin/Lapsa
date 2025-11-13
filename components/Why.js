@@ -28,7 +28,7 @@ const reasons = [
 
 export default function Why() {
   return (
-    <section className="py-12 bg-gray-50 text-white relative z-10 overflow-hidden py-20 px-6 md:px-12">
+    <section className="py-12 bg-green-50 text-white relative z-10 overflow-hidden py-20 px-6 md:px-12">
       {/* Subtle Background Glow */}
       <div className="absolute top-1/2 left-1/2 -z-10 h-[300px] w-[300px] bg-indigo-500/10 blur-3xl rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
 
@@ -64,7 +64,7 @@ export default function Why() {
                 <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-4 rounded-full transition-all">
                   {item.icon}
                 </div>
-                <h3 className="md:text-xl font-semibold font-serif">
+                <h3 className="text-lg md:text-xl font-semibold font-serif">
                   {item.title}
                 </h3>
               </div>

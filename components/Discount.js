@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Discount() {
   return (
-    <section className="relative bg-gray-50 dient-to-b from-gray-50 to-white py-24 px-6 md:px-12 overflow-hidden">
+    <section className="relative bg-green-50 dient-to-b from-gray-50 to-white py-24 px-6 md:px-12 overflow-hidden">
       {/* Subtle background gradient pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.08),transparent_60%)] pointer-events-none" />
 
@@ -69,7 +69,7 @@ export default function Discount() {
             <img
               src="/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp"
               alt="Affordable Website Design by Lapsa"
-              className="w-full h-auto object-cover rounded shadow-xl"
+              className="w-full h-auto object-cover rounded-md shadow-xl border-2 border-gray-200"
             />
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-pink-500/10 to-blue-600/10 blur-2xl -z-10" />
           </div>

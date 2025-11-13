@@ -3,7 +3,6 @@ import Benefits from "@/components/Benefits";
 import ChatButton from "@/components/ChatButton";
 import Discount from "@/components/Discount";
 import Hero from "@/components/Hero";
-import Know from "@/components/Know";
 import Ready from "@/components/Ready";
 import ServiceMarquee from "@/components/Marquee";
 import OurServices from "@/components/OurServices";

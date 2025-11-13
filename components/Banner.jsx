@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gray-50 py-20 px-6 md:px-12">
+    <section className="relative overflow-hidden bg-green-50 py-20 px-6 md:px-12">
       {/* Decorative background shapes */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 bg-center"></div>
       <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl"></div>
 
-      <div className="relative rounded-xl bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24 px-6 md:px-16 z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div className="relative rounded-xl bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 px-6 md:px-16 z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="text-left flex-1">
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight font-serif">
+          <h1 className="text-2xl md:text-4xl font-extrabold leading-tight font-serif mb-5">
             We Design <br />
             <span className="text-yellow-300">Websites That Work</span>
           </h1>

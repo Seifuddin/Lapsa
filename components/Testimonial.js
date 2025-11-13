@@ -71,7 +71,7 @@ const Testimonial = () => {
 
   return (
     <div>
-      <section className="py-20 relative bg-gray-50 dient-to-br from-blue-100 via-white to-orange-100 text-gray-800 overflow-hidden">
+      <section className="py-20 px-6 relative bg-green-50 dient-to-br from-blue-100 via-white to-orange-100 text-gray-800 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Heading */}
           <div className="text-center mb-16">
@@ -92,13 +92,13 @@ const Testimonial = () => {
           <div className="flex justify-between mb-6">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
-              className="p-2 rounded-full bg-red-700 hover:bg-blue-600 text-white hover:text-white shadow-lg transition"
+              className="p-2 rounded-full bg-gradient-to-r from-blue-900 to-blue-700 hover:bg-red-600 text-white hover:text-white shadow-lg transition"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={() => swiperRef.current?.slideNext()}
-              className="p-2 rounded-full bg-red-700 hover:bg-blue-600 text-white hover:text-white shadow-lg transition"
+              className="p-2 rounded-full bg-gradient-to-r from-blue-900 to-blue-700 hover:bg-red-600 text-white hover:text-white shadow-lg transition"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -123,7 +123,7 @@ const Testimonial = () => {
                 <motion.div
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.4 }}
-                  className="bg-white/60 backdrop-blur-md border border-blue-100 shadow-2xl rounded-md p-8 text-center h-full flex flex-col items-center justify-between"
+                  className="bg-white/60 backdrop-blur-md border border-gray-200 shadow-2xl rounded-md p-4 text-center h-full flex flex-col items-center justify-between"
                 >
                   <img
                     src={testimonial.image}
@@ -136,7 +136,7 @@ const Testimonial = () => {
                       "{testimonial.quote}"
                     </p>
                   </div>
-                  <p className="font-bold md:text-lg text-red-700 mt-2 font-serif">
+                  <p className="font-bold md:text-lg text-blue-800 mt-2 font-serif">
                     {testimonial.author}
                   </p>
                 </motion.div>

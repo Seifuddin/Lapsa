@@ -13,7 +13,7 @@ import {
 export default function Contact() {
   return (
     <div
-      className="relative bg-cover bg-center bg-gray-100 bg-no-repeat py-10 text-gray-800">
+      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800">
       {/* style={{
         backgroundImage: `url('/images/pngwng.com (7).png')`,
       }}
