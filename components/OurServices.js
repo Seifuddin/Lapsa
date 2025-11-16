@@ -92,7 +92,7 @@ export default function OurServices() {
               <div className="p-6 text-left space-y-3">
                 <div className="flex items-center gap-2">
                   {service.icon}
-                  <h3 className="text-g md:text-xl font-serif font-bold text-blue-800">
+                  <h3 className="text-g md:text-xl fontserif font-bold text-blue-800">
                     {service.title}
                   </h3>
                 </div>

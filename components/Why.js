@@ -61,10 +61,10 @@ export default function Why() {
               className="group bg-white/10 rounded-2xl border border-blue-500 hover:from-gray-800 hover:to-gray-900 roundedxl shadow-md p-5 hover:shadow-indigo-500/30 transition-all hover:scale-[1.015]"
             >
               <div className="flex items-center gap-3 mb-2">
-                <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-4 rounded-full transition-all">
+                <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-2 rounded-full transition-all">
                   {item.icon}
                 </div>
-                <h3 className="textlg md:text-xl font-semibold font-serif">
+                <h3 className="textlg md:text-xl font-semibold fontserif">
                   {item.title}
                 </h3>
               </div>

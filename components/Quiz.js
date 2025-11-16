@@ -69,7 +69,7 @@ export default function FAQ() {
           <div className="flex justify-center mb-4">
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className="flex items-center gap-2 border border-blue-700 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-50 transition"
+              className="flex items-center gap-2 border border-blue-400 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-50 transition"
             >
               <Filter className="w-4 h-4" />
               Filter Categories
@@ -121,7 +121,7 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="textlg md:text-xl font-serif w-full flex justify-between items-center text-left p-5 font-semibold text-gray-700"
+                  className="textlg md:text-xl fontserif w-full flex justify-between items-center text-left p-3 font-semibold text-gray-700"
                 >
                   <span>{faq.question}</span>
                   <ChevronDown

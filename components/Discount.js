@@ -13,7 +13,7 @@ export default function Discount() {
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="space-y-6"
+          className="space-y-3"
         >
           <h3 className="text-sm font-semibold text-pink-600 tracking-widest uppercase">
             Limited-Time Offer
@@ -39,7 +39,7 @@ export default function Discount() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap gap-2 mt-6"
+            className="flex flex-wrap gap-2 mt-10"
           >
             <div className="flex flex-col w-full sm:flex-row gap-4 justify-center md:justify-start">
             <a

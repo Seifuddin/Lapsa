@@ -15,11 +15,11 @@ export default function HeroSection() {
             We Design <br />
             <span className="text-yellow-300">Websites That Work</span>
           </h1>
-          <p className="relative mt-2 text-left md:text-center text-white max-w-4xl mx-auto">
+          <p className="relative mt-2 mb-5 text-left md:textcenter text-white max-w-4xl mx-auto">
             Lapsa Web & Graphics helps businesses stand out online with
             beautiful, high-performing websites and creative visual design.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-3">
             <a
               href="#contact"
               className="bg-white text-center text-blue-700 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
