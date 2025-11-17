@@ -35,16 +35,16 @@ export default function WhyWebsite() {
 
   return (
     <section className="bg-green-50 py-24 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 font-serif tracking-tight">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 fontserif tracking-tight">
           Why Every Business Needs a Website
         </h2>
-        <p className="mt-4 text-blue-800 max-w-2xl mx-auto">
+        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
           A modern website is your most powerful tool for visibility, credibility, and growth.
         </p>
       </div>
 
-      <div className="mt-16 max-w-5xl mx-auto">
+      <div className="mt-16 max-w-7xl mx-auto">
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={30}
@@ -60,11 +60,11 @@ export default function WhyWebsite() {
         >
           {features.map(({ icon: Icon, title, text }, idx) => (
             <SwiperSlide key={idx}>
-              <div className="bg-white rounded-xl border border-gray-200 p-8 h-full flex flex-col justify-start hover:shadow-md transition-all duration-200">
-                <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-blue-100 mb-6 border border-gray-300">
-                  <Icon className="h-6 w-6 text-blue-800" />
+              <div className="bg-white rounded-xl border border-blue-200 p-6 h-full flex flex-col justify-start hover:shadow-md transition-all duration-200">
+                <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-800 mb-6 bordr border-gray-300">
+                  <Icon className="h-6 w-6 text-yellow-300" />
                 </div>
-                <h3 className="md:text-lg font-semibold text-blue-900 fontserif mb-2">
+                <h3 className="md:text-lg font-semibold text-blue-800 fontserif mb-2">
                   {title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{text}</p>
@@ -74,10 +74,10 @@ export default function WhyWebsite() {
         </Swiper>
       </div>
 
-      <div className="text-center mt-10">
+      <div className="hidden text-center mt-10">
         <a
           href="#contact"
-          className="inline-block bg-blue-700 text-white font-medium py-3 px-8 rounded-md shadow-sm hover:bg-blue-800 transition-colors duration-200"
+          className="inline-block bg-blue-800 text-white font-medium py-2 md:py-3 px-10 rounded-md shadow-sm hover:bg-blue-800 transition-colors duration-200"
         >
           Let’s Build Your Website
         </a>

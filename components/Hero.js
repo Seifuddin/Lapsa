@@ -84,7 +84,7 @@ export default function Hero() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80" />
         </motion.div>
       </AnimatePresence>
 
@@ -95,7 +95,7 @@ export default function Hero() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold tracking-tight"
+          className="text-4xl text-yellow-300 md:text-6xl font-extrabold tracking-tight"
         >
           {slides[current].title}
         </motion.h1>
@@ -113,7 +113,7 @@ export default function Hero() {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mt-8 px-10 py-3 text-lg font-semibold rounded-full bg-gradient-to-r from-indigo-600 to-pink-600 hover:from-pink-700 hover:to-indigo-700 transition shadow-lg"
+          className="mt-8 px-14 py-3 text-lg text-gray-900 font-semibold rounded-full bg-yellow-400 gradient-to-r from-indigo-600 to-pink-600 hover:from-pink-700 hover:to-indigo-700 transition shadow-lg"
         >
           {slides[current].button}
         </motion.button>
@@ -122,13 +122,13 @@ export default function Hero() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full shadow-lg transition"
+        className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-yellow-300 p-3 rounded-full shadow-lg transition"
       >
         <ChevronLeft size={28} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full shadow-lg transition"
+        className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-yellow-300 p-3 rounded-full shadow-lg transition"
       >
         <ChevronRight size={28} />
       </button>
@@ -141,7 +141,7 @@ export default function Hero() {
             onClick={() => setCurrent(index)}
             className={`w-3 h-3 rounded-full transition-all ${
               current === index
-                ? "bg-pink-600 scale-125 shadow-md"
+                ? "bg-yellow-300 scale-125 shadow-md"
                 : "bg-gray-400 hover:bg-pink-400"
             }`}
           />

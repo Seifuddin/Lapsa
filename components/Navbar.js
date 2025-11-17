@@ -45,7 +45,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative w-10 h-10">
             <Image
-              src="/images/Lapsa Logo Final.png"
+              src="/images/Screenshot_20221022-170110-removebg-preview.png"
               alt="Lapsa Logo"
               fill
               className="rounded-md object-contain"

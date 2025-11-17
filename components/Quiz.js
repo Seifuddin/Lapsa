@@ -44,8 +44,8 @@ export default function FAQ() {
   return (
     <section className="px-6 py-20 bg-green-50 adient-to-b from-gray-50 via-white to-blue-50">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-red-600 text-sm font-bold uppercase tracking-wider mb-3">FAQ</h2>
-        <h2 className="text-blue-900 text-2xl md:text-5xl font-extrabold font-serif mb-3">
+        <h2 className="hidden text-red-600 text-sm font-bold uppercase tracking-wider mb-3">FAQ</h2>
+        <h2 className="text-gray-800 text-2xl md:text-4xl font-bold fontserif mb-3">
           Frequently Asked Questions
         </h2>
         <p className="text-gray-600 italc font-medium mb-10 max-w-2xl mx-auto">
@@ -60,7 +60,7 @@ export default function FAQ() {
             placeholder="Search FAQs..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-blue-200 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
+            className="w-full pl-10 pr-4 py-2 border border-blue-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
           />
         </div>
 
@@ -69,7 +69,7 @@ export default function FAQ() {
           <div className="flex justify-center mb-4">
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className="flex items-center gap-2 border border-blue-400 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-50 transition"
+              className="flex items-center gap-2 border border-gray-200 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-50 transition"
             >
               <Filter className="w-4 h-4" />
               Filter Categories
@@ -116,7 +116,7 @@ export default function FAQ() {
             filteredFaqs.map((faq, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300"
+                className="bgwhite rounded border2 border-b border-blue-200 shadow-sm hover:shadow-lg transition duration-300"
                 whileHover={{ scale: 1.01 }}
               >
                 <button
@@ -125,7 +125,7 @@ export default function FAQ() {
                 >
                   <span>{faq.question}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-blue-900 transform transition-transform duration-300 ${
+                    className={`w-5 h-5 text-blue-800 transform transition-transform duration-300 ${
                       openIndex === index ? "rotate-180" : ""
                     }`}
                   />
@@ -157,24 +157,24 @@ export default function FAQ() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mt-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-2xl shadow-lg p-10 max-w3xl mx-auto text-center"
+          className="mt-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-lg shadow-lg p-6 py-10 max-w3xl mx-auto text-center"
         >
-          <h3 className="text-2xl text-left md:text-center md:text-3xl font-bold mb-3 font-serif">
+          <h3 className="text-2xl textleft text-yellow-300 md: text-center md:text-3xl font-bold mb-3 fontserif">
             Still have questions?
           </h3>
-          <p className="text-gray-200 mb-6 text-left md:text-center">
+          <p className="text-gray-200 mb-6 textleft md: text-center">
             Reach out to our team — we’d love to help bring your ideas to life.
           </p>
           <div className="relative mt-6 flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="/contact"
-              className="bg-white text-blue-700 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
+              className="bg-yellow-300 text-gray-900 font-semibold py-2 md:py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
             >
               Contact Us
             </a>
             <a
               href="#portfolio"
-              className="border border-white/70 text-white font-semibold py-3 px-8 rounded-lg hover:bg-white/10 transition"
+              className="border border-white/70 text-white font-semibold py-2 md:py-3 px-8 rounded-lg hover:bg-white/10 transition"
             >
               View Our Work
             </a>

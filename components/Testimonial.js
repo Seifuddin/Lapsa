@@ -72,14 +72,14 @@ const Testimonial = () => {
   return (
     <div>
       <section className="py-20 px-6 relative bg-green-50 dient-to-br from-blue-100 via-white to-orange-100 text-gray-800 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px4 sm:px6 lg:px8 relative z-10">
           {/* Heading */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 px-3">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="text-blue-800 text-2xl md:text-4xl font-bold font-serif tracking-tight mb-4"
+              className="text-gray-800 text-2xl md:text-4xl font-bold fontserif tracking-tight mb-4"
             >
               What Our Clients Say
             </motion.h2>
@@ -89,16 +89,16 @@ const Testimonial = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-between mb-6">
+          <div className="flex justify-between mb6">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
-              className="p-2 rounded-full bg-gradient-to-r from-blue-900 to-blue-700 hover:bg-red-600 text-white hover:text-white shadow-lg transition"
+              className="p-2 rounded-full bg-gradient-to-r from-blue-100 to-blue-200 hover:bg-red-600 text-blue-800 hover:text-white shadow-lg transition"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={() => swiperRef.current?.slideNext()}
-              className="p-2 rounded-full bg-gradient-to-r from-blue-900 to-blue-700 hover:bg-red-600 text-white hover:text-white shadow-lg transition"
+              className="p-2 rounded-full bg-gradient-to-r from-blue-100 to-blue-200 hover:bg-red-600 text-blue-800 hover:text-white shadow-lg transition"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -123,12 +123,12 @@ const Testimonial = () => {
                 <motion.div
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.4 }}
-                  className="bg-white/60 backdrop-blur-md border border-gray-200 shadow-2xl rounded-md p-4 text-center h-full flex flex-col items-center justify-between"
+                  className="bg-white/60 backdrop-blur-md border border-blue-200 shadow-2xl rounded-md p-4 py-10 text-center h-full flex flex-col items-center justify-between"
                 >
                   <img
                     src={testimonial.image}
                     alt={testimonial.author}
-                    className="w-24 h-24 rounded-full object-cover border-2 border-blue-900 shadow-lg mb-4"
+                    className="w-24 h-24 rounded-full object-cover border-2 border-yellow-500 shadow-lg mb-4"
                   />
                   <div className="relative mb-4">
                     <Quote className="w-8 h-8 text-blue-500 absolute -top-6 left-1/2 -translate-x-1/2" />
@@ -136,7 +136,7 @@ const Testimonial = () => {
                       "{testimonial.quote}"
                     </p>
                   </div>
-                  <p className="font-bold md:text-lg text-blue-800 mt-2 font-serif">
+                  <p className="font-bold md:text-lg text-blue-800 mt-2 fontserif">
                     {testimonial.author}
                   </p>
                 </motion.div>
