@@ -28,11 +28,11 @@ const reasons = [
 
 export default function Why() {
   return (
-    <section className="py-12 bg-green-50 text-white relative z-10 overflow-hidden py-20 px-6 md:px-12">
+    <section className="py-12 bg-gradient-to-r from-blue-900 to-blue-700 text-white relative z-10 overflow-hidden py-20 px-6 md:px-12">
       {/* Subtle Background Glow */}
       <div className="absolute top-1/2 left-1/2 -z-10 h-[300px] w-[300px] bg-indigo-500/10 blur-3xl rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
 
-      <div className="relative rounded-lg bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24 px-6 md:px-16 z-10 max-w-7xl mx-auto">
+      <div className="relative roundedlg  text-white py24 px6 md:px16 z-10 max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
