@@ -48,8 +48,8 @@ export default function About() {
       />
 
       {/* Page Sections */}
-      <Timeline />
       <HeroSection/>
+      <Timeline />
     </div>
   );
 }
