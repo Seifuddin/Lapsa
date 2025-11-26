@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Facebook,
   Twitter,
@@ -42,9 +43,23 @@ export default function Footer() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 1, ease: "easeInOut" }}
         >
-          <h2 className="text-lg font-bold text-white mb-2">Lapsa Web & Graphics</h2>
-          <p className="text-sm text-gray-200 italic">
-            Elevate Your Brand Online 
+          <div className="flex items-center gap-3 mb-4">
+          <Image
+              src="/images/LapsaMainLogo.jpeg"
+              alt="Utamaduni Logo"
+              width={40}
+              height={40}
+              className="rounded-md"
+            />
+            <h2 className="text-2xl font-bold text-white fontserif">
+              Lapsa<p className="text-sm font-semibold text-white fontserif">
+              Web & Graphics
+            </p>
+            </h2>
+          
+          </div>
+          <p className="text-sm leading-relaxed text-gray-300">
+            Elevate your brand online.
           </p>
         </motion.div>
 

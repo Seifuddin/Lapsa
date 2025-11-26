@@ -10,41 +10,58 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
+// WORKING HANDLE SUBMIT
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    subject: form.subject.value,
+    message: form.message.value,
+  };
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      alert("Message sent successfully!");
+      form.reset();
+    } else {
+      alert("Failed to send message. Please try again.");
+    }
+  } catch (err) {
+    console.error("Submit error:", err);
+    alert("Network error. Could not send message.");
+  }
+};
+
 export default function Contact() {
   return (
-    <div
-      className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800">
-      {/* style={{
-        backgroundImage: `url('/images/pngwng.com (7).png')`,
-      }}
-        */}
+    <div className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800">
       <div className="rounded-xl p-6 md:p-12 max-w-6xl mx-auto">
-        {/* Header 
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-4xl md:text-5xl font-extrabold text-blue-950">
-            Contact <span className="text-orange-500">Us</span>
-          </h1>
-          <p className="text-gray-700 mt-4 text-lg">
-            Have a project in mind? We'd love to hear from you.
-          </p>
-        </motion.div>
-        */}
-        {/* Grid */}
+
+        {/* Grid Layout */}
         <div className="grid md:grid-cols-2 gap-10">
-          {/* Contact Info */}
+
+          {/* CONTACT INFORMATION */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 bg-gray-50 shadow-xl border border-gray-200 p-5 py-10 rounded-lg"
+            className="space-y-6 bg-gray-50 shadow-xl border border-gray-200 p-6 py-10 rounded-lg"
           >
-            <h4 className="text-xl font-bold text-blue-900 mb-6 font-serif">Contact Information</h4>
-            <div className="flex items-start space-x-4 shadowmd p1">
+            <h4 className="text-xl font-bold text-blue-900 mb-6 font-serif">
+              Contact Information
+            </h4>
+
+            <div className="flex items-start space-x-4">
               <Mail className="text-red-600 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Email</h4>
@@ -52,7 +69,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 shadowmd p1">
+            <div className="flex items-start space-x-4">
               <Phone className="text-red-600 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Phone</h4>
@@ -60,7 +77,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 shadowmd p1">
+            <div className="flex items-start space-x-4">
               <MapPin className="text-red-600 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Location</h4>
@@ -68,65 +85,88 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 shadowmd p1">
+            <div className="flex items-start space-x-4">
               <Building2 className="text-red-600 mt-1" />
               <div>
-                <h4 className="font-bold text-gray-800">Building</h4>
-                <p className="text-blue-900">Kahawa Wendani, Magu House, First Floor, Room No. 27</p>
+                <h4 className="font-bold text-gray-800">Office</h4>
+                <p className="text-blue-900">
+                  Kahawa Wendani, Magu House, 1st Floor, Room 27
+                </p>
               </div>
             </div>
 
-            {/* Social Media Icons */}
-            <h4 className="font-bold text-blue-800 text-lg font-serif">Follow Us</h4>
+            {/* SOCIAL MEDIA */}
+            <h4 className="font-bold text-blue-800 text-lg font-serif">
+              Follow Us
+            </h4>
+
             <div className="flex space-x-4 pt-4">
-              <a href="https://www.facebook.com/profile.php?id=61570201295782" aria-label="Facebook" className="text-blue-700 hover:text-orange-500 shadow-md p-1">
+              <a
+                href="https://www.facebook.com/profile.php?id=61570201295782"
+                className="text-blue-700 hover:text-orange-500 p-1"
+              >
                 <FaFacebookF size={20} />
               </a>
-              <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48" aria-label="Instagram" className="text-pink-600 hover:text-orange-500 shadow-md p-1">
+
+              <a
+                href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=v17tv48"
+                className="text-pink-600 hover:text-orange-500 p-1"
+              >
                 <FaInstagram size={20} />
               </a>
-              <a href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09" aria-label="Twitter" className="text-blue-400 hover:text-orange-500 shadow-md p-1">
+
+              <a
+                href="https://x.com/Lapsa020?t=6Mt7tfu41Aw5JKx3vy9BwA&s=09"
+                className="text-blue-400 hover:text-orange-500 p-1"
+              >
                 <FaTwitter size={20} />
               </a>
-              <a href="https://www.tiktok.com/@muriithi_nguru?_t=ZM-8wuMwLm6AoH&_r=1" aria-label="TikTok" className="text-black hover:text-orange-500 shadow-md p-1">
+
+              <a
+                href="https://www.tiktok.com/@muriithi_nguru?_t=ZM-8wuMwLm6AoH&_r=1"
+                className="text-black hover:text-orange-500 p-1"
+              >
                 <FaTiktok size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/edwin-nguru-92ab23312?utm_sources=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" className="text-blue-600 hover:text-orange-500 shadow-md p-1">
+
+              <a
+                href="https://www.linkedin.com/in/edwin-nguru-92ab23312"
+                className="text-blue-600 hover:text-orange-500 p-1"
+              >
                 <FaLinkedinIn size={20} />
               </a>
             </div>
           </motion.div>
 
-          {/* Contact Form */}
+          {/* CONTACT FORM */}
           <motion.form
+            onSubmit={handleSubmit}
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             className="bg-gray-50 border border-gray-200 p-6 rounded-lg shadow-xl space-y-4"
-            onSubmit={(e) => {
-              e.preventDefault();
-              // Handle submission
-            }}
           >
-          <h2 className="text-xl font-bold text-blue-900 mb-6 font-serif">Send Us a Message</h2>
+            <h2 className="text-xl font-bold text-blue-900 mb-6 font-serif">
+              Send Us a Message
+            </h2>
 
             <div>
               <label className="block font-semibold text-gray-800">Full Name</label>
               <input
                 type="text"
                 name="name"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Name"
                 required
               />
             </div>
 
             <div>
-              <label className="block font-semibold  text-gray-800">Email Address</label>
+              <label className="block font-semibold text-gray-800">Email Address</label>
               <input
                 type="email"
                 name="email"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Email"
                 required
               />
@@ -137,7 +177,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Phone Number"
               />
             </div>
@@ -147,7 +187,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="subject"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Subject of Your Message"
               />
             </div>
@@ -157,7 +197,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 rows="4"
-                className="w-full text-blue-900 mt-1 p-2 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-md"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 bg-gray-50 rounded-md focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Message"
                 required
               ></textarea>

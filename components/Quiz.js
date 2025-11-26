@@ -116,7 +116,7 @@ export default function FAQ() {
             filteredFaqs.map((faq, index) => (
               <motion.div
                 key={index}
-                className="bgwhite rounded border2 border-b-2 border-blue-100 shadow-sm hover:shadow-lg transition duration-300"
+                className="bgwhite rounded border2 border-b-2 border-blue-100 shadowsm hover:shadowlg transition duration-300"
                 whileHover={{ scale: 1.01 }}
               >
                 <button
@@ -157,7 +157,7 @@ export default function FAQ() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mt-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-lg shadow-lg p-6 py-10 max-w3xl mx-auto text-center"
+          className="mt-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-lg shadow-lg p-6 py-10 max-w3xl mx-auto text-center"
         >
           <h3 className="text-2xl textleft text-yellow-300 md: text-center md:text-3xl font-bold mb-3 fontserif">
             Still have questions?

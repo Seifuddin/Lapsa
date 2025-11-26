@@ -40,12 +40,12 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white py-1 px-6 shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl px-6 mx-auto flex justify-between items-center py-3">
+      <div className="max-w-7xl px6 mx-auto flex justify-between items-center py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative w-10 h-10">
             <Image
-              src="/images/Screenshot_20221022-170110-removebg-preview.png"
+              src="/images/LapsaMainLogo.jpeg"
               alt="Lapsa Logo"
               fill
               className="rounded-md object-contain"

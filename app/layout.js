@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 import Script from "next/script";
+import WhatsAppButton from "@/components/WhatsApp";
 
 const GA_MEASUREMENT_ID = "G-HCMWHKJ5FK"; // Replace with your GA4 ID
 
@@ -87,7 +88,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        <Navbar />
+        <Navbar /> 
+        <WhatsAppButton /> 
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>

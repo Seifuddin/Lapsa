@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import Benefits from "@/components/Benefits";
-import ChatButton from "@/components/ChatButton";
 import Discount from "@/components/Discount";
 import Hero from "@/components/Hero";
 import Ready from "@/components/Ready";
@@ -55,7 +54,6 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <ChatButton />
       <Discount />
       <Whatis />
       <WhyWebsite />

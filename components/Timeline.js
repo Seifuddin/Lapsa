@@ -11,14 +11,14 @@ export default function Timeline() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-center max-w-4xl text-2xl md:text-4xl font-bold text-red-700 mb-5 fontserif">
+          <h1 className="text-center maxw-4xl text-2xl md:text-4xl font-bold text-gray-900 mb-5 fontserif">
                     Our Journey<span className="text-gray-800"></span>
                   </h1>
-          <p className="itaic text-center text-gray-600 font-bold mb-10 max-w-6xl mx-auto">
+          <p className="itaic text-center text-gray-600 font-bold mb-10 maxw-6xl mx-auto">
             A brief History about Lapsa Web and Graphics.
           </p>
         </motion.div>
-        <div className="relative border-l-4 border-blue-700 pl-6 space-y-6">
+        <div className="relative border-l-4 border-blue-700 pl-4 space-y-6">
           {[
             {
               year: "September 9 2024 - Company Founded",
@@ -43,7 +43,7 @@ export default function Timeline() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <div className='bgwhite p-5 rounded-md shadowmd border-b-2 border-blue-100'>
+              <div className='bgwhite p-2 rounded-md shadowmd border-b-2 border-blue-100'>
               <h4 className="font-bold text-blue-900 mb-2 fontserif">{item.year}</h4>
               <p className="text-gray-700">{item.desc}</p>
               </div>

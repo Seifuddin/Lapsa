@@ -19,8 +19,7 @@ export default function Discount() {
             Limited-Time Offer
           </h3>
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight fontserif">Get 
-            <span className="text-gray-900"> Stunning Websites</span> starting
-            from<span className="text-blue-800"> 13,000</span>
+            <span className="text-gray-900"> Stunning Websites</span><span className="text-blue-800"> starting from 13,000</span>
           </h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

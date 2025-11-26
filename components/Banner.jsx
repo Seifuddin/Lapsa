@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-green50 py-16 px-6 md:px12 roundedxl bg-gradient-to-r from-blue-900 to-blue-700">
+    <section className="relative overflow-hidden bg-green50 py-16 px-6 md:px12 roundedxl bg-gradient-to-r from-blue-900 to-blue-800">
       {/* Decorative background shapes */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 bg-center"></div>
       <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
@@ -16,7 +16,7 @@ export default function HeroSection() {
             We Design Websites That Work<br />
             <span className="text-yellow-300"></span>
           </h1>
-          <p className="relative mt-2 mb-5 text-base text-left md:ext-center text-white max-w-4xl mx-auto">
+          <p className="relative mt-2 mb-5 text-base text-center md:text-left text-white max-w-4xl mx-auto">
             Lapsa Web & Graphics helps businesses stand out online with
             beautiful, high-performing websites and creative visual design.
           </p>
