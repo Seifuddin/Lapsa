@@ -89,7 +89,7 @@ const Testimonial = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-between mb6">
+          <div className="flex justify-between mb-6">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="p-2 rounded-full bg-gradient-to-r from-blue-100 to-blue-200 hover:bg-red-600 text-blue-800 hover:text-white shadow-lg transition"

@@ -116,7 +116,7 @@ export default function FAQ() {
             filteredFaqs.map((faq, index) => (
               <motion.div
                 key={index}
-                className="bgwhite rounded border2 border-b-2 border-blue-100 shadowsm hover:shadowlg transition duration-300"
+                className="bgwhite rounded border2 border-b border-blue-200 shadowsm hover:shadowlg transition duration-300"
                 whileHover={{ scale: 1.01 }}
               >
                 <button
