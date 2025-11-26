@@ -43,7 +43,7 @@ export default function Navbar() {
       <div className="max-w-7xl px6 mx-auto flex justify-between items-center py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-10 h-10">
+          <div className="relative w-8 h-8 md:w-10 md:h-10">
             <Image
               src="/images/LapsaMainLogo.jpeg"
               alt="Lapsa Logo"
