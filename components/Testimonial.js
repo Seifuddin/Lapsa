@@ -128,7 +128,7 @@ const Testimonial = () => {
                   <img
                     src={testimonial.image}
                     alt={testimonial.author}
-                    className="w-24 h-24 rounded-full object-cover border-2 border-yellow-500 shadow-lg mb-4"
+                    className="w-24 h-24 rounded-full object-cover border-4 border-blue-800 shadow-lg mb-4"
                   />
                   <div className="relative mb-4">
                     <Quote className="w-8 h-8 text-blue-500 absolute -top-6 left-1/2 -translate-x-1/2" />
@@ -136,7 +136,7 @@ const Testimonial = () => {
                       "{testimonial.quote}"
                     </p>
                   </div>
-                  <p className="font-bold md:text-lg text-blue-800 mt-2 fontserif">
+                  <p className="font-bold md:text-lg text-blue-900 mt-2 fontserif">
                     {testimonial.author}
                   </p>
                 </motion.div>

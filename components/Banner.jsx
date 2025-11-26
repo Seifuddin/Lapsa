@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div className="relative  text-white py16 px6 md:px16 z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="text-left flex-1">
-          <h1 className="text-2xl text-yellow-300 md:text-4xl text-center md:text-left font-extrabold leading-tight fontserif mb-5">
+          <h1 className="text-2xl text-yellow-400 md:text-4xl text-center md:text-left font-extrabold leading-tight fontserif mb-5">
             We Design Websites That Work<br />
             <span className="text-yellow-300"></span>
           </h1>
@@ -23,7 +23,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-3">
             <a
               href="#contact"
-              className="bg-yellow-300 text-center text-gray-800 font-semibold py-2 md:py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
+              className="bg-yellow-400 text-center text-gray-800 font-semibold py-2 md:py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
             >
               Get a Free Quote
             </a>

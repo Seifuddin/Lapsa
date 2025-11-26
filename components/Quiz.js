@@ -159,7 +159,7 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           className="mt-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-lg shadow-lg p-6 py-10 max-w3xl mx-auto text-center"
         >
-          <h3 className="text-2xl textleft text-yellow-300 md: text-center md:text-3xl font-bold mb-3 fontserif">
+          <h3 className="text-2xl textleft text-yellow-400 md: text-center md:text-3xl font-bold mb-3 fontserif">
             Still have questions?
           </h3>
           <p className="text-gray-200 mb-6 textleft md: text-center">
@@ -168,7 +168,7 @@ export default function FAQ() {
           <div className="relative mt-6 flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="/contact"
-              className="bg-yellow-300 text-gray-900 font-semibold py-2 md:py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
+              className="bg-yellow-400 text-gray-900 font-semibold py-2 md:py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
             >
               Contact Us
             </a>

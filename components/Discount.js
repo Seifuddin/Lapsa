@@ -28,7 +28,7 @@ export default function Discount() {
             className="font-base itali fontsemibold text-gray-600 mt-4 max-w-2xl mx-auto mb-8"
           >
             Professional web design doesn’t have to be expensive.{" "}
-            <span className="font-semibold text-blue-800">Lapsa Web & Graphics</span>{" "}
+            <span className="font-semibold text-gray-900">Lapsa Web & Graphics</span>{" "}
             delivers high-quality, custom websites built to fit your brand,
             vision, and budget. Whether you’re a startup, business, or creative,
             we’ll help you stand out online — affordably.

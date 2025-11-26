@@ -45,7 +45,7 @@ const handleSubmit = async (e) => {
 export default function Contact() {
   return (
     <div className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800">
-      <div className="rounded-xl p-6 md:p-12 max-w-6xl mx-auto">
+      <div className="rounded-xl p-6 md:p-12 max-w-7xl mx-auto">
 
         {/* Grid Layout */}
         <div className="grid md:grid-cols-2 gap-10">
@@ -57,46 +57,46 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="space-y-6 bg-gray-50 shadow-xl border border-gray-200 p-6 py-10 rounded-lg"
           >
-            <h4 className="text-xl font-bold text-blue-900 mb-6 font-serif">
+            <h4 className="text-xl font-bold text-blue-800 mb-6 fontserif">
               Contact Information
             </h4>
 
             <div className="flex items-start space-x-4">
-              <Mail className="text-red-600 mt-1" />
+              <Mail className="text-blue-700 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Email</h4>
-                <p className="text-blue-900">lapsatechnologies@gmail.com</p>
+                <p className="text-gray-600">lapsatechnologies@gmail.com</p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <Phone className="text-red-600 mt-1" />
+              <Phone className="text-blue-700 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Phone</h4>
-                <p className="text-blue-900">+254 111 608 331</p>
+                <p className="text-gray-600">+254 111 608 331</p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <MapPin className="text-red-600 mt-1" />
+              <MapPin className="text-blue-700 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Location</h4>
-                <p className="text-blue-900">Nairobi, Kenya</p>
+                <p className="text-gray-600">Nairobi, Kenya</p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <Building2 className="text-red-600 mt-1" />
+              <Building2 className="text-blue-700 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Office</h4>
-                <p className="text-blue-900">
+                <p className="text-gray-600">
                   Kahawa Wendani, Magu House, 1st Floor, Room 27
                 </p>
               </div>
             </div>
 
             {/* SOCIAL MEDIA */}
-            <h4 className="font-bold text-blue-800 text-lg font-serif">
+            <h4 className="font-bold text-blue-800 text-lg fontserif">
               Follow Us
             </h4>
 
@@ -146,7 +146,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="bg-gray-50 border border-gray-200 p-6 rounded-lg shadow-xl space-y-4"
           >
-            <h2 className="text-xl font-bold text-blue-900 mb-6 font-serif">
+            <h2 className="text-xl font-bold text-blue-900 mb-6 fontserif">
               Send Us a Message
             </h2>
 
@@ -155,7 +155,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="name"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Name"
                 required
               />
@@ -166,7 +166,7 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Email"
                 required
               />
@@ -177,7 +177,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Phone Number"
               />
             </div>
@@ -187,7 +187,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="subject"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Subject of Your Message"
               />
             </div>
@@ -197,7 +197,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 rows="4"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-200 bg-gray-50 rounded-md focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 bg-gray-50 rounded-md focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Message"
                 required
               ></textarea>
