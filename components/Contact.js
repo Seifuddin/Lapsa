@@ -55,7 +55,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 bg-gray-50 shadow-xl border border-gray-200 p-6 py-10 rounded-lg"
+            className="space-y-6 bg-gray-50 shadow border border-gray-300 p-6 py-10 rounded-lg"
           >
             <h4 className="text-xl font-bold text-blue-800 mb-6 fontserif">
               Contact Information
@@ -144,7 +144,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-50 border border-gray-200 p-6 rounded-lg shadow-xl space-y-4"
+            className="bg-gray-50 border border-gray-300 p-6 rounded-lg shadow space-y-4"
           >
             <h2 className="text-xl font-bold text-blue-900 mb-6 fontserif">
               Send Us a Message

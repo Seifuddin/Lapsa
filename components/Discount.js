@@ -66,7 +66,7 @@ export default function Discount() {
         >
           <div className="relative w-full maxwmd">
             <img
-              src="/images/discount.jpg"
+              src="/images/image-removebg-preview.png"
               alt="Affordable Website Design by Lapsa"
               className="w-full h-auto object-cover rounded-lg shadow-xl border-2 border-gray-200"
             />

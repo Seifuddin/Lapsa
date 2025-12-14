@@ -22,9 +22,9 @@ const services = [
       "/images/creative-web-design-studio-with-flying-web-page-layout-elements-concept_1029473-56271.avif",
   },
   {
-    title: "Software Development",
+    title: "Desktop Applications",
     description:
-      "Transform your innovative ideas into reality with our bespoke software development services. We build custom applications that solve real business problems.",
+      "Transform your innovative ideas into reality with our bespoke Desktop Apps development services. We build custom Desktop applications that solve real business problems.",
     icon: <Code className="w-10 h-10 text-yellow-300 p-2 bg-gradient-to-r from-blue-900 to-blue-700 rounded-md" />,
     image: "/images/what-is-software-development.jpg",
   },

@@ -1,6 +1,6 @@
 import AnimatedCounters from "@/components/AnimatedCounters";
 import CorePrinciples from "@/components/CorePrinciples";
-import AboutHero from "@/components/HeroAbout";
+import AboutUs from "@/components/About";
 import Leadership from "@/components/Leadership";
 import Ready from "@/components/Ready";
 import Timeline from "@/components/Timeline";
@@ -48,7 +48,7 @@ export default function About() {
       />
 
       {/* Page Sections */}
-      <HeroSection/>
+      <AboutUs />
       <Timeline />
     </div>
   );

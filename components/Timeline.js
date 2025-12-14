@@ -43,7 +43,7 @@ export default function Timeline() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <div className='bgwhite p-2 rounded-md shadowmd border-b-2 border-blue-100'>
+              <div className='bgwhite p-2 rounded-md shadowmd border-b-2 border-blue-200'>
               <h4 className="font-bold text-blue-900 mb-2 fontserif">{item.year}</h4>
               <p className="text-gray-700">{item.desc}</p>
               </div>

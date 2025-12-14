@@ -12,11 +12,11 @@ export default function HeroSection() {
       <div className="relative  text-white py16 px6 md:px16 z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="text-left flex-1">
-          <h1 className="text-2xl text-yellow-400 md:text-4xl text-center md:text-left font-extrabold leading-tight fontserif mb-5">
+          <h1 className="text-2xl text-yellow-400 md:text-4xl text-centermd: text-left font-extrabold leading-tight fontserif mb-5">
             We Design Websites That Work<br />
             <span className="text-yellow-300"></span>
           </h1>
-          <p className="relative mt-2 mb-5 text-base text-center md:text-left text-white max-w-4xl mx-auto">
+          <p className="relative mt-2 mb-5 text-base text-left md:text-left text-white max-w-4xl mx-auto">
             Lapsa Web & Graphics helps businesses stand out online with
             beautiful, high-performing websites and creative visual design.
           </p>
@@ -37,11 +37,11 @@ export default function HeroSection() {
         </div>
 
         {/* Right: Image */}
-          <div className="text-left flex-2">
+          <div className="text-left flex-2 fustify-centeritems-centermx-auto">
             <img
-              src="/images/image-removebg-preview (18).png"
+              src="/images/discount-removebg-preview.png"
               alt="Affordable Website Design by Lapsa"
-              className="w-full bg-gray-200 h-auto object-cover rounded-lg shadow-xl border-2border-yellow-500"
+              className="mx-auto w-full mdw-3/4 bg-gray-200 h-auto object-cover rounded-lg shadow-xl border-2border-yellow-500"
             />
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-pink-500/10 to-blue-600/10 blur-2xl -z-10" />
           </div>
