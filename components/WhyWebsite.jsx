@@ -39,7 +39,7 @@ export default function WhyWebsite() {
   ];
 
   return (
-    <section className="bg-white py-24 px-6 md:px-12">
+    <section className="bg-amber-50 py-24 px-6 md:px-12">
       {/* Section Header */}
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">

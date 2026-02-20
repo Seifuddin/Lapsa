@@ -45,22 +45,22 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-16 bg-green-50">
+    <section className="py-16 bg-amber-50">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-12">
-          <span className="inline-block bg-green-200 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block bg-blue-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Questions And Answers
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Frequently 
-            <span className="text-green-700"> Asked Questions </span>
+            <span className="text-blue-700"> Asked Questions </span>
           </h2>
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "5rem" }}
             transition={{ duration: 0.5 }}
-            className="h-1 bg-green-200 rounded-full mx-auto my-3"
+            className="h-1 bg-blue-200 rounded-full mx-auto my-3"
           ></motion.div>
           <p className="mt-2 text-gray-600 max-w-2xl mx-auto font-medium text-center md:text-lg mb-6">
             Have questions? We’ve got answers about our services, projects, and how we can help your business grow online.
@@ -72,7 +72,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-green-300 rounded-lg shadow-sm bg-white overflow-hidden"
+              className="border-b border-blue-300 rounded shadow-sm bgwhite overflow-hidden"
             >
               <button
                 onClick={() => toggleFAQ(index)}

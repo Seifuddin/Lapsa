@@ -63,7 +63,7 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative z-0 py-16 bg-gradient-to-b from-blue-50 via-white to-yellow-50 px-5">
+    <section className="relative z-0 py-16 bg-amber-50 via-white to-yellow-50 px-5">
       <div className="max-w-7xl mx-auto text-center">
         {/* Updated Header */}
         <h2 className="text-gray-900 text-3xl md:text-5xl font-bold tracking-tight mb-4">

@@ -5,7 +5,7 @@ import { Globe, LayoutDashboard, Smartphone, Rocket } from "lucide-react";
 
 export default function Whatis() {
   return (
-    <section className="bg-white py-24 px-6 lg:px-20 overflow-hidden">
+    <section className="bg-amber-50 py-24 px-6 lg:px-20 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
@@ -18,7 +18,7 @@ export default function Whatis() {
             What Is a <span className="text-blue-700">Website</span>?
           </h2>
 
-          <p className="text-gray-600 text-lg mb-10">
+          <p className="text-gray-600 text-base md:text-lg mb-10">
             A website is your digital office, store, and brand identity —
             accessible online 24/7 from anywhere in the world. It helps
             you connect with customers, showcase your services, and grow your business.
