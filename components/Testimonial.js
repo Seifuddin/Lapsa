@@ -1,178 +1,218 @@
 "use client";
-
-import { useState, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
-import {
-  Palette,
-  MonitorSmartphone,
-  Lightbulb,
-  Clock3,
-  Quote,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
-import { Dialog } from "@headlessui/react";
+import Image from "next/image";
+import { Quote, HeartHandshake } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  EffectFade,
-  Autoplay,
-} from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/effect-fade";
 
-const Testimonial = () => {
-  const [selectedFeature, setSelectedFeature] = useState(null);
-  const swiperRef = useRef(null);
-
-  const testimonials = [
+export default function StoriesAndTestimonials() {
+  const stories = [
     {
-      quote:
-        "Lapsa transformed our brand image with a stunning website and sleek visual identity. Absolutely phenomenal!",
-      author: "Mark Kinyua",
-      image: "/images/images (1).jpg",
+      image: "/images/utamaduni at mathare/_DSC8551.jpg",
+      title: "Empowering Women",
+      text: "Through Utamaduni’s community workshops, over 50 women have gained tailoring and entrepreneurship skills — transforming their families’ livelihoods and restoring dignity.",
     },
     {
-      quote:
-        "Their attention to detail and creative direction elevated our product launch beyond expectations.",
-      author: "Clifford Matara",
-      image: "/images/ai-generated-businessman-using-tablet-with-social-media-icons-over-night-cityscape-background-a-businessman-on-a-blurred-background-using-a-3d-rendering-mobile-phone-with-social-m.jpg",
+      image: "/images/utamaduni at mathare/_DSC8943.jpg",
+      title: "Restoring Hope for Street Children",
+      text: "Our outreach programs have helped reintegrate vulnerable children back to school and into safe homes, giving them a second chance at life and learning.",
     },
     {
-      quote:
-        "From UI/UX to branding kits, Lapsa’s team delivers with passion, creativity, and professionalism.",
-      author: "Brian Odhiambo",
-      image: "/images/pexels-pixabay-268533.jpg",
-    },
-    {
-      quote:
-        "We received a fast, responsive site that boosted our engagement and sales within weeks. Highly recommended!",
-      author: "Muriithi Nguru",
-      image: "/images/Screenshot_20231128-143947_Photos.jpg",
-    },
-    {
-      quote:
-        "Their branding strategy and design expertise gave our company the professional look we needed.",
-      author: "DJ Youngjey254",
-      image: "/images/teamup.jpg",
+      image: "/images/how_it_went_down/_DSC7546.jpg",
+      title: "Greening the Future Together",
+      text: "Utamaduni volunteers planted 2,000 trees across local schools, helping to build environmental awareness and sustainable communities.",
     },
   ];
 
-  const handleFeatureClick = useCallback((item) => {
-    setSelectedFeature(item);
-  }, []);
+  const testimonials = [
+    {
+      name: "Clifford Matara,",
+      role: "-Director, capvim International Publishers.",
+      quote:
+        "Their attention to detail and collaborative process turned my manuscript into a masterpiece.",
+            image: "/images/WhatsApp Image 2025-04-27 at 04.32.48 (1).webp",
+    },
+    {
+      name: "Vincent Obwogi, .",
+      role: "-Director, Inklab Graphics.",
+      quote:
+        "Outstanding experience! The quality of design and timeliness exceeded expectations.",
+            image: "/images/WhatsApp Image 2025-04-27 at 04.32.48 (1).webp",
 
-  const handleModalClose = useCallback(() => {
-    setSelectedFeature(null);
-  }, []);
+    },
+    {
+      name: "Ishmail Atudo,",
+      role: "-Director, NIMA",
+      quote:
+        "Professional, creative, and always on point. Highly recommended!",
+            image: "/images/WhatsApp Image 2025-04-27 at 04.32.48 (1).webp",
+
+    },
+
+    {
+      name: "Brian Odhiambo,",
+      role: "-Publisher",
+      quote:
+        "I felt supported every step of the way. Their team is simply the best.",
+            image: "/images/WhatsApp Image 2025-04-27 at 04.32.48 (1).webp",
+
+    },
+
+    {
+      name: "Murithi Nguru,",
+      role: "-Director, Lapsa",
+      quote:
+        "My project wouldn't have been the same without them.",
+            image: "/images/WhatsApp Image 2025-04-27 at 04.32.48 (1).webp",
+
+    },
+
+  ];
 
   return (
-    <div>
-      <section className="py-20 px-6 relative bg-green-50 dient-to-br from-blue-100 via-white to-orange-100 text-gray-800 overflow-hidden">
-        <div className="max-w-7xl mx-auto px4 sm:px6 lg:px8 relative z-10">
-          {/* Heading */}
-          <div className="text-center mb-16 px-3">
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
+    <section className="relative py-20 bg-amber-50 px6 overflow-hidden bg-gradient-to-r from-blue-900 to-blue-800">
+
+      {/* Decorative Waves */}
+      <div className="absolute -top-16 left-0 w-full h-36 bg-gradient-to-r from-indigo-800 via-indigo-900 to-indigo-800 rounded-b-full opacity-30"></div>
+      <div className="absolute -bottom-16 right-0 w-56 h-56 bg-indigo-700 rounded-full mix-blend-multiply filter blur-2xl opacity-25"></div>
+
+      <div className="relative z-10 px6">
+        {/* Header 
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <p className="text-sm uppercase font-semibold tracking-wider text-pink-700">
+            Stories of Change
+          </p>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-4">
+            Real Lives, Real Impact
+          </h2>
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "5rem" }}
+            transition={{ duration: 0.5 }}
+            className="h-1 bg-pink-700 rounded-full mx-auto mb-6"
+          ></motion.div>
+          <p className="mt-2 text-gray-600 max-w-2xl mx-auto font-medium text-center md:text-lg mb-6">
+            Every story from <span className="font-semibold text-gray-800">Utamaduni</span>{" "}
+            reminds us why we serve — transforming lives through compassion, unity, and culture.
+          </p>
+        </motion.div>
+*/}
+        {/* Stories Grid 
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
+          {stories.map((story, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="text-gray-800 text-2xl md:text-4xl font-bold fontserif tracking-tight mb-4"
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="rounded overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300"
             >
-              What Our Clients Say
-            </motion.h2>
-            <p className="itext-lg itali fontsemibold text-gray-600 mt-4 max-w-2xl mx-auto mb-8">
-              Hear how Lapsa Web and Graphics has transformed businesses through powerful design and modern web solutions.
+              <div className="relative w-full h-44">
+                <Image
+                  src={story.image}
+                  alt={story.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="md:text-lg font-bold text-blue-900 mb-2 font-serif">
+                  {story.title}
+                </h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  {story.text}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        */}
+        
+
+        {/* Testimonials Section with Swiper Slider */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="text-white max-w-7xl mx-auto rounded-2xl px-6 md:p14 shadow2xl relative overflow-hidden"
+        >
+          <HeartHandshake className="absolute opacity-10 w-40 h-40 right-10 bottom-10 text-blue-200" />
+          <div className="text-center mb-12 px4">
+            <Quote className="w-10 h-10 mx-auto mb-4 text-white" />
+            <span className="inline-block bg-green-400 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Client Testimonials
+          </span>
+            <h3 className="text-2xl md:text-4xl font-semibold mb-3 fontserif">
+              What Our 
+              <span className="text-green-400"> Clients Say </span>
+            </h3>
+              <div className="w-24 h-1 bg-green-400 mx-auto rounded-full my-3"></div>
+            <p className="text-blue-100 max-w-2xl mx-auto">
+              Hear from the authors and organizations we've had the pleasure of working with.
             </p>
           </div>
 
-          {/* Navigation Arrows */}
-          <div className="flex justify-between mb-6">
-            <button
-              onClick={() => swiperRef.current?.slidePrev()}
-              className="p-2 rounded-full bg-gradient-to-r from-blue-100 to-blue-200 hover:bg-red-600 text-blue-800 hover:text-white shadow-lg transition"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={() => swiperRef.current?.slideNext()}
-              className="p-2 rounded-full bg-gradient-to-r from-blue-100 to-blue-200 hover:bg-red-600 text-blue-800 hover:text-white shadow-lg transition"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-          </div>
-
-          {/* Swiper */}
           <Swiper
-            modules={[Navigation, Pagination, EffectFade, Autoplay]}
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            autoplay={{ delay: 6000 }}
-            loop={true}
-            spaceBetween={40}
+            modules={[Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
             pagination={{ clickable: true }}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            loop={true}
             breakpoints={{
-              640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
           >
-            {testimonials.map((testimonial, idx) => (
-              <SwiperSlide key={idx}>
+            {testimonials.map((t, i) => (
+              <SwiperSlide key={i}>
                 <motion.div
-                  whileHover={{ scale: 1.03 }}
-                  transition={{ duration: 0.4 }}
-                  className="bg-white/60 backdrop-blur-md border border-blue-200 shadow-2xl rounded-md p-4 py-10 text-center h-full flex flex-col items-center justify-between"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-white/5 rounded-2xl border border-blue-700 p-4 backdrop-blur-sm shadow-md hover:shadow-lg transition-all h-full"
                 >
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-24 h-24 rounded-full object-cover border-4 border-blue-800 shadow-lg mb-4"
-                  />
-                  <div className="relative mb-4">
-                    <Quote className="w-8 h-8 text-blue-500 absolute -top-6 left-1/2 -translate-x-1/2" />
-                    <p className="italic text-blue-950 text-base leading-relaxed">
-                      "{testimonial.quote}"
-                    </p>
+                  <div className="flex items-center gap-4 mb-4">
+                    <Image
+                      src={t.image}
+                      alt={t.name}
+                      width={50}
+                      height={50}
+                      className="rounded-full border-2 border-green-500"
+                    />
+                    <div>
+                      <h4 className="font-bold text-gray-100 fontserif md:text-lg my-2">{t.name}</h4>
+                      <p className="text-blue-200 text-sm">{t.role}</p>
+                    </div>
                   </div>
-                  <p className="font-bold md:text-lg text-blue-900 mt-2 fontserif">
-                    {testimonial.author}
+                  <p className="text-blue-100 text-sm leading-relaxed">
+                    “{t.quote}”
                   </p>
                 </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
 
-        {/* Gradient Light Effects */}
-        <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-30 rounded-full blur-3xl -z-10 animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-200 opacity-30 rounded-full blur-3xl -z-10 animate-pulse"></div>
-      </section>
-
-      {/* Optional Modal Feature Section (if enabled later) */}
-      <Dialog open={!!selectedFeature} onClose={handleModalClose} className="relative z-50">
-        <div className="fixed inset-0 bg-black/30 rounded-lg" aria-hidden="true" />
-        <div className="fixed inset-0 flex items-center justify-center p-4">
-          <Dialog.Panel className="w-full max-w-md rounded-xl bg-white p-6 shadow-2xl">
-            <Dialog.Title className="flex items-center gap-3 text-lg font-bold text-orange-600 mb-3">
-              {selectedFeature?.icon}
-              {selectedFeature?.title}
-            </Dialog.Title>
-            <Dialog.Description className="text-sm text-gray-700">
-              {selectedFeature?.modal}
-            </Dialog.Description>
-            <button
-              onClick={handleModalClose}
-              className="mt-4 text-sm text-blue-600 underline"
-            >
-              Close
+          {/* Call to Action 
+          <div className="text-center mt-14">
+            <button className="bg-yellow-400 text-blue-800 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-white transition-all duration-300">
+              Share Your Story
             </button>
-          </Dialog.Panel>
-        </div>
-      </Dialog>
-    </div>
+          </div>
+          */}
+        </motion.div>
+      </div>
+    </section>
   );
-};
-
-export default Testimonial;
+}

@@ -1,17 +1,18 @@
 import About from "@/components/About";
 import Benefits from "@/components/Benefits";
-import Discount from "@/components/Discount";
 import Hero from "@/components/Hero";
 import Ready from "@/components/Ready";
 import ServiceMarquee from "@/components/Marquee";
 import OurServices from "@/components/OurServices";
 import Portfolio from "@/components/Portfolio";
-import FAQ from "@/components/Quiz";
+import FAQ from "@/components/FAQ";
 import Why from "@/components/Why";
 import Testimonial from "@/components/Testimonial";
 import WhyWebsite from "@/components/WhyWebsite";
 import HeroSection from "@/components/Banner";
 import Whatis from "@/components/What";
+import AboutLapsa from "@/components/Abt";
+import CTASection from "@/components/CTA";
 
 // ✅ Page-specific SEO metadata
 export const metadata = {
@@ -54,14 +55,15 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <Discount />
       <Whatis />
+      <CTASection />
       <WhyWebsite />
-      <HeroSection />
+      <AboutLapsa />
       <OurServices />
       <Why />
-      <FAQ />
+      <Portfolio />
       <Testimonial />
+      <FAQ />
     </div>
   );
 }

@@ -1,66 +1,36 @@
 "use client";
 
-import { Globe, TrendingUp, Users, Smartphone } from "lucide-react";
-import CTA from "./CTA"; // adjust path if needed
+import Link from "next/link";
 
-export default function WhyWebsite() {
+export default function CTASection() {
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-20">
-      <div className="max-w-4xl mx-auto text-center">
-        
+    <section className="bg-blue-800 py-20 px-6 md:px-12">
+      <div className="max-w-6xl mx-auto text-center text-white">
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">
-          What is a Website?
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          Ready to Take Your Business Online?
         </h2>
-        <p className="text-gray-600 leading-relaxed mb-12">
-          A website is your business’s online home — a digital space where 
-          customers can learn about who you are, what you offer, and how to 
-          connect with you. It works 24/7, giving your brand visibility and 
-          credibility in today’s digital world.
-        </p>
 
         {/* Subheading */}
-        <h3 className="text-2xl font-semibold text-gray-900 mb-8">
-          Why Your Business Needs a Website
-        </h3>
+        <p className="text-lg md:text-xl mb-10 text-blue-100">
+          Let Lapsa Web & Graphics help you build a stunning website that grows your brand, attracts clients, and boosts your sales.
+        </p>
 
-        {/* Reason Cards */}
-        <div className="grid sm:grid-cols-2 gap-6 mb-14 text-left">
-          <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-            <Globe className="text-blue-600 w-8 h-8 mb-3" />
-            <h4 className="font-semibold text-gray-800 mb-2">Global Reach</h4>
-            <p className="text-gray-600 text-sm">
-              Reach customers beyond your local area and grow your business worldwide.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-            <TrendingUp className="text-green-600 w-8 h-8 mb-3" />
-            <h4 className="font-semibold text-gray-800 mb-2">Business Growth</h4>
-            <p className="text-gray-600 text-sm">
-              Attract new clients, showcase your services, and increase sales opportunities.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-            <Users className="text-purple-600 w-8 h-8 mb-3" />
-            <h4 className="font-semibold text-gray-800 mb-2">Credibility</h4>
-            <p className="text-gray-600 text-sm">
-              A professional website builds trust and shows that your brand is reliable.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-            <Smartphone className="text-pink-600 w-8 h-8 mb-3" />
-            <h4 className="font-semibold text-gray-800 mb-2">24/7 Availability</h4>
-            <p className="text-gray-600 text-sm">
-              Customers can find you anytime, anywhere, even outside business hours.
-            </p>
-          </div>
+        {/* Buttons */}
+        <div className="flex flex-col md:flex-row justify-center gap-4">
+          <Link
+            href="#contact"
+            className="inline-block bg-yellow-400 text-blue-900 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-300 transition-colors duration-300"
+          >
+            Get Started Today
+          </Link>
+          <Link
+            href="/portfolio"
+            className="inline-block bg-transparent border-2 border-yellow-400 text-yellow-400 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors duration-300"
+          >
+            View Portfolio
+          </Link>
         </div>
-
-        {/* CTA */}
-        <CTA />
       </div>
     </section>
   );

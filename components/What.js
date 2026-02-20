@@ -1,32 +1,138 @@
-import React from 'react'
+"use client";
+
+import { motion } from "framer-motion";
+import { Globe, LayoutDashboard, Smartphone, Rocket } from "lucide-react";
 
 export default function Whatis() {
   return (
-    <section className="relative bg-green-50 px-6 pb-10 overflow-hidden">
-      <div className="mx-auto px-3 bg-gradient-to-r from-blue-900 to-blue-800 text-center max-w-7xl text-white py-16 rounded-md">
-      {/* Background Overlay with Patterns */}
-      <div className="relative inset-0 bg-gradient-to-br from-blue-900/60 via-[#0a2540]/90 to-blue-800/70 z-0"></div>
-      <div className="relative inset-0 bg-[url('/images/patterns.png')] opacity-10 bg-cover bg-center z-0"></div>
-        <div className="max-w-6xl mx-auto px-3 text-center">
-          <h3 className="relative textleft md: text-center  text-2xl md:text-4xl fontmedium fontserif font-bold text-yellow-400 mb-4">Did You  Know?</h3>
-          <p className="relative font-base mt-2 text-left md:text-center text-white max-w-4xl mx-auto">A website is your digital storefront — a space on the internet where people can learn about your business, products, and services at any time, from anywhere. It’s often the first impression customers get of your brand.</p>
+    <section className="bg-white py-24 px-6 lg:px-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
-          <div className="relative mt-6 flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="#contact"
-              className="bg-yellow-400 text-gray-900 font-semibold py-2 md:py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition"
-            >
-              Get a Free Quote
-            </a>
-            <a
-              href="#portfolio"
-              className="border border-white/70 text-white font-semibold py-2 md:py-3 px-8 rounded-lg hover:bg-white/10 transition"
-            >
-              View Our Work
-            </a>
+        {/* LEFT CONTENT */}
+        <div>
+          <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+            Did You know?
+          </span>
+
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            What Is a <span className="text-blue-700">Website</span>?
+          </h2>
+
+          <p className="text-gray-600 text-lg mb-10">
+            A website is your digital office, store, and brand identity —
+            accessible online 24/7 from anywhere in the world. It helps
+            you connect with customers, showcase your services, and grow your business.
+          </p>
+
+          {/* Features Grid */}
+          <div className="grid sm:grid-cols-2 gap-6">
+            
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-3 items-center">
+                <Globe className="text-blue-700 mt-1" />
+                <h4 className="font-semibold text-gray-900 text-sm">Your Online Presence</h4>
+              </div>
+              <p className="text-gray-600 text-xs ml-7">
+                Being online allows potential customers to find you anytime, anywhere.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-3 items-center">
+                <LayoutDashboard className="text-yellow-500 mt-1" />
+                <h4 className="font-semibold text-gray-900 text-sm">A Digital Storefront</h4>
+              </div>
+              <p className="text-gray-600 text-xs ml-7">
+                Your website showcases products or services, just like a physical shop.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-3 items-center">
+                <Smartphone className="text-blue-700 mt-1" />
+                <h4 className="font-semibold text-gray-900 text-sm">Accessible Everywhere</h4>
+              </div>
+              <p className="text-gray-600 text-xs ml-7">
+                Works seamlessly on phones, tablets, and computers for all users.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-3 items-center">
+                <Rocket className="text-yellow-500 mt-1" />
+                <h4 className="font-semibold text-gray-900 text-sm">A Growth Tool</h4>
+              </div>
+              <p className="text-gray-600 text-xs ml-7">
+                Helps attract more customers, increase sales, and grow your brand.
+              </p>
+            </div>
+
           </div>
         </div>
-        </div>
-      </section>
-  )
+
+        {/* RIGHT LAPTOP MOCKUP */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="relative flex justify-center"
+        >
+
+          {/* Laptop Base */}
+          <div className="relative w-full max-w-lg">
+
+            {/* Screen */}
+            <div className="bg-gray-900 rounded-t-2xl p-3 shadow-2xl">
+              <div className="bg-white rounded-xl overflow-hidden">
+
+                {/* Browser Top Bar */}
+                <div className="flex gap-2 px-4 py-3 border-b border-gray-200">
+                  <span className="w-3 h-3 bg-red-400 rounded-full"></span>
+                  <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                  <span className="w-3 h-3 bg-green-400 rounded-full"></span>
+                </div>
+
+                {/* Animated Website Content */}
+                <div className="p-6 space-y-4">
+                  <motion.div
+                    animate={{ width: ["60%", "90%", "60%"] }}
+                    transition={{ repeat: Infinity, duration: 4 }}
+                    className="h-3 bg-blue-200 rounded"
+                  ></motion.div>
+
+                  <motion.div
+                    animate={{ width: ["80%", "50%", "80%"] }}
+                    transition={{ repeat: Infinity, duration: 5 }}
+                    className="h-3 bg-yellow-300 rounded"
+                  ></motion.div>
+
+                  <motion.div
+                    animate={{ width: ["40%", "70%", "40%"] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    className="h-3 bg-blue-300 rounded"
+                  ></motion.div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Laptop Bottom Base */}
+            <div className="h-6 bg-gray-800 rounded-b-2xl shadow-md"></div>
+
+            {/* Floating Badge */}
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ repeat: Infinity, duration: 3 }}
+              className="absolute -bottom-6 -right-6 bg-yellow-400 text-blue-900 px-4 py-3 rounded-xl shadow-lg text-sm font-semibold"
+            >
+              24/7 Online
+            </motion.div>
+
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
+  );
 }

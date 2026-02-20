@@ -11,6 +11,7 @@ import {
   Smartphone,
   X,
 } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -62,13 +63,14 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative z-0 py-16 bg-green-50 dient-to-b from-blue-50 via-white to-orange-50 px-5">
+    <section className="relative z-0 py-16 bg-gradient-to-b from-blue-50 via-white to-yellow-50 px-5">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-gray-900 text-2xl md:text-4xl font-bold fontserif tracking-tight mb-4">
-          What We Do
+        {/* Updated Header */}
+        <h2 className="text-gray-900 text-3xl md:text-5xl font-bold tracking-tight mb-4">
+          Explore Our Web & Graphics Services
         </h2>
-        <p className="font-base itali fontsemibold text-gray-600 mt-4 max-w-2xl mx-auto mb-8">
-          Everything you need to succeed online — from design to deployment.
+        <p className="text-gray-600 mt-4 max-w-2xl mx-auto mb-8">
+          From design to deployment, we help businesses succeed online with creative and innovative solutions.
         </p>
 
         <motion.div
@@ -92,19 +94,29 @@ export default function OurServices() {
               <div className="p-4 text-left space-y-3">
                 <div className="flex items-center gap-2">
                   {service.icon}
-                  <h3 className="text-g md:text-xl fontserif font-bold text-blue-800">
+                  <h3 className="text-black text-lg md:text-xl font-bold">
                     {service.title}
                   </h3>
                 </div>
                 <p className="text-blue-950 text-sm line-clamp-3">
                   {service.description}
                 </p>
-                <button
-                  onClick={() => setActiveService(service)}
-                  className="w-full inline-block text-sm bg-blue-800 text-white py-2 rounded mt-2 hover:bg-blue-700 transition"
-                >
-                  Learn More
-                </button>
+
+                {/* Buttons Row */}
+                <div className="flex gap-3 mt-3">
+                  <button
+                    onClick={() => setActiveService(service)}
+                    className="flex-1 bg-blue-800 text-white py-2 rounded hover:bg-blue-700 transition font-semibold text-sm"
+                  >
+                    Learn More
+                  </button>
+                  <Link
+                    href="/portfolio"
+                    className="flex-1 bg-transparent border-2 border-blue-800 text-blue-800 py-2 rounded hover:bg-blue-800 hover:text-white transition font-semibold text-sm text-center"
+                  >
+                    View Portfolio
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -140,11 +152,27 @@ export default function OurServices() {
               />
               <div className="flex items-center gap-2 mb-2">
                 {activeService.icon}
-                <h3 className="text-2xl font-bold text-orange-700">
+                <h3 className="text-2xl font-bold text-black">
                   {activeService.title}
                 </h3>
               </div>
-              <p className="text-blue-950">{activeService.description}</p>
+              <p className="text-blue-950 mb-4">{activeService.description}</p>
+
+              {/* Buttons in Modal */}
+              <div className="flex gap-3 mt-3">
+                <button
+                  onClick={() => setActiveService(null)}
+                  className="flex-1 bg-blue-800 text-white py-2 rounded hover:bg-blue-700 transition font-semibold text-sm"
+                >
+                  Close
+                </button>
+                <Link
+                  href="/portfolio"
+                  className="flex-1 bg-transparent border-2 border-blue-800 text-blue-800 py-2 rounded hover:bg-blue-800 hover:text-white transition font-semibold text-sm text-center"
+                >
+                  View Portfolio
+                </Link>
+              </div>
             </motion.div>
           </motion.div>
         )}

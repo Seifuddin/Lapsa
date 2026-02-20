@@ -1,71 +1,88 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
-const services = [
-  { title: "Web Design", image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" },
-  { title: "Business Cards", image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" },
-  { title: "Flyers", image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" },
-  { title: "T-shirt Printing", image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" },
-  { title: "Stickers", image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" },
-  { title: "Banners", image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" },
-  { title: "Photo Mounting", image: "/images/Web-design-Cork-web-designer-website-design-Ireland-web-desgin-agency-Diane-Higgins-Design-website-designer-CPS-website.jpg" },
-];
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { ArrowTopRightOnSquareIcon, EyeIcon } from "@heroicons/react/24/outline";
 
 export default function Portfolio() {
+  const projects = [
+    {
+      title: "Capvim Publishers",
+      description: "A professional publishing company website offering services, portfolio showcase, and easy contact for authors and clients.",
+      image: "/images/CDG_blog_post_image_01-850x412.jpg",
+      link: "https://capvim.vercel.app",
+    },
+    {
+      title: "Utamadu Ni Organization",
+      description: "An NGO website designed to highlight community projects, news updates, and engagement opportunities for supporters.",
+      image: "/images/download.jpg",
+      link: "https://utamaduniorganization.vercel.app",
+    },
+    {
+      title: "Lapsa Clinic",
+      description: "A healthcare website providing information about medical services, appointments, and health resources for patients.",
+      image: "/images/download (2).jpg",
+      link: "https://lapsaclinic.vercel.app",
+    },
+  ];
+
   return (
-    <section className="w-full px-4 py-10 bg-gray-900 rounded-lg">
-      <h2 className="text-3xl font-bold text-white mb-2">What We Do</h2>
-      <p className="text-white mb-6 text-lg max-w-3xl">
-        We offer a wide range of professional services including Web Design, Branding,
-        Digital Printing, and Graphic Design — all tailored to elevate your brand.
-      </p>
-
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        breakpoints={{
-          200: { slidesPerView: 2 },
-          550: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
-        }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        navigation
-        pagination={{ clickable: true }}
-        className="pb-10"
-      >
-        {services.map((service, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white rounded-lg shadow-md p-4 border border-orange-500 hover:scale-105 transition-transform duration-300">
-              <div className="flex justify-center mb-4">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-24 h-20 object-cover border border-orange-400 rounded"
-                />
-              </div>
-              <h3 className="text-center text-orange-700 font-semibold text-lg">
-                {service.title}
-              </h3>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
-      <div className="mt-8">
-        <p className="text-white mb-4 text-base">
-          Want to explore more of our creative services or get a personalized quote?
+    <section className="py-24 px-6 md:px-12 bg-gray-50">
+      {/* Header */}
+      <div className="max-w-5xl mx-auto text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">
+          Explore Our Portfolio
+        </h2>
+        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          These are some of the projects we've crafted — combining design, functionality, and creativity to deliver results.
         </p>
-        <a
-          href="#portfolio"
-          className="inline-block bg-orange-600 hover:bg-blue-600 transition-colors text-white px-5 py-2 rounded-md font-semibold"
-        >
-          View More Services
-        </a>
+      </div>
+
+      {/* Portfolio Grid */}
+      <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project, idx) => (
+          <motion.div
+            key={idx}
+            whileHover={{ scale: 1.03 }}
+            className="flex flex-col rounded-xl overflow-hidden shadow-lg bg-white border border-gray-200 transition-all duration-300"
+          >
+            {/* Image */}
+            <div className="relative w-full h-64">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="p-6 flex flex-col justify-between flex-1">
+              <div className="mb-4">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-gray-700 text-sm">{project.description}</p>
+              </div>
+
+              {/* Buttons */}
+              <div className="flex gap-3 mt-auto">
+                <Link
+                  href={project.link}
+                  target="_blank"
+                  className="bg-blue-800 text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-blue-700 transition"
+                >
+                  <ArrowTopRightOnSquareIcon className="w-4 h-4" /> View Site
+                </Link>
+                <Link
+                  href="#contact"
+                  className="border border-blue-800 text-blue-800 px-4 py-2 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
+                >
+                  <EyeIcon className="w-4 h-4" /> Request Service
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

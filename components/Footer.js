@@ -12,6 +12,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -187,6 +188,20 @@ export default function Footer() {
         className="mt-10 pt-6 border-t border-slate-700 text-center text-sm text-slate-400"
       >
         &copy; {new Date().getFullYear()} Lapsa Web and Graphics. All rights reserved.
+        <p className="text-gray-300">
+          Designed & Powered by{" "}
+          <Link
+            href="https://lapsa.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-blue-400 font-semibold transition-all duration-300 
+                       after:content-[''] after:absolute after:left-0 after:-bottom-1 
+                       after:w-0 after:h-[2px] after:bg-blue-400 
+                       hover:after:w-full after:transition-all after:duration-300"
+          >
+            Lapsa Web and Graphics
+          </Link>
+        </p>
       </motion.div>
     </footer>
   );
