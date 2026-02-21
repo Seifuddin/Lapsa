@@ -8,7 +8,7 @@ import { ArrowTopRightOnSquareIcon, EyeIcon } from "@heroicons/react/24/outline"
 export default function Portfolio() {
   const projects = [
     {
-      title: "Capvim Publishers",
+      title: "Capvim International Publishers",
       description: "A professional publishing company website offering services, portfolio showcase, and easy contact for authors and clients.",
       image: "/images/CDG_blog_post_image_01-850x412.jpg",
       link: "https://capvim.vercel.app",
@@ -20,7 +20,7 @@ export default function Portfolio() {
       link: "https://utamaduniorganization.vercel.app",
     },
     {
-      title: "Lapsa Clinic",
+      title: "Lapsa Family Clinic",
       description: "A healthcare website providing information about medical services, appointments, and health resources for patients.",
       image: "/images/download (2).jpg",
       link: "https://lapsafamilyclinic.vercel.app",
@@ -69,13 +69,13 @@ export default function Portfolio() {
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="bg-blue-800 text-white px-2 py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
+                  className="bg-blue-800 text-white px-4 py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
                 >
                   <ArrowTopRightOnSquareIcon className="w-4 h-4" /> View Site
                 </Link>
                 <Link
                   href="#contact"
-                  className="border border-blue-800 text-blue-800 px-2 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
+                  className="border border-blue-800 text-blue-800 px-4 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
                 >
                   <EyeIcon className="w-4 h-4" /> Request Service
                 </Link>

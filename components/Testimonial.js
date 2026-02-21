@@ -10,8 +10,8 @@ import "swiper/css/pagination";
 export default function StoriesAndTestimonials() {
   const testimonials = [
     {
-      name: "Edwin Nguru",
-      role: "- Founder, Lapsa Web & Graphics",
+      name: "Muriithi Nguru",
+      role: "- Founder and CEO, Lapsa Web & Graphics",
       quote:
         "Working with Lapsa was a game-changer. Their design skills and attention to detail elevated our brand online.",
       image: "/images/IMG_20240804_185749_718~2.jpg",

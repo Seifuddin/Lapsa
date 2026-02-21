@@ -89,7 +89,7 @@ export default function OurServices() {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-32 md:h-44 object-cover"
+                className="w-full h-44 md:h-44 object-cover"
               />
               <div className="p-4 text-left space-y-3">
                 <div className="flex items-center gap-2">
