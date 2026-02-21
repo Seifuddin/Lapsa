@@ -69,13 +69,13 @@ export default function Portfolio() {
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="bg-blue-800 text-white px-4 py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
+                  className="flex-1 text-center bg-blue-800 text-white py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
                 >
                   <ArrowTopRightOnSquareIcon className="w-4 h-4" /> View Site
                 </Link>
                 <Link
                   href="#contact"
-                  className="border border-blue-800 text-blue-800 px-4 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
+                  className="flex-1 text-center border border-blue-800 text-blue-800 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
                 >
                   <EyeIcon className="w-4 h-4" /> Request Service
                 </Link>

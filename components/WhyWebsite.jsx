@@ -70,7 +70,7 @@ export default function WhyWebsite() {
               <div className="rounded bg-white border border-amber-200 flex flex-col h-full hover:shadow-lg transition-all duration-200">
 
                 {/* Top Image */}
-                <div className="w-full h-44 md:h-44 relative rounded-t overflow-hidden">
+                <div className="w-full h-40 md:h-44 relative rounded-t overflow-hidden">
                   <Image
                     src={image}
                     alt={title}
