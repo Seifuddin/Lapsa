@@ -71,13 +71,13 @@ export default function Portfolio() {
                   target="_blank"
                   className="flex-1 text-center bg-blue-800 text-white py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
                 >
-                  <ArrowTopRightOnSquareIcon className="w-4 h-4" /> View Site
+                  <ArrowTopRightOnSquareIcon className="ml-1 w-4 h-4" /> View Site
                 </Link>
                 <Link
                   href="#contact"
                   className="flex-1 text-center border border-blue-800 text-blue-800 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
                 >
-                  <EyeIcon className="w-4 h-4" /> Request Service
+                  <EyeIcon className="ml-1 w-4 h-4" /> Request Service
                 </Link>
               </div>
             </div>
