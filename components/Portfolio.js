@@ -14,7 +14,7 @@ export default function Portfolio() {
       link: "https://capvim.vercel.app",
     },
     {
-      title: "Utamadu Ni Organization",
+      title: "Utamaduni Organization",
       description: "An NGO website designed to highlight community projects, news updates, and engagement opportunities for supporters.",
       image: "/images/download.jpg",
       link: "https://utamaduniorganization.vercel.app",
@@ -31,8 +31,8 @@ export default function Portfolio() {
     <section className="py-24 px-6 md:px-12 bg-amber-50">
       {/* Header */}
       <div className="max-w-5xl mx-auto text-center mb-16">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">
-          Explore Our Portfolio
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
+          Explore Our  <span className="text-yellow-500"> Portfolio </span>
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
           These are some of the projects we've crafted — combining design, functionality, and creativity to deliver results.
@@ -45,10 +45,10 @@ export default function Portfolio() {
           <motion.div
             key={idx}
             whileHover={{ scale: 1.03 }}
-            className="flex flex-col rounded overflow-hidden shadowlg bgwhite border-b border-gray-300 transition-all duration-300"
+            className="flex flex-col rounded overflow-hidden shadowlg bgwhite border border-amber-200 transition-all duration-300"
           >
             {/* Image */}
-            <div className="relative w-full h-44 md:h-64">
+            <div className="relative w-full h-36 md:h-44">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -58,9 +58,9 @@ export default function Portfolio() {
             </div>
 
             {/* Content */}
-            <div className="py-3 flex flex-col justify-between flex-1">
+            <div className="p-3 bg-white flex flex-col justify-between flex-1">
               <div className="mb-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
+                <h3 className="md:text-lg font-bold text-yellow-500 mb-2">{project.title}</h3>
                 <p className="text-gray-700 text-sm">{project.description}</p>
               </div>
 
@@ -69,13 +69,13 @@ export default function Portfolio() {
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="bg-blue-800 text-white px-2 py-1 rounded-md flex items-center gap-2 hover:bg-blue-700 transition"
+                  className="flex-1 bg-blue-800 text-white px-2 py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
                 >
                   <ArrowTopRightOnSquareIcon className="w-4 h-4" /> View Site
                 </Link>
                 <Link
                   href="#contact"
-                  className="border border-blue-800 text-blue-800 px-2 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
+                  className="flex-1 border border-blue-800 text-blue-800 px-2 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
                 >
                   <EyeIcon className="w-4 h-4" /> Request Service
                 </Link>

@@ -52,7 +52,7 @@ export default function StoriesAndTestimonials() {
       <div className="absolute -top-16 left-0 w-full h-36 bg-gradient-to-r from-indigo-800 via-indigo-900 to-indigo-800 rounded-b-full opacity-30"></div>
       <div className="absolute -bottom-16 right-0 w-56 h-56 bg-indigo-700 rounded-full mix-blend-multiply filter blur-2xl opacity-25"></div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto">
         {/* Testimonials Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -62,14 +62,14 @@ export default function StoriesAndTestimonials() {
           className="text-center mb-12"
         >
           <Quote className="w-10 h-10 mx-auto mb-4 text-white" />
-          <span className="inline-block bg-green-400 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block bg-yellow-400 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Client Testimonials
           </span>
           <h3 className="text-2xl md:text-4xl font-semibold mb-3 text-white">
             What Our 
-            <span className="text-green-400"> Clients Say </span>
+            <span className="text-yellow-400"> Clients Say </span>
           </h3>
-          <div className="w-24 h-1 bg-green-400 mx-auto rounded-full my-3"></div>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full my-3"></div>
           <p className="text-blue-100 max-w-2xl mx-auto">
             Hear from the businesses and individuals we've had the pleasure of serving at Lapsa Web & Graphics.
           </p>
@@ -103,7 +103,7 @@ export default function StoriesAndTestimonials() {
                     alt={t.name}
                     width={50}
                     height={50}
-                    className="rounded-full border-2 border-green-500"
+                    className="rounded-full border-2 border-yellow-400"
                   />
                   <div>
                     <h4 className="font-bold text-gray-100 md:text-lg my-2">{t.name}</h4>

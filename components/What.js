@@ -5,64 +5,64 @@ import { Globe, LayoutDashboard, Smartphone, Rocket } from "lucide-react";
 
 export default function Whatis() {
   return (
-    <section className="bg-amber-50 py-24 px-6 lg:px-20 overflow-hidden">
+    <section className="bg-yellow-50 py-24 px-6 lg:px-20 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
         <div>
-          <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block bg-yellow-200 text-blue-800 px-4 py-1 rounded-full text-sm fontsemibold mb-4">
             Did You know?
           </span>
 
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-            What Is a <span className="text-blue-700">Website</span>?
+            What Is a <span className="text-yellow-500">Website</span>?
           </h2>
 
-          <p className="text-gray-600 text-base md:text-lg mb-10">
+          <p className="text-gray-600 textbase md:text-lg mb-10">
             A website is your digital office, store, and brand identity —
             accessible online 24/7 from anywhere in the world. It helps
             you connect with customers, showcase your services, and grow your business.
           </p>
 
           {/* Features Grid */}
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-3">
             
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
-                <Globe className="text-blue-700 mt-1" />
-                <h4 className="font-semibold text-gray-900 text-sm">Your Online Presence</h4>
+                <Globe className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
+                <h4 className="font-semibold text-yellow-500 md:text-lg">Your Online Presence</h4>
               </div>
-              <p className="text-gray-600 text-xs ml-7">
+              <p className="text-gray-600 text-sm md:text-base ml-7">
                 Being online allows potential customers to find you anytime, anywhere.
               </p>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
-                <LayoutDashboard className="text-yellow-500 mt-1" />
-                <h4 className="font-semibold text-gray-900 text-sm">A Digital Storefront</h4>
+                <LayoutDashboard className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
+                <h4 className="font-semibold text-yellow-500 md:text-lg">A Digital Storefront</h4>
               </div>
-              <p className="text-gray-600 text-xs ml-7">
+              <p className="text-gray-600 text-sm md:text-base ml-7">
                 Your website showcases products or services, just like a physical shop.
               </p>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
-                <Smartphone className="text-blue-700 mt-1" />
-                <h4 className="font-semibold text-gray-900 text-sm">Accessible Everywhere</h4>
+                <Smartphone className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
+                <h4 className="font-semibold text-yellow-500 md:text-lg">Accessible Everywhere</h4>
               </div>
-              <p className="text-gray-600 text-xs ml-7">
+              <p className="text-gray-600 text-sm md:text-base ml-7">
                 Works seamlessly on phones, tablets, and computers for all users.
               </p>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
-                <Rocket className="text-yellow-500 mt-1" />
-                <h4 className="font-semibold text-gray-900 text-sm">A Growth Tool</h4>
+                <Rocket className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
+                <h4 className="font-semibold text-yellow-500 md:text-lg">A Growth Tool</h4>
               </div>
-              <p className="text-gray-600 text-xs ml-7">
+              <p className="text-gray-600 text-sm md:text-base ml-7">
                 Helps attract more customers, increase sales, and grow your brand.
               </p>
             </div>
@@ -80,7 +80,7 @@ export default function Whatis() {
         >
 
           {/* Laptop Base */}
-          <div className="relative w-full max-w-lg">
+          <div className="relative w-full max-w-xl">
 
             {/* Screen */}
             <div className="bg-gray-900 rounded-t-2xl p-3 shadow-2xl">

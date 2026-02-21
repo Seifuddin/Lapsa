@@ -26,13 +26,12 @@ export default function AboutLapsa() {
             About Lapsa
           </span>
 
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-            We Build Powerful
-            <span className="text-yellow-400"> Digital Brands </span>
-            & High-Performance Websites.
+          <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-6">
+            We Build
+            <span className="text-yellow-400"> High-Performance Websites. </span>
           </h2>
 
-          <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-xl">
+          <p className="text-blue-100 md:text-lg leading-relaxed mb-10 max-w-xl">
             Lapsa Web & Graphics is a modern creative tech studio delivering
             premium web development and bold visual design. We combine
             strategy, design, and technology to create digital experiences
@@ -40,22 +39,22 @@ export default function AboutLapsa() {
           </p>
 
           <div className="space-y-6 mb-10">
-            <div className="flex items-start gap-4">
-              <Code2 className="text-yellow-400 mt-1" size={26} />
+            <div className="flex items-start gap-4 p-2 border-b border-blue-700 rounded">
+              <Code2 className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-400 to-blue-600 p-2 rounded" size={34} />
               <p className="text-blue-100">
                 Clean, scalable & responsive web applications.
               </p>
             </div>
 
-            <div className="flex items-start gap-4">
-              <Palette className="text-yellow-400 mt-1" size={26} />
+            <div className="flex items-start gap-4 p-2 border-b border-blue-700 rounded">
+              <Palette className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-400 to-blue-600 p-2 rounded" size={34} />
               <p className="text-blue-100">
                 Creative branding, logos & marketing visuals.
               </p>
             </div>
 
-            <div className="flex items-start gap-4">
-              <Rocket className="text-yellow-400 mt-1" size={26} />
+            <div className="flex items-start gap-4 p-2 border-b border-blue-700 rounded">
+              <Rocket className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-400 to-blue-600 p-2 rounded" size={34} />
               <p className="text-blue-100">
                 Strategy-driven solutions built for performance.
               </p>
@@ -65,14 +64,14 @@ export default function AboutLapsa() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/services"
-              className="px-8 py-3 bg-yellow-400 text-blue-950 font-semibold rounded-xl shadow-xl hover:scale-105 transition duration-300"
+              className="px-5 py-2 bg-yellow-400 text-blue-950 font-semibold rounded shadow-xl hover:scale-105 transition duration-300"
             >
               Explore Services
             </Link>
 
             <Link
               href="/portfolio"
-              className="px-8 py-3 border border-yellow-400 text-yellow-400 rounded-xl font-semibold hover:bg-yellow-400 hover:text-blue-950 transition duration-300"
+              className="px-5 py-2 border border-yellow-400 text-yellow-400 rounded font-semibold hover:bg-yellow-400 hover:text-blue-950 transition duration-300"
             >
               View Portfolio
             </Link>
@@ -89,9 +88,9 @@ export default function AboutLapsa() {
         >
 
           {/* Main Image */}
-          <div className="relative w-full max-wmd h-[400px] md:h-[600px] rounded overflow-hidden shadow-2xl border border-white/10">
+          <div className="relative w-full max-wmd h-[300px] md:h-[600px] rounded overflow-hidden shadow-2xl border border-white/10">
             <Image
-              src="/images/discount-removebg-preview.png" // replace with your real image
+              src="/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp" // replace with your real image
               alt="Lapsa Web and Graphics Team"
               fill
               className="object-cover bg-white"

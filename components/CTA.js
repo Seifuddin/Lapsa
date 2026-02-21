@@ -8,7 +8,7 @@ export default function CTASection() {
       <div className="max-w-6xl mx-auto text-center text-white">
         {/* Heading */}
         <h2 className="text-2xl md:text-4xl font-bold mb-6">
-          Ready to Take Your Business Online?
+          Ready to Take Your <span className="text-yellow-400"> Business Online </span>?
         </h2>
 
         {/* Subheading */}
@@ -26,7 +26,7 @@ export default function CTASection() {
           </Link>
           <Link
             href="/portfolio"
-            className="inline-block bg-transparent border-2 border-yellow-400 text-yellow-400 font-semibold px-8 py-2 rounded-lg shadow-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors duration-300"
+            className="inline-block bg-transparent border border-yellow-400 text-yellow-400 font-semibold px-8 py-2 rounded-lg shadow-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors duration-300"
           >
             View Portfolio
           </Link>

@@ -41,7 +41,7 @@ export default function Why() {
           viewport={{ once: true }}
           className="mb-8 text-center"
         >
-          <h2 className="text-2xl text-yellow-400 md:text-4xl font-bold tracking-tight mb-2 fontserif">
+          <h2 className="text-2xl text-white md:text-4xl font-bold tracking-tight mb-2 fontserif">
             Why Choose <span className="text-yellow-400">Lapsa</span>?
           </h2>
           <p className="text-base text-gray-300 max-w-2xl mx-auto">

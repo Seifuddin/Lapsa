@@ -45,22 +45,22 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-16 bg-amber-50">
+    <section className="py-24 bg-amber-50">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-12">
-          <span className="inline-block bg-blue-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Questions And Answers
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Frequently 
-            <span className="text-blue-700"> Asked Questions </span>
+            <span className="text-yellow-500"> Asked Questions </span>
           </h2>
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "5rem" }}
             transition={{ duration: 0.5 }}
-            className="h-1 bg-blue-200 rounded-full mx-auto my-3"
+            className="h-1 bg-yellow-200 rounded-full mx-auto my-3"
           ></motion.div>
           <p className="mt-2 text-gray-600 max-w-2xl mx-auto font-medium text-center md:text-lg mb-6">
             Have questions? We’ve got answers about our services, projects, and how we can help your business grow online.
@@ -72,13 +72,13 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-blue-300 rounded shadow-sm bgwhite overflow-hidden"
+              className="border-b border-amber-200 rounded shadow-sm overflow-hidden"
             >
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex justify-between items-center px-3 py-4 text-left hover:bg-amber-100 transition"
               >
-                <span className="text-gray-900 font-medium text-base md:text-lg">
+                <span className="text-gray-900 md:font-medium text-base md:text-lg">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -95,7 +95,7 @@ export default function FAQ() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="px-3 pb-4 text-gray-600 text-base md:font-medium leading-relaxed"
+                    className="px-3 py-3 text-gray-600 text-sm md:font-medium leading-relaxed"
                   >
                     {faq.answer}
                   </motion.div>

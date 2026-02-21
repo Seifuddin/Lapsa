@@ -43,7 +43,7 @@ export default function WhyWebsite() {
       {/* Section Header */}
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
-          Why Every Business Needs a Website
+          Why Every Business<span className="text-yellow-500"> Needs a Website </span>
         </h2>
         <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
           A modern website is your most powerful tool for visibility, credibility, and growth.
@@ -67,7 +67,7 @@ export default function WhyWebsite() {
         >
           {features.map(({ icon: Icon, image, title, text }, idx) => (
             <SwiperSlide key={idx}>
-              <div className="bg-white rounded border border-blue-200 flex flex-col h-full hover:shadow-lg transition-all duration-200">
+              <div className="rounded border border-amber-200 flex flex-col h-full hover:shadow-lg transition-all duration-200">
 
                 {/* Top Image */}
                 <div className="w-full h-48 relative rounded-t overflow-hidden">
@@ -86,7 +86,7 @@ export default function WhyWebsite() {
                     <div className="flex items-center justify-center w-9 h-9 rounded bg-blue-800 border border-gray-300 mr-3">
                       <Icon className="h-5 w-5 text-yellow-300" />
                     </div>
-                    <h3 className="md:text-lg font-semibold text-blue-800">
+                    <h3 className="md:text-lg font-semibold text-yellow-500">
                       {title}
                     </h3>
                   </div>
