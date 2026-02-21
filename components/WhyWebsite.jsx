@@ -39,7 +39,7 @@ export default function WhyWebsite() {
   ];
 
   return (
-    <section className="bg-amber-50 py-24 px-6 md:px-12">
+    <section className="bg-yellow-50 py-24 px-6 md:px-12">
       {/* Section Header */}
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
@@ -67,10 +67,10 @@ export default function WhyWebsite() {
         >
           {features.map(({ icon: Icon, image, title, text }, idx) => (
             <SwiperSlide key={idx}>
-              <div className="rounded border border-amber-200 flex flex-col h-full hover:shadow-lg transition-all duration-200">
+              <div className="rounded bg-white border border-amber-200 flex flex-col h-full hover:shadow-lg transition-all duration-200">
 
                 {/* Top Image */}
-                <div className="w-full h-48 relative rounded-t overflow-hidden">
+                <div className="w-full h-32 md:h-44 relative rounded-t overflow-hidden">
                   <Image
                     src={image}
                     alt={title}

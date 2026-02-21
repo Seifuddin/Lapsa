@@ -28,7 +28,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className="py-24 px-6 md:px-12 bg-amber-50">
+    <section className="py-24 px-6 md:px-12 bg-yellow-50">
       {/* Header */}
       <div className="max-w-5xl mx-auto text-center mb-16">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
@@ -69,13 +69,13 @@ export default function Portfolio() {
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="flex-1 bg-blue-800 text-white px-2 py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
+                  className="bg-blue-800 text-white px-2 py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
                 >
                   <ArrowTopRightOnSquareIcon className="w-4 h-4" /> View Site
                 </Link>
                 <Link
                   href="#contact"
-                  className="flex-1 border border-blue-800 text-blue-800 px-2 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
+                  className="border border-blue-800 text-blue-800 px-2 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
                 >
                   <EyeIcon className="w-4 h-4" /> Request Service
                 </Link>

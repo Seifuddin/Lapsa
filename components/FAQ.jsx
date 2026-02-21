@@ -45,7 +45,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-24 bg-amber-50">
+    <section className="py-24 bg-yellow-50">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-12">
@@ -62,7 +62,7 @@ export default function FAQ() {
             transition={{ duration: 0.5 }}
             className="h-1 bg-yellow-200 rounded-full mx-auto my-3"
           ></motion.div>
-          <p className="mt-2 text-gray-600 max-w-2xl mx-auto font-medium text-center md:text-lg mb-6">
+          <p className="mt-2 text-gray-600 max-w-2xl mx-auto md:font-medium text-center md:text-lg mb-6">
             Have questions? We’ve got answers about our services, projects, and how we can help your business grow online.
           </p>
         </div>
@@ -78,11 +78,11 @@ export default function FAQ() {
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex justify-between items-center px-3 py-4 text-left hover:bg-amber-100 transition"
               >
-                <span className="text-gray-900 md:font-medium text-base md:text-lg">
+                <span className="text-gray-900 font-medium textbase md:text-lg">
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 text-blue-800 transform transition-transform duration-300 ${
+                  className={`w-5 h-5 text-yellow-300 transform transition-transform duration-300 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />

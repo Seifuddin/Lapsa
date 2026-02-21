@@ -22,7 +22,7 @@ export default function AboutLapsa() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <span className="inline-block bg-yellow-400 text-blue-950 px-4 py-1 rounded-full text-sm font-semibold mb-6 shadow-lg">
+          <span className="inline-block bg-yellow-400 text-blue-950 px-4 py-1 rounded-full text-sm md:font-semibold mb-6 shadow-lg">
             About Lapsa
           </span>
 
@@ -64,14 +64,14 @@ export default function AboutLapsa() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/services"
-              className="px-5 py-2 bg-yellow-400 text-blue-950 font-semibold rounded shadow-xl hover:scale-105 transition duration-300"
+              className="px-5 py-2 bg-yellow-400 text-blue-950 md:font-semibold rounded shadow-xl hover:scale-105 transition duration-300"
             >
               Explore Services
             </Link>
 
             <Link
               href="/portfolio"
-              className="px-5 py-2 border border-yellow-400 text-yellow-400 rounded font-semibold hover:bg-yellow-400 hover:text-blue-950 transition duration-300"
+              className="px-5 py-2 border border-yellow-400 text-yellow-400 rounded md:font-semibold hover:bg-yellow-400 hover:text-blue-950 transition duration-300"
             >
               View Portfolio
             </Link>

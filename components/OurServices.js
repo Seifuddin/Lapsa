@@ -63,7 +63,7 @@ export default function OurServices() {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative z-0 py-16 bg-amber-50 via-white to-yellow-50 px-5">
+    <section className="relative z-0 py-16 bg-yellow-50 via-white to-yellow-50 px-5">
       <div className="max-w-7xl mx-auto text-center">
         {/* Updated Header */}
         <h2 className="text-gray-900 text-2xl md:text-4xl font-bold tracking-tight mb-4">
@@ -89,7 +89,7 @@ export default function OurServices() {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-32 md:h-44 object-cover"
               />
               <div className="p-4 text-left space-y-3">
                 <div className="flex items-center gap-2">
