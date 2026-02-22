@@ -67,7 +67,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[70vh] overflow-hidden">
+    <section className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={slides[current].id}
@@ -113,7 +113,7 @@ export default function Hero() {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mt-8 px-14 py-3 text-lg text-gray-900 font-semibold rounded-full bg-yellow-400 gradient-to-r from-indigo-600 to-pink-600 hover:from-pink-700 hover:to-indigo-700 transition shadow-lg"
+          className="mt-5 px-14 py-2 md:text-lg text-gray-900 font-semibold rounded-full bg-yellow-400 gradient-to-r from-indigo-600 to-pink-600 hover:from-pink-700 hover:to-indigo-700 transition shadow-lg"
         >
           {slides[current].button}
         </motion.button>
@@ -139,7 +139,7 @@ export default function Hero() {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
+            className={`w-2 h-2 rounded-full transition-all ${
               current === index
                 ? "bg-yellow-300 scale-125 shadow-md"
                 : "bg-gray-400 hover:bg-pink-400"

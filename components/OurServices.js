@@ -66,9 +66,13 @@ export default function OurServices() {
     <section className="relative z-0 py-16 bg-yellow-50 via-white to-yellow-50 px-5">
       <div className="max-w-7xl mx-auto text-center">
         {/* Updated Header */}
+        <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Our Services
+          </span>
         <h2 className="text-gray-900 text-2xl md:text-4xl font-bold tracking-tight mb-4">
-          Explore Our <span className="text-yellow-500"> Web & Graphics Services </span> 
+          Explore Our <span className="text-yellow-500"> Web & Graphics </span> Services.
         </h2>
+        <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
         <p className="text-gray-600 mt-4 max-w-2xl mx-auto mb-8">
           From design to deployment, we help businesses succeed online with creative and innovative solutions.
         </p>

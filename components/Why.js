@@ -41,9 +41,13 @@ export default function Why() {
           viewport={{ once: true }}
           className="mb-8 text-center"
         >
+          <span className="inline-block bg-yellow-400 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Why Us
+          </span>
           <h2 className="text-2xl text-white md:text-4xl font-bold tracking-tight mb-2 fontserif">
             Why Choose <span className="text-yellow-400">Lapsa</span>?
           </h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full my-3"></div>
           <p className="text-base text-gray-300 max-w-2xl mx-auto">
             We're not just a design agency — we're your creative growth partner.
           </p>

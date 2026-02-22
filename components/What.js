@@ -1,29 +1,28 @@
 "use client";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { Globe, LayoutDashboard, Smartphone, Rocket } from "lucide-react";
+import { Globe, LayoutDashboard, Code2, Palette, Smartphone, Rocket } from "lucide-react";
 
 export default function Whatis() {
   return (
     <section className="bg-yellow-50 py-24 px-6 lg:px-20 overflow-hidden">
+      <div className="max-w-6xl mx-auto text-center mb-10">
+        <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Did You know?
+          </span>
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
+          What Is a <span className="text-yellow-500">Website</span>?
+        </h2>
+        <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
+        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
+          A website is your digital office, store, and brand identity —
+            accessible online 24/7 from anywhere in the world.
+        </p>
+      </div>
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
         <div>
-          <span className="inline-block bg-yellow-200 text-blue-800 px-4 py-1 rounded-full text-sm fontsemibold mb-4">
-            Did You know?
-          </span>
-
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-            What Is a <span className="text-yellow-500">Website</span>?
-          </h2>
-
-          <p className="text-gray-600 textbase md:text-lg mb-10">
-            A website is your digital office, store, and brand identity —
-            accessible online 24/7 from anywhere in the world. It helps
-            you connect with customers, showcase your services, and grow your business.
-          </p>
-
           {/* Features Grid */}
           <div className="grid sm:grid-cols-2 gap-3">
             
@@ -69,6 +68,40 @@ export default function Whatis() {
 
           </div>
         </div>
+        {/* RIGHT CREATIVE IMAGE SECTION */}
+                <motion.div
+                  initial={{ opacity: 0, x: 60 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                  className="relative flex justify-center"
+                >
+        
+                  {/* Main Image */}
+                  <div className="relative w-full max-wmd h-[300px] md:h-[400px] rounded overflow-hidden shadow-2xl border-2 border-yellow-500">
+                    <Image
+                      src="/images/1765669389666~2.jpg" // replace with your real image
+                      alt="Lapsa Web and Graphics Team"
+                      fill
+                      className="object-cover bg-white"
+                    />
+                  </div>
+        
+                  {/* Floating UI Card */}
+                  <div className="absolute -top-6 -left-6 bg-white text-blue-900 p-4 rounded-xl shadow-xl w-40 hidden md:block">
+                    <p className="text-xs font-semibold mb-1">UI Preview</p>
+                    <div className="h-2 bg-blue-200 rounded mb-2"></div>
+                    <div className="h-2 bg-yellow-400 rounded w-3/4"></div>
+                  </div>
+        
+                  {/* Floating Branding Card */}
+                  <div className="absolute -bottom-6 -right-6 bg-yellow-400 text-blue-950 p-4 rounded-xl shadow-xl w-44 hidden md:block">
+                    <p className="text-xs font-bold mb-1">Brand Identity</p>
+                    <div className="h-2 bg-blue-900 rounded mb-2"></div>
+                    <div className="h-2 bg-blue-900 rounded w-2/3"></div>
+                  </div>
+        
+                </motion.div>
 
         {/* RIGHT LAPTOP MOCKUP */}
         <motion.div
@@ -76,14 +109,14 @@ export default function Whatis() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative flex justify-center"
+          className="hidden relative flex justify-center"
         >
 
           {/* Laptop Base */}
           <div className="relative w-full max-w-xl">
 
             {/* Screen */}
-            <div className="bg-gray-900 rounded-t-2xl p-3 shadow-2xl">
+            <div className="bg-blue-900 rounded-t-2xl p-3 shadow-2xl">
               <div className="bg-white rounded-xl overflow-hidden">
 
                 {/* Browser Top Bar */}

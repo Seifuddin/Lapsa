@@ -42,9 +42,13 @@ export default function WhyWebsite() {
     <section className="bg-yellow-50 py-24 px-6 md:px-12">
       {/* Section Header */}
       <div className="max-w-6xl mx-auto text-center">
+        <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Why Have a Website 
+          </span>
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
-          Why Every Business<span className="text-yellow-500"> Needs a Website </span>
+          Why Every <span className="text-yellow-500"> Business Needs a  </span> Website.
         </h2>
+        <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
         <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
           A modern website is your most powerful tool for visibility, credibility, and growth.
         </p>

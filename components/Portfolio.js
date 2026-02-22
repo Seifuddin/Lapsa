@@ -31,9 +31,13 @@ export default function Portfolio() {
     <section className="py-24 px-6 md:px-12 bg-yellow-50">
       {/* Header */}
       <div className="max-w-5xl mx-auto text-center mb-16">
+        <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Our Work
+          </span>
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
           Explore Our  <span className="text-yellow-500"> Portfolio </span>
         </h2>
+        <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
           These are some of the projects we've crafted — combining design, functionality, and creativity to deliver results.
         </p>

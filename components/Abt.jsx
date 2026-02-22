@@ -13,6 +13,23 @@ export default function AboutLapsa() {
       <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-yellow-400 opacity-20 blur-[120px] rounded-full"></div>
       <div className="absolute bottom-[-120px] right-[-100px] w-[350px] h-[350px] bg-blue-400 opacity-20 blur-[140px] rounded-full"></div>
 
+      <div className="max-w-6xl mb-16 mx-auto text-center">
+        <span className="inline-block bg-yellow-400 text-blue-700 px-4 py-1 rounded-full text-sm md:font-semibold mb-6 shadow-lg">
+            Our Principles
+          </span>
+
+          <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-6">
+            We Build
+            <span className="text-yellow-400"> High-Performance </span> Websites.
+          </h2>
+        <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
+        <p className="mt-4 text-white max-w-2xl mx-auto">
+         We combine
+            strategy, design, and technology to create digital experiences
+            that drive real business growth.
+        </p>
+      </div>
+
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
 
         {/* LEFT CONTENT */}
@@ -22,20 +39,9 @@ export default function AboutLapsa() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <span className="inline-block bg-yellow-400 text-blue-950 px-4 py-1 rounded-full text-sm md:font-semibold mb-6 shadow-lg">
-            About Lapsa
-          </span>
-
-          <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-6">
-            We Build
-            <span className="text-yellow-400"> High-Performance Websites. </span>
-          </h2>
-
-          <p className="text-blue-100 md:text-lg leading-relaxed mb-10 max-w-xl">
+          <p className="hidden text-blue-100 md:text-lg leading-relaxed mb-10 max-w-xl">
             Lapsa Web & Graphics is a modern creative tech studio delivering
-            premium web development and bold visual design. We combine
-            strategy, design, and technology to create digital experiences
-            that drive real business growth.
+            premium web development and bold visual design.
           </p>
 
           <div className="space-y-6 mb-10">
@@ -88,7 +94,7 @@ export default function AboutLapsa() {
         >
 
           {/* Main Image */}
-          <div className="relative w-full max-wmd h-[300px] md:h-[600px] rounded overflow-hidden shadow-2xl border border-white/10">
+          <div className="relative w-full max-wmd h-[200px] md:h-[400px] rounded overflow-hidden shadow-2xl border border-white/10">
             <Image
               src="/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp" // replace with your real image
               alt="Lapsa Web and Graphics Team"

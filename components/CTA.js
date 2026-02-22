@@ -7,9 +7,13 @@ export default function CTASection() {
     <section className="bg-blue-800 py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto text-center text-white">
         {/* Heading */}
+        <span className="inline-block bg-yellow-400 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Take Action Now
+          </span>
         <h2 className="text-2xl md:text-4xl font-bold mb-6">
           Ready to Take Your <span className="text-yellow-400"> Business Online </span>?
         </h2>
+        <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full my-3"></div>
 
         {/* Subheading */}
         <p className="text-base md:text-lg md:text-xl mb-10 text-blue-100">
