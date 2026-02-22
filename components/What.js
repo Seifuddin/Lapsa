@@ -78,9 +78,9 @@ export default function Whatis() {
                 >
         
                   {/* Main Image */}
-                  <div className="relative w-full max-wmd h-[300px] md:h-[400px] rounded overflow-hidden shadow-2xl border-2 border-yellow-500">
+                  <div className="relative w-full max-wmd h-[200px] md:h-[400px] rounded overflow-hidden shadow-2xl border border-white/10">
                     <Image
-                      src="/images/1765669389666~2.jpg" // replace with your real image
+                      src="/images/CDG_blog_post_image_01-850x412.jpg" // replace with your real image
                       alt="Lapsa Web and Graphics Team"
                       fill
                       className="object-cover bg-white"
