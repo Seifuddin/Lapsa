@@ -84,7 +84,7 @@ export default function OurServices() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="relative rounded overflow-hidden shadow-xl border border-amber-200 bgwhite/60 backdrop-blur-md transition-all duration-300 hover:shadow-2xl group"
+              className="relative rounded overflow-hidden shadow-xl border border-amber-200 backdrop-blur-md transition-all duration-300 hover:shadow-2xl group"
             >
               <img
                 src={service.image}
@@ -94,7 +94,7 @@ export default function OurServices() {
               <div className="p-4 text-left space-y-3">
                 <div className="flex items-center gap-2">
                   {service.icon}
-                  <h3 className="text-yellow-500 md:text-lg md:text-xl font-bold">
+                  <h3 className="text-gray-800 md:text-lg md:text-xl font-bold">
                     {service.title}
                   </h3>
                 </div>
@@ -137,7 +137,7 @@ export default function OurServices() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-white rounded-2xl max-w-lg w-full p-6 relative shadow-2xl"
+              className="bg-white rounded max-w-lg w-full p-6 relative shadow-2xl"
             >
               <button
                 onClick={() => setActiveService(null)}

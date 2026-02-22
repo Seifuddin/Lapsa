@@ -60,7 +60,7 @@ export default function Portfolio() {
             {/* Content */}
             <div className="p-3 bg-white flex flex-col justify-between flex-1">
               <div className="mb-4">
-                <h3 className="md:text-lg font-bold text-yellow-500 mb-2">{project.title}</h3>
+                <h3 className="md:text-lg font-bold text-gray-800 mb-2">{project.title}</h3>
                 <p className="text-gray-700 text-sm">{project.description}</p>
               </div>
 

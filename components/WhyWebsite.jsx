@@ -86,7 +86,7 @@ export default function WhyWebsite() {
                     <div className="flex items-center justify-center w-9 h-9 rounded bg-blue-800 border border-gray-300 mr-3">
                       <Icon className="h-5 w-5 text-yellow-300" />
                     </div>
-                    <h3 className="md:text-lg font-semibold text-yellow-500">
+                    <h3 className="md:text-lg font-semibold text-gray-800">
                       {title}
                     </h3>
                   </div>

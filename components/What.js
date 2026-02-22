@@ -30,7 +30,7 @@ export default function Whatis() {
             <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
                 <Globe className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
-                <h4 className="font-semibold text-yellow-500 md:text-lg">Your Online Presence</h4>
+                <h4 className="font-semibold text-gray-800 md:text-lg">Your Online Presence</h4>
               </div>
               <p className="text-gray-600 text-sm md:text-base ml-7">
                 Being online allows potential customers to find you anytime, anywhere.
@@ -40,7 +40,7 @@ export default function Whatis() {
             <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
                 <LayoutDashboard className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
-                <h4 className="font-semibold text-yellow-500 md:text-lg">A Digital Storefront</h4>
+                <h4 className="font-semibold text-gray-800 md:text-lg">A Digital Storefront</h4>
               </div>
               <p className="text-gray-600 text-sm md:text-base ml-7">
                 Your website showcases products or services, just like a physical shop.
@@ -50,7 +50,7 @@ export default function Whatis() {
             <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
                 <Smartphone className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
-                <h4 className="font-semibold text-yellow-500 md:text-lg">Accessible Everywhere</h4>
+                <h4 className="font-semibold text-gray-800 md:text-lg">Accessible Everywhere</h4>
               </div>
               <p className="text-gray-600 text-sm md:text-base ml-7">
                 Works seamlessly on phones, tablets, and computers for all users.
@@ -60,7 +60,7 @@ export default function Whatis() {
             <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
                 <Rocket className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
-                <h4 className="font-semibold text-yellow-500 md:text-lg">A Growth Tool</h4>
+                <h4 className="font-semibold text-gray-800 md:text-lg">A Growth Tool</h4>
               </div>
               <p className="text-gray-600 text-sm md:text-base ml-7">
                 Helps attract more customers, increase sales, and grow your brand.

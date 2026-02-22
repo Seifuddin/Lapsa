@@ -44,7 +44,7 @@ const handleSubmit = async (e) => {
 
 export default function Contact() {
   return (
-    <div className="relative bg-cover bg-center bg-blue-50 bg-no-repeat py-10 text-gray-800">
+    <div className="relative bg-cover bg-center bg-yellow-50 bg-no-repeat py-10 text-gray-800">
       <div className="rounded-xl p-6 md:p-12 max-w-7xl mx-auto">
 
         {/* Grid Layout */}
