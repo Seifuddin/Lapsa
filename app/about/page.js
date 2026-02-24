@@ -6,6 +6,7 @@ import Ready from "@/components/Ready";
 import Timeline from "@/components/Timeline";
 import Location from "../../components/Location";
 import HeroSection from "@/components/Banner";
+import Hero from "@/components/Hero";
 
 // ✅ SEO metadata for this page
 export const metadata = {
@@ -48,7 +49,7 @@ export default function About() {
       />
 
       {/* Page Sections */}
-      <AboutUs />
+      <Hero />
       <Timeline />
     </div>
   );

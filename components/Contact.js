@@ -55,13 +55,13 @@ export default function Contact() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 bg-gray-50 shadow border border-gray-300 p-6 py-10 rounded-lg"
+            className="space-y-6 bggray-50 shadow border border-gray-300 p-6 py-10 rounded-lg"
           >
             <h4 className="text-xl font-bold text-blue-800 mb-6 fontserif">
               Contact Information
             </h4>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 rounded p-2 border-b border-yellow-200">
               <Mail className="text-blue-700 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Email</h4>
@@ -69,7 +69,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 rounded p-2 border-b border-yellow-200">
               <Phone className="text-blue-700 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Phone</h4>
@@ -77,7 +77,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 rounded p-2 border-b border-yellow-200">
               <MapPin className="text-blue-700 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Location</h4>
@@ -85,7 +85,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 rounded p-2 border-b border-yellow-200">
               <Building2 className="text-blue-700 mt-1" />
               <div>
                 <h4 className="font-bold text-gray-800">Office</h4>
@@ -97,7 +97,7 @@ export default function Contact() {
 
             {/* SOCIAL MEDIA */}
             <h4 className="font-bold text-blue-800 text-lg fontserif">
-              Follow Us
+              Follow Us: @ <span className="text-yellow-500"> Lapsa Web & Graphics </span> 
             </h4>
 
             <div className="flex space-x-4 pt-4">
@@ -144,7 +144,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-50 border border-gray-300 p-6 rounded-lg shadow space-y-4"
+            className="border border-gray-300 p-6 rounded-lg shadow space-y-4"
           >
             <h2 className="text-xl font-bold text-blue-900 mb-6 fontserif">
               Send Us a Message
@@ -155,7 +155,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="name"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded bg-yellow-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Name"
                 required
               />
@@ -166,7 +166,7 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded bg-yellow-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Email"
                 required
               />
@@ -177,7 +177,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded bg-yellow-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Phone Number"
               />
             </div>
@@ -187,7 +187,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="subject"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded-md bg-gray-50 focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 rounded bg-yellow-50 focus:ring-2 focus:ring-orange-500"
                 placeholder="Subject of Your Message"
               />
             </div>
@@ -197,7 +197,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 rows="4"
-                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 bg-gray-50 rounded-md focus:ring-2 focus:ring-orange-500"
+                className="w-full text-blue-900 mt-1 p-2 border border-gray-500 bg-yellow-50 rounded focus:ring-2 focus:ring-orange-500"
                 placeholder="Your Message"
                 required
               ></textarea>

@@ -4,21 +4,26 @@ import { motion } from "framer-motion";
 
 export default function Timeline() {
   return (
-    <div className='overflow-x-hidden bg-green-50'>
+    <div className='overflow-x-hidden bg-yellow-50'>
         <div className="py-16 px-6 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
+          className="text-center mb-12"
         >
+          <span className="inline-block mx-auto bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Brief History 
+          </span>
           <h1 className="text-center maxw-4xl text-2xl md:text-4xl font-bold text-gray-900 mb-5 fontserif">
                     Our Journey<span className="text-gray-800"></span>
                   </h1>
-          <p className="itaic text-center text-gray-600 font-bold mb-10 maxw-6xl mx-auto">
+                  <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
+          <p className="itaic text-center text-gray-600 mb-10 maxw-6xl mx-auto">
             A brief History about Lapsa Web and Graphics.
           </p>
         </motion.div>
-        <div className="relative border-l-4 border-blue-700 pl-4 space-y-6">
+        <div className="relative border-l-4 border-yellow-500 pl-4 space-y-6">
           {[
             {
               year: "September 9 2024 - Company Founded",
@@ -43,8 +48,8 @@ export default function Timeline() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <div className='bgwhite p-2 rounded-md shadowmd border-b-2 border-blue-200'>
-              <h4 className="font-bold text-blue-900 mb-2 fontserif">{item.year}</h4>
+              <div className='p-2 rounded-md border-b border-yellow-200'>
+              <h4 className="font-bold text-gray-800 mb-2">{item.year}</h4>
               <p className="text-gray-700">{item.desc}</p>
               </div>
             </motion.div>

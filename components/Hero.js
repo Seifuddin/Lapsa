@@ -16,7 +16,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "/images/iphone_apps.jpg",
+    image: "/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp",
     title: "Custom Mobile Apps",
     subtitle:
       "We build intuitive mobile applications for Android and iOS, tailored to help your business grow and connect better.",
@@ -24,7 +24,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/images/images (3).jpg",
+    image: "/images/digital-marketing-header.jpg",
     title: "Creative Graphic Design",
     subtitle:
       "From logos and posters to full branding packages — our creative touch makes your business stand out everywhere.",
@@ -32,7 +32,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "/images/digitalprinting.jpg",
+    image: "/images/The-Most-Beautiful-Brand-Books-and-Brand-Guidelines-Examples-6-Brand-Book-Templates-1.webp",
     title: "High-Quality Digital Printing",
     subtitle:
       "We offer top-notch digital printing services with vibrant colors, premium materials, and fast delivery times.",
@@ -40,7 +40,7 @@ const slides = [
   },
   {
     id: 5,
-    image: "/images/teamup.jpg",
+    image: "/images/ai-generated-businessman-using-tablet-with-social-media-icons-over-night-cityscape-background-a-businessman-on-a-blurred-background-using-a-3d-rendering-mobile-phone-with-social-m.jpg",
     title: "Your Creative Partner",
     subtitle:
       "At Lapsa Web and Graphics, innovation meets design excellence. Let’s bring your vision to life together.",
