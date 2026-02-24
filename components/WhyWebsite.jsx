@@ -14,25 +14,25 @@ export default function WhyWebsite() {
   const features = [
     {
       icon: GlobeAltIcon,
-      image: "/images/iphone_apps.jpg",
+      image: "/images/CDG_blog_post_image_01-850x412.jpg",
       title: "Establish Your Online Presence",
       text: "A professional website gives your business a permanent digital presence — accessible to customers around the world, 24/7.",
     },
     {
       icon: SparklesIcon,
-      image: "/images/iphone_apps.jpg",
+      image: "/images/download.jpg",
       title: "Build Trust & Credibility",
       text: "A well-designed website demonstrates professionalism and reliability — helping clients feel confident in your brand.",
     },
     {
       icon: ChartBarIcon,
-      image: "/images/iphone_apps.jpg",
+      image: "/images/digital-marketing-header.jpg",
       title: "Expand Your Reach",
       text: "Your website enables discovery through search, social media, and digital campaigns, connecting you with new audiences.",
     },
     {
       icon: CursorArrowRaysIcon,
-      image: "/images/iphone_apps.jpg",
+      image: "/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp",
       title: "Convert Visitors into Clients",
       text: "With clear messaging and strong calls-to-action, your site turns visitors into customers and relationships into growth.",
     },
