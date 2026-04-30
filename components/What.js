@@ -10,7 +10,7 @@ export default function Whatis() {
         <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Did You know?
           </span>
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
           What Is a <span className="text-yellow-500">Website</span>?
         </h2>
         <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
@@ -21,53 +21,7 @@ export default function Whatis() {
       </div>
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
-        {/* LEFT CONTENT */}
-        <div>
-          {/* Features Grid */}
-          <div className="grid sm:grid-cols-2 gap-3">
-            
-            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
-              <div className="flex gap-3 items-center">
-                <Globe className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
-                <h4 className="font-semibold text-gray-800 md:text-lg">Your Online Presence</h4>
-              </div>
-              <p className="text-gray-600 text-sm md:text-base ml-7">
-                Being online allows potential customers to find you anytime, anywhere.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
-              <div className="flex gap-3 items-center">
-                <LayoutDashboard className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
-                <h4 className="font-semibold text-gray-800 md:text-lg">A Digital Storefront</h4>
-              </div>
-              <p className="text-gray-600 text-sm md:text-base ml-7">
-                Your website showcases products or services, just like a physical shop.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
-              <div className="flex gap-3 items-center">
-                <Smartphone className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
-                <h4 className="font-semibold text-gray-800 md:text-lg">Accessible Everywhere</h4>
-              </div>
-              <p className="text-gray-600 text-sm md:text-base ml-7">
-                Works seamlessly on phones, tablets, and computers for all users.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
-              <div className="flex gap-3 items-center">
-                <Rocket className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-2 w-8 h-8 rounded" />
-                <h4 className="font-semibold text-gray-800 md:text-lg">A Growth Tool</h4>
-              </div>
-              <p className="text-gray-600 text-sm md:text-base ml-7">
-                Helps attract more customers, increase sales, and grow your brand.
-              </p>
-            </div>
-
-          </div>
-        </div>
+        
         {/* RIGHT CREATIVE IMAGE SECTION */}
                 <motion.div
                   initial={{ opacity: 0, x: 60 }}
@@ -78,7 +32,7 @@ export default function Whatis() {
                 >
         
                   {/* Main Image */}
-                  <div className="relative w-full max-wmd h-[200px] md:h-[400px] rounded overflow-hidden shadow-2xl border border-white/10">
+                  <div className="relative w-full max-wmd h-[300px] md:h-[350px] rounded overflow-hidden border border-white/10">
                     <Image
                       src="/images/CDG_blog_post_image_01-850x412.jpg" // replace with your real image
                       alt="Lapsa Web and Graphics Team"
@@ -164,6 +118,54 @@ export default function Whatis() {
 
           </div>
         </motion.div>
+
+        {/* LEFT CONTENT */}
+        <div>
+          {/* Features Grid */}
+          <div className="grid sm:grid-cols-2 gap-3">
+            
+            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
+              <div className="flex gap-3 items-center">
+                <Globe className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-7 h-7 rounded" />
+                <h4 className="font-medium text-gray-900 md:text-lg">Your Online Presence</h4>
+              </div>
+              <p className="text-gray-600 text-sm ml-7">
+                Being online allows potential customers to find you anytime, anywhere.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
+              <div className="flex gap-3 items-center">
+                <LayoutDashboard className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-7 h-7 rounded" />
+                <h4 className="font-medium text-gray-900 md:text-lg">A Digital Storefront</h4>
+              </div>
+              <p className="text-gray-600 text-sm ml-7">
+                Your website showcases products or services, just like a physical shop.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
+              <div className="flex gap-3 items-center">
+                <Smartphone className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-7 h-7 rounded" />
+                <h4 className="font-medium text-gray-900 md:text-lg">Accessible Everywhere</h4>
+              </div>
+              <p className="text-gray-600 text-sm ml-7">
+                Works seamlessly on phones, tablets, and computers for all users.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
+              <div className="flex gap-3 items-center">
+                <Rocket className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-7 h-7 rounded" />
+                <h4 className="font-medium text-gray-900 md:text-lg">A Growth Tool</h4>
+              </div>
+              <p className="text-gray-600 text-sm ml-7">
+                Helps attract more customers, increase sales, and grow your brand.
+              </p>
+            </div>
+
+          </div>
+        </div>
 
       </div>
     </section>

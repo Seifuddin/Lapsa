@@ -65,7 +65,7 @@ export default function StoriesAndTestimonials() {
           <span className="inline-block bg-yellow-400 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Client Testimonials
           </span>
-          <h3 className="text-2xl md:text-4xl font-semibold mb-3 text-white">
+          <h3 className="text-2xl md:text-3xl font-semibold mb-3 text-white">
             What Our 
             <span className="text-yellow-400"> Clients Say </span>
           </h3>

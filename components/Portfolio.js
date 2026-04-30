@@ -3,90 +3,104 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowTopRightOnSquareIcon, EyeIcon } from "@heroicons/react/24/outline";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Portfolio() {
   const projects = [
     {
       title: "Capvim International Publishers",
-      description: "A professional publishing company website offering services, portfolio showcase, and easy contact for authors and clients.",
+      description: "Publishing platform built for credibility and reach.",
       image: "/images/CDG_blog_post_image_01-850x412.jpg",
       link: "https://capvim.vercel.app",
     },
     {
       title: "Utamaduni Organization",
-      description: "An NGO website designed to highlight community projects, news updates, and engagement opportunities for supporters.",
+      description: "NGO experience focused on impact and storytelling.",
       image: "/images/download.jpg",
       link: "https://utamaduniorganization.vercel.app",
     },
     {
       title: "Lapsa Family Clinic",
-      description: "A healthcare website providing information about medical services, appointments, and health resources for patients.",
+      description: "Healthcare interface designed for trust and clarity.",
       image: "/images/download (2).jpg",
       link: "https://lapsafamilyclinic.vercel.app",
+    },
+    {
+      title: "Lapsa Web and Graphics",
+      description: "Professional Web Design and Graphics in Kenya.",
+      image: "/images/1765669389666~2.jpg",
+      link: "https://lapsa.vercel.app",
     },
   ];
 
   return (
-    <section className="py-24 px-6 md:px-12 bg-yellow-50">
-      {/* Header */}
-      <div className="max-w-5xl mx-auto text-center mb-16">
-        <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
-            Our Work
-          </span>
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
-          Explore Our  <span className="text-yellow-500"> Portfolio </span>
+    <section className="py-20 bg-yellow-50 overflow-hidden">
+      
+      {/* HEADER (centered) */}
+      <div className="max-w-5xl mx-auto text-center mb-10 px-6 md:px-12">
+        <p className="text-xs tracking-[0.25em] text-gray-500 mb-3 uppercase">
+          Portfolio
+        </p>
+
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+          Selected Work
         </h2>
-        <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          These are some of the projects we've crafted — combining design, functionality, and creativity to deliver results.
+
+        <p className="mt-4 text-gray-600 max-w-md mx-auto text-sm md:text-base">
+          A curated selection of projects built with clarity, purpose, and performance in mind.
         </p>
       </div>
 
-      {/* Portfolio Grid */}
-      <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, idx) => (
-          <motion.div
-            key={idx}
-            whileHover={{ scale: 1.03 }}
-            className="flex flex-col rounded overflow-hidden shadowlg bgwhite border border-amber-200 transition-all duration-300"
-          >
-            {/* Image */}
-            <div className="relative w-full h-36 md:h-44">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover"
-              />
-            </div>
+      {/* SCROLL SECTION */}
+      <div className="relative">
+        <div className="flex gap-5 overflow-x-auto px-6 md:px-12 pb-2 no-scrollbar justify-center md:justify-start">
 
-            {/* Content */}
-            <div className="p-3 bg-white flex flex-col justify-between flex-1">
-              <div className="mb-4">
-                <h3 className="md:text-lg font-bold text-gray-800 mb-2">{project.title}</h3>
-                <p className="text-gray-700 text-sm">{project.description}</p>
-              </div>
+          {projects.map((project, idx) => (
+            <motion.div
+              key={idx}
+              whileHover={{ y: -6 }}
+              className="min-w-[260px] md:min-w-[340px] flex-shrink-0"
+            >
+              <Link href={project.link} target="_blank">
+                
+                <div className="relative h-[320px] w-full rounded-xl overflow-hidden group shadow-sm">
 
-              {/* Buttons */}
-              <div className="flex gap-3 mt-auto">
-                <Link
-                  href={project.link}
-                  target="_blank"
-                  className="flex-1 text-center bg-blue-800 text-white py-1 rounded flex items-center gap-2 hover:bg-blue-700 transition"
-                >
-                  <ArrowTopRightOnSquareIcon className="ml-1 w-4 h-4" /> View Site
-                </Link>
-                <Link
-                  href="#contact"
-                  className="flex-1 text-center border border-blue-800 text-blue-800 py-1 rounded-md flex items-center gap-2 hover:bg-blue-800 hover:text-white transition"
-                >
-                  <EyeIcon className="ml-1 w-4 h-4" /> Request Service
-                </Link>
-              </div>
-            </div>
-          </motion.div>
-        ))}
+                  {/* Image */}
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-[1.03] transition duration-500"
+                  />
+
+                  {/* Gradient overlay (luxury feel) */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
+
+                  {/* Content */}
+                  <div className="absolute bottom-0 p-5 text-white">
+                    
+                    <h3 className="text-lg font-semibold mb-1">
+                      {project.title}
+                    </h3>
+
+                    <p className="text-xs text-gray-200 mb-3 line-clamp-2">
+                      {project.description}
+                    </p>
+
+                    <span className="inline-flex items-center gap-1 text-yellow-300 text-xs font-medium tracking-wide">
+                      View Project
+                      <ArrowTopRightOnSquareIcon className="w-3.5 h-3.5" />
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </Link>
+            </motion.div>
+          ))}
+
+        </div>
       </div>
     </section>
   );

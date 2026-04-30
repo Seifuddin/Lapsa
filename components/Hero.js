@@ -95,7 +95,7 @@ export default function Hero() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl md:text-4xl text-white md:text-5xl font-extrabold tracking-tight"
+          className="text-2xl text-white md:text-3xl font-extrabold tracking-tight"
         >
           {slides[current].title}
         </motion.h1>
@@ -104,7 +104,7 @@ export default function Hero() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mt-4 textlg md:text-2xl text-gray-200 max-w-3xl leading-relaxed"
+          className="mt-4 textlg md:text2xl text-gray-200 max-w-3xl leading-relaxed"
         >
           {slides[current].subtitle}
         </motion.p>
@@ -113,11 +113,41 @@ export default function Hero() {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mt-5 px-14 py-2 md:text-lg text-gray-900 font-semibold rounded-full bg-yellow-400 gradient-to-r from-indigo-600 to-pink-600 hover:from-pink-700 hover:to-indigo-700 transition shadow-lg"
+          className="hidden mt-5 px-14 py-2 md:text-lg text-gray-900 rounded-full bg-yellow-400 gradient-to-r from-indigo-600 to-pink-600 hover:from-pink-700 hover:to-indigo-700 transition shadow-lg"
         >
           {slides[current].button}
         </motion.button>
+
+        {/* Buttons */}
+        <div className="mt-7 flex flex-colsm: flex-row gap-3 justify-center">
+
+          <a
+            href="/portfolio"
+            className="
+              px-7 py-2.5 rounded-full
+              bg-white text-black text-sm font-medium
+              hover:bg-pink-500 hover:text-white
+              transition
+            "
+          >
+            Our Portfolio
+          </a>
+
+          <a
+            href="/contacts"
+            className="
+              px-7 py-2.5 rounded-full
+              border border-white/40 text-white/90 text-sm
+              hover:border-white hover:text-white
+              transition
+            "
+          >
+            Contact Us
+          </a>
+        </div>
       </div>
+
+      
 
       {/* Navigation Arrows */}
       <button

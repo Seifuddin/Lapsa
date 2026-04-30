@@ -1,109 +1,115 @@
 "use client";
 
-import Image from "next/image";
 import {
   GlobeAltIcon,
   SparklesIcon,
   ChartBarIcon,
   CursorArrowRaysIcon,
 } from "@heroicons/react/24/outline";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+
+const features = [
+  {
+    icon: GlobeAltIcon,
+    title: "Visibility",
+    before: "No one can find your business online",
+    after: "Customers discover you 24/7 worldwide",
+  },
+  {
+    icon: SparklesIcon,
+    title: "Trust",
+    before: "People doubt your legitimacy",
+    after: "You look professional and credible",
+  },
+  {
+    icon: ChartBarIcon,
+    title: "Growth",
+    before: "Limited reach and stagnant sales",
+    after: "Endless growth through digital channels",
+  },
+  {
+    icon: CursorArrowRaysIcon,
+    title: "Conversion",
+    before: "Visitors leave without action",
+    after: "Visitors turn into paying clients",
+  },
+];
 
 export default function WhyWebsite() {
-  const features = [
-    {
-      icon: GlobeAltIcon,
-      image: "/images/CDG_blog_post_image_01-850x412.jpg",
-      title: "Establish Your Online Presence",
-      text: "A professional website gives your business a permanent digital presence — accessible to customers around the world, 24/7.",
-    },
-    {
-      icon: SparklesIcon,
-      image: "/images/download.jpg",
-      title: "Build Trust & Credibility",
-      text: "A well-designed website demonstrates professionalism and reliability — helping clients feel confident in your brand.",
-    },
-    {
-      icon: ChartBarIcon,
-      image: "/images/digital-marketing-header.jpg",
-      title: "Expand Your Reach",
-      text: "Your website enables discovery through search, social media, and digital campaigns, connecting you with new audiences.",
-    },
-    {
-      icon: CursorArrowRaysIcon,
-      image: "/images/61378e9d-082c-42c2-866b-5e2bbe5f61a4_large.webp",
-      title: "Convert Visitors into Clients",
-      text: "With clear messaging and strong calls-to-action, your site turns visitors into customers and relationships into growth.",
-    },
-  ];
-
   return (
-    <section className="bg-yellow-50 py-24 px-6 md:px-12">
-      {/* Section Header */}
-      <div className="max-w-6xl mx-auto text-center">
-        <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
-            Why Have a Website 
-          </span>
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
-          Why Every <span className="text-yellow-500"> Business Needs a  </span> Website.
+    <section className="relative bg-black text-white py-16 px-4 md:px-10 overflow-hidden">
+      
+      {/* Glow Background */}
+      <div className="absolute left-0 top-0 w-1/2 h-full bg-red-500/10 blur-[120px]" />
+      <div className="absolute right-0 top-0 w-1/2 h-full bg-yellow-400/10 blur-[120px]" />
+
+      {/* Header */}
+      <div className="text-center max-w-3xl mx-auto mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold leading-tight">
+          The Difference a{" "}
+          <span className="text-yellow-400">Website</span> Makes
         </h2>
-        <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
-        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
-          A modern website is your most powerful tool for visibility, credibility, and growth.
+        <p className="text-gray-400 mt-4">
+          It’s not optional anymore — it’s the line between invisible and unstoppable.
         </p>
       </div>
 
-      {/* Swiper */}
-      <div className="mt-16 max-w-7xl mx-auto">
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          spaceBetween={30}
-          slidesPerView={1}
-          breakpoints={{
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          autoplay={{ delay: 3500, disableOnInteraction: false }}
-          loop={true}
-          pagination={{ clickable: true }}
-          className="pb-12"
-        >
-          {features.map(({ icon: Icon, image, title, text }, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="rounded bg-white border border-amber-200 flex flex-col h-full hover:shadow-lg transition-all duration-200">
+      {/* Split Layout */}
+      <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
 
-                {/* Top Image */}
-                <div className="w-full h-36 md:h-44 relative rounded-t overflow-hidden">
-                  <Image
-                    src={image}
-                    alt={title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+        {/* LEFT - BEFORE */}
+        <div className="bg-white/5 border border-red-500/20 rounded-2xl p-6 backdrop-blur-lg">
+          <h3 className="text-red-400 text-lg font-semibold mb-5">
+            Without a Website
+          </h3>
 
-                {/* Content */}
-                <div className="p-3 flex flex-col items-start">
-                  {/* Icon + Title Row */}
-                  <div className="flex items-center mb-4">
-                    <div className="flex items-center justify-center w-9 h-9 rounded bg-blue-800 border border-gray-300 mr-3">
-                      <Icon className="h-5 w-5 text-yellow-300" />
-                    </div>
-                    <h3 className="md:text-lg font-semibold text-gray-800">
-                      {title}
-                    </h3>
-                  </div>
-
-                  {/* Text */}
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {text}
-                  </p>
+          <div className="space-y-5">
+            {features.map(({ icon: Icon, title, before }, i) => (
+              <div key={i} className="flex items-start gap-3 opacity-70">
+                <Icon className="w-5 h-5 text-red-400 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-sm">{title}</h4>
+                  <p className="text-gray-400 text-sm">{before}</p>
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            ))}
+          </div>
+        </div>
+
+        {/* RIGHT - AFTER */}
+        <div className="relative bg-gradient-to-br from-yellow-400/20 to-transparent border border-yellow-400/30 rounded-2xl p-6 overflow-hidden">
+
+          {/* Glow effect */}
+          <div className="absolute inset-0 bg-yellow-400/10 blur-3xl opacity-30" />
+
+          <h3 className="text-yellow-400 text-lg font-semibold mb-5 relative z-10">
+            With a Website
+          </h3>
+
+          <div className="space-y-5 relative z-10">
+            {features.map(({ icon: Icon, title, after }, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-3 group hover:translate-x-1 transition duration-300"
+              >
+                <Icon className="w-5 h-5 text-yellow-400 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-sm">{title}</h4>
+                  <p className="text-gray-300 text-sm">{after}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Punchline */}
+      <div className="text-center mt-14">
+        <p className="text-xl md:text-2xl font-semibold">
+          Your business is already competing online.
+        </p>
+        <p className="text-yellow-400 text-xl md:text-2xl font-bold mt-2">
+          The only question is — are you visible?
+        </p>
       </div>
     </section>
   );

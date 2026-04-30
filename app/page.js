@@ -56,11 +56,9 @@ export default function MyApp({ Component, pageProps }) {
     <div className="overflow-hidden">
       <Hero />
       <Whatis />
-      <CTASection />
       <WhyWebsite />
-      <AboutLapsa />
       <OurServices />
-      <Why />
+      <CTASection />
       <Portfolio />
       <Testimonial />
       <FAQ />
