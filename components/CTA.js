@@ -26,7 +26,8 @@ export default function CTASection() {
 
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold leading-snug">
-          Ready to Take Your Business Online?
+          Ready to Take Your 
+          <span className="text-yellow-400"> Business Online?</span>
         </h2>
 
         {/* Subtext */}

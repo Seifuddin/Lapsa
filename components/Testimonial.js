@@ -14,43 +14,42 @@ export default function StoriesAndTestimonials() {
       role: "- Founder and CEO, Lapsa Web & Graphics",
       quote:
         "Working with Lapsa was a game-changer. Their design skills and attention to detail elevated our brand online.",
-      image: "/images/IMG_20240804_185749_718~2.jpg",
+      image: "/images/edited-photo.png",
     },
     {
       name: "Sarah Wanjiku",
       role: "- CEO, GreenTech Solutions",
       quote:
         "Lapsa delivered a stunning website for our startup. The process was smooth, and the results exceeded expectations.",
-      image: "/images/IMG_20240804_185749_718~2.jpg",
+      image: "/images/IMG-20250804-WA0003~2.png",
     },
     {
       name: "Brian Odhiambo",
       role: "- Marketing Director, FreshFoods Ltd.",
       quote:
         "Professional, responsive, and creative. Lapsa Web & Graphics truly understands how to make a brand stand out online.",
-      image: "/images/IMG_20240804_185749_718~2.jpg",
+      image: "/images/edited-photo.png",
     },
     {
       name: "Murithi Nguru",
       role: "- Director, Lapsa Clinic",
       quote:
         "Thanks to Lapsa, our website attracts more clients and communicates our services clearly and beautifully.",
-      image: "/images/IMG_20240804_185749_718~2.jpg",
+      image: "/images/IMG-20250804-WA0003~2.png",
     },
     {
       name: "Vincent Obwogi",
       role: "- CEO, Inklab Graphics",
       quote:
         "Their creativity and timely delivery made our web project a success. Highly recommend Lapsa Web & Graphics.",
-      image: "/images/IMG_20240804_185749_718~2.jpg",
+      image: "/images/edited-photo.png",
     },
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-r from-blue-900 to-blue-800 px-6 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#020617] px-6 overflow-hidden">
       {/* Decorative Waves */}
-      <div className="absolute -top-16 left-0 w-full h-36 bg-gradient-to-r from-indigo-800 via-indigo-900 to-indigo-800 rounded-b-full opacity-30"></div>
-      <div className="absolute -bottom-16 right-0 w-56 h-56 bg-indigo-700 rounded-full mix-blend-multiply filter blur-2xl opacity-25"></div>
+            <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-pink-500/20 rounded-full blur-3xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Testimonials Section Header */}
@@ -95,7 +94,7 @@ export default function StoriesAndTestimonials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="bg-white/5 rounded-2xl border border-blue-700 p-4 backdrop-blur-sm shadow-md hover:shadow-lg transition-all h-full"
+                className="p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-center hover:border-yellow-500/30 transition h-full"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <Image
@@ -106,8 +105,8 @@ export default function StoriesAndTestimonials() {
                     className="rounded-full border-2 border-yellow-400"
                   />
                   <div>
-                    <h4 className="font-bold text-gray-100 md:text-lg my-2">{t.name}</h4>
-                    <p className="text-blue-200 text-sm">{t.role}</p>
+                    <h4 className="text-left font-bold text-gray-100 md:text-lg my-2">{t.name}</h4>
+                    <p className="text-left text-blue-200 text-sm">{t.role}</p>
                   </div>
                 </div>
                 <p className="text-blue-100 text-sm leading-relaxed">

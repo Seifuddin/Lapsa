@@ -7,6 +7,12 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Portfolio() {
   const projects = [
+     {
+      title: "Lapsa Web and Graphics",
+      description: "Professional Web Design and Graphics in Kenya.",
+      image: "/images/1765669389666~2.jpg",
+      link: "https://lapsa.vercel.app",
+    },
     {
       title: "Capvim International Publishers",
       description: "Publishing platform built for credibility and reach.",
@@ -25,12 +31,6 @@ export default function Portfolio() {
       image: "/images/download (2).jpg",
       link: "https://lapsafamilyclinic.vercel.app",
     },
-    {
-      title: "Lapsa Web and Graphics",
-      description: "Professional Web Design and Graphics in Kenya.",
-      image: "/images/1765669389666~2.jpg",
-      link: "https://lapsa.vercel.app",
-    },
   ];
 
   return (
@@ -38,8 +38,8 @@ export default function Portfolio() {
       
       {/* HEADER (centered) */}
       <div className="max-w-5xl mx-auto text-center mb-10 px-6 md:px-12">
-        <p className="text-xs tracking-[0.25em] text-gray-500 mb-3 uppercase">
-          Portfolio
+        <p className="text-xs tracking-[0.25em] text-yellow-500 mb-3 upprcase">
+          Our Portfolio
         </p>
 
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
@@ -53,7 +53,7 @@ export default function Portfolio() {
 
       {/* SCROLL SECTION */}
       <div className="relative">
-        <div className="flex gap-5 overflow-x-auto px-6 md:px-12 pb-2 no-scrollbar justify-center md:justify-start">
+        <div className="flex gap-5 overflow-x-auto px-6 md:px-12 pb-2 no-scrollbar justify-start md:justify-start">
 
           {projects.map((project, idx) => (
             <motion.div

@@ -46,7 +46,7 @@ export default function WhyWebsite() {
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-2xl md:text-3xl font-bold leading-tight">
           The Difference a{" "}
-          <span className="text-yellow-400">Website</span> Makes
+          <span className="text-yellow-400">Website Makes</span> 
         </h2>
         <p className="text-gray-400 mt-4">
           It’s not optional anymore — it’s the line between invisible and unstoppable.

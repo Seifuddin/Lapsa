@@ -11,7 +11,7 @@ export default function Whatis() {
             Did You know?
           </span>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
-          What Is a <span className="text-yellow-500">Website</span>?
+          What Is a <span className="text-yellow-500">Website?</span>
         </h2>
         <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
         <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
