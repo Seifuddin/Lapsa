@@ -69,7 +69,7 @@ export default function StoriesAndTestimonials() {
             <span className="text-yellow-400"> Clients Say </span>
           </h3>
           <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full my-3"></div>
-          <p className="text-blue-100 max-w-2xl mx-auto">
+          <p className="text-blue-100 text-sm max-w-2xl mx-auto">
             Hear from the businesses and individuals we've had the pleasure of serving at Lapsa Web & Graphics.
           </p>
         </motion.div>
@@ -105,8 +105,8 @@ export default function StoriesAndTestimonials() {
                     className="rounded-full border-2 border-yellow-400"
                   />
                   <div>
-                    <h4 className="text-left font-bold text-gray-100 md:text-lg my-2">{t.name}</h4>
-                    <p className="text-left text-blue-200 text-sm">{t.role}</p>
+                    <h4 className="text-left font-bold text-gray-100 text-sm my-2">{t.name}</h4>
+                    <p className="text-left text-yellow-400 text-sm">{t.role}</p>
                   </div>
                 </div>
                 <p className="text-blue-100 text-sm leading-relaxed">

@@ -13,6 +13,9 @@ import HeroSection from "@/components/Banner";
 import Whatis from "@/components/What";
 import AboutLapsa from "@/components/Abt";
 import CTASection from "@/components/CTA";
+import WebsiteTypes from "@/components/Types";
+import GraphicDesign from "@/components/Graphics";
+import WhyUs from "@/components/WhyUs";
 
 // ✅ Page-specific SEO metadata
 export const metadata = {
@@ -55,10 +58,12 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <Whatis />
-      <WhyWebsite />
-      <OurServices />
+      <WebsiteTypes />
       <CTASection />
+      <Whatis />
+      <OurServices />
+      <WhyUs />
+      <WhyWebsite />
       <Portfolio />
       <Testimonial />
       <FAQ />

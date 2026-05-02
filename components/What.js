@@ -5,21 +5,21 @@ import { Globe, LayoutDashboard, Code2, Palette, Smartphone, Rocket } from "luci
 
 export default function Whatis() {
   return (
-    <section className="bg-yellow-50 py-24 px-6 lg:px-20 overflow-hidden">
-      <div className="max-w-6xl mx-auto text-center mb-10">
+    <section className="bg-yellow-50 py-16 px-6 lg:px-20 overflow-hidden">
+      <div className="lg:hidden max-w-6xlmx-auto text-center mb-7">
         <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Did You know?
           </span>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
-          What Is a <span className="text-yellow-500">Website?</span>
+          What is a <span className="text-yellow-500">Website?</span>
         </h2>
         <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
-        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
+        <p className="mt-4 text-gray-700 max-w-2xl mx-auto text-sm">
           A website is your digital office, store, and brand identity —
             accessible online 24/7 from anywhere in the world.
         </p>
       </div>
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
         
         {/* RIGHT CREATIVE IMAGE SECTION */}
@@ -32,9 +32,9 @@ export default function Whatis() {
                 >
         
                   {/* Main Image */}
-                  <div className="relative w-full max-wmd h-[300px] md:h-[350px] rounded overflow-hidden border border-white/10">
+                  <div className="relative w-full max-wmd h-[300px] md:h-[400px] rounded overflow-hidden border border-white/10">
                     <Image
-                      src="/images/CDG_blog_post_image_01-850x412.jpg" // replace with your real image
+                      src="/images/herobackground1.webp" // replace with your real image
                       alt="Lapsa Web and Graphics Team"
                       fill
                       className="object-cover bg-white"
@@ -42,14 +42,14 @@ export default function Whatis() {
                   </div>
         
                   {/* Floating UI Card */}
-                  <div className="absolute -top-6 -left-6 bg-white text-blue-900 p-4 rounded-xl shadow-xl w-40 hidden md:block">
+                  <div className="absolute -top-6 -left-6 bg-white text-blue-900 p-4 rounded-xl shadow-xl w-40 hiddenmd: block">
                     <p className="text-xs font-semibold mb-1">UI Preview</p>
                     <div className="h-2 bg-blue-200 rounded mb-2"></div>
                     <div className="h-2 bg-yellow-400 rounded w-3/4"></div>
                   </div>
         
                   {/* Floating Branding Card */}
-                  <div className="absolute -bottom-6 -right-6 bg-yellow-400 text-blue-950 p-4 rounded-xl shadow-xl w-44 hidden md:block">
+                  <div className="absolute -bottom-6 -right-6 bg-yellow-400 text-blue-950 p-4 rounded-xl shadow-xl w-44 hiddenmd: block">
                     <p className="text-xs font-bold mb-1">Brand Identity</p>
                     <div className="h-2 bg-blue-900 rounded mb-2"></div>
                     <div className="h-2 bg-blue-900 rounded w-2/3"></div>
@@ -121,45 +121,58 @@ export default function Whatis() {
 
         {/* LEFT CONTENT */}
         <div>
+          <div className="hidden lg:flex flex-col items-start maxw-6xl mx-auto text-left mb-4">
+        <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Did You know?
+          </span>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
+          What is a <span className="text-yellow-500">Website?</span>
+        </h2>
+        <div className="w-24 h-1 bg-yellow-300 rounded-full my-3"></div>
+        <p className="mt-4 text-gray-700 max-w-2x text-sm">
+          A website is your digital office, store, and brand identity —
+            accessible online 24/7 from anywhere in the world.
+        </p>
+      </div>
           {/* Features Grid */}
-          <div className="grid sm:grid-cols-2 gap-3">
+          <div className="grid sm:grid-cols-2 gap-2">
             
-            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
+            <div className="flex flex-col gap-1 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
-                <Globe className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-7 h-7 rounded" />
-                <h4 className="font-medium text-gray-900 md:text-lg">Your Online Presence</h4>
+                <Globe className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-6 h-6 rounded" />
+                <h4 className="font-semibold text-gray-800 text-sm">Your Online Presence</h4>
               </div>
-              <p className="text-gray-600 text-sm ml-7">
+              <p className="text-gray-700 text-sm ml-7">
                 Being online allows potential customers to find you anytime, anywhere.
               </p>
             </div>
 
-            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
+            <div className="flex flex-col gap-1 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
-                <LayoutDashboard className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-7 h-7 rounded" />
-                <h4 className="font-medium text-gray-900 md:text-lg">A Digital Storefront</h4>
+                <LayoutDashboard className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-6 h-6 rounded" />
+                <h4 className="font-semibold text-gray-800 text-sm">A Digital Storefront</h4>
               </div>
-              <p className="text-gray-600 text-sm ml-7">
+              <p className="text-gray-700 text-sm ml-7">
                 Your website showcases products or services, just like a physical shop.
               </p>
             </div>
 
-            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
+            <div className="flex flex-col gap-1 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
-                <Smartphone className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-7 h-7 rounded" />
-                <h4 className="font-medium text-gray-900 md:text-lg">Accessible Everywhere</h4>
+                <Smartphone className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-6 h-6 rounded" />
+                <h4 className="font-semibold text-gray-800 text-sm">Accessible Everywhere</h4>
               </div>
-              <p className="text-gray-600 text-sm ml-7">
+              <p className="text-gray-700 text-sm ml-7">
                 Works seamlessly on phones, tablets, and computers for all users.
               </p>
             </div>
 
-            <div className="flex flex-col gap-2 p-2 rounded border-b border-amber-200">
+            <div className="flex flex-col gap-1 p-2 rounded border-b border-amber-200">
               <div className="flex gap-3 items-center">
-                <Rocket className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-7 h-7 rounded" />
-                <h4 className="font-medium text-gray-900 md:text-lg">A Growth Tool</h4>
+                <Rocket className="text-yellow-400 mt-1 bg-gradient-to-r from-blue-600 to-blue-900 p-1 w-6 h-6 rounded" />
+                <h4 className="font-semibold text-gray-800 text-sm">A Growth Tool</h4>
               </div>
-              <p className="text-gray-600 text-sm ml-7">
+              <p className="text-gray-700 text-sm ml-7">
                 Helps attract more customers, increase sales, and grow your brand.
               </p>
             </div>

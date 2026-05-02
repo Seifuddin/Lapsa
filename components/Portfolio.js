@@ -7,28 +7,28 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Portfolio() {
   const projects = [
-     {
+    {
+      title: "Capvim International Publishers",
+      description: "Publishing platform built for credibility and reach.",
+      image: "/images/1000_F_248500652_ODdXTJo565M5YO8wO7nvawB1li0uLtOZ.jpg",
+      link: "https://capvim.vercel.app",
+    },
+    {
+      title: "Utamaduni Organization",
+      description: "NGO experience focused on impact and storytelling.",
+      image: "/images/_DSC8080.jpg",
+      link: "https://utamaduniorganization.vercel.app",
+    },
+    {
       title: "Lapsa Web and Graphics",
       description: "Professional Web Design and Graphics in Kenya.",
       image: "/images/1765669389666~2.jpg",
       link: "https://lapsa.vercel.app",
     },
     {
-      title: "Capvim International Publishers",
-      description: "Publishing platform built for credibility and reach.",
-      image: "/images/CDG_blog_post_image_01-850x412.jpg",
-      link: "https://capvim.vercel.app",
-    },
-    {
-      title: "Utamaduni Organization",
-      description: "NGO experience focused on impact and storytelling.",
-      image: "/images/download.jpg",
-      link: "https://utamaduniorganization.vercel.app",
-    },
-    {
       title: "Lapsa Family Clinic",
       description: "Healthcare interface designed for trust and clarity.",
-      image: "/images/download (2).jpg",
+      image: "/images/media_10f9ad2dd9a4185c9b0126a171c3161dbbef0ae16.jpeg",
       link: "https://lapsafamilyclinic.vercel.app",
     },
   ];
@@ -38,7 +38,7 @@ export default function Portfolio() {
       
       {/* HEADER (centered) */}
       <div className="max-w-5xl mx-auto text-center mb-10 px-6 md:px-12">
-        <p className="text-xs tracking-[0.25em] text-yellow-500 mb-3 upprcase">
+        <p className="text-xs tracking-[0.25em] text-yellow-600 mb-3 upprcase">
           Our Portfolio
         </p>
 
@@ -46,7 +46,7 @@ export default function Portfolio() {
           Selected Work
         </h2>
 
-        <p className="mt-4 text-gray-600 max-w-md mx-auto text-sm md:text-base">
+        <p className="mt-4 text-gray-600 mx-auto text-sm">
           A curated selection of projects built with clarity, purpose, and performance in mind.
         </p>
       </div>

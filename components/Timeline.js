@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Timeline() {
   return (
     <div className='overflow-x-hidden bg-yellow-50'>
-        <div className="py-16 px-6 max-w-7xl mx-auto">
+        <div className="py-16 px-6 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
