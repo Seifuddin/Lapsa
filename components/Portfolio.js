@@ -20,7 +20,7 @@ export default function Portfolio() {
       link: "https://utamaduniorganization.vercel.app",
     },
     {
-      title: "Lapsa Web and Graphics",
+      title: "JSoft Technologies",
       description: "Professional Web Design and Graphics in Kenya.",
       image: "/images/photography.jpg",
       link: "https://jsofttechnologies.vercel.app",
