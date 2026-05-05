@@ -11,7 +11,7 @@ export default function Portfolio() {
       title: "Capvim International Publishers",
       description: "Publishing platform built for credibility and reach.",
       image: "/images/1000_F_248500652_ODdXTJo565M5YO8wO7nvawB1li0uLtOZ.jpg",
-      link: "https://capvim.vercel.app",
+      link: "https://capvimn .vercel.app",
     },
     {
       title: "Utamaduni Organization",
@@ -22,8 +22,8 @@ export default function Portfolio() {
     {
       title: "Lapsa Web and Graphics",
       description: "Professional Web Design and Graphics in Kenya.",
-      image: "/images/1765669389666~2.jpg",
-      link: "https://lapsa.vercel.app",
+      image: "/images/photography.jpg",
+      link: "https://jsofttechnologies.vercel.app",
     },
     {
       title: "Lapsa Family Clinic",
