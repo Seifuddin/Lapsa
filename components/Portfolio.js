@@ -11,7 +11,7 @@ export default function Portfolio() {
       title: "Capvim International Publishers",
       description: "Publishing platform built for credibility and reach.",
       image: "/images/1000_F_248500652_ODdXTJo565M5YO8wO7nvawB1li0uLtOZ.jpg",
-      link: "https://capvimn .vercel.app",
+      link: "https://capvim.vercel.app",
     },
     {
       title: "Utamaduni Organization",
