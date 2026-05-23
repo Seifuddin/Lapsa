@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight, ShieldCheck, Network, Camera, Cpu } from "lucide-react";
 
 const slides = [
   {
@@ -67,7 +67,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[70vh] overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={slides[current].id}
@@ -90,12 +90,21 @@ export default function Hero() {
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
+        {/* badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="inline-flex items-center mb-4 gap-2 px-4 py-1 rounded-full border border-white/10 bg-white/5 text-xs text-yellow-400"
+          >
+            <Cpu size={14} />
+            elevate your brand online with Lapsa
+          </motion.div>
         <motion.h1
           key={slides[current].title}
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-2xl text-white md:text-3xl font-extrabold tracking-tight"
+          className="text-2xl md:text-3xl text-white font-semibold tracking-tight"
         >
           {slides[current].title}
         </motion.h1>
@@ -104,7 +113,7 @@ export default function Hero() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mt-4 textlg md:text2xl text-gray-200 max-w-3xl leading-relaxed"
+          className="mt-4 text-sm md:text-base text-gray-100 max-w-3xl leading-relaxed"
         >
           {slides[current].subtitle}
         </motion.p>
@@ -118,15 +127,35 @@ export default function Hero() {
           {slides[current].button}
         </motion.button>
 
+        {/* trust row */}
+                  <div className="flex flex-wrap items-center justify-center textleft gap-3 mt-4 text-sm text-gray-200">
+        
+                    <span className="flex items-center gap-2">
+                      <ShieldCheck size={14} className="text-yellow-400" />
+                      Secure Websites
+                    </span>
+        
+                    <span className="flex items-center gap-2">
+                      <Network size={14} className="text-yellow-400" />
+                      Designed by Experts
+                    </span>
+        
+                    <span className="flex items-center gap-2">
+                      <Camera size={14} className="text-yellow-400" />
+                      Driven by Passion
+                    </span>
+        
+                  </div>
+
         {/* Buttons */}
         <div className="mt-7 flex flex-colsm: flex-row gap-3 justify-center">
 
           <a
             href="/portfolio"
             className="
-              px-7 py-2.5 rounded-full
-              bg-white text-black text-sm font-medium
-              hover:bg-pink-500 hover:text-white
+              px-7 py-1.5 rounded -full
+              bg-yellow-400 text-black text-sm font-medium md:textbase
+              hover:bg-blue-500 hover:text-white
               transition
             "
           >
@@ -136,8 +165,8 @@ export default function Hero() {
           <a
             href="/contacts"
             className="
-              px-7 py-2.5 rounded-full
-              border border-white/40 text-white/90 text-sm
+              px-7 py-1.5 rounded -full
+              border border-white/40 text-white/90 text-sm md:textbase
               hover:border-white hover:text-white
               transition
             "
@@ -145,6 +174,11 @@ export default function Hero() {
             Contact Us
           </a>
         </div>
+        
+        {/* Micro trust line */}
+        <p className="mt-6 text-[10px] text-white/40">
+          Transparent • Verified impact • Community driven
+        </p>
       </div>
 
       
@@ -152,15 +186,15 @@ export default function Hero() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-yellow-300 p-3 rounded-full shadow-lg transition"
+        className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-yellow-300 p-2 rounded-full shadow-lg transition"
       >
-        <ChevronLeft size={28} />
+        <ChevronLeft size={20} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-yellow-300 p-3 rounded-full shadow-lg transition"
+        className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-yellow-300 p-2 rounded-full shadow-lg transition"
       >
-        <ChevronRight size={28} />
+        <ChevronRight size={20} />
       </button>
 
       {/* Indicators */}

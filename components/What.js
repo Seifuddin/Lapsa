@@ -10,8 +10,8 @@ export default function Whatis() {
         <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Did You know?
           </span>
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
-          What is a <span className="text-yellow-500">Website?</span>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight">
+          What is a <span className="text-yellow-400">Website?</span>
         </h2>
         <div className="w-24 h-1 bg-yellow-300 mx-auto rounded-full my-3"></div>
         <p className="mt-4 text-gray-700 max-w-2xl mx-auto text-sm">
@@ -34,7 +34,7 @@ export default function Whatis() {
                   {/* Main Image */}
                   <div className="relative w-full max-wmd h-[300px] md:h-[400px] rounded overflow-hidden border border-white/10">
                     <Image
-                      src="/images/herobackground1.webp" // replace with your real image
+                      src="/images/herobackground4.avif" // replace with your real image
                       alt="Lapsa Web and Graphics Team"
                       fill
                       className="object-cover bg-white"
@@ -125,10 +125,10 @@ export default function Whatis() {
         <span className="inline-block bg-yellow-200 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Did You know?
           </span>
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
-          What is a <span className="text-yellow-500">Website?</span>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight">
+          What is a <span className="text-yellow-400">Website?</span>
         </h2>
-        <div className="w-24 h-1 bg-yellow-300 rounded-full my-3"></div>
+        <div className="w-24 h-1 bg-yellow-400 rounded-full my-3"></div>
         <p className="mt-4 text-gray-700 max-w-2x text-sm">
           A website is your digital office, store, and brand identity —
             accessible online 24/7 from anywhere in the world.

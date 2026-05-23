@@ -42,7 +42,7 @@ export default function CTASection() {
             href="/contacts"
             className="
               px-7 py-2.5 rounded-full
-              bg-white text-black text-sm font-medium
+              bg-yellow-400 text-black text-sm font-medium
               hover:bg-pink-500 hover:text-white
               transition
             "

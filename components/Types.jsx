@@ -48,13 +48,13 @@ export default function WebsiteTypes() {
 
         {/* HEADER */}
         <div className="text-center max-wxl mb-16">
-          <span className="text-sm fontsemibold text-yellow-500 uppercas tracking-wider">
+          <span className="text-sm fontsemibold text-yellow-400 uppercas tracking-wider">
             What We Build
           </span>
 
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-3">
             Websites Tailored for 
-            <span className="text-yellow-500"> Every Industry</span> 
+            <span className="text-orange-400"> Every Industry</span> 
           </h2>
 
           <p className="text-sm text-gray-800 mt-4 px-4">
