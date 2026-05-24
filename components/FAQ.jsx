@@ -68,7 +68,7 @@ export default function FAQ() {
         </div>
 
         {/* FAQ List */}
-        <div className="space-y-1">
+        <div className="space-y-2">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -76,7 +76,7 @@ export default function FAQ() {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center px-3 py-2 text-left hover:bg-amber-100 transition"
+                className="w-full flex justify-between items-center px-3 py-3 text-left hover:bg-amber-100 transition"
               >
                 <span className="text-gray-900 font textbase md:font-medium">
                   {faq.question}
@@ -95,7 +95,7 @@ export default function FAQ() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="px-3 py-1 text-gray-600 text-sm md:font-medium leading-relaxed"
+                    className="px-3 py-2 text-gray-600 text-sm md:font-medium leading-relaxed"
                   >
                     {faq.answer}
                   </motion.div>
