@@ -54,7 +54,7 @@ export default function WebsiteTypes() {
 
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-3">
             Websites Tailored for 
-            <span className="text-orange-400"> Every Industry</span> 
+            <span className="text-yellow-400"> Every Industry</span> 
           </h2>
 
           <p className="text-sm text-gray-800 mt-4 px-4">

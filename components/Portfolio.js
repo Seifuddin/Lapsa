@@ -7,11 +7,11 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Portfolio() {
   const projects = [
-    {
-      title: "Capvim International Publishers",
-      description: "Publishing platform built for credibility and reach.",
-      image: "/images/1000_F_248500652_ODdXTJo565M5YO8wO7nvawB1li0uLtOZ.jpg",
-      link: "https://capvim.vercel.app",
+     {
+      title: "JSoft Technologies",
+      description: "Professional Web Design and Graphics in Kenya.",
+      image: "/images/photography.jpg",
+      link: "https://jsofttechnologies.vercel.app",
     },
     {
       title: "Utamaduni Organization",
@@ -20,10 +20,10 @@ export default function Portfolio() {
       link: "https://utamaduniorganization.vercel.app",
     },
     {
-      title: "JSoft Technologies",
-      description: "Professional Web Design and Graphics in Kenya.",
-      image: "/images/photography.jpg",
-      link: "https://jsofttechnologies.vercel.app",
+      title: "Capvim International Publishers",
+      description: "Publishing platform built for credibility and reach.",
+      image: "/images/1000_F_248500652_ODdXTJo565M5YO8wO7nvawB1li0uLtOZ.jpg",
+      link: "https://capvim.vercel.app",
     },
     {
       title: "Lapsa Family Clinic",

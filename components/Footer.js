@@ -46,13 +46,13 @@ export default function Footer() {
         >
           <div className="flex items-center gap-3 mb-4">
           <Image
-              src="/images/LapsaMainLogo.jpeg"
-              alt="Utamaduni Logo"
-              width={40}
-              height={40}
+              src="/images/logonew.png"
+              alt="Lapsa Logo"
+              width={90}
+              height={72}
               className="rounded-md"
             />
-            <h2 className="text-2xl font-bold text-white fontserif">
+            <h2 className="text2xl font-bold text-white fontserif">
               Lapsa<p className="text-sm font-semibold text-white fontserif">
               Web & Graphics
             </p>
