@@ -8,10 +8,10 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 export default function Portfolio() {
   const projects = [
      {
-      title: "JSoft Technologies",
+      title: "JSoft Technologies KE",
       description: "Professional Web Design and Graphics in Kenya.",
       image: "/images/photography.jpg",
-      link: "https://jsofttechnologies.vercel.app",
+      link: "https://jsofttechnologieske.vercel.app",
     },
     {
       title: "Utamaduni Organization",

@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Lapsa Web and Graphics",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/logonew.png",
         width: 1200,
         height: 630,
         alt: "Lapsa Web and Graphics preview"
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Lapsa Web and Graphics",
     description: "Crafting websites and designs that elevate your brand.",
-    images: ["/og-image.jpg"]
+    images: ["/images/logonew.png"]
   },
 
 };
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               name: "Lapsa Web and Graphics",
               url: "https://lapsa.vercel.app",
-              logo: "https://lapsa.vercel.app/logo.png", // Replace with actual logo URL
+              logo: "https://lapsa.vercel.app/logonew.png", // Replace with actual logo URL
               sameAs: [
                 "https://facebook.com/lapsa",
                 "https://instagram.com/lapsa",
