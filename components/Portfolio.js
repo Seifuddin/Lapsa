@@ -10,25 +10,25 @@ export default function Portfolio() {
      {
       title: "JSoft Technologies KE",
       description: "Professional Web Design and Graphics in Kenya.",
-      image: "/images/photography.jpg",
+      image: "/images/jsoft.png",
       link: "https://jsofttechnologieske.vercel.app",
     },
     {
       title: "Utamaduni Organization",
       description: "NGO experience focused on impact and storytelling.",
-      image: "/images/_DSC8080.jpg",
+      image: "/images/utmaduni.png",
       link: "https://utamaduniorganization.vercel.app",
     },
     {
       title: "Capvim International Publishers",
       description: "Publishing platform built for credibility and reach.",
-      image: "/images/1000_F_248500652_ODdXTJo565M5YO8wO7nvawB1li0uLtOZ.jpg",
+      image: "/images/capvimm.png",
       link: "https://capvim.vercel.app",
     },
     {
       title: "Lapsa Family Clinic",
       description: "Healthcare interface designed for trust and clarity.",
-      image: "/images/media_10f9ad2dd9a4185c9b0126a171c3161dbbef0ae16.jpeg",
+      image: "/images/clinic.png",
       link: "https://lapsafamilyclinic.vercel.app",
     },
   ];
