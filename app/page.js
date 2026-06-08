@@ -38,7 +38,7 @@ export const metadata = {
     url: "https://lapsa.vercel.app",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/og-image.jpeg",
         width: 1200,
         height: 630,
         alt: "Lapsa Web and Graphics"
@@ -50,7 +50,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Lapsa Web and Graphics",
     description: "Get high-quality web and graphic design solutions with Lapsa.",
-    images: ["/og-image.jpg"]
+    images: ["/images/og-image.jpeg"]
   }
 };
 
