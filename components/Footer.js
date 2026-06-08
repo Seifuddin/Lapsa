@@ -36,7 +36,7 @@ export default function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto grid md:grid-cols-5 gap-10"
+        className="max-w-7xl mx-auto grid md:grid-cols-4 lg:grid-cols-4 gap-10"
       >
         {/* Logo & Mission */}
         <motion.div
@@ -46,7 +46,7 @@ export default function Footer() {
         >
           <div className="flex items-center gap-3 mb-4">
           <Image
-              src="/images/logonew.png"
+              src="/images/Lapsa-removebg-preview.png"
               alt="Lapsa Logo"
               width={90}
               height={72}
@@ -80,28 +80,6 @@ export default function Footer() {
           </ul>
         </motion.div>
 
-        {/* Contact Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 1, ease: "easeInOut" }}
-        >
-          <h4 className="text-white font-semibold mb-4">Contact</h4>
-          <ul className="text-sm space-y-2">
-            <li className="flex items-start gap-2">
-              <MapPin className="w-4 h-4 mt-1 text-indigo-400" />
-              <span>Nairobi, Kenya</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <Phone className="w-4 h-4 mt-1 text-indigo-400" />
-              <span>+254 111 608 331</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <Mail className="w-4 h-4 mt-1 text-indigo-400" />
-              <span>lapsatechnologies@gmail.com</span>
-            </li>
-          </ul>
-        </motion.div>
 
         {/* Social Media */}
         <motion.div
@@ -150,11 +128,36 @@ export default function Footer() {
           </div>
         </motion.div>
 
+        {/* Contact Info */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 1, ease: "easeInOut" }}
+        >
+          <h4 className="text-white font-semibold mb-4">Contact</h4>
+          <ul className="text-sm space-y-2">
+            <li className="flex items-start gap-2">
+              <MapPin className="w-4 h-4 mt-1 text-indigo-400" />
+              <span>Nairobi, Kenya</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Phone className="w-4 h-4 mt-1 text-indigo-400" />
+              <span>+254 111 608 331</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Mail className="w-4 h-4 mt-1 text-indigo-400" />
+              <span>lapsatechnologies@gmail.com</span>
+            </li>
+          </ul>
+        </motion.div>
+
+
         {/* Newsletter */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6, duration: 1, ease: "easeInOut" }}
+          className="hidden"
         >
           <h4 className="text-white font-semibold mb-4">Subscribe</h4>
           <p className="text-sm text-gray-400 mb-4">

@@ -46,10 +46,10 @@ export default function Navbar() {
         <Link href="/" className="flex items-center justify-center gap-3 group">
           <div className="relative w-44 h-8 md:w-72 md:h-10">
             <Image
-              src="/images/logonew.png"
+              src="/images/Lapsa-removebg-preview.png"
               alt="Lapsa Logo"
-              width={80}
-              height={44}
+              width={60}
+              height={40}
               className="rounded-md object-contain"
             />
           </div>
