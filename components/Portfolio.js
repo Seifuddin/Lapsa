@@ -31,6 +31,12 @@ export default function Portfolio() {
       image: "/images/clinic.png",
       link: "https://lapsafamilyclinic.vercel.app",
     },
+    {
+      title: "Josro Bridge International",
+      description: "An Education and Consultancy Firm.",
+      image: "/images/clinic.png",
+      link: "https://josrobridgeinternational.vercel.app",
+    },
   ];
 
   return (
