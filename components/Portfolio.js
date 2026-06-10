@@ -34,7 +34,7 @@ export default function Portfolio() {
     {
       title: "Josro Bridge International",
       description: "An Education and Consultancy Firm.",
-      image: "/images/clinic.png",
+      image: "/images/josrohero.png",
       link: "https://josrobridgeinternational.vercel.app",
     },
   ];
