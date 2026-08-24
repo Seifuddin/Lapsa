@@ -66,7 +66,6 @@ export default function MyApp({ Component, pageProps }) {
       <WhyUs />
       <WhyWebsite />
       <Portfolio />
-      <Gallery />
       <Testimonial />
       <FAQ />
     </div>
