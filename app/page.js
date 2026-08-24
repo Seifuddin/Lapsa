@@ -16,6 +16,7 @@ import CTASection from "@/components/CTA";
 import WebsiteTypes from "@/components/Types";
 import GraphicDesign from "@/components/Graphics";
 import WhyUs from "@/components/WhyUs";
+import Gallery from "@/components/Gallery";
 
 // ✅ Page-specific SEO metadata
 export const metadata = {
@@ -65,6 +66,7 @@ export default function MyApp({ Component, pageProps }) {
       <WhyUs />
       <WhyWebsite />
       <Portfolio />
+      <Gallery />
       <Testimonial />
       <FAQ />
     </div>

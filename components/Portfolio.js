@@ -7,6 +7,12 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Portfolio() {
   const projects = [
+    {
+      title: "Josro Bridge International",
+      description: "An Education and Consultancy Firm.",
+      image: "/images/josrohero.png",
+      link: "https://josrobridgeinternational.vercel.app",
+    },
      {
       title: "JSoft Technologies KE",
       description: "Professional Web Design and Graphics in Kenya.",
@@ -31,12 +37,7 @@ export default function Portfolio() {
       image: "/images/clinic.png",
       link: "https://lapsafamilyclinic.vercel.app",
     },
-    {
-      title: "Josro Bridge International",
-      description: "An Education and Consultancy Firm.",
-      image: "/images/josrohero.png",
-      link: "https://josrobridgeinternational.vercel.app",
-    },
+    
   ];
 
   return (
