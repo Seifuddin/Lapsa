@@ -1,7 +1,7 @@
 import Gallery from '@/components/Gallery'
 import React from 'react'
 
-export default function Gallery() {
+export default function GalleryPage() {
   return (
     <div className='overflow-x-hidden'>
         <Gallery />
