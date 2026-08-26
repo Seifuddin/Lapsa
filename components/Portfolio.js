@@ -3,110 +3,124 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Portfolio() {
   const projects = [
     {
       title: "Josro Bridge International",
-      description: "An Education and Consultancy Firm.",
+      description: "Education & Consultancy Firm",
+      category: "Education",
       image: "/images/josrohero.png",
       link: "https://josrobridgeinternational.vercel.app",
     },
-     {
+    {
       title: "JSoft Technologies KE",
-      description: "Professional Web Design and Graphics in Kenya.",
+      description: "Professional Web Design & Graphics",
+      category: "Technology",
       image: "/images/jsoft.png",
       link: "https://jsofttechnologieske.vercel.app",
     },
     {
       title: "Utamaduni Organization",
-      description: "NGO experience focused on impact and storytelling.",
+      description: "NGO Impact & Storytelling",
+      category: "Non-Profit",
       image: "/images/utmaduni.png",
       link: "https://utamaduniorganization.vercel.app",
     },
     {
       title: "Capvim International Publishers",
-      description: "Publishing platform built for credibility and reach.",
+      description: "Publishing Platform",
+      category: "Publishing",
       image: "/images/capvimm.png",
       link: "https://capvim.vercel.app",
     },
     {
       title: "Lapsa Family Clinic",
-      description: "Healthcare interface designed for trust and clarity.",
+      description: "Healthcare Interface",
+      category: "Healthcare",
       image: "/images/clinic.png",
       link: "https://lapsafamilyclinic.vercel.app",
     },
-    
   ];
 
   return (
-    <section className="py-20 bg-yellow-50 overflow-hidden">
-      
-      {/* HEADER (centered) */}
-      <div className="max-w-5xl mx-auto text-center mb-10 px-6 md:px-12">
-        <p className="text-xs tracking-[0.25em] text-yellow-600 mb-3 upprcase">
-          Our Portfolio
-        </p>
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <span className="text-sm font-medium text-blue-600 tracking-wider uppercase">
+            Portfolio
+          </span>
+          <h2 className="text-3xl font-bold text-slate-900 mt-2">
+            Selected Work
+          </h2>
+          <p className="text-slate-500 mt-2 max-w-md mx-auto">
+            Projects built with clarity, purpose, and performance
+          </p>
+        </div>
 
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-          Selected Work
-        </h2>
-
-        <p className="mt-4 text-gray-600 mx-auto text-sm">
-          A curated selection of projects built with clarity, purpose, and performance in mind.
-        </p>
-      </div>
-
-      {/* SCROLL SECTION */}
-      <div className="relative">
-        <div className="flex gap-5 overflow-x-auto px-6 md:px-12 pb-2 no-scrollbar justify-start md:justify-start">
-
-          {projects.map((project, idx) => (
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index) => (
             <motion.div
-              key={idx}
-              whileHover={{ y: -6 }}
-              className="min-w-[260px] md:min-w-[340px] flex-shrink-0"
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -4 }}
+              className="group"
             >
               <Link href={project.link} target="_blank">
-                
-                <div className="relative h-[320px] w-full rounded-xl overflow-hidden group shadow-sm">
-
-                  {/* Image */}
+                {/* Image Container */}
+                <div className="relative h-64 w-full rounded-xl overflow-hidden bg-slate-100">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover group-hover:scale-[1.03] transition duration-500"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-
-                  {/* Gradient overlay (luxury feel) */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
-
-                  {/* Content */}
-                  <div className="absolute bottom-0 p-5 text-white">
-                    
-                    <h3 className="text-lg font-semibold mb-1">
-                      {project.title}
-                    </h3>
-
-                    <p className="text-xs text-gray-200 mb-3 line-clamp-2">
-                      {project.description}
-                    </p>
-
-                    <span className="inline-flex items-center gap-1 text-yellow-300 text-xs font-medium tracking-wide">
-                      View Project
-                      <ArrowTopRightOnSquareIcon className="w-3.5 h-3.5" />
+                  
+                  {/* Category Badge */}
+                  <div className="absolute top-3 left-3">
+                    <span className="px-3 py-1 text-xs font-medium text-white bg-black/50 backdrop-blur-sm rounded-full">
+                      {project.category}
                     </span>
-
                   </div>
 
+                  {/* Overlay on Hover */}
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-sm font-medium flex items-center gap-2">
+                      View Project
+                      <ArrowUpRight className="w-4 h-4" />
+                    </span>
+                  </div>
                 </div>
 
+                {/* Description Below Image */}
+                <div className="mt-4">
+                  <h3 className="text-base font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-slate-500 mt-1">
+                    {project.description}
+                  </p>
+                </div>
               </Link>
             </motion.div>
           ))}
+        </div>
 
+        {/* View All */}
+        <div className="text-center mt-12">
+          <Link
+            href="/portfolio"
+            className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
+          >
+            View All Projects
+            <ArrowUpRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>

@@ -17,6 +17,7 @@ import WebsiteTypes from "@/components/Types";
 import GraphicDesign from "@/components/Graphics";
 import WhyUs from "@/components/WhyUs";
 import Gallery from "@/components/Gallery";
+import WebPricing from "@/components/Prices";
 
 // ✅ Page-specific SEO metadata
 export const metadata = {
@@ -59,15 +60,16 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <WebsiteTypes />
-      <CTASection />
       <Whatis />
       <OurServices />
-      <WhyUs />
       <WhyWebsite />
-      <Portfolio />
+      <CTASection />
+      <WebsiteTypes />
+      <WebPricing />
+      <WhyUs />
       <Testimonial />
       <FAQ />
+      <Portfolio />
     </div>
   );
 }

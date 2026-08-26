@@ -36,7 +36,7 @@ export default function CTASection() {
         </p>
 
         {/* Buttons */}
-        <div className="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
+        <div className="mt-7 flex flex-colsm: flex-row gap-3 justify-center">
 
           <a
             href="/contacts"

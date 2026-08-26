@@ -1,100 +1,160 @@
 "use client";
+
 import { motion } from "framer-motion";
-import { ShieldCheck, Sparkles, Users, Rocket } from "lucide-react";
+import { ShieldCheck, Sparkles, Users, Rocket, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
 
 const reasons = [
   {
-    icon: <ShieldCheck className="w-6 h-6 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />,
+    icon: ShieldCheck,
     title: "Trusted Expertise",
-    desc: "Years of experience delivering world-class web and graphic solutions that elevate your brand.",
+    description: "Years of experience delivering world-class web and graphic solutions that elevate your brand.",
+    number: "01",
+    color: "#3B82F6",
   },
   {
-    icon: <Sparkles className="w-6 h-6 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />,
+    icon: Sparkles,
     title: "Creative Excellence",
-    desc: "We blend design and tech to craft visually stunning and functionally powerful results.",
+    description: "We blend design and tech to craft visually stunning and functionally powerful results.",
+    number: "02",
+    color: "#8B5CF6",
   },
   {
-    icon: <Users className="w-6 h-6 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />,
+    icon: Users,
     title: "Client-Centered Approach",
-    desc: "Your goals come first. We listen, understand, and deliver tailored solutions with full transparency.",
+    description: "Your goals come first. We listen, understand, and deliver tailored solutions with full transparency.",
+    number: "03",
+    color: "#10B981",
   },
   {
-    icon: <Rocket className="w-6 h-6 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />,
+    icon: Rocket,
     title: "Speed & Reliability",
-    desc: "We deliver fast, optimized websites with zero compromise on quality or performance.",
+    description: "We deliver fast, optimized websites with zero compromise on quality or performance.",
+    number: "04",
+    color: "#F59E0B",
   },
 ];
 
-export default function Why() {
+export default function WhyChooseUs() {
   return (
-    <section className="py-12 bg-gradient-to-r from-blue-900 to-blue-800 text-white relative z-10 overflow-hidden py-20 px-6 md:px-12">
-      {/* Subtle Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -z-10 h-[300px] w-[300px] bg-indigo-500/10 blur-3xl rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
+    <section className="py-24 bg-slate-50 relative overflow-hidden">
+      {/* Decorative Background */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-50/50 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-100/30 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-20 w-48 h-48 bg-blue-100/20 rounded-full blur-3xl" />
 
-      <div className="relative roundedlg  text-white py24 px6 md:px16 z-10 max-w-7xl mx-auto">
-        {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-8 text-center"
-        >
-          <span className="inline-block bg-yellow-400 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
-            Why Us
-          </span>
-          <h2 className="text-2xl text-white md:text-4xl font-bold tracking-tight mb-2 fontserif">
-            Why Choose <span className="text-yellow-400">Lapsa</span>?
-          </h2>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full my-3"></div>
-          <p className="text-base text-gray-300 max-w-2xl mx-auto">
-            We're not just a design agency — we're your creative growth partner.
-          </p>
-        </motion.div>
-
-        {/* Reason Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {reasons.map((item, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: idx * 0.15 }}
-              viewport={{ once: true }}
-              className="group bg-white/10 rounded-lg border border-blue-500 hover:from-gray-800 hover:to-gray-900 roundedxl shadow-md p-5 hover:shadow-indigo-500/30 transition-all hover:scale-[1.015]"
-            >
-              <div className="flex items-center gap-3 mb-2">
-                <div className="bg-gradient-to-r from-blue-400 to-blue-600 p-2 rounded-full transition-all">
-                  {item.icon}
-                </div>
-                <h3 className="textlg md:text-xl font-semibold fontserif">
-                  {item.title}
-                </h3>
-              </div>
-              <p className="text-gray-200 text-sm leading-relaxed">
-                {item.desc}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* CTA Button 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          viewport={{ once: true }}
-          className="mt-10 text-center"
-        >
-          <Link
-            href="/contact"
-            className="inline-block px-6 py-3 text-sm md:text-base text-white font-medium rounded-full bg-indigo-600 hover:bg-indigo-700 transition-all shadow-md shadow-indigo-500/20"
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Column - Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
           >
-            Get Started with Lapsa
-          </Link>
-        </motion.div>
-        */}
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-slate-200 shadow-sm mb-6">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+              </span>
+              <span className="text-xs font-semibold text-slate-700 tracking-wider uppercase">
+                Why Choose Us
+              </span>
+            </div>
+
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+              Your Success
+              <br />
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                Starts Here
+              </span>
+            </h2>
+
+            <p className="mt-4 text-lg text-slate-500 leading-relaxed">
+              We're not just a design agency — we're your creative growth partner, 
+              dedicated to bringing your vision to life.
+            </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4 mt-8">
+              {[
+                { number: "50+", label: "Projects" },
+                { number: "98%", label: "Satisfaction" },
+                { number: "4.9★", label: "Rating" },
+              ].map((stat, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 + i * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-xl border border-slate-200 p-4 text-center shadow-sm"
+                >
+                  <div className="text-xl font-bold text-slate-900">{stat.number}</div>
+                  <div className="text-xs text-slate-500 mt-0.5">{stat.label}</div>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 mt-8 px-8 py-3.5 bg-slate-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-600 transition-all duration-300 group shadow-lg shadow-slate-200"
+            >
+              Start Your Project
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
+
+          {/* Right Column - Cards */}
+          <div className="space-y-4">
+            {reasons.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ x: 8 }}
+                className="group"
+              >
+                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 p-5 flex items-start gap-4">
+                  {/* Number & Icon */}
+                  <div className="flex flex-col items-center gap-2">
+                    <div 
+                      className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+                      style={{ backgroundColor: `${item.color}15` }}
+                    >
+                      <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                    </div>
+                    <span 
+                      className="text-xs font-bold"
+                      style={{ color: item.color }}
+                    >
+                      {item.number}
+                    </span>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1">
+                    <h3 className="text-base font-semibold text-slate-900 mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-slate-500 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+
+                  {/* Arrow indicator */}
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity">
+                    <ArrowRight className="w-4 h-4 text-slate-400" />
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
