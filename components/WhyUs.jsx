@@ -86,7 +86,7 @@ export default function WhyUs() {
               {/* Stats */}
               <div className="flex gap-3 mt-5">
                 {[
-                  { number: "50+", label: "Projects" },
+                  { number: "10+", label: "Projects" },
                   { number: "98%", label: "Satisfaction" },
                   { number: "4.9★", label: "Rating" },
                 ].map((stat, i) => (

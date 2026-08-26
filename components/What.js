@@ -117,7 +117,7 @@ export default function WhatIsWebsite() {
             {/* CTA */}
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-slate-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-600 transition-all duration-300 group"
+              className="hidden inline-flexitems-center gap-2 mt-8 px-6 py-3 bg-slate-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-600 transition-all duration-300 group"
             >
               Get Started
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

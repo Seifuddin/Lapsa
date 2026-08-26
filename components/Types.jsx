@@ -168,7 +168,7 @@ export default function WebsiteTypes() {
           viewport={{ once: true }}
           className="mt-14 text-center"
         >
-          <div className="inline-flex flex-wrap items-center gap-6 px-8 py-5 bg-gradient-to-r from-blue-50 to-orange-50 rounded-2xl border border-blue-100">
+          <div className="hidden inline-flexflex-wrap items-center gap-6 px-8 py-5 bg-gradient-to-r from-blue-50 to-orange-50 rounded-2xl border border-blue-100">
             <div className="text-left">
               <p className="text-sm font-semibold text-slate-900">
                 Ready to build your website?

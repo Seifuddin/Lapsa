@@ -41,7 +41,7 @@ export default function CTASection() {
           <a
             href="/contacts"
             className="
-              px-7 py-2.5 rounded-full
+              px-7 py-2.5 rounded -full
               bg-yellow-400 text-black text-sm font-medium
               hover:bg-pink-500 hover:text-white
               transition
@@ -53,7 +53,7 @@ export default function CTASection() {
           <a
             href="/portfolio"
             className="
-              px-7 py-2.5 rounded-full
+              px-7 py-2.5 rounded -full
               border border-white/20 text-white/70 text-sm
               hover:border-white hover:text-white
               transition
