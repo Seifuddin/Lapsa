@@ -62,8 +62,8 @@ export default function MyApp({ Component, pageProps }) {
       <Hero />
       <WebsiteTypes />
       <OurServices />
-      <WhyUs />
       <WebPricing />
+      <WhyUs />
       <CTASection />
       <Testimonial />
       <FAQ />
