@@ -60,16 +60,13 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <Whatis />
-      <OurServices />
-      <WhyWebsite />
-      <CTASection />
       <WebsiteTypes />
-      <WebPricing />
+      <OurServices />
       <WhyUs />
+      <WebPricing />
+      <CTASection />
       <Testimonial />
       <FAQ />
-      <Portfolio />
     </div>
   );
 }
