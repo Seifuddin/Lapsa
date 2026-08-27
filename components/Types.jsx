@@ -9,7 +9,7 @@ const websiteTypes = [
   {
     title: "School Websites",
     desc: "Modern platforms for learning, communication, and student engagement.",
-    image: "/images/cybercafee.webp",
+    image: "/images/school-admission-web-banner-design-education-website-homepage-landing-page-hero-section_755018-629~2.jpg",
     tag: "Education",
     icon: GraduationCap,
     color: "from-blue-500 to-blue-600",
@@ -18,7 +18,7 @@ const websiteTypes = [
   {
     title: "Hospital Websites",
     desc: "Clean, accessible systems for patient care, bookings, and information.",
-    image: "/images/cyber.jpg",
+    image: "/images/images - 2026-08-29T213242.474~2.jpg",
     tag: "Healthcare",
     icon: Heart,
     color: "from-rose-500 to-rose-600",
@@ -27,7 +27,7 @@ const websiteTypes = [
   {
     title: "E-Commerce Stores",
     desc: "High-converting online shops designed to maximize sales.",
-    image: "/images/61d1aff14bf9944a66bdd2fb81cf637c729d70c9.jpg",
+    image: "/images/a50a13168411771.644ea2a6b2810.jpg",
     tag: "Business",
     icon: ShoppingBag,
     color: "from-orange-500 to-orange-600",
@@ -36,7 +36,7 @@ const websiteTypes = [
   {
     title: "Corporate Websites",
     desc: "Professional digital presence that builds trust and authority.",
-    image: "/images/ai-generated-businessman-using-tablet-with-social-media-icons-over-night-cityscape-background-a-businessman-on-a-blurred-background-using-a-3d-rendering-mobile-phone-with-social-m.jpg",
+    image: "/images/f9f15454bea502421bd1b4da5fd604b0~3.jpg",
     tag: "Enterprise",
     icon: Building2,
     color: "from-indigo-500 to-indigo-600",
@@ -45,7 +45,7 @@ const websiteTypes = [
   {
     title: "NGO & Charity Websites",
     desc: "Impact-driven platforms to tell stories and drive donations.",
-    image: "/images/_DSC8080.jpg",
+    image: "/images/divi-plus-nonprofit-theme-hero.webp",
     tag: "Non-Profit",
     icon: Globe,
     color: "from-emerald-500 to-emerald-600",
@@ -54,7 +54,7 @@ const websiteTypes = [
   {
     title: "Portfolio Websites",
     desc: "Showcase your work with style and clarity.",
-    image: "/images/heroimage1.jpg",
+    image: "/images/images - 2026-08-29T214340.131.jpg",
     tag: "Personal Brand",
     icon: User,
     color: "from-purple-500 to-purple-600",
@@ -110,10 +110,10 @@ export default function WebsiteTypes() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
-              className="group relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300"
+              className="group relative rounded-xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300"
             >
               {/* Image */}
-              <div className="relative h-52 overflow-hidden bg-slate-100">
+              <div className="relative h-44 overflow-hidden bg-slate-100">
                 <Image
                   src={type.image}
                   alt={type.title}
