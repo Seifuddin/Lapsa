@@ -105,7 +105,7 @@ export default function FAQ() {
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span
-                    className={`text-sm font-medium transition-colors ${
+                    className={`text-lg font-medium transition-colors ${
                       openIndex === index ? "text-blue-700" : "text-slate-800"
                     }`}
                   >
@@ -128,7 +128,7 @@ export default function FAQ() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <div className="px-5 pb-4 pl-14 text-sm text-slate-600 leading-relaxed">
+                    <div className="px-5 pb-4 pl-14 text-base text-slate-600 leading-relaxed">
                       {faq.answer}
                     </div>
                   </motion.div>
