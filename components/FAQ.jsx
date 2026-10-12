@@ -60,21 +60,21 @@ export default function FAQ() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100 mb-4">
-            <HelpCircle className="w-4 h-4 text-blue-600" />
-            <span className="text-xs font-semibold text-blue-700 tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 rounded-full border border-orange-100 mb-4">
+            <HelpCircle className="w-4 h-4 text-orange-600" />
+            <span className="text-xs font-semibold text-orange-400 tracking-wider uppercase">
               FAQ
             </span>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
             Frequently Asked{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">
               Questions
             </span>
           </h2>
 
-          <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full mt-4" />
+          <div className="w-16 h-1 bg-gradient-to-r from-orange-600 to-orange-600 mx-auto rounded-full mt-4" />
 
           <p className="mt-4 text-sm text-slate-500 max-w-2xl mx-auto">
             Have questions? We've got answers about our services, projects, and how we can help your business grow online.
@@ -101,7 +101,7 @@ export default function FAQ() {
                 className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
               >
                 <div className="flex items-start gap-3">
-                  <span className="text-xs font-bold text-blue-600 bg-blue-100 rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="text-xs font-bold text-orange-600 bg-orange-100 rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span
@@ -114,7 +114,7 @@ export default function FAQ() {
                 </div>
                 <ChevronDown
                   className={`w-5 h-5 text-slate-400 transition-all duration-300 shrink-0 ${
-                    openIndex === index ? "rotate-180 text-blue-600" : ""
+                    openIndex === index ? "rotate-180 text-orange-600" : ""
                   }`}
                 />
               </button>
@@ -147,13 +147,13 @@ export default function FAQ() {
           className="mt-12 text-center"
         >
           <div className="inline-flex flex-wrap items-center gap-4 px-6 py-4 bg-slate-50 rounded-2xl border border-slate-200">
-            <MessageCircle className="w-5 h-5 text-blue-600" />
+            <MessageCircle className="w-5 h-5 text-orange-600" />
             <span className="text-sm text-slate-600">
               Still have questions?
             </span>
             <Link
               href="/contact"
-              className="text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors inline-flex items-center gap-1"
+              className="text-sm font-semibold text-orange-600 hover:text-blue-700 transition-colors inline-flex items-center gap-1"
             >
               Contact us
               <ChevronDown className="w-4 h-4 -rotate-90" />

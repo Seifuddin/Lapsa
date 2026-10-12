@@ -82,13 +82,13 @@ export default function PricingGrid() {
       <div className="max-w-7xl mx-auto">
         {/* Header - Compact */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 mb-3">
-            <Zap className="w-3.5 h-3.5 text-slate-600" />
-            <span className="text-xs font-medium text-slate-700">Pricing Plans</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 border border-orange-200 mb-3">
+            <Zap className="w-3.5 h-3.5 text-orange-600" />
+            <span className="text-xs font-medium text-orange-700">Pricing Plans</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
             Choose Your{" "}
-            <span className="bg-gradient-to-r from-violet-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-600 via-orange-600 to-orange-600 bg-clip-text text-transparent">
               Perfect Plan
             </span>
           </h2>
@@ -124,7 +124,7 @@ export default function PricingGrid() {
                   <div className="flex-1">
                     <div className="flex items-center gap-1.5 flex-wrap">
                       <p className={`text-[10px] font-semibold uppercase tracking-wider ${
-                        pkg.popular ? "text-violet-200" : "text-slate-400"
+                        pkg.popular ? "text-violet-200" : "text-orange-400"
                       }`}>
                         {pkg.complexity}
                       </p>
@@ -132,7 +132,7 @@ export default function PricingGrid() {
                         <span className={`text-[9px] px-1.5 py-0.5 rounded-full font-medium ${
                           pkg.popular 
                             ? "bg-white/20 text-white" 
-                            : "bg-slate-200 text-slate-600"
+                            : "bg-slate-200 text-blue-600"
                         }`}>
                           {pkg.tag}
                         </span>
@@ -148,7 +148,7 @@ export default function PricingGrid() {
                     pkg.popular ? "bg-white/20" : "bg-white"
                   }`}>
                     <pkg.icon className={`w-4 h-4 ${
-                      pkg.popular ? "text-white" : "text-violet-600"
+                      pkg.popular ? "text-white" : "text-orange-600"
                     }`} />
                   </div>
                 </div>
@@ -165,13 +165,13 @@ export default function PricingGrid() {
                   <div className="flex items-baseline gap-0.5">
                     {pkg.price !== "Custom" && (
                       <span className={`text-sm font-semibold ${
-                        pkg.popular ? "text-violet-200" : "text-slate-600"
+                        pkg.popular ? "text-violet-200" : "text-orange-600"
                       }`}>
                         KSh
                       </span>
                     )}
                     <span className={`text-2xl font-bold tracking-tight ${
-                      pkg.popular ? "text-white" : "text-slate-900"
+                      pkg.popular ? "text-white" : "text-blue-700"
                     }`}>
                       {pkg.price}
                     </span>
