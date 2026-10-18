@@ -15,6 +15,13 @@ export default function Portfolio() {
       link: "https://josrobridgeinternational.vercel.app",
     },
     {
+      title: "Makyn Construction Company Limited.",
+      description: "Building Construction Company",
+      category: "Construction",
+      image: "/images/f9f15454bea502421bd1b4da5fd604b0~3.jpg",
+      link: "https://makyn.vercel.app",
+    },
+    {
       title: "Utamaduni Organization",
       description: "NGO Impact & Storytelling",
       category: "Non-Profit",
